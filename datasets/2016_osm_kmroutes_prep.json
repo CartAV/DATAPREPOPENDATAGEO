@@ -46,13 +46,31 @@
         "maxLength": -1
       },
       {
-        "name": "type_route",
-        "type": "string",
+        "name": "km autoroute",
+        "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "km_route",
+        "name": "km route départementale",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "km agglomération",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "km autres routes",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "km route nationale",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -72,6 +90,15 @@
   "flowOptions": {
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "antoinefa",
+      "displayName": "Fabien Antoine",
+      "email": "fabien.antoine@interieur.gouv.fr"
+    },
+    "lastModifiedOn": 1484332063190
   },
   "customMeta": {
     "kv": {}
