@@ -1,6 +1,168 @@
 {
-  "steps": [],
+  "steps": [
+    {
+      "type": "Pivot",
+      "params": {
+        "indexColumn": "code_insee",
+        "labelsColumn": "type_route",
+        "valuesColumn": "km_route"
+      },
+      "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    },
+    {
+      "steps": [
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "km agglomération",
+            "expression": "residential+living_street"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "km route départementale",
+            "expression": "secondary+secondary_link"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "km autoroute",
+            "expression": "motorway+motorway_link"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "tmp",
+            "expression": "trunk+trunk_link"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "tmp2",
+            "expression": "primary+primary_link"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "km route nationale",
+            "expression": "tmp+tmp2"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "tmp2",
+            "expression": "unclassified+tertiary_link"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "tmp",
+            "expression": "tertiary+service"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "km autres routes",
+            "expression": "tmp+tmp2"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        }
+      ],
+      "metaType": "GROUP",
+      "preview": false,
+      "disabled": false,
+      "name": "mapping",
+      "alwaysShowComment": false
+    },
+    {
+      "steps": [
+        {
+          "type": "ColumnsSelector",
+          "params": {
+            "keep": false,
+            "appliesTo": "COLUMNS",
+            "columns": [
+              "type_route",
+              "km_route",
+              "trunk",
+              "trunk_link",
+              "primary_link",
+              "primary",
+              "secondary",
+              "secondary_link",
+              "tertiary",
+              "tertiary_link",
+              "unclassified",
+              "service",
+              "living_street",
+              "tmp2",
+              "tmp",
+              "motorway",
+              "motorway_link",
+              "residential"
+            ]
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        }
+      ],
+      "metaType": "GROUP",
+      "preview": false,
+      "disabled": false,
+      "name": "suppression de colonnes",
+      "alwaysShowComment": false
+    }
+  ],
   "tags": [],
+  "origin": "PREPARE_RECIPE",
   "columnsSelection": {
     "mode": "ALL"
   },
@@ -14,21 +176,24 @@
     "selection": {
       "samplingMethod": "HEAD_SEQUENTIAL",
       "partitionSelectionMethod": "ALL",
-      "maxRecords": 10000,
+      "maxRecords": 100000,
       "targetRatio": 0.02
     },
     "autoRefreshSample": false,
-    "_refreshTrigger": 0
+    "_refreshTrigger": 1
   },
   "vizSampling": {
     "autoRefreshSample": false,
     "_refreshTrigger": 0
   },
-  "exploreUIParams": {},
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "globalSearchQuery": "",
   "explorationFilters": [
     {
-      "type": "global_search"
+      "type": "global_search",
+      "$$hashKey": "1E1"
     }
   ],
   "previewMode": "ALL_ROWS",
