@@ -35,22 +35,22 @@
     "compress": ""
   },
   "schema": {
-    "userModified": false,
+    "userModified": true,
     "columns": [
       {
-        "name": "col_0",
+        "name": "code_insee",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "col_1",
+        "name": "type_route",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "col_2",
+        "name": "km_route",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -81,6 +81,15 @@
   "flowOptions": {
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "antoinefa",
+      "displayName": "Fabien Antoine",
+      "email": "fabien.antoine@interieur.gouv.fr"
+    },
+    "lastModifiedOn": 1484330235442
   },
   "customMeta": {
     "kv": {}
