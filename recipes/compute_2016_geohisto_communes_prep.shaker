@@ -1,6 +1,75 @@
 {
-  "steps": [],
+  "steps": [
+    {
+      "type": "DateParser",
+      "params": {
+        "lang": "auto",
+        "timezone_id": "UTC",
+        "formats": [
+          "yyyy-MM-dd HH:mm:ss"
+        ],
+        "appliesTo": "COLUMNS",
+        "columns": [
+          "start_datetime",
+          "end_datetime"
+        ]
+      },
+      "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    },
+    {
+      "type": "ColumnSplitter",
+      "params": {
+        "inCol": "successors",
+        "separator": ";",
+        "outColPrefix": "successors",
+        "keepEmptyChunks": false,
+        "target": "JSON",
+        "limitOutput": false,
+        "limit": 0
+      },
+      "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    },
+    {
+      "type": "ColumnSplitter",
+      "params": {
+        "inCol": "ancestors",
+        "separator": ";",
+        "outColPrefix": "ancestors",
+        "keepEmptyChunks": false,
+        "target": "JSON",
+        "limitOutput": false,
+        "limit": 0
+      },
+      "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    },
+    {
+      "type": "ColumnSplitter",
+      "params": {
+        "inCol": "parents",
+        "separator": ";",
+        "outColPrefix": "parents",
+        "keepEmptyChunks": false,
+        "target": "JSON",
+        "limitOutput": false,
+        "limit": 0
+      },
+      "metaType": "PROCESSOR",
+      "preview": true,
+      "disabled": false,
+      "alwaysShowComment": false
+    }
+  ],
   "tags": [],
+  "origin": "PREPARE_RECIPE",
   "columnsSelection": {
     "mode": "ALL"
   },
@@ -24,11 +93,14 @@
     "autoRefreshSample": false,
     "_refreshTrigger": 0
   },
-  "exploreUIParams": {},
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "globalSearchQuery": "",
   "explorationFilters": [
     {
-      "type": "global_search"
+      "type": "global_search",
+      "$$hashKey": "11H"
     }
   ],
   "previewMode": "ALL_ROWS",
