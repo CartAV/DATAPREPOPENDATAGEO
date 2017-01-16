@@ -63,6 +63,22 @@
         "limit": 0
       },
       "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    },
+    {
+      "type": "FilterOnBadType",
+      "params": {
+        "type": "LongMeaning",
+        "action": "CLEAR_CELL",
+        "booleanMode": "AND",
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "population"
+        ]
+      },
+      "metaType": "PROCESSOR",
       "preview": true,
       "disabled": false,
       "alwaysShowComment": false
@@ -83,11 +99,11 @@
     "selection": {
       "samplingMethod": "HEAD_SEQUENTIAL",
       "partitionSelectionMethod": "ALL",
-      "maxRecords": 10000,
+      "maxRecords": 100000,
       "targetRatio": 0.02
     },
     "autoRefreshSample": false,
-    "_refreshTrigger": 0
+    "_refreshTrigger": 1
   },
   "vizSampling": {
     "autoRefreshSample": false,
@@ -101,6 +117,42 @@
     {
       "type": "global_search",
       "$$hashKey": "11H"
+    },
+    {
+      "column": "end_datetime",
+      "type": "columnFilter",
+      "currentMode": "FACET",
+      "active": true,
+      "facet": {
+        "type": "facet",
+        "column": "end_datetime",
+        "columnType": "DATE",
+        "currentMode": "DATE",
+        "sort": "count",
+        "maxValue": 242082168064753,
+        "selectedValues": {},
+        "dateFilterType": "RANGE"
+      },
+      "alphanumFilter": {
+        "type": "alphanum",
+        "column": "end_datetime",
+        "values": [],
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        }
+      },
+      "validityFilter": {
+        "type": "validity",
+        "column": "end_datetime",
+        "params": {
+          "type": "Date",
+          "ok": true,
+          "nok": true,
+          "empty": true
+        }
+      },
+      "$$hashKey": "52B"
     }
   ],
   "previewMode": "ALL_ROWS",
