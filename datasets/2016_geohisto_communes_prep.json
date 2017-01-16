@@ -42,24 +42,26 @@
       {
         "name": "id",
         "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "insee_code",
         "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "start_datetime",
-        "type": "string",
+        "type": "date",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "end_datetime",
-        "type": "string",
+        "type": "date",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -72,24 +74,28 @@
       {
         "name": "successors",
         "type": "string",
+        "meaning": "JSONArrayMeaning",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "ancestors",
         "type": "string",
+        "meaning": "JSONArrayMeaning",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "parents",
         "type": "string",
+        "meaning": "JSONArrayMeaning",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "population",
         "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -114,6 +120,15 @@
   "flowOptions": {
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "antoinefa",
+      "displayName": "Fabien Antoine",
+      "email": "fabien.antoine@interieur.gouv.fr"
+    },
+    "lastModifiedOn": 1484584314852
   },
   "customMeta": {
     "kv": {}
