@@ -12,7 +12,46 @@
         ]
       },
       "metaType": "PROCESSOR",
-      "preview": true,
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    },
+    {
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "Année de naissance",
+            "to": "INSEE_ANNEE_NAIS"
+          },
+          {
+            "from": "Âge révolu",
+            "to": "INSEE_AGE"
+          },
+          {
+            "from": "Nombre d\u0027hommes",
+            "to": "INSEE_NB_HOMMES"
+          },
+          {
+            "from": "Nombre de femmes",
+            "to": "INSEE_NB_FEMMES"
+          },
+          {
+            "from": "Ensemble",
+            "to": "INSEE_TOTAL"
+          },
+          {
+            "from": "INSEE_NB_FEMMES",
+            "to": "INSEE_FEMMES"
+          },
+          {
+            "from": "INSEE_NB_HOMMES",
+            "to": "INSEE_HOMMES"
+          }
+        ]
+      },
+      "metaType": "PROCESSOR",
+      "preview": false,
       "disabled": false,
       "alwaysShowComment": false
     }
