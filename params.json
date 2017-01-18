@@ -15,7 +15,7 @@
     "exposedComputables": [
       {
         "type": "DATASET",
-        "localName": "201601_INSEE_pyramide_ages",
+        "localName": "201601_INSEE_pyramide_ages_prep",
         "rules": [
           {
             "targetProject": "ACCIDENTS",
@@ -45,6 +45,24 @@
           },
           {
             "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
+            "appearOnFlow": true
+          }
+        ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "2016_osm_kmroutes_prep",
+        "rules": [
+          {
+            "targetProject": "ACCIDENTS",
+            "appearOnFlow": true
+          },
+          {
+            "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
+            "appearOnFlow": true
+          },
+          {
+            "targetProject": "CROISEMENTACCIDENTSVERBALISATION",
             "appearOnFlow": true
           }
         ]
