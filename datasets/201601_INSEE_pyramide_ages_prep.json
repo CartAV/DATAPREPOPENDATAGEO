@@ -19,31 +19,31 @@
     "userModified": true,
     "columns": [
       {
-        "name": "Année de naissance",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
-      {
-        "name": "Âge révolu",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
-      {
-        "name": "Nombre d\u0027hommes",
+        "name": "INSEE_ANNEE_NAIS",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "Nombre de femmes",
+        "name": "INSEE_AGE",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "Ensemble",
+        "name": "INSEE_HOMMES",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "INSEE_FEMMES",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "INSEE_TOTAL",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -63,6 +63,15 @@
   "flowOptions": {
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "antoinefa",
+      "displayName": "Fabien Antoine",
+      "email": "fabien.antoine@interieur.gouv.fr"
+    },
+    "lastModifiedOn": 1484751615300
   },
   "customMeta": {
     "kv": {}
