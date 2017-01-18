@@ -12,7 +12,44 @@
   "tutorialProject": false,
   "settings": {
     "flowAnchorSourcesAndSinks": true,
-    "exposedComputables": [],
+    "exposedComputables": [
+      {
+        "type": "DATASET",
+        "localName": "201601_INSEE_pyramide_ages",
+        "rules": [
+          {
+            "targetProject": "ACCIDENTS",
+            "appearOnFlow": true
+          },
+          {
+            "targetProject": "CROISEMENTACCIDENTSVERBALISATION",
+            "appearOnFlow": true
+          },
+          {
+            "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
+            "appearOnFlow": true
+          }
+        ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "2016_geohisto_communes_prep",
+        "rules": [
+          {
+            "targetProject": "ACCIDENTS",
+            "appearOnFlow": true
+          },
+          {
+            "targetProject": "CROISEMENTACCIDENTSVERBALISATION",
+            "appearOnFlow": true
+          },
+          {
+            "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
+            "appearOnFlow": true
+          }
+        ]
+      }
+    ],
     "gitCommitMode": "AUTO",
     "disableAutomaticTriggers": false
   },
