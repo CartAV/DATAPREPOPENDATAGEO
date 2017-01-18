@@ -1,6 +1,24 @@
 {
-  "steps": [],
+  "steps": [
+    {
+      "type": "FilterOnBadType",
+      "params": {
+        "type": "LongMeaning",
+        "action": "REMOVE_ROW",
+        "booleanMode": "AND",
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "Âge révolu"
+        ]
+      },
+      "metaType": "PROCESSOR",
+      "preview": true,
+      "disabled": false,
+      "alwaysShowComment": false
+    }
+  ],
   "tags": [],
+  "origin": "PREPARE_RECIPE",
   "columnsSelection": {
     "mode": "ALL"
   },
@@ -24,11 +42,14 @@
     "autoRefreshSample": false,
     "_refreshTrigger": 0
   },
-  "exploreUIParams": {},
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "globalSearchQuery": "",
   "explorationFilters": [
     {
-      "type": "global_search"
+      "type": "global_search",
+      "$$hashKey": "271"
     }
   ],
   "previewMode": "ALL_ROWS",
