@@ -57,13 +57,31 @@
         "maxLength": 16200
       },
       {
+        "name": "successors_array",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
         "name": "ancestors",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
+        "name": "ancestors_array",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
         "name": "parents",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "parents_array",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
@@ -97,13 +115,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
-      "login": "antoinefa",
-      "displayName": "Fabien Antoine",
-      "email": "fabien.antoine@interieur.gouv.fr"
+      "login": "chabouisfr",
+      "displayName": "Francis Chabouis",
+      "email": "francis.chabouis@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1484584649389
+    "lastModifiedOn": 1485266531689
   },
   "customMeta": {
     "kv": {}
