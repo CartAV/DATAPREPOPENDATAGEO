@@ -34,6 +34,10 @@
           {
             "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
             "appearOnFlow": true
+          },
+          {
+            "targetProject": "VERBALISATIONLECTRONIQUEDSCR",
+            "appearOnFlow": true
           }
         ]
       },
@@ -51,6 +55,10 @@
           },
           {
             "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
+            "appearOnFlow": true
+          },
+          {
+            "targetProject": "VERBALISATIONLECTRONIQUEDSCR",
             "appearOnFlow": true
           }
         ]
@@ -70,6 +78,10 @@
           {
             "targetProject": "CROISEMENTACCIDENTSVERBALISATION",
             "appearOnFlow": true
+          },
+          {
+            "targetProject": "VERBALISATIONLECTRONIQUEDSCR",
+            "appearOnFlow": true
           }
         ]
       },
@@ -83,6 +95,10 @@
           },
           {
             "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
+            "appearOnFlow": true
+          },
+          {
+            "targetProject": "VERBALISATIONLECTRONIQUEDSCR",
             "appearOnFlow": true
           }
         ]
