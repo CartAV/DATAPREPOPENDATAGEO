@@ -9,12 +9,6 @@
       "downloadData": true
     },
     {
-      "group": "data_team",
-      "type": "ADMIN",
-      "runJob": false,
-      "downloadData": true
-    },
-    {
       "group": "eig",
       "type": "ADMIN",
       "runJob": false,
