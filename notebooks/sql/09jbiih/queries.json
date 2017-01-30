@@ -1,0 +1,25 @@
+{
+  "queries": {
+    "qiq30urbsbp": [
+      {
+        "mode": "SQL",
+        "id": "ps4CsdfF3znG",
+        "runOn": 1485788080449,
+        "runIn": -1,
+        "runBy": "antoinefa",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "ezQUpTHXaj1BCMTP",
+        "hash": "8876cd89d9617474bf89923e54c7df3f",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "CREATE LIBRARY AggregateFunctionsConcatenate AS \u0027/opt/vertica/sdk/examples/AggregateFunctions/Concatenate.so\u0027;\n",
+        "expandedSql": "CREATE LIBRARY AggregateFunctionsConcatenate AS \u0027/opt/vertica/sdk/examples/AggregateFunctions/Concatenate.so\u0027;\n"
+      }
+    ]
+  }
+}
