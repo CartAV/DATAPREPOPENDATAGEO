@@ -8,6 +8,14 @@
           "deps": []
         }
       ]
+    },
+    "scriptDeps": {
+      "items": [
+        {
+          "ref": "2016_geoapi_communes_wgs84",
+          "deps": []
+        }
+      ]
     }
   },
   "outputs": {
@@ -31,13 +39,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 5,
     "lastModifiedBy": {
-      "login": "chabouisfr",
-      "displayName": "Francis Chabouis",
-      "email": "francis.chabouis@interieur.gouv.fr"
+      "login": "antoinefa",
+      "displayName": "Fabien Antoine",
+      "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1485251493145
+    "lastModifiedOn": 1485792572133
   },
   "customMeta": {
     "kv": {}

@@ -1,5 +1,31 @@
 {
-  "steps": [],
+  "steps": [
+    {
+      "type": "MemoryEquiJoiner",
+      "params": {
+        "leftCol": "Code_commune_INSEE",
+        "rightInput": "2016_geoapi_communes_wgs84",
+        "rightCol": "Code INSEE",
+        "copyColumns": [
+          "latitude",
+          "longitude"
+        ],
+        "copyPrefix": "",
+        "fuzzy": false,
+        "maxLevenshtein": 1,
+        "forceRawLevenshteinEngine": false,
+        "sortAlphabetically": false,
+        "clearStopWords": false,
+        "normalize": false,
+        "stem": false,
+        "language": "english"
+      },
+      "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": true,
+      "alwaysShowComment": false
+    }
+  ],
   "tags": [],
   "origin": "PREPARE_RECIPE",
   "columnsSelection": {
@@ -15,11 +41,11 @@
     "selection": {
       "samplingMethod": "HEAD_SEQUENTIAL",
       "partitionSelectionMethod": "ALL",
-      "maxRecords": 10000,
+      "maxRecords": 100000,
       "targetRatio": 0.02
     },
     "autoRefreshSample": false,
-    "_refreshTrigger": 0
+    "_refreshTrigger": 1
   },
   "vizSampling": {
     "autoRefreshSample": false,
@@ -28,7 +54,7 @@
   "exploreUIParams": {
     "autoRefresh": true
   },
-  "globalSearchQuery": "",
+  "globalSearchQuery": "75120",
   "explorationFilters": [
     {
       "type": "global_search",
