@@ -19,6 +19,25 @@
         },
         "sql": "CREATE LIBRARY AggregateFunctionsConcatenate AS \u0027/opt/vertica/sdk/examples/AggregateFunctions/Concatenate.so\u0027;\n",
         "expandedSql": "CREATE LIBRARY AggregateFunctionsConcatenate AS \u0027/opt/vertica/sdk/examples/AggregateFunctions/Concatenate.so\u0027;\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "WEsOM39Xf4UB",
+        "runOn": 1485789084894,
+        "runIn": 44,
+        "runBy": "antoinefa",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "OUt42Y0ZTjiT8Nl6",
+        "hash": "7c52d18e44d1ac3eec9d94b3e7262641",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select agg_group_concat(id) as ids\nfrom \"2016_geohisto_communes_prep\"\ngroup by name\n",
+        "expandedSql": "select agg_group_concat(id) as ids\nfrom \"2016_geohisto_communes_prep\"\ngroup by name\n"
       }
     ]
   }
