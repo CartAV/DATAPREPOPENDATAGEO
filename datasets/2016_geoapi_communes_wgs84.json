@@ -116,12 +116,23 @@
   "tags": [
     "creator_antoinefa"
   ],
+  "shortDesc": "Données récupérées par script sur https://geo.api.gouv.fr fin 2016",
+  "description": "Données récupérées par script sur https://geo.api.gouv.fr fin 2016 :\n\n for f in {a..z}; do curl -s \"https://geo.api.gouv.fr/communes?fields\u003dcode,nom,codesPostaux,departement,region,surface,population,centre\u0026nom\u003d$f*\" | jq -c \u0027.[]\u0027 \u003e communes_$f.json;done\ncat * | sort | uniq -w 15 \u003e communes.json\ncat communes.json  | jq -c \u0027[.code,.nom,(.codesPostaux | join(\" \")),.departement.nom,.departement.code,.region.nom,.region.code,.surface,.population,.centre.coordinates[0],.centre.coordinates[1]]\u0027 | sed \u0027s/^\\[//;s/\\]$//\u0027 | tr \u0027,\u0027 \u0027;\u0027 | awk -F \";\" \u0027BEGIN{print \"Code INSEE;Commune;Codes Postaux;Département;Code Département;Région;Code Région;Surface;Population;longitude;latitude;geo_point_2d\"}{printf $0;print \";[\" $NF \",\" $(NF-1) \"]\" }\u0027 \u003e correspondance-code-insee-code-postal.csv",
   "checklists": {
     "checklists": []
   },
   "flowOptions": {
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "versionTag": {
+    "versionNumber": 2,
+    "lastModifiedBy": {
+      "login": "antoinefa",
+      "displayName": "Fabien Antoine",
+      "email": "fabien.antoine@interieur.gouv.fr"
+    },
+    "lastModifiedOn": 1485792074913
   },
   "customMeta": {
     "kv": {}
