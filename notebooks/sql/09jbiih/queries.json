@@ -62,10 +62,10 @@
         "mode": "SQL",
         "id": "8FaT0rozHOSt",
         "runOn": 1485789703300,
-        "runIn": 4190,
+        "runIn": 124,
         "runBy": "antoinefa",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "9tmvjgDLPdOBlpOF",
         "hash": "fbccb1563ec73c1ee94bcc341d0c82c7",
         "querySettings": {
