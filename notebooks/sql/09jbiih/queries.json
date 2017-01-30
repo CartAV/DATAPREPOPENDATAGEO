@@ -24,10 +24,10 @@
         "mode": "SQL",
         "id": "WEsOM39Xf4UB",
         "runOn": 1485789084894,
-        "runIn": 44,
+        "runIn": 62,
         "runBy": "antoinefa",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "OUt42Y0ZTjiT8Nl6",
         "hash": "7c52d18e44d1ac3eec9d94b3e7262641",
         "querySettings": {
