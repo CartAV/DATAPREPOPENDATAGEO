@@ -1,12 +1,32 @@
 {
   "creator": "antoinefa",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "antoinefa",
+      "displayName": "Fabien Antoine",
+      "email": "fabien.antoine@interieur.gouv.fr"
+    },
+    "lastModifiedOn": 1485788050322
+  },
   "connection": "datalabmaster",
   "name": "sql opendata",
   "checklists": {
     "checklists": []
   },
   "tags": [],
-  "cells": [],
+  "cells": [
+    {
+      "id": "qiq30urbsbp",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "extraConf": [],
+        "addDkuUdf": false
+      }
+    }
+  ],
   "automationLocal": false,
   "createdBy": {},
   "createdOn": 0,
