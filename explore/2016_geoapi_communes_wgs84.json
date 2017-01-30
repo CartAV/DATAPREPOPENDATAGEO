@@ -27,7 +27,7 @@
   "exploreUIParams": {
     "autoRefresh": true
   },
-  "globalSearchQuery": "paris",
+  "globalSearchQuery": "",
   "explorationFilters": [],
   "previewMode": "ALL_ROWS",
   "charts": [],
