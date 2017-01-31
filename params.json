@@ -108,7 +108,7 @@
         "localName": "departements_wgs84_prepared",
         "rules": [
           {
-            "targetProject": "GOCODAGEACCIDENTS",
+            "targetProject": "ACCIDENTS",
             "appearOnFlow": true
           }
         ]
