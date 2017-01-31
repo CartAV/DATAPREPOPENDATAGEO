@@ -51,7 +51,19 @@
         "maxLength": 16200
       },
       {
+        "name": "norm_name",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
         "name": "successors",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "newest_id",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
@@ -64,6 +76,18 @@
       },
       {
         "name": "ancestors",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "insee_code_history",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "dep_history",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
@@ -97,6 +121,57 @@
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
+      },
+      {
+        "name": "dep_code",
+        "type": "string",
+        "meaning": "Text",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "newest_name",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "newest_insee_code",
+        "type": "string",
+        "meaning": "Text",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "newest_dep_code",
+        "type": "string",
+        "meaning": "Text",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "surface",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "latitude",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "longitude",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "geopoint_2d",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
       }
     ]
   },
@@ -115,13 +190,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "chabouisfr",
-      "displayName": "Francis Chabouis",
-      "email": "francis.chabouis@interieur.gouv.fr"
+      "login": "antoinefa",
+      "displayName": "Fabien Antoine",
+      "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1485266531689
+    "lastModifiedOn": 1485865977368
   },
   "customMeta": {
     "kv": {}
