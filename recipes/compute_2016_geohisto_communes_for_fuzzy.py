@@ -6,7 +6,7 @@ from dataiku import pandasutils as pdu
 # Recipe inputs
 ds = dataiku.Dataset("2016_geohisto_communes_prep")
 df = ds.get_dataframe()
-df = df[['id','dep_code']]
+df = df[['norm_name','dep_code']]
 df=df.groupby('norm_name').agg(lambda x: '[{}]'.format(','.join(set(x))) )
 
 # Recipe outputs
