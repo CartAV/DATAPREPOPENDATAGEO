@@ -10,7 +10,7 @@ df = df[['norm_name','id']]
 
 
 df=df.groupby('norm_name').agg(lambda x: '[{}]'.format(','.join(x.astype(str)))).reset_index()
-df['dep_code']=df['id'].map(lambda x: x.replace(/^COM(.....).*$/,"$1")
+df['dep_code']=df['id'].apply(lambda x: x.replace(/^COM(.....).*$/,"$1")
 
 # Recipe outputs
 ds_out = dataiku.Dataset("2016_geohisto_communes_for_fuzzy")
