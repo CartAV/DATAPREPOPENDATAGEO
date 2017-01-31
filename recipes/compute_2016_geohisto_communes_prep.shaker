@@ -306,6 +306,27 @@
       "alwaysShowComment": true
     },
     {
+      "type": "FilterOnValue",
+      "params": {
+        "values": [
+          "990"
+        ],
+        "matchingMode": "FULL_STRING",
+        "normalizationMode": "EXACT",
+        "action": "REMOVE_ROW",
+        "booleanMode": "AND",
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "insee_modification"
+        ]
+      },
+      "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "comment": "Supprime les numéros de communes saisies par erreur",
+      "alwaysShowComment": true
+    },
+    {
       "steps": [
         {
           "type": "MemoryEquiJoiner",
@@ -339,6 +360,28 @@
           "params": {
             "column": "population",
             "expression": "if(population\u003e0,population,Population)"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "latitude",
+            "expression": "round(10000000*latitude)/10000000"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "longitude",
+            "expression": "round(10000000*longitude)/10000000"
           },
           "metaType": "PROCESSOR",
           "preview": false,
@@ -542,9 +585,10 @@
         "type": "facet",
         "column": "insee_modification",
         "columnType": "NUMERICAL",
-        "currentMode": "NUMERICAL",
+        "currentMode": "ALPHANUM",
         "sort": "count",
-        "selectedValues": {}
+        "selectedValues": {},
+        "minValue": 881.5
       },
       "alphanumFilter": {
         "type": "alphanum",
