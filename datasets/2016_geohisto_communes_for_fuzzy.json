@@ -16,7 +16,7 @@
   "checks": [],
   "managed": true,
   "schema": {
-    "userModified": false,
+    "userModified": true,
     "columns": [
       {
         "name": "norm_name",
@@ -33,6 +33,7 @@
       {
         "name": "dep_code",
         "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       }
@@ -53,12 +54,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
-      "login": "DSS",
-      "displayName": "DSS"
+      "login": "antoinefa",
+      "displayName": "Fabien Antoine",
+      "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1485872312096
+    "lastModifiedOn": 1485872489764
   },
   "customMeta": {
     "kv": {}
