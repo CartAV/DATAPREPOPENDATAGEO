@@ -10,7 +10,7 @@ df = df[['norm_name','id','dep_code']]
 
 aggregations={
     'id': {lambda x: '[{}]'.format(','.join(x))},
-    'dep_code': {lambda x: '[{}]'.format(','.join(x))}
+    'dep_code': {lambda x: '[{}]'.format(','.join(x.astype(str)))}
     }
 df=df.groupby('norm_name').agg(aggregations)
 
