@@ -6,7 +6,7 @@ from dataiku import pandasutils as pdu
 # Recipe inputs
 ds = dataiku.Dataset("2016_geohisto_communes_prep")
 df = ds.get_dataframe(infer_with_pandas=False)
-
+df = df[['id','dep_code']]
 df=df.groupby('nomr_name').agg(lambda x: '[{}]'.format(','.join(set(x))) )
 
 # Recipe outputs
