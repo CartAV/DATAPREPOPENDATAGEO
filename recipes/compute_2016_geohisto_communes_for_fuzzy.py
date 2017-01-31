@@ -9,7 +9,7 @@ df = ds.get_dataframe()
 df = df[['norm_name','id']]
 
 
-#df=df.groupby('norm_name').agg(lambda x: '[{}]'.format(','.join(x.astype(str)))).reset_index()
+df=df.groupby('norm_name').agg(lambda x: '[{}]'.format(','.join(x.astype(str)))).reset_index()
 
 
 # Recipe outputs
