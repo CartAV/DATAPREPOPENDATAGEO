@@ -1,87 +1,398 @@
 {
   "steps": [
     {
-      "type": "DateParser",
-      "params": {
-        "lang": "auto",
-        "timezone_id": "UTC",
-        "formats": [
-          "yyyy-MM-dd HH:mm:ss"
-        ],
-        "appliesTo": "COLUMNS",
-        "columns": [
-          "start_datetime",
-          "end_datetime"
-        ]
-      },
-      "metaType": "PROCESSOR",
+      "steps": [
+        {
+          "type": "DateParser",
+          "params": {
+            "lang": "auto",
+            "timezone_id": "UTC",
+            "formats": [
+              "yyyy-MM-dd HH:mm:ss"
+            ],
+            "appliesTo": "COLUMNS",
+            "columns": [
+              "start_datetime",
+              "end_datetime"
+            ]
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        }
+      ],
+      "metaType": "GROUP",
       "preview": false,
       "disabled": false,
+      "name": "dates",
       "alwaysShowComment": false
     },
     {
-      "type": "ColumnSplitter",
-      "params": {
-        "inCol": "successors",
-        "separator": ";",
-        "outColPrefix": "successors_array",
-        "keepEmptyChunks": false,
-        "target": "JSON",
-        "limitOutput": false,
-        "limit": 0
-      },
-      "metaType": "PROCESSOR",
+      "steps": [
+        {
+          "type": "ColumnSplitter",
+          "params": {
+            "inCol": "ancestors",
+            "separator": ";",
+            "outColPrefix": "ancestors_array",
+            "keepEmptyChunks": false,
+            "target": "JSON",
+            "limitOutput": false,
+            "limit": 0
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "ColumnSplitter",
+          "params": {
+            "inCol": "successors",
+            "separator": ";",
+            "outColPrefix": "successors_array",
+            "keepEmptyChunks": false,
+            "target": "JSON",
+            "limitOutput": false,
+            "limit": 0
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "ColumnSplitter",
+          "params": {
+            "inCol": "parents",
+            "separator": ";",
+            "outColPrefix": "parents_array",
+            "keepEmptyChunks": false,
+            "target": "JSON",
+            "limitOutput": false,
+            "limit": 0
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "insee_code_history",
+            "expression": "arrayDedup(forEach(filter(split(ancestors+\";\"+id+\";\"+successors,\";\"),v,v!\u003d\"\"),v,replace(v,/COM(.....)@.*/,\"$1\"))))"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "comment": "historique complet des codes insee (l\u0027ordre historique n\u0027est pas forcément respecté)",
+          "alwaysShowComment": true
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "insee_code_history",
+            "expression": "arraySort(insee_code_history)"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "comment": "trie les codes (alphanumérique) pour permettre le cas échéant un regroupement  par historique communs",
+          "alwaysShowComment": true
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "dep_history",
+            "expression": "arrayDedup(forEach(insee_code_history,v,replace(v,/(97.)..|(..).../,\"$1$2\")))"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "comment": "détermine la liste unique des départements auxquels la commune a été rattachée dans son historique",
+          "alwaysShowComment": true
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "dep_history",
+            "expression": "arraySort(dep_history)"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "comment": "tri (impossible dans formule précédente)",
+          "alwaysShowComment": true
+        }
+      ],
+      "metaType": "GROUP",
       "preview": false,
       "disabled": false,
+      "name": "Historique / parents : mise en forme (array)",
+      "comment": "Mises en formes de l\u0027historique (array, historique complet des codes et départements)",
+      "alwaysShowComment": true
+    },
+    {
+      "steps": [
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "dep_code",
+            "expression": "replace(strval(\u0027insee_code\u0027),/(97.)..|(..).../,\"$1$2\")"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "newest_id",
+            "expression": "if(successors!\u003d\"\",replace(successors,/.*;/,\"\"),id)"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "MemoryEquiJoiner",
+          "params": {
+            "leftCol": "newest_id",
+            "rightInput": "2016_geohisto_communes_prep",
+            "rightCol": "id",
+            "copyColumns": [
+              "name",
+              "insee_code"
+            ],
+            "copyPrefix": "newest_",
+            "fuzzy": false,
+            "maxLevenshtein": 1,
+            "forceRawLevenshteinEngine": false,
+            "sortAlphabetically": false,
+            "clearStopWords": false,
+            "normalize": false,
+            "stem": false,
+            "language": "english"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "newest_insee_code",
+            "expression": "if(newest_insee_code\u003d\u003d\"\",replace(strval(\u0027newest_id\u0027),/COM(.....)@.*/,\"$1\"),strval(\u0027newest_insee_code\u0027))"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "comment": "Contournement du bug du référentiel pour 3 communes (Chisa, Bury sur oise et Toussus le noble)",
+          "alwaysShowComment": true
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "newest_name",
+            "expression": "if(newest_name\u003d\u003d\"\",strval(\u0027name\u0027),strval(\u0027newest_name\u0027))"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "comment": "Contournement du bug du référentiel pour 3 communes (Chisa, Bury sur oise et Toussus le noble)",
+          "alwaysShowComment": true
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "newest_dep_code",
+            "expression": "replace(strval(\u0027newest_insee_code\u0027),/(97.)..|(..).../,\"$1$2\")"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "comment": "Contournement du bug du référentiel pour 3 communes (Chisa, Bury sur oise et Toussus le noble)",
+          "alwaysShowComment": true
+        },
+        {
+          "type": "FilterOnValue",
+          "params": {
+            "values": [
+              "COM20366@1942-01-01",
+              "COM78692@1942-01-01"
+            ],
+            "matchingMode": "FULL_STRING",
+            "normalizationMode": "EXACT",
+            "action": "REMOVE_ROW",
+            "booleanMode": "AND",
+            "appliesTo": "SINGLE_COLUMN",
+            "columns": [
+              "id"
+            ]
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "comment": "Contournement du bug du référentiel pour 3 communes (Chisa, Bury sur oise et Toussus le noble)",
+          "alwaysShowComment": true
+        }
+      ],
+      "metaType": "GROUP",
+      "preview": false,
+      "disabled": false,
+      "name": "Derniers code insee et code département",
       "alwaysShowComment": false
     },
     {
-      "type": "ColumnSplitter",
-      "params": {
-        "inCol": "ancestors",
-        "separator": ";",
-        "outColPrefix": "ancestors_array",
-        "keepEmptyChunks": false,
-        "target": "JSON",
-        "limitOutput": false,
-        "limit": 0
-      },
-      "metaType": "PROCESSOR",
+      "steps": [
+        {
+          "type": "TextSimplifierProcessor",
+          "params": {
+            "inCol": "name",
+            "outCol": "norm_name",
+            "sortAlphabetically": false,
+            "clearStopWords": true,
+            "normalize": true,
+            "stem": false,
+            "language": "french"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "FindReplace",
+          "params": {
+            "output": "",
+            "normalization": "EXACT",
+            "matching": "PATTERN",
+            "stopAfterFirstMatch": false,
+            "mapping": [
+              {
+                "from": "\\ssous\\s",
+                "to": " "
+              },
+              {
+                "from": "æ",
+                "to": "ae"
+              },
+              {
+                "from": "œ",
+                "to": "oe"
+              }
+            ],
+            "appliesTo": "SINGLE_COLUMN",
+            "columns": [
+              "norm_name"
+            ]
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        }
+      ],
+      "metaType": "GROUP",
       "preview": false,
       "disabled": false,
-      "alwaysShowComment": false
+      "name": "Simplification nom pour fuzzy match",
+      "comment": "préparation au fuzzy match (utilisé pour correspondance des lieux de naissance) : normalise le nom de la commune pour faciliter les jointures floues - désaccentue, retire les stop words, complète les traitements non gérés par dss : oe, sous, ...",
+      "alwaysShowComment": true
     },
     {
-      "type": "ColumnSplitter",
-      "params": {
-        "inCol": "parents",
-        "separator": ";",
-        "outColPrefix": "parents_array",
-        "keepEmptyChunks": false,
-        "target": "JSON",
-        "limitOutput": false,
-        "limit": 0
-      },
-      "metaType": "PROCESSOR",
+      "steps": [
+        {
+          "type": "MemoryEquiJoiner",
+          "params": {
+            "leftCol": "newest_insee_code",
+            "rightInput": "2016_geoapi_communes_wgs84",
+            "rightCol": "Code INSEE",
+            "copyColumns": [
+              "Population",
+              "Surface",
+              "latitude",
+              "longitude"
+            ],
+            "copyPrefix": "",
+            "fuzzy": false,
+            "maxLevenshtein": 1,
+            "forceRawLevenshteinEngine": false,
+            "sortAlphabetically": false,
+            "clearStopWords": false,
+            "normalize": false,
+            "stem": false,
+            "language": "english"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "population",
+            "expression": "if(population\u003e0,population,Population)"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "GeoPointCreator",
+          "params": {
+            "out_column": "geopoint_2d",
+            "lat_column": "latitude",
+            "lon_column": "longitude"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "ColumnsSelector",
+          "params": {
+            "keep": false,
+            "appliesTo": "SINGLE_COLUMN",
+            "columns": [
+              "Population"
+            ]
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "ColumnRenamer",
+          "params": {
+            "renamings": [
+              {
+                "from": "Surface",
+                "to": "surface"
+              }
+            ]
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        }
+      ],
+      "metaType": "GROUP",
       "preview": false,
       "disabled": false,
-      "alwaysShowComment": false
-    },
-    {
-      "type": "FilterOnBadType",
-      "params": {
-        "type": "LongMeaning",
-        "action": "CLEAR_CELL",
-        "booleanMode": "AND",
-        "appliesTo": "SINGLE_COLUMN",
-        "columns": [
-          "population"
-        ]
-      },
-      "metaType": "PROCESSOR",
-      "preview": false,
-      "disabled": false,
-      "alwaysShowComment": false
+      "name": "Données communes GPS pop surface",
+      "comment": "via données issues de geoapi : attention, pour les anciennes communes, les données de la commune correspondante la plus récente sont utilisées si pas de données historiques. Pour certaines communes simplement disparues sans filiation les données ne sont pas disponibles",
+      "alwaysShowComment": true
     }
   ],
   "tags": [],
@@ -117,6 +428,144 @@
     {
       "type": "global_search",
       "$$hashKey": "11H"
+    },
+    {
+      "column": "population",
+      "type": "columnFilter",
+      "currentMode": "FACET",
+      "active": false,
+      "facet": {
+        "type": "facet",
+        "column": "population",
+        "columnType": "NUMERICAL",
+        "currentMode": "NUMERICAL",
+        "sort": "count",
+        "selectedValues": {}
+      },
+      "alphanumFilter": {
+        "type": "alphanum",
+        "column": "population",
+        "values": [],
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        }
+      },
+      "validityFilter": {
+        "type": "validity",
+        "column": "population",
+        "params": {
+          "type": "LongMeaning",
+          "ok": false,
+          "nok": false,
+          "empty": true
+        }
+      },
+      "$$hashKey": "AQL"
+    },
+    {
+      "column": "successors",
+      "type": "columnFilter",
+      "currentMode": "FACET",
+      "active": false,
+      "facet": {
+        "type": "facet",
+        "column": "successors",
+        "columnType": "ALPHANUM",
+        "currentMode": "ALPHANUM",
+        "sort": "count",
+        "selectedValues": {}
+      },
+      "alphanumFilter": {
+        "type": "alphanum",
+        "column": "successors",
+        "values": [],
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        }
+      },
+      "validityFilter": {
+        "type": "validity",
+        "column": "successors",
+        "params": {
+          "type": "Email",
+          "ok": false,
+          "nok": false,
+          "empty": true
+        }
+      },
+      "$$hashKey": "DNU"
+    },
+    {
+      "column": "end_datetime",
+      "type": "columnFilter",
+      "currentMode": "FACET",
+      "active": false,
+      "facet": {
+        "type": "facet",
+        "column": "end_datetime",
+        "columnType": "DATE",
+        "currentMode": "DATE",
+        "sort": "count",
+        "maxValue": 159358121160644,
+        "selectedValues": {},
+        "dateFilterType": "RANGE"
+      },
+      "alphanumFilter": {
+        "type": "alphanum",
+        "column": "end_datetime",
+        "values": [],
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        }
+      },
+      "validityFilter": {
+        "type": "validity",
+        "column": "end_datetime",
+        "params": {
+          "type": "Date",
+          "ok": true,
+          "nok": true,
+          "empty": true
+        }
+      },
+      "$$hashKey": "DUI"
+    },
+    {
+      "column": "insee_modification",
+      "type": "columnFilter",
+      "currentMode": "FACET",
+      "active": true,
+      "facet": {
+        "type": "facet",
+        "column": "insee_modification",
+        "columnType": "NUMERICAL",
+        "currentMode": "NUMERICAL",
+        "sort": "count",
+        "selectedValues": {}
+      },
+      "alphanumFilter": {
+        "type": "alphanum",
+        "column": "insee_modification",
+        "values": [],
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        }
+      },
+      "validityFilter": {
+        "type": "validity",
+        "column": "insee_modification",
+        "params": {
+          "type": "LongMeaning",
+          "ok": true,
+          "nok": true,
+          "empty": true
+        }
+      },
+      "$$hashKey": "EST"
     }
   ],
   "previewMode": "ALL_ROWS",

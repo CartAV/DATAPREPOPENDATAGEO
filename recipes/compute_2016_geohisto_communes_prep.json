@@ -8,6 +8,18 @@
           "deps": []
         }
       ]
+    },
+    "scriptDeps": {
+      "items": [
+        {
+          "ref": "2016_geohisto_communes_prep",
+          "deps": []
+        },
+        {
+          "ref": "2016_geoapi_communes_wgs84",
+          "deps": []
+        }
+      ]
     }
   },
   "outputs": {
@@ -31,13 +43,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 11,
     "lastModifiedBy": {
-      "login": "chabouisfr",
-      "displayName": "Francis Chabouis",
-      "email": "francis.chabouis@interieur.gouv.fr"
+      "login": "antoinefa",
+      "displayName": "Fabien Antoine",
+      "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1485266533725
+    "lastModifiedOn": 1485865977563
   },
   "customMeta": {
     "kv": {}
