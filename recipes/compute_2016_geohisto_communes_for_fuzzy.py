@@ -4,8 +4,8 @@ import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 
 # Recipe inputs
-2016_geohisto_communes_prep = dataiku.Dataset("2016_geohisto_communes_prep")
-df = 2016_geohisto_communes_prep.get_dataframe(infer_with_pandas=False)
+ds = dataiku.Dataset("2016_geohisto_communes_prep")
+df = ds.get_dataframe(infer_with_pandas=False)
 
 df=df.groupby('nomr_name').agg(lambda x: '[{}]'.format(','.join(set(x))) )
 
