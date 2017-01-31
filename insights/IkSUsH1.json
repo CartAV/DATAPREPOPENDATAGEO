@@ -16,8 +16,8 @@
     },
     "dataset": "departements_wgs84_prepared",
     "chart": {
-      "type": "scatter_map",
-      "variant": "normal",
+      "type": "admin_map",
+      "variant": "filled_map",
       "name": "Chart",
       "userEditedName": false,
       "genericDimension0": [],
@@ -38,11 +38,11 @@
       "sizeMeasure": [],
       "geometry": [
         {
-          "column": "the_geom",
-          "type": "GEOMETRY",
+          "column": "chef_lieu_geo",
+          "type": "GEOPOINT",
           "treatAsAlphanum": false,
           "isA": "ua",
-          "adminLevel": 0
+          "adminLevel": 2
         }
       ],
       "tooltipMeasures": [],
