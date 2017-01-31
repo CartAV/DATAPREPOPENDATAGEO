@@ -1,6 +1,20 @@
 {
-  "steps": [],
+  "steps": [
+    {
+      "type": "GeoPointCreator",
+      "params": {
+        "out_column": "chef_lieu_geo",
+        "lat_column": "lat",
+        "lon_column": "lat"
+      },
+      "metaType": "PROCESSOR",
+      "preview": true,
+      "disabled": false,
+      "alwaysShowComment": false
+    }
+  ],
   "tags": [],
+  "origin": "PREPARE_RECIPE",
   "columnsSelection": {
     "mode": "ALL"
   },
@@ -24,11 +38,14 @@
     "autoRefreshSample": false,
     "_refreshTrigger": 0
   },
-  "exploreUIParams": {},
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "globalSearchQuery": "",
   "explorationFilters": [
     {
-      "type": "global_search"
+      "type": "global_search",
+      "$$hashKey": "1QO"
     }
   ],
   "previewMode": "ALL_ROWS",
