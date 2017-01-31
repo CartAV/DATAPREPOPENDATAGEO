@@ -19,13 +19,13 @@
     "userModified": false,
     "columns": [
       {
-        "name": "(\u0027id\u0027, \u0027\u003clambda\u003e\u0027)",
+        "name": "norm_name",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "(\u0027dep_code\u0027, \u0027\u003clambda\u003e\u0027)",
+        "name": "id",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
@@ -47,12 +47,12 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "DSS",
       "displayName": "DSS"
     },
-    "lastModifiedOn": 1485868854545
+    "lastModifiedOn": 1485869064622
   },
   "customMeta": {
     "kv": {}
