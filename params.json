@@ -102,6 +102,16 @@
             "appearOnFlow": true
           }
         ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "departements_wgs84_prepared",
+        "rules": [
+          {
+            "targetProject": "GOCODAGEACCIDENTS",
+            "appearOnFlow": true
+          }
+        ]
       }
     ],
     "gitCommitMode": "AUTO",
