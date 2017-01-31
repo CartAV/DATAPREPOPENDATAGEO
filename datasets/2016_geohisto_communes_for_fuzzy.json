@@ -19,7 +19,7 @@
     "userModified": false,
     "columns": [
       {
-        "name": "dep_code",
+        "name": "id",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
@@ -41,12 +41,12 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "DSS",
       "displayName": "DSS"
     },
-    "lastModifiedOn": 1485867961438
+    "lastModifiedOn": 1485867982876
   },
   "customMeta": {
     "kv": {}
