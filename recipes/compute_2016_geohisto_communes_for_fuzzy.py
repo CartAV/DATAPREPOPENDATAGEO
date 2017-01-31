@@ -7,7 +7,12 @@ from dataiku import pandasutils as pdu
 ds = dataiku.Dataset("2016_geohisto_communes_prep")
 df = ds.get_dataframe()
 df = df[['norm_name','id','dep_code']]
-df=df.groupby('norm_name').agg(lambda x: '[{}]'.format(','.join(x)) )
+
+aggregations={
+    'id': {lambda x: '[{}]'.format(','.join(x))},
+    'dep_code': {lambda x: '[{}]'.format(','.join(x))}
+    }
+df=df.groupby('norm_name').agg(aggregations)
 
 # Recipe outputs
 ds_out = dataiku.Dataset("2016_geohisto_communes_for_fuzzy")
