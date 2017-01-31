@@ -8,6 +8,77 @@
         "lon_column": "lon"
       },
       "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    },
+    {
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "normalization": "EXACT",
+        "matching": "FULL_STRING",
+        "stopAfterFirstMatch": false,
+        "mapping": [
+          {
+            "from": "BOURGOGNE-FRANCHE-COMTE",
+            "to": "Bourgogne-Franche-Compé"
+          },
+          {
+            "from": "AUVERGNE-RHONE-ALPES",
+            "to": "Auvergne-Rhône-Alpes"
+          },
+          {
+            "from": "NORMANDIE",
+            "to": "Normandie"
+          },
+          {
+            "from": "ALSACE-CHAMPAGNE-ARDENNE-LORRAINE",
+            "to": "Grand Est"
+          },
+          {
+            "from": "CENTRE-VAL DE LOIRE",
+            "to": "Centre-Val de Loire"
+          },
+          {
+            "from": "AQUITAINE-LIMOUSIN-POITOU-CHARENTES",
+            "to": "Nouvelle-Aquitaine"
+          },
+          {
+            "from": "ILE-DE-FRANCE",
+            "to": "Île-de-France"
+          },
+          {
+            "from": "NORD-PAS-DE-CALAIS-PICARDIE",
+            "to": "Hauts-de-Franc"
+          },
+          {
+            "from": "LANGUEDOC-ROUSSILLON-MIDI-PYRENEES",
+            "to": "Occitanie"
+          },
+          {
+            "from": "PROVENCE-ALPES-COTE D\u0027AZUR",
+            "to": "Provence-Alpes-Côte d\u0027Azur"
+          },
+          {
+            "from": "PAYS DE LA LOIRE",
+            "to": "Pays de la Loire"
+          },
+          {
+            "from": "BRETAGNE",
+            "to": "Bretagne"
+          },
+          {
+            "from": "CORSE",
+            "to": "corse"
+          }
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "NOM_REG"
+        ]
+      },
+      "metaType": "PROCESSOR",
       "preview": true,
       "disabled": false,
       "alwaysShowComment": false
