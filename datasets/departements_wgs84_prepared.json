@@ -98,6 +98,12 @@
         "meaning": "Latitude",
         "timestampNoTzAsDate": false,
         "maxLength": -1
+      },
+      {
+        "name": "chef_lieu_geo",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
       }
     ]
   },
@@ -114,6 +120,15 @@
   "flowOptions": {
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "grabenertr",
+      "displayName": "Tristam Gräbener",
+      "email": "tristam.grabener@interieur.gouv.fr"
+    },
+    "lastModifiedOn": 1485875325125
   },
   "customMeta": {
     "kv": {}
