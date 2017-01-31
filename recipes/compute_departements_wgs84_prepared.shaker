@@ -5,7 +5,7 @@
       "params": {
         "out_column": "chef_lieu_geo",
         "lat_column": "lat",
-        "lon_column": "lat"
+        "lon_column": "lon"
       },
       "metaType": "PROCESSOR",
       "preview": true,
