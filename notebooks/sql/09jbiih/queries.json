@@ -133,6 +133,25 @@
         },
         "sql": "select count(*) as c, name\nfrom \"2016_geohisto_communes_prep\"\ngroup by name\n",
         "expandedSql": "select count(*) as c, name\nfrom \"2016_geohisto_communes_prep\"\ngroup by name\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "69Y0mH0VzhdG",
+        "runOn": 1485860991071,
+        "runIn": 131,
+        "runBy": "antoinefa",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "lZXfyqMVyW5ogsEZ",
+        "hash": "d84f69130306166d0ea8c40b93b2f256",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(*) as c, agg_group_concat(id) as ids, name\nfrom \"2016_geohisto_communes_prep\"\ngroup by name\n",
+        "expandedSql": "select count(*) as c, agg_group_concat(id) as ids, name\nfrom \"2016_geohisto_communes_prep\"\ngroup by name\n"
       }
     ]
   }
