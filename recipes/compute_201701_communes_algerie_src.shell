@@ -12,11 +12,14 @@ cat pages_des_wilaya | xargs wget
 #grep  '^<td>' Communes* | sed "s/.*wilaya_d'//;s/.*wilaya_de_//;" | grep Daïra |  sed 's|.*href="|https://fr.wikipedia.org|;s/".*//' | sort | uniq > pages_des_daïra
 #cat pages_des_daïra | xargs wget
 
-mkdir -p csv wilaya
+mkdir -p csv wilaya json
 mv Communes* wilaya/
 #communes
 for wilaya in `ls wilaya`
-do echo $wilaya
 cat wilaya/"$wilaya" | perl -e 'use utf8; $wilaya="'"$wilaya"'";$wilaya=~s/Communes_de_la_wilaya_d(._|.)//;binmode STDIN, "utf8";binmode STDOUT, "utf8";use HTML::Entities;$_=join("",<>);s/\n//g;if(s|.*<table class="wikitable.*?>(.*?)</table>.*|$1|) {s|<th.*?>(.*?)</th>|$1;|g;s|<td.*?>(.*?)</td>|$1;|g;s|<tr>(.*?)</tr>|$1\n|g;} else {s|.*<ol>(.*?)</ol>.*|$1|m;s|.*?<ul>(.*?)</ul>.*|$1|m;s|<li>(.*?)</li>|$1;\n|g; $_="Commune;\n".$_} s|<br.*?>| |g;s|<.*?>||gm;s/(,|\+|&#160;)/ /g;s/ ([0-9])/$1/g;s/([0-9]) /$1/g;s/ +;/;/g;s/;$//gm;s/\n/;$wilaya\n/g;s/;[^;]*\n/;wilaya\n/;print decode_entities($_)'  > csv/$wilaya.csv
+cat csv/"$wilaya".csv | csvjson -d ';' > json/"$wilaya".csv
 done
+
+cat *json | jq -c '.[]' | perl -e '@l=<>;print "[".join(",",@l)."]"' | jq '.' | in2csv -f json 
+
 
