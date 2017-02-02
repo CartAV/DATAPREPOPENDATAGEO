@@ -1,5 +1,5 @@
 #!/bin/bash
-export https_proxy=https://proxy-1
+export https_proxy=https://proxy-1:3182
 
 #données wikipedia
 
