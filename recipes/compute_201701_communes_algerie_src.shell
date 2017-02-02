@@ -5,7 +5,8 @@ export https_proxy=https://proxy-1:3182
 
 #pages des wilaya
 #ces pages tableau des communes d'algérie et permettent l'association wilaya / daira / commune
-curl -s -XGET 'https://fr.wikipedia.org/wiki/Liste_des_communes_d%27Alg%C3%A9rie' | grep 'Communes de la wilaya' | sed 's|.*href="|https://fr.wikipedia.org|;s/".*//' | xargs wget
+curl -s -XGET 'https://fr.wikipedia.org/wiki/Liste_des_communes_d%27Alg%C3%A9rie' | grep 'Communes de la wilaya' | sed 's|.*href="|https://fr.wikipedia.org|;s/".*//' > pages_des_wilaya
+cat pages_des_wilaya | xargs wget
 
 #pages des Daïra (pour archive (utilit
 #grep  '^<td>' Communes* | sed "s/.*wilaya_d'//;s/.*wilaya_de_//;" | grep Daïra |  sed 's|.*href="|https://fr.wikipedia.org|;s/".*//' | sort | uniq > pages_des_daïra
