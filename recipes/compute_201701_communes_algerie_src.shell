@@ -1,6 +1,6 @@
 #!/bin/bash
 export https_proxy=https://proxy-1:3128
-mkdir csv wilaya json
+mkdir -p csv wilaya json
 
 #données wikipedia
 
