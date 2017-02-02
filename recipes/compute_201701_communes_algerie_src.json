@@ -33,13 +33,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 24,
+    "versionNumber": 25,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1486062615403
+    "lastModifiedOn": 1486062617415
   },
   "customMeta": {
     "kv": {}
