@@ -17,7 +17,14 @@
   "managed": true,
   "schema": {
     "userModified": false,
-    "columns": []
+    "columns": [
+      {
+        "name": "https://fr.wikipedia.org/wiki/Communes_de_la_wilaya_d%27Adrar",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      }
+    ]
   },
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -32,6 +39,14 @@
   "flowOptions": {
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "DSS",
+      "displayName": "DSS"
+    },
+    "lastModifiedOn": 1486060085705
   },
   "customMeta": {
     "kv": {}
