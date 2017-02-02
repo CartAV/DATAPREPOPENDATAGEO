@@ -19,7 +19,7 @@
     "userModified": false,
     "columns": [
       {
-        "name": "https://fr.wikipedia.org/wiki/Communes_de_la_wilaya_d%27Adrar",
+        "name": "Code ONS;Commune;Population nb. habitants;wilaya",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
@@ -41,12 +41,12 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "DSS",
       "displayName": "DSS"
     },
-    "lastModifiedOn": 1486060085705
+    "lastModifiedOn": 1486060363571
   },
   "customMeta": {
     "kv": {}
