@@ -1,5 +1,6 @@
 #!/bin/bash
 export https_proxy=https://proxy-1:3128
+mkdir csv wilaya json
 
 #données wikipedia
 
@@ -12,7 +13,6 @@ cat pages_des_wilaya | xargs wget
 #grep  '^<td>' Communes* | sed "s/.*wilaya_d'//;s/.*wilaya_de_//;" | grep Daïra |  sed 's|.*href="|https://fr.wikipedia.org|;s/".*//' | sort | uniq > pages_des_daïra
 #cat pages_des_daïra | xargs wget
 
-mkdir -p csv wilaya json
 mv Communes* wilaya/
 #communes
 for wilaya in `ls wilaya`
