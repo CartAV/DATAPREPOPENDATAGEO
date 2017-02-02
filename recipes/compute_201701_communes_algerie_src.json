@@ -23,8 +23,9 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "autoInferSchema": false,
-    "expectHeaders": false,
+    "pipeOut": "201701_communes_algerie_src",
+    "autoInferSchema": true,
+    "expectHeaders": true,
     "sendHeaders": false
   },
   "checklists": {
@@ -32,13 +33,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1486059322531
+    "lastModifiedOn": 1486059371744
   },
   "customMeta": {
     "kv": {}
