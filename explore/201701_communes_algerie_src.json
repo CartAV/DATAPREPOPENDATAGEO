@@ -27,7 +27,7 @@
   "exploreUIParams": {
     "autoRefresh": true
   },
-  "globalSearchQuery": "Rom",
+  "globalSearchQuery": "",
   "explorationFilters": [],
   "previewMode": "ALL_ROWS",
   "charts": [],
