@@ -14,6 +14,5 @@ curl -s -XGET 'https://fr.wikipedia.org/wiki/Liste_des_communes_d%27Alg%C3%A9rie
 #communes
 rm *csv
 for commune in `ls Communes*`
-do echo $commune
-cat "$commune" | perl -e 'use utf8; $commune="'"$commune"'";$commune=~s/Communes_de_la_wilaya_d(._|.)//;binmode STDIN, "utf8";binmode STDOUT, "utf8";use HTML::Entities;$_=join("",<>);s/\n//g;if(s|.*<table class="wikitable.*?>(.*?)</table>.*|$1|) {s|<th.*?>(.*?)</th>|$1;|g;s|<td.*?>(.*?)</td>|$1;|g;s|<tr>(.*?)</tr>|$1\n|g;} else {s|.*<ol>(.*?)</ol>.*|$1|m;s|.*<ul>(.*?)</ul>.*|$1|m;s|<li>(.*?)</li>|$1;\n|g; $_="Commune;\n".$_} s|<br.*?>| |g;s|<.*?>||gm;s/(,|\+|&#160;)/ /g;s/ ([0-9])/$1/g;s/([0-9]) /$1/g;s/ +;/;/g;s/;$//gm;s/\n/;$commune\n/g;s/;[^;]*\n/;wilaya\n/;print decode_entities($_)'  
+do cat "$commune" | perl -e 'use utf8; $commune="'"$commune"'";$commune=~s/Communes_de_la_wilaya_d(._|.)//;binmode STDIN, "utf8";binmode STDOUT, "utf8";use HTML::Entities;$_=join("",<>);s/\n//g;if(s|.*<table class="wikitable.*?>(.*?)</table>.*|$1|) {s|<th.*?>(.*?)</th>|$1;|g;s|<td.*?>(.*?)</td>|$1;|g;s|<tr>(.*?)</tr>|$1\n|g;} else {s|.*<ol>(.*?)</ol>.*|$1|m;s|.*<ul>(.*?)</ul>.*|$1|m;s|<li>(.*?)</li>|$1;\n|g; $_="Commune;\n".$_} s|<br.*?>| |g;s|<.*?>||gm;s/(,|\+|&#160;)/ /g;s/ ([0-9])/$1/g;s/([0-9]) /$1/g;s/ +;/;/g;s/;$//gm;s/\n/;$commune\n/g;s/;[^;]*\n/;wilaya\n/;print decode_entities($_)'  
 done
