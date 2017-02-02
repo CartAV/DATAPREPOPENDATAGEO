@@ -20,6 +20,6 @@ cat wilaya/"$wilaya" | perl -e 'use utf8; $wilaya="'"$wilaya"'";$wilaya=~s/Commu
 cat csv/"$wilaya".csv | csvjson -d ';' > json/"$wilaya".csv
 done
 
-cat *json | jq -c '.[]' | perl -e '@l=<>;print "[".join(",",@l)."]"' | jq '.' | in2csv -f json 
+cat json/*json | jq -c '.[]' | perl -e '@l=<>;print "[".join(",",@l)."]"' | jq '.' | in2csv -f json 
 
 
