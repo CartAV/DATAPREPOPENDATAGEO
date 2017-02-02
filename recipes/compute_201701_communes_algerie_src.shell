@@ -1,0 +1,20 @@
+#!/bin/bash
+export https_proxy=https://proxy-1
+
+#données wikipedia
+
+#pages des wilaya
+#ces pages tableau des communes d'algérie et permettent l'association wilaya / daira / commune
+curl -s -XGET 'https://fr.wikipedia.org/wiki/Liste_des_communes_d%27Alg%C3%A9rie' | grep 'Communes de la wilaya' | sed 's|.*href="|https://fr.wikipedia.org|;s/".*//' > pages_des_wilaya
+cat pages_des_wilaya | xargs wget
+
+#pages des Daïra (pour archive (utilit
+grep  '^<td>' Communes* | sed "s/.*wilaya_d'//;s/.*wilaya_de_//;" | grep Daïra |  sed 's|.*href="|https://fr.wikipedia.org|;s/".*//' | sort | uniq > pages_des_daïra
+cat pages_des_daïra | xargs wget
+
+#communes
+rm *csv
+for commune in `ls Communes*`
+do echo $commune
+cat "$commune" | perl -e 'use utf8; $commune="'"$commune"'";$commune=~s/Communes_de_la_wilaya_d(._|.)//;binmode STDIN, "utf8";binmode STDOUT, "utf8";use HTML::Entities;$_=join("",<>);s/\n//g;if(s|.*<table class="wikitable.*?>(.*?)</table>.*|$1|) {s|<th.*?>(.*?)</th>|$1;|g;s|<td.*?>(.*?)</td>|$1;|g;s|<tr>(.*?)</tr>|$1\n|g;} else {s|.*<ol>(.*?)</ol>.*|$1|m;s|.*<ul>(.*?)</ul>.*|$1|m;s|<li>(.*?)</li>|$1;\n|g; $_="Commune;\n".$_} s|<br.*?>| |g;s|<.*?>||gm;s/(,|\+|&#160;)/ /g;s/ ([0-9])/$1/g;s/([0-9]) /$1/g;s/ +;/;/g;s/;$//gm;s/\n/;$commune\n/g;s/;[^;]*\n/;wilaya\n/;print decode_entities($_)'  > $commune.csv
+done
