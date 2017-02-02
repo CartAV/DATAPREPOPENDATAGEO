@@ -19,7 +19,7 @@
     "userModified": false,
     "columns": [
       {
-        "name": "Code ONS;Commune;Population nb. habitants;wilaya",
+        "name": "Code ONS;Commune;Population nb. habitants;wilaya;Superficie km2",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
@@ -41,12 +41,12 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "DSS",
       "displayName": "DSS"
     },
-    "lastModifiedOn": 1486060363571
+    "lastModifiedOn": 1486063476588
   },
   "customMeta": {
     "kv": {}
