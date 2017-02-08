@@ -22,7 +22,7 @@
         "mapping": [
           {
             "from": "BOURGOGNE-FRANCHE-COMTE",
-            "to": "Bourgogne-Franche-Compé"
+            "to": "Bourgogne-Franche-Comté"
           },
           {
             "from": "AUVERGNE-RHONE-ALPES",
@@ -50,7 +50,7 @@
           },
           {
             "from": "NORD-PAS-DE-CALAIS-PICARDIE",
-            "to": "Hauts-de-Franc"
+            "to": "Hauts-de-France"
           },
           {
             "from": "LANGUEDOC-ROUSSILLON-MIDI-PYRENEES",
@@ -70,7 +70,7 @@
           },
           {
             "from": "CORSE",
-            "to": "corse"
+            "to": "Corse"
           }
         ],
         "appliesTo": "SINGLE_COLUMN",
