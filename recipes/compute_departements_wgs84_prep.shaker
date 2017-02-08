@@ -82,6 +82,20 @@
       "preview": false,
       "disabled": false,
       "alwaysShowComment": false
+    },
+    {
+      "type": "ColumnsSelector",
+      "params": {
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "the_geom"
+        ]
+      },
+      "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
     }
   ],
   "tags": [],
