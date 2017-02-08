@@ -19,13 +19,6 @@
     "userModified": true,
     "columns": [
       {
-        "name": "the_geom",
-        "type": "string",
-        "meaning": "GeometryMeaning",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
-      {
         "name": "lon",
         "type": "double",
         "meaning": "Longitude",
@@ -126,6 +119,15 @@
   "flowOptions": {
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "grabenertr",
+      "displayName": "Tristam Gräbener",
+      "email": "tristam.grabener@interieur.gouv.fr"
+    },
+    "lastModifiedOn": 1486571452689
   },
   "customMeta": {
     "kv": {}
