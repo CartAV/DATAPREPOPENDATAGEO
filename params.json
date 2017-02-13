@@ -120,6 +120,10 @@
           {
             "targetProject": "ACCIDENTS",
             "appearOnFlow": true
+          },
+          {
+            "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
+            "appearOnFlow": true
           }
         ]
       }
