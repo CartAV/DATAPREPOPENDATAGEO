@@ -1,6 +1,46 @@
 {
-  "steps": [],
+  "steps": [
+    {
+      "type": "DateParser",
+      "params": {
+        "outCol": "",
+        "lang": "auto",
+        "timezone_id": "UTC",
+        "formats": [
+          "yyyy-MM-dd HH:mm:ss"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "start_datetime"
+        ]
+      },
+      "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    },
+    {
+      "type": "DateParser",
+      "params": {
+        "outCol": "end_datetime_parsed",
+        "lang": "auto",
+        "timezone_id": "UTC",
+        "formats": [
+          "yyyy-MM-dd HH:mm:ss"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "end_datetime"
+        ]
+      },
+      "metaType": "PROCESSOR",
+      "preview": true,
+      "disabled": false,
+      "alwaysShowComment": false
+    }
+  ],
   "tags": [],
+  "origin": "PREPARE_RECIPE",
   "columnsSelection": {
     "mode": "ALL"
   },
@@ -24,11 +64,14 @@
     "autoRefreshSample": false,
     "_refreshTrigger": 0
   },
-  "exploreUIParams": {},
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "globalSearchQuery": "",
   "explorationFilters": [
     {
-      "type": "global_search"
+      "type": "global_search",
+      "$$hashKey": "32A"
     }
   ],
   "previewMode": "ALL_ROWS",
