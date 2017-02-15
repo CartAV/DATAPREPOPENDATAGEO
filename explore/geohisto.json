@@ -27,13 +27,13 @@
   "exploreUIParams": {
     "autoRefresh": true
   },
-  "globalSearchQuery": "59011",
+  "globalSearchQuery": "",
   "explorationFilters": [
     {
       "column": "insee_code",
       "type": "columnFilter",
       "currentMode": "FACET",
-      "active": true,
+      "active": false,
       "facet": {
         "type": "facet",
         "column": "insee_code",
