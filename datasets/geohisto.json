@@ -21,7 +21,6 @@
       {
         "name": "id",
         "type": "string",
-        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
@@ -33,13 +32,13 @@
       },
       {
         "name": "start_datetime",
-        "type": "date",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "end_datetime",
-        "type": "date",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
@@ -64,7 +63,6 @@
       {
         "name": "current_insee_code",
         "type": "string",
-        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       }
@@ -85,13 +83,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1487173446705
+    "lastModifiedOn": 1487175078709
   },
   "customMeta": {
     "kv": {}
