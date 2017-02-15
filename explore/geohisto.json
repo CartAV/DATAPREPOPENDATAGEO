@@ -14,11 +14,11 @@
     "selection": {
       "samplingMethod": "HEAD_SEQUENTIAL",
       "partitionSelectionMethod": "ALL",
-      "maxRecords": 10000,
+      "maxRecords": 100000,
       "targetRatio": 0.02
     },
     "autoRefreshSample": false,
-    "_refreshTrigger": 0
+    "_refreshTrigger": 1
   },
   "vizSampling": {
     "autoRefreshSample": false,
@@ -27,8 +27,42 @@
   "exploreUIParams": {
     "autoRefresh": true
   },
-  "globalSearchQuery": "",
-  "explorationFilters": [],
+  "globalSearchQuery": "59011",
+  "explorationFilters": [
+    {
+      "column": "insee_code",
+      "type": "columnFilter",
+      "currentMode": "FACET",
+      "active": true,
+      "facet": {
+        "type": "facet",
+        "column": "insee_code",
+        "columnType": "NUMERICAL",
+        "currentMode": "ALPHANUM",
+        "sort": "count",
+        "selectedValues": {}
+      },
+      "alphanumFilter": {
+        "type": "alphanum",
+        "column": "insee_code",
+        "values": [],
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        }
+      },
+      "validityFilter": {
+        "type": "validity",
+        "column": "insee_code",
+        "params": {
+          "type": "LongMeaning",
+          "ok": true,
+          "nok": true,
+          "empty": true
+        }
+      }
+    }
+  ],
   "previewMode": "ALL_ROWS",
   "charts": [],
   "chartsEngine": "LINO"
