@@ -14,11 +14,11 @@
     "selection": {
       "samplingMethod": "HEAD_SEQUENTIAL",
       "partitionSelectionMethod": "ALL",
-      "maxRecords": 10000,
+      "maxRecords": 100000,
       "targetRatio": 0.02
     },
     "autoRefreshSample": false,
-    "_refreshTrigger": 0
+    "_refreshTrigger": 1
   },
   "vizSampling": {
     "autoRefreshSample": false,
@@ -56,6 +56,39 @@
         "column": "parents",
         "params": {
           "type": "JSONArrayMeaning",
+          "ok": true,
+          "nok": true,
+          "empty": true
+        }
+      }
+    },
+    {
+      "column": "dep_code",
+      "type": "columnFilter",
+      "currentMode": "FACET",
+      "active": true,
+      "facet": {
+        "type": "facet",
+        "column": "dep_code",
+        "columnType": "ALPHANUM",
+        "currentMode": "ALPHANUM",
+        "sort": "count",
+        "selectedValues": {}
+      },
+      "alphanumFilter": {
+        "type": "alphanum",
+        "column": "dep_code",
+        "values": [],
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        }
+      },
+      "validityFilter": {
+        "type": "validity",
+        "column": "dep_code",
+        "params": {
+          "type": "Text",
           "ok": true,
           "nok": true,
           "empty": true
