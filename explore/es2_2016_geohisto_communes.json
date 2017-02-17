@@ -40,7 +40,9 @@
         "columnType": "NUMERICAL",
         "currentMode": "ALPHANUM",
         "sort": "count",
-        "selectedValues": {}
+        "selectedValues": {
+          "59": true
+        }
       },
       "alphanumFilter": {
         "type": "alphanum",
