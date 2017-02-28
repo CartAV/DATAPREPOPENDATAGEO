@@ -51,7 +51,7 @@
       },
       {
         "name": "CODE_CHF",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -63,31 +63,31 @@
       },
       {
         "name": "X_CHF_LIEU",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "Y_CHF_LIEU",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "X_CENTROID",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "Y_CENTROID",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "CODE_REG",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -112,6 +112,15 @@
   "flowOptions": {
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "grabenertr",
+      "displayName": "Tristam Gräbener",
+      "email": "tristam.grabener@interieur.gouv.fr"
+    },
+    "lastModifiedOn": 1488297955932
   },
   "customMeta": {
     "kv": {}
