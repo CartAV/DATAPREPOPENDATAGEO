@@ -1,12 +1,32 @@
 {
   "creator": "chabouisfr",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "chabouisfr",
+      "displayName": "Francis Chabouis",
+      "email": "francis.chabouis@interieur.gouv.fr"
+    },
+    "lastModifiedOn": 1488298209982
+  },
   "connection": "datalabmaster",
   "name": "Bidouilles à Francis",
   "checklists": {
     "checklists": []
   },
   "tags": [],
-  "cells": [],
+  "cells": [
+    {
+      "id": "x2mpqlgu0qj",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "extraConf": [],
+        "addDkuUdf": false
+      }
+    }
+  ],
   "automationLocal": false,
   "createdBy": {},
   "createdOn": 0,
