@@ -40,9 +40,7 @@
         "columnType": "NUMERICAL",
         "currentMode": "ALPHANUM",
         "sort": "count",
-        "selectedValues": {
-          "59": true
-        }
+        "selectedValues": {}
       },
       "alphanumFilter": {
         "type": "alphanum",
@@ -58,6 +56,39 @@
         "column": "Code Département",
         "params": {
           "type": "LongMeaning",
+          "ok": true,
+          "nok": true,
+          "empty": true
+        }
+      }
+    },
+    {
+      "column": "Département",
+      "type": "columnFilter",
+      "currentMode": "FACET",
+      "active": true,
+      "facet": {
+        "type": "facet",
+        "column": "Département",
+        "columnType": "ALPHANUM",
+        "currentMode": "ALPHANUM",
+        "sort": "count",
+        "selectedValues": {}
+      },
+      "alphanumFilter": {
+        "type": "alphanum",
+        "column": "Département",
+        "values": [],
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        }
+      },
+      "validityFilter": {
+        "type": "validity",
+        "column": "Département",
+        "params": {
+          "type": "Text",
           "ok": true,
           "nok": true,
           "empty": true
