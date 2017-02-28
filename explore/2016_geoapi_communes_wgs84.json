@@ -18,7 +18,7 @@
       "targetRatio": 0.02
     },
     "autoRefreshSample": false,
-    "_refreshTrigger": 1
+    "_refreshTrigger": 2
   },
   "vizSampling": {
     "autoRefreshSample": false,
@@ -28,7 +28,107 @@
     "autoRefresh": true
   },
   "globalSearchQuery": "",
-  "explorationFilters": [],
+  "explorationFilters": [
+    {
+      "column": "Commune",
+      "type": "columnFilter",
+      "currentMode": "FACET",
+      "active": true,
+      "facet": {
+        "type": "facet",
+        "column": "Commune",
+        "columnType": "ALPHANUM",
+        "currentMode": "ALPHANUM",
+        "sort": "count",
+        "selectedValues": {}
+      },
+      "alphanumFilter": {
+        "type": "alphanum",
+        "column": "Commune",
+        "values": [],
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        }
+      },
+      "validityFilter": {
+        "type": "validity",
+        "column": "Commune",
+        "params": {
+          "type": "Text",
+          "ok": true,
+          "nok": true,
+          "empty": true
+        }
+      }
+    },
+    {
+      "column": "Département",
+      "type": "columnFilter",
+      "currentMode": "FACET",
+      "active": true,
+      "facet": {
+        "type": "facet",
+        "column": "Département",
+        "columnType": "ALPHANUM",
+        "currentMode": "ALPHANUM",
+        "sort": "count",
+        "selectedValues": {}
+      },
+      "alphanumFilter": {
+        "type": "alphanum",
+        "column": "Département",
+        "values": [],
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        }
+      },
+      "validityFilter": {
+        "type": "validity",
+        "column": "Département",
+        "params": {
+          "type": "Text",
+          "ok": true,
+          "nok": true,
+          "empty": true
+        }
+      }
+    },
+    {
+      "column": "Code Département",
+      "type": "columnFilter",
+      "currentMode": "FACET",
+      "active": true,
+      "facet": {
+        "type": "facet",
+        "column": "Code Département",
+        "columnType": "ALPHANUM",
+        "currentMode": "ALPHANUM",
+        "sort": "count",
+        "selectedValues": {}
+      },
+      "alphanumFilter": {
+        "type": "alphanum",
+        "column": "Code Département",
+        "values": [],
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        }
+      },
+      "validityFilter": {
+        "type": "validity",
+        "column": "Code Département",
+        "params": {
+          "type": "Text",
+          "ok": true,
+          "nok": true,
+          "empty": true
+        }
+      }
+    }
+  ],
   "previewMode": "ALL_ROWS",
   "charts": [],
   "chartsEngine": "LINO"
