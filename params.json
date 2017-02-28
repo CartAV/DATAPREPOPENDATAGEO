@@ -136,6 +136,16 @@
             "appearOnFlow": true
           }
         ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "IGN_DEPARTEMENT_prep",
+        "rules": [
+          {
+            "targetProject": "ACCIDENTS",
+            "appearOnFlow": true
+          }
+        ]
       }
     ],
     "gitCommitMode": "AUTO",
