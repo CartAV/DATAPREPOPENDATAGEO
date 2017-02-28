@@ -1,0 +1,25 @@
+{
+  "queries": {
+    "x2mpqlgu0qj": [
+      {
+        "mode": "SQL",
+        "id": "k8iNnAajwY7O",
+        "runOn": 1488298220457,
+        "runIn": -1,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "GalSMENLViHzFb3P",
+        "hash": "5888085e25884abe78c79886b4127033",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select * from 2016_geoapi_communes_wgs84;",
+        "expandedSql": "select * from 2016_geoapi_communes_wgs84;"
+      }
+    ]
+  }
+}
