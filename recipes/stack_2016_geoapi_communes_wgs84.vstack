@@ -40,13 +40,26 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
+  "originColumnName": "original_dataset",
   "postFilter": {
     "enabled": false,
     "language": "GREL",
     "distinct": false
   },
-  "originColumnName": "original_dataset",
-  "selectedColumns": [],
+  "selectedColumns": [
+    "Code INSEE",
+    "Commune",
+    "Codes Postaux",
+    "Département",
+    "Code Département",
+    "Région",
+    "Code Région",
+    "Surface",
+    "Population",
+    "longitude",
+    "latitude",
+    "geo_point_2d"
+  ],
   "addOriginColumn": false,
   "mode": "UNION"
 }
