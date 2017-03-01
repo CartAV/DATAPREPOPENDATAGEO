@@ -10,7 +10,7 @@
     "table": "ign_commune_postgis",
     "tableCreationMode": "auto",
     "customPreWriteStatements": "",
-    "customPostWriteStatements": "UPDATE \"ign_commune_postgis\"\n\tSET the_geom \u003d  st_setSRID(st_geomfromtext(the_geom), 4326);\n\nALTER TABLE \"ign_commune_postgis\" ALTER COLUMN the_geom type geometry(MultiPolygon, 4326);\n\nCREATE INDEX commune_geom_idx ON \"ign_departement_prep\"\n\tUSING GIST(the_geom);",
+    "customPostWriteStatements": "UPDATE \"ign_commune_postgis\"\n\tSET the_geom \u003d  st_setSRID(st_geomfromtext(the_geom), 4326);\n\nALTER TABLE \"ign_commune_postgis\" ALTER COLUMN the_geom type geometry(MultiPolygon, 4326);\n\nCREATE INDEX commune_geom_idx ON \"ign_commune_prep\"\n\tUSING GIST(the_geom);",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "hasColsWithUnknownTz": false,
@@ -152,13 +152,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1488389469099
+    "lastModifiedOn": 1488389577506
   },
   "customMeta": {
     "kv": {}
