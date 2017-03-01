@@ -1,6 +1,28 @@
 {
-  "steps": [],
+  "steps": [
+    {
+      "type": "FilterOnValue",
+      "params": {
+        "values": [
+          "75056"
+        ],
+        "matchingMode": "FULL_STRING",
+        "normalizationMode": "EXACT",
+        "action": "REMOVE_ROW",
+        "booleanMode": "AND",
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "Code INSEE"
+        ]
+      },
+      "metaType": "PROCESSOR",
+      "preview": true,
+      "disabled": false,
+      "alwaysShowComment": false
+    }
+  ],
   "tags": [],
+  "origin": "PREPARE_RECIPE",
   "columnsSelection": {
     "mode": "ALL"
   },
@@ -14,21 +36,96 @@
     "selection": {
       "samplingMethod": "HEAD_SEQUENTIAL",
       "partitionSelectionMethod": "ALL",
-      "maxRecords": 10000,
+      "maxRecords": 100000,
       "targetRatio": 0.02
     },
     "autoRefreshSample": false,
-    "_refreshTrigger": 0
+    "_refreshTrigger": 1
   },
   "vizSampling": {
     "autoRefreshSample": false,
     "_refreshTrigger": 0
   },
-  "exploreUIParams": {},
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "globalSearchQuery": "",
   "explorationFilters": [
     {
-      "type": "global_search"
+      "type": "global_search",
+      "$$hashKey": "DMB"
+    },
+    {
+      "column": "Région",
+      "type": "columnFilter",
+      "currentMode": "FACET",
+      "active": true,
+      "facet": {
+        "type": "facet",
+        "column": "Région",
+        "columnType": "ALPHANUM",
+        "currentMode": "ALPHANUM",
+        "sort": "count",
+        "selectedValues": {
+          "Île-de-France": true
+        }
+      },
+      "alphanumFilter": {
+        "type": "alphanum",
+        "column": "Région",
+        "values": [],
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        }
+      },
+      "validityFilter": {
+        "type": "validity",
+        "column": "Région",
+        "params": {
+          "type": "Text",
+          "ok": true,
+          "nok": true,
+          "empty": true
+        }
+      },
+      "$$hashKey": "DTG"
+    },
+    {
+      "column": "Code Département",
+      "type": "columnFilter",
+      "currentMode": "FACET",
+      "active": true,
+      "facet": {
+        "type": "facet",
+        "column": "Code Département",
+        "columnType": "ALPHANUM",
+        "currentMode": "ALPHANUM",
+        "sort": "count",
+        "selectedValues": {
+          "75": true
+        }
+      },
+      "alphanumFilter": {
+        "type": "alphanum",
+        "column": "Code Département",
+        "values": [],
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        }
+      },
+      "validityFilter": {
+        "type": "validity",
+        "column": "Code Département",
+        "params": {
+          "type": "Text",
+          "ok": true,
+          "nok": true,
+          "empty": true
+        }
+      },
+      "$$hashKey": "E58"
     }
   ],
   "previewMode": "ALL_ROWS",
