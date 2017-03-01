@@ -139,7 +139,7 @@
       },
       {
         "type": "DATASET",
-        "localName": "IGN_DEPARTEMENT_prep",
+        "localName": "IGN_TRONCON_ROUTE_postgis",
         "rules": [
           {
             "targetProject": "ACCIDENTS",
