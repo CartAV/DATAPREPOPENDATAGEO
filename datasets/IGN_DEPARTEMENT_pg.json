@@ -9,6 +9,7 @@
     "normalizeDoubles": true,
     "table": "ign_departement_pg",
     "tableCreationMode": "auto",
+    "customPostWriteStatements": "UPDATE \"ign_departement_pg\"\n\tSET the_geom \u003d  st_setSRID(st_geomfromtext(the_geom), 4326);\n\nALTER TABLE \"ign_departement_pg\" ALTER COLUMN the_geom type geometry(MultiPolygon, 4326);\n\nCREATE INDEX commune_geom_idx ON \"ign_departement_pg\"\n\tUSING GIST(the_geom);",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "hasColsWithUnknownTz": false,
@@ -114,13 +115,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1488297955932
+    "lastModifiedOn": 1488389893394
   },
   "customMeta": {
     "kv": {}
