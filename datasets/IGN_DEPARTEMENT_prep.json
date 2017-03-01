@@ -9,6 +9,8 @@
     "normalizeDoubles": true,
     "table": "ign_departement_prep",
     "tableCreationMode": "auto",
+    "customPreWriteStatements": "ALTER TABLE \"ign_departement_prep\" ALTER COLUMN geometry type geometry(MultiPoint, 4326)\n",
+    "customPostWriteStatements": "CREATE INDEX geom_idx ON \"ign_departement_prep\"\n\tUSING GIST(geom_acc);",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "hasColsWithUnknownTz": false,
@@ -126,13 +128,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1488298786210
+    "lastModifiedOn": 1488366972062
   },
   "customMeta": {
     "kv": {}
