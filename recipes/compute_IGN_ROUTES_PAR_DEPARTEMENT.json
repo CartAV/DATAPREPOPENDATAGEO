@@ -1,0 +1,56 @@
+{
+  "type": "sql_query",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "allowMultipleConnections": false,
+    "displayExecutionPlan": true,
+    "skipPrerunValidate": false
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "IGN_TRONCON_ROUTE_postgis",
+          "deps": []
+        },
+        {
+          "ref": "IGN_DEPARTEMENT_pg",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "IGN_ROUTES_PAR_DEPARTEMENT",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "grabenertr"
+    },
+    "lastModifiedOn": 1488474222426
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "grabenertr"
+    },
+    "lastModifiedOn": 1488474222426
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
+}
