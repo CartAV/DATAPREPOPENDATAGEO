@@ -1,5 +1,39 @@
 {
   "type": "PostgreSQL",
+  "managed": true,
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 1,
+    "lastModifiedBy": {
+      "login": "grabenertr"
+    },
+    "lastModifiedOn": 1488460941971
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "grabenertr"
+    },
+    "lastModifiedOn": 1488460941977
+  },
+  "tags": [
+    "creator_grabenertr"
+  ],
   "params": {
     "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
     "connection": "postgis",
@@ -9,14 +43,12 @@
     "normalizeDoubles": true,
     "table": "ign_troncon_route_postgis",
     "tableCreationMode": "auto",
-    "customPostWriteStatements": "UPDATE \"ign_troncon_route_postgis\"\n\tSET the_geom \u003d  st_transform(st_setSRID(st_geomfromtext(the_geom), 2154), 4326);\n\nALTER TABLE \"ign_troncon_route_postgis\" ALTER COLUMN the_geom type geometry(MultiLineString, 4326);\n\nCREATE INDEX route_geom_idx ON \"ign_troncon_route_postgis\"\n\tUSING GIST(the_geom);",
+    "customPostWriteStatements": "UPDATE \"ign_troncon_route_postgis\"\n\tSET the_geom \u003d  st_transform(st_geomfromtext(the_geom), 2154, 4326);\n\nALTER TABLE \"ign_troncon_route_postgis\" ALTER COLUMN the_geom type geometry(MultiLineString, 4326);\n\nCREATE INDEX route_geom_idx ON \"ign_troncon_route_postgis\"\n\tUSING GIST(the_geom);",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "hasColsWithUnknownTz": false,
     "readColsWithUnknownTzAsDates": false
   },
-  "checks": [],
-  "managed": true,
   "schema": {
     "userModified": false,
     "columns": [
@@ -105,32 +137,6 @@
         "maxLength": -1
       }
     ]
-  },
-  "partitioning": {
-    "ignoreNonMatchingFile": false,
-    "dimensions": []
-  },
-  "tags": [
-    "creator_grabenertr"
-  ],
-  "checklists": {
-    "checklists": []
-  },
-  "flowOptions": {
-    "rebuildBehavior": "NORMAL",
-    "crossProjectBuildBehavior": "DEFAULT"
-  },
-  "versionTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "grabenertr",
-      "displayName": "Tristam Gräbener",
-      "email": "tristam.grabener@interieur.gouv.fr"
-    },
-    "lastModifiedOn": 1488390406994
-  },
-  "customMeta": {
-    "kv": {}
   },
   "metrics": {
     "probes": [
