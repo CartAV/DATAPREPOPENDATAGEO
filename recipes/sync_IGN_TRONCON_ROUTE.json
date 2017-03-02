@@ -1,5 +1,42 @@
 {
   "type": "sync",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "schemaMode": "STRICT_SYNC",
+    "engineType": "DSS",
+    "engineParams": {
+      "maxThreads": 4,
+      "sparkSQL": {
+        "overwriteOutputSchema": false,
+        "useGlobalMetastore": false,
+        "sparkConfig": {
+          "inheritConf": "default",
+          "conf": []
+        },
+        "readParams": {
+          "map": {}
+        },
+        "pipelineAllowMerge": true,
+        "pipelineAllowStart": true
+      },
+      "impala": {
+        "forceStreamMode": true
+      },
+      "hive": {
+        "inheritConf": "default",
+        "hiveconf": [],
+        "executionEngine": "HIVECLI_LOCAL",
+        "addDkuUdf": false,
+        "skipPrerunValidate": false
+      },
+      "lowerCaseSchemaIfEngineRequiresIt": false
+    }
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
   "inputs": {
     "main": {
       "items": [
@@ -20,27 +57,15 @@
       ]
     }
   },
-  "neverRecomputeExistingPartitions": false,
-  "optionalDependencies": false,
-  "params": {
-    "schemaMode": "STRICT_SYNC",
-    "syncThreads": 4
-  },
-  "checklists": {
-    "checklists": []
+  "versionTag": {
+    "versionNumber": 2,
+    "lastModifiedBy": {
+      "login": "grabenertr"
+    },
+    "lastModifiedOn": 1488460955251
   },
   "tags": [],
-  "versionTag": {
-    "versionNumber": 1,
-    "lastModifiedBy": {
-      "login": "grabenertr",
-      "displayName": "Tristam Gräbener",
-      "email": "tristam.grabener@interieur.gouv.fr"
-    },
-    "lastModifiedOn": 1488390419740
-  },
-  "customMeta": {
-    "kv": {}
-  },
-  "redispatchPartitioning": false
+  "checklists": {
+    "checklists": []
+  }
 }
