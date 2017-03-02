@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488461563901
+    "lastModifiedOn": 1488461697120
   },
   "creationTag": {
     "versionNumber": 0,
@@ -43,7 +43,7 @@
     "normalizeDoubles": true,
     "table": "ign_troncon_route_postgis",
     "tableCreationMode": "auto",
-    "customPostWriteStatements": "UPDATE \"ign_troncon_route_postgis\"\n\tSET the_geom \u003d st_SetSRID(st_geomfromtext(the_geom), 4326);\n\nALTER TABLE \"ign_troncon_route_postgis\" ALTER COLUMN the_geom type geography(MultiLineString, 4326);\n\nCREATE INDEX route_geom_idx ON \"ign_troncon_route_postgis\"\n\tUSING GIST(the_geom);",
+    "customPostWriteStatements": "UPDATE \"ign_troncon_route_postgis\"\n\tSET the_geom \u003d st_SetSRID(st_geomfromtext(the_geom), 4326);\n\nALTER TABLE \"ign_troncon_route_postgis\" ALTER COLUMN the_geom type geography(MultiLineString);\n\nCREATE INDEX route_geom_idx ON \"ign_troncon_route_postgis\"\n\tUSING GIST(the_geom);",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "hasColsWithUnknownTz": false,
