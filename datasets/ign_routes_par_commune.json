@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488547350633
+    "lastModifiedOn": 1488556308504
   },
   "creationTag": {
     "versionNumber": 0,
@@ -43,16 +43,17 @@
     "normalizeDoubles": true,
     "table": "ign_routes_par_commune",
     "tableCreationMode": "auto",
+    "customPostWriteStatements": "ALTER TABLE ign_routes_par_commune\n\tALTER COLUMN ",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "hasColsWithUnknownTz": false,
     "readColsWithUnknownTzAsDates": false
   },
   "schema": {
-    "userModified": false,
+    "userModified": true,
     "columns": [
       {
-        "name": "st_intersection",
+        "name": "the_geom",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
