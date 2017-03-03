@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488535471524
+    "lastModifiedOn": 1488535504251
   },
   "creationTag": {
     "versionNumber": 0,
@@ -43,7 +43,7 @@
     "normalizeDoubles": true,
     "table": "ign_routes_par_departement",
     "tableCreationMode": "auto",
-    "customPostWriteStatements": "ALTER TABLE \"ign_routes_par_departement\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using geom_acc::geography(MultiLineString);\n\nCREATE INDEX geom_routes_dep_idx ON \"ign_routes_par_departement\"\n\tUSING GIST(the_geom);",
+    "customPostWriteStatements": "ALTER TABLE \"ign_routes_par_departement\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n\nCREATE INDEX geom_routes_dep_idx ON \"ign_routes_par_departement\"\n\tUSING GIST(the_geom);",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "hasColsWithUnknownTz": false,
