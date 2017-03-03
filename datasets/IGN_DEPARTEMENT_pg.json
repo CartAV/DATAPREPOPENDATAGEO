@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488533225909
+    "lastModifiedOn": 1488533580263
   },
   "creationTag": {
     "versionNumber": 0,
@@ -44,7 +44,7 @@
     "table": "ign_departement_pg",
     "tableCreationMode": "auto",
     "customPreWriteStatements": "",
-    "customPostWriteStatements": "ALTER TABLE \"ign_departement_pg\"\n\tALTER COLUMN the_geom type geography(MultiPolygon) USING st_geomfromtext(the_geom)::geography(MultiPolygon);\n\nCREATE INDEX departement_geom_idx ON \"ign_departement_pg\"\n\tUSING GIST(the_geom);\n\nCREATE INDEX departement_code_idx ON \"ign_departement_pg\"(CODE_DEPT);",
+    "customPostWriteStatements": "ALTER TABLE \"ign_departement_pg\"\n\tALTER COLUMN the_geom type geography(MultiPolygon) USING st_geomfromtext(the_geom)::geography(MultiPolygon);\n\nCREATE INDEX departement_geom_idx ON \"ign_departement_pg\"\n\tUSING GIST(the_geom);\n\nCREATE INDEX departement_code_idx ON \"ign_departement_pg\"(code_dept);",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "hasColsWithUnknownTz": false,
