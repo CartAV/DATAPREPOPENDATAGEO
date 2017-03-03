@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488474752465
+    "lastModifiedOn": 1488533786751
   },
   "creationTag": {
     "versionNumber": 0,
@@ -59,6 +59,12 @@
       },
       {
         "name": "CODE_DEPT",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "NUM_ROUTE",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
