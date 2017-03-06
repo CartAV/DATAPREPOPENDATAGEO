@@ -8,6 +8,13 @@
           "objectType": "DATASET"
         },
         "modes": []
+      },
+      {
+        "objectRef": {
+          "objectId": "IGN_COMMUNE_FRANCE",
+          "objectType": "DATASET"
+        },
+        "modes": []
       }
     ]
   },
@@ -140,6 +147,16 @@
             "appearOnFlow": true
           }
         ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "IGN_COMMUNE_FRANCE",
+        "rules": [
+          {
+            "targetProject": "ACCIDENTS",
+            "appearOnFlow": true
+          }
+        ]
       }
     ]
   },
@@ -208,11 +225,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488803787910
+    "lastModifiedOn": 1488803854818
   },
   "shortDesc": "The project *Dataprep opendata geo* was created by Fabien Antoine on Jan 13th 2017",
   "tags": [],
