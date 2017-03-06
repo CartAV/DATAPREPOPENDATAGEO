@@ -1,5 +1,5 @@
 SELECT
-  st_intersection(commune."the_geom", route."the_geom")::geography(MultiLineString),
+  st_linemerge(st_intersection(commune."the_geom", route."the_geom")),
   route."CODE_DEPT",
   route.num_route_or_id
 FROM
