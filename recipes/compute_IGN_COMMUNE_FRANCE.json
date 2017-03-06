@@ -16,6 +16,22 @@
         {
           "ref": "IGN_COMMUNE_GUADELOUPE",
           "deps": []
+        },
+        {
+          "ref": "IGN_COMMUNE_GUYANE",
+          "deps": []
+        },
+        {
+          "ref": "IGN_COMMUNE_MARTINIQUE",
+          "deps": []
+        },
+        {
+          "ref": "IGN_COMMUNE_MAYOTTE",
+          "deps": []
+        },
+        {
+          "ref": "IGN_COMMUNE",
+          "deps": []
         }
       ]
     }
@@ -31,11 +47,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488794253874
+    "lastModifiedOn": 1488795116817
   },
   "creationTag": {
     "versionNumber": 0,
