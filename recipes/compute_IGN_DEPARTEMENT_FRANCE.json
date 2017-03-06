@@ -16,6 +16,22 @@
         {
           "ref": "IGN_DEPARTEMENT",
           "deps": []
+        },
+        {
+          "ref": "IGN_DEPARTEMENT_GUADELOUPE",
+          "deps": []
+        },
+        {
+          "ref": "IGN_DEPARTEMENT_GUYANE",
+          "deps": []
+        },
+        {
+          "ref": "IGN_DEPARTEMENT_MAYOTTE",
+          "deps": []
+        },
+        {
+          "ref": "IGN_DEPARTEMENT_REUNION",
+          "deps": []
         }
       ]
     }
@@ -31,11 +47,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488797408157
+    "lastModifiedOn": 1488797455353
   },
   "creationTag": {
     "versionNumber": 0,
