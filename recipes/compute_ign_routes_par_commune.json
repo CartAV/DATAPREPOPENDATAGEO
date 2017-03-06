@@ -19,7 +19,7 @@
           "deps": []
         },
         {
-          "ref": "IGN_COMMUNE_postgis",
+          "ref": "IGN_COMMUNE_FRANCE",
           "deps": []
         }
       ]
@@ -36,11 +36,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488796498914
+    "lastModifiedOn": 1488796521221
   },
   "creationTag": {
     "versionNumber": 0,
