@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488795571956
+    "lastModifiedOn": 1488796402115
   },
   "creationTag": {
     "versionNumber": 0,
@@ -43,7 +43,7 @@
     "normalizeDoubles": true,
     "table": "ign_commune_france",
     "tableCreationMode": "auto",
-    "customPostWriteStatements": "UPDATE \"ign_commune_france\"\n\tSET the_geom \u003d st_SetSRID(st_geomfromtext(the_geom), 4326);\n\n--ALTER TABLE \"ign_troncon_route_postgis\"\n--\tALTER COLUMN the_geom type geography(MultiPolygon)\n--\tUSING the_geom::geography(MultiPolygon);",
+    "customPostWriteStatements": "UPDATE \"ign_commune_france\"\n\tSET the_geom \u003d st_SetSRID(st_geomfromtext(the_geom), 4326);\n\nALTER TABLE \"ign_commune_france\"\n\tALTER COLUMN the_geom type geography(MultiPolygon)\n\tUSING the_geom::geography(MultiPolygon);",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "hasColsWithUnknownTz": false,
