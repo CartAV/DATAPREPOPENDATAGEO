@@ -44,6 +44,28 @@
         },
         "sql": "/* UPDATE \"ign_departement_france\"\n\tSET the_geom \u003d st_SetSRID(st_geomfromtext(the_geom), 4326);\n\n\n\nALTER TABLE \"ign_departement_france\"\n\tALTER COLUMN the_geom type geography(MultiPolygon)\n\tUSING the_geom::geography(MultiPolygon);\n*/\nCREATE INDEX departement_idx ON \"ign_departement_france\"\n    USING gist(the_geom);",
         "expandedSql": "/* UPDATE \"ign_departement_france\"\n\tSET the_geom \u003d st_SetSRID(st_geomfromtext(the_geom), 4326);\n\n\n\nALTER TABLE \"ign_departement_france\"\n\tALTER COLUMN the_geom type geography(MultiPolygon)\n\tUSING the_geom::geography(MultiPolygon);\n*/\nCREATE INDEX departement_idx ON \"ign_departement_france\"\n    USING gist(the_geom);"
+      },
+      {
+        "mode": "SQL",
+        "id": "kdz6tQFpoFNs",
+        "runOn": 1488797884009,
+        "runIn": 67,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "4R4RoDVY7P4Pt9Dn",
+        "hash": "99ae7fef08774c5b60c6baff8cac3533",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "/* UPDATE \"ign_departement_france\"\n\tSET the_geom \u003d st_SetSRID(st_geomfromtext(the_geom), 4326);\n\n\n\nALTER TABLE \"ign_departement_france\"\n\tALTER COLUMN the_geom type geography(MultiPolygon)\n\tUSING the_geom::geography(MultiPolygon);\n*/\nCREATE INDEX commune_idx ON \"ign_commune_france\"\n    USING gist(the_geom);",
+        "expandedSql": "/* UPDATE \"ign_departement_france\"\n\tSET the_geom \u003d st_SetSRID(st_geomfromtext(the_geom), 4326);\n\n\n\nALTER TABLE \"ign_departement_france\"\n\tALTER COLUMN the_geom type geography(MultiPolygon)\n\tUSING the_geom::geography(MultiPolygon);\n*/\nCREATE INDEX commune_idx ON \"ign_commune_france\"\n    USING gist(the_geom);"
       }
     ]
   }
