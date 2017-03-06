@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488789601959
+    "lastModifiedOn": 1488802500322
   },
   "creationTag": {
     "versionNumber": 0,
@@ -43,7 +43,7 @@
     "normalizeDoubles": true,
     "table": "ign_routes_par_commune",
     "tableCreationMode": "auto",
-    "customPostWriteStatements": "ALTER TABLE ign_routes_par_commune\n\tALTER COLUMN st_intersection",
+    "customPostWriteStatements": "-- ALTER TABLE ign_routes_par_commune\n--\tALTER COLUMN st_intersection",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "hasColsWithUnknownTz": false,
