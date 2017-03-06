@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488797408128
+    "lastModifiedOn": 1488797869845
   },
   "creationTag": {
     "versionNumber": 0,
@@ -43,6 +43,7 @@
     "normalizeDoubles": true,
     "table": "ign_departement_france",
     "tableCreationMode": "auto",
+    "customPostWriteStatements": "UPDATE \"ign_departement_france\"\n\tSET the_geom \u003d st_SetSRID(st_geomfromtext(the_geom), 4326);\n\nALTER TABLE \"ign_departement_france\"\n\tALTER COLUMN the_geom type geography(MultiPolygon)\n\tUSING the_geom::geography(MultiPolygon);\n\nCREATE INDEX departement_idx ON \"ign_departement_france\"\n    USING gist(the_geom);",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "hasColsWithUnknownTz": false,
