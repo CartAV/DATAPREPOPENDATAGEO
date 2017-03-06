@@ -1,5 +1,5 @@
 SELECT
-  st_linemerge(st_intersection(commune."the_geom", route."the_geom")),
+  st_linemerge(st_intersection(commune."the_geom", route."the_geom")) as the_geom,
   route."CODE_DEPT",
   route.num_route_or_id
 FROM
