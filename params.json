@@ -1,24 +1,18 @@
 {
-  "projectType": "REGULAR",
-  "owner": "antoinefa",
-  "permissions": [
-    {
-      "group": "opendata",
-      "type": "ANALYST_READWRITE",
-      "runJob": false,
-      "downloadData": true
-    },
-    {
-      "group": "eig",
-      "type": "ADMIN",
-      "runJob": false,
-      "downloadData": true
-    }
-  ],
-  "tutorialProject": false,
-  "settings": {
-    "flowAnchorSourcesAndSinks": true,
-    "exposedComputables": [
+  "dashboardAuthorizations": {
+    "allAuthorized": false,
+    "authorizations": [
+      {
+        "objectRef": {
+          "objectId": "IGN_DEPARTEMENT_FRANCE",
+          "objectType": "DATASET"
+        },
+        "modes": []
+      }
+    ]
+  },
+  "exposedObjects": {
+    "objects": [
       {
         "type": "DATASET",
         "localName": "201601_INSEE_pyramide_ages_prep",
@@ -147,15 +141,82 @@
           }
         ]
       }
-    ],
+    ]
+  },
+  "projectType": "REGULAR",
+  "owner": "antoinefa",
+  "permissions": [
+    {
+      "group": "opendata",
+      "admin": false,
+      "readProjectContent": false,
+      "writeProjectContent": true,
+      "exportDatasetsData": false,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false
+    },
+    {
+      "group": "eig",
+      "admin": true,
+      "readProjectContent": false,
+      "writeProjectContent": false,
+      "exportDatasetsData": false,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false
+    }
+  ],
+  "tutorialProject": false,
+  "settings": {
+    "flowAnchorSourcesAndSinks": true,
     "gitCommitMode": "AUTO",
-    "disableAutomaticTriggers": false
+    "disableAutomaticTriggers": false,
+    "integrations": {
+      "integrations": []
+    },
+    "flowBuildSettings": {
+      "mergeSparkPipelines": false,
+      "pruneBeforeSparkPipelines": true
+    },
+    "limitsSettings": {
+      "memSampleBytes": {
+        "soft": -1,
+        "hard": -1
+      },
+      "shakerMemTableBytes": {
+        "soft": -1,
+        "hard": -1
+      }
+    },
+    "relocationSettings": {
+      "sqlLikeRecipesInitializationMode": "RESOLVED_TABLE_REFERENCES"
+    },
+    "recipeEnginesPreferences": {
+      "forbiddenEngines": [],
+      "enginesPreferenceOrder": [],
+      "forbiddenByRecipeType": {},
+      "preferenceByRecipeType": {}
+    }
   },
   "name": "Dataprep opendata geo",
+  "projectStatus": "Sandbox",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "grabenertr"
+    },
+    "lastModifiedOn": 1488803787910
+  },
   "shortDesc": "The project *Dataprep opendata geo* was created by Fabien Antoine on Jan 13th 2017",
+  "tags": [],
   "checklists": {
     "checklists": []
-  },
-  "tags": [],
-  "projectStatus": "Sandbox"
+  }
 }
