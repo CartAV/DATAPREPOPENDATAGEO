@@ -228,13 +228,13 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488803866156
+    "lastModifiedOn": 1488984523489
   },
-  "shortDesc": "The project *Dataprep opendata geo* was created by Fabien Antoine on Jan 13th 2017",
+  "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
   "checklists": {
     "checklists": []
