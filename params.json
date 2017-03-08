@@ -36,10 +36,6 @@
         "localName": "2016_geohisto_communes_prep",
         "rules": [
           {
-            "targetProject": "ACCIDENTS",
-            "appearOnFlow": true
-          },
-          {
             "targetProject": "CROISEMENTACCIDENTSVERBALISATION",
             "appearOnFlow": true
           },
@@ -202,11 +198,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488984765111
+    "lastModifiedOn": 1488984783334
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
