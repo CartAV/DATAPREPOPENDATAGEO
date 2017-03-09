@@ -15,6 +15,13 @@
           "objectType": "DATASET"
         },
         "modes": []
+      },
+      {
+        "objectRef": {
+          "objectId": "geohisto",
+          "objectType": "DATASET"
+        },
+        "modes": []
       }
     ]
   },
@@ -104,16 +111,6 @@
         "rules": [
           {
             "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
-            "appearOnFlow": true
-          }
-        ]
-      },
-      {
-        "type": "DATASET",
-        "localName": "geohisto",
-        "rules": [
-          {
-            "targetProject": "ACCIDENTS",
             "appearOnFlow": true
           }
         ]
@@ -215,11 +212,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488992094699
+    "lastModifiedOn": 1489068257568
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
