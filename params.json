@@ -4,13 +4,6 @@
     "authorizations": [
       {
         "objectRef": {
-          "objectId": "IGN_COMMUNE_FRANCE",
-          "objectType": "DATASET"
-        },
-        "modes": []
-      },
-      {
-        "objectRef": {
           "objectId": "geohisto_pg",
           "objectType": "DATASET"
         },
@@ -122,16 +115,6 @@
       },
       {
         "type": "DATASET",
-        "localName": "IGN_COMMUNE_FRANCE",
-        "rules": [
-          {
-            "targetProject": "ACCIDENTS",
-            "appearOnFlow": true
-          }
-        ]
-      },
-      {
-        "type": "DATASET",
         "localName": "IGN_DEPARTEMENT_FRANCE",
         "rules": []
       },
@@ -212,11 +195,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489068257568
+    "lastModifiedOn": 1489068310189
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
