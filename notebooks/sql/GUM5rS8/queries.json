@@ -442,6 +442,28 @@
         },
         "sql": "--delete from osm_routes_par_departement where geometrytype(the_geom) \u003d \u0027LINESTRING\u0027\n\n--select distinct(geometrytype(the_geom)) as t, count(*) from osm_routes_par_departement group by t\n\nALTER TABLE \"osm_routes_par_departement\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);",
         "expandedSql": "--delete from osm_routes_par_departement where geometrytype(the_geom) \u003d \u0027LINESTRING\u0027\n\n--select distinct(geometrytype(the_geom)) as t, count(*) from osm_routes_par_departement group by t\n\nALTER TABLE \"osm_routes_par_departement\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);"
+      },
+      {
+        "mode": "SQL",
+        "id": "ED8jW6rETHmY",
+        "runOn": 1489075893197,
+        "runIn": 22320,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "3VfZPEnihD2ipoaY",
+        "hash": "a55fbd0dac086390d581aee28b659927",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "--delete from osm_routes_par_departement where geometrytype(the_geom) \u003d \u0027LINESTRING\u0027\n\n--select distinct(geometrytype(the_geom)) as t, count(*) from osm_routes_par_departement group by t\nCREATE INDEX geom_osm_routes_dep_idx ON \"osm_routes_par_departement\"\n\tUSING GIST(the_geom);",
+        "expandedSql": "--delete from osm_routes_par_departement where geometrytype(the_geom) \u003d \u0027LINESTRING\u0027\n\n--select distinct(geometrytype(the_geom)) as t, count(*) from osm_routes_par_departement group by t\nCREATE INDEX geom_osm_routes_dep_idx ON \"osm_routes_par_departement\"\n\tUSING GIST(the_geom);"
       }
     ]
   }
