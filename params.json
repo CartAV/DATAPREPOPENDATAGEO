@@ -22,6 +22,13 @@
           "objectType": "DATASET"
         },
         "modes": []
+      },
+      {
+        "objectRef": {
+          "objectId": "IGN_COMMUNE_FRANCE",
+          "objectType": "DATASET"
+        },
+        "modes": []
       }
     ]
   },
@@ -144,6 +151,16 @@
             "appearOnFlow": true
           }
         ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "IGN_COMMUNE_FRANCE",
+        "rules": [
+          {
+            "targetProject": "GECODAGE_ACCIDENTS",
+            "appearOnFlow": true
+          }
+        ]
       }
     ]
   },
@@ -212,11 +229,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489070967190
+    "lastModifiedOn": 1489072676823
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
