@@ -398,6 +398,28 @@
         },
         "sql": "delete from osm_routes_par_departement where geometrytype(the_geom) \u003d \u0027LINESTRING\u0027\n\n--select distinct(geometrytype(the_geom)) as t, count(*) from osm_routes_par_departement group by t",
         "expandedSql": "delete from osm_routes_par_departement where geometrytype(the_geom) \u003d \u0027LINESTRING\u0027\n\n--select distinct(geometrytype(the_geom)) as t, count(*) from osm_routes_par_departement group by t"
+      },
+      {
+        "mode": "SQL",
+        "id": "xA1wT5OBS1zY",
+        "runOn": 1489075740326,
+        "runIn": 5447,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "TW2XfLL8CrN93WOU",
+        "hash": "9ae8cfb8672c7dd30c97cad98cf1c04c",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "--delete from osm_routes_par_departement where geometrytype(the_geom) \u003d \u0027LINESTRING\u0027\n\nselect distinct(geometrytype(the_geom)) as t, count(*) from osm_routes_par_departement group by t",
+        "expandedSql": "--delete from osm_routes_par_departement where geometrytype(the_geom) \u003d \u0027LINESTRING\u0027\n\nselect distinct(geometrytype(the_geom)) as t, count(*) from osm_routes_par_departement group by t"
       }
     ]
   }
