@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489056863587
+    "lastModifiedOn": 1489056908990
   },
   "creationTag": {
     "versionNumber": 0,
@@ -43,7 +43,7 @@
     "normalizeDoubles": true,
     "table": "ign_commune_france",
     "tableCreationMode": "auto",
-    "customPostWriteStatements": "UPDATE \"ign_commune_france\"\n\tSET the_geom \u003d st_SetSRID(st_geomfromtext(the_geom), 4326);\n\nALTER TABLE \"ign_commune_france\"\n\tALTER COLUMN the_geom type geography(MultiPolygon)\n\tUSING the_geom::geography(MultiPolygon);\n\nCREATE INDEX commune_idx ON \"ign_commune_france\"\n    USING gist(the_geom);\n\nCREATE INDEX commune_insee idx ON \"ign_commune_france\"(insee_com);",
+    "customPostWriteStatements": "UPDATE \"ign_commune_france\"\n\tSET the_geom \u003d st_SetSRID(st_geomfromtext(the_geom), 4326);\n\nALTER TABLE \"ign_commune_france\"\n\tALTER COLUMN the_geom type geography(MultiPolygon)\n\tUSING the_geom::geography(MultiPolygon);\n\nCREATE INDEX commune_idx ON \"ign_commune_france\"\n    USING gist(the_geom);\n\nCREATE INDEX commune_insee_idx ON \"ign_commune_france\"(\"INSEE_COM\");",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "hasColsWithUnknownTz": false,
