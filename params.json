@@ -15,6 +15,13 @@
           "objectType": "DATASET"
         },
         "modes": []
+      },
+      {
+        "objectRef": {
+          "objectId": "osm_france",
+          "objectType": "DATASET"
+        },
+        "modes": []
       }
     ]
   },
@@ -127,6 +134,16 @@
             "appearOnFlow": true
           }
         ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "osm_france",
+        "rules": [
+          {
+            "targetProject": "GECODAGE_ACCIDENTS",
+            "appearOnFlow": true
+          }
+        ]
       }
     ]
   },
@@ -195,11 +212,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489068310189
+    "lastModifiedOn": 1489070967190
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
