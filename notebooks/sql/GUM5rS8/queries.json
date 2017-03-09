@@ -420,6 +420,28 @@
         },
         "sql": "--delete from osm_routes_par_departement where geometrytype(the_geom) \u003d \u0027LINESTRING\u0027\n\nselect distinct(geometrytype(the_geom)) as t, count(*) from osm_routes_par_departement group by t",
         "expandedSql": "--delete from osm_routes_par_departement where geometrytype(the_geom) \u003d \u0027LINESTRING\u0027\n\nselect distinct(geometrytype(the_geom)) as t, count(*) from osm_routes_par_departement group by t"
+      },
+      {
+        "mode": "SQL",
+        "id": "rMWpgRhoAKZd",
+        "runOn": 1489075821107,
+        "runIn": 17074,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "tkq9w1nNf8f171TW",
+        "hash": "94536a259667c622c5898dc2c0eb8f1e",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "--delete from osm_routes_par_departement where geometrytype(the_geom) \u003d \u0027LINESTRING\u0027\n\n--select distinct(geometrytype(the_geom)) as t, count(*) from osm_routes_par_departement group by t\n\nALTER TABLE \"osm_routes_par_departement\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);",
+        "expandedSql": "--delete from osm_routes_par_departement where geometrytype(the_geom) \u003d \u0027LINESTRING\u0027\n\n--select distinct(geometrytype(the_geom)) as t, count(*) from osm_routes_par_departement group by t\n\nALTER TABLE \"osm_routes_par_departement\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);"
       }
     ]
   }
