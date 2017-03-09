@@ -308,6 +308,28 @@
         },
         "sql": "/* UPDATE \"ign_departement_france\"\n\tSET the_geom \u003d st_SetSRID(st_geomfromtext(the_geom), 4326);\n\n\n\nALTER TABLE \"ign_departement_france\"\n\tALTER COLUMN the_geom type geography(MultiPolygon)\n\tUSING the_geom::geography(MultiPolygon);\n\nCREATE INDEX commune_idx ON \"ign_commune_france\"\n    USING gist(the_geom);\n*/\n-- CREATE INDEX commune_insee_idx ON \"ign_commune_france\"(\"INSEE_COM\");\nALTER TABLE \"osm_routes_par_departement\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using st_MlineFromText(the_geom);\n\nCREATE INDEX geom_osm_routes_dep_idx ON \"osm_routes_par_departement\"\n\tUSING GIST(the_geom);",
         "expandedSql": "/* UPDATE \"ign_departement_france\"\n\tSET the_geom \u003d st_SetSRID(st_geomfromtext(the_geom), 4326);\n\n\n\nALTER TABLE \"ign_departement_france\"\n\tALTER COLUMN the_geom type geography(MultiPolygon)\n\tUSING the_geom::geography(MultiPolygon);\n\nCREATE INDEX commune_idx ON \"ign_commune_france\"\n    USING gist(the_geom);\n*/\n-- CREATE INDEX commune_insee_idx ON \"ign_commune_france\"(\"INSEE_COM\");\nALTER TABLE \"osm_routes_par_departement\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using st_MlineFromText(the_geom);\n\nCREATE INDEX geom_osm_routes_dep_idx ON \"osm_routes_par_departement\"\n\tUSING GIST(the_geom);"
+      },
+      {
+        "mode": "SQL",
+        "id": "cgxdAwDKBWN4",
+        "runOn": 1489075417376,
+        "runIn": 154,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "vuHtCpnxxpizA9WX",
+        "hash": "9c1aab62212a40ba4a1be0ec5c461a97",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "/* UPDATE \"ign_departement_france\"\n\tSET the_geom \u003d st_SetSRID(st_geomfromtext(the_geom), 4326);\n\n\n\nALTER TABLE \"ign_departement_france\"\n\tALTER COLUMN the_geom type geography(MultiPolygon)\n\tUSING the_geom::geography(MultiPolygon);\n\nCREATE INDEX commune_idx ON \"ign_commune_france\"\n    USING gist(the_geom);\n*/\n-- CREATE INDEX commune_insee_idx ON \"ign_commune_france\"(\"INSEE_COM\");\nALTER TABLE \"osm_routes_par_departement\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using st_MlineFromWKB(the_geom);\n\nCREATE INDEX geom_osm_routes_dep_idx ON \"osm_routes_par_departement\"\n\tUSING GIST(the_geom);",
+        "expandedSql": "/* UPDATE \"ign_departement_france\"\n\tSET the_geom \u003d st_SetSRID(st_geomfromtext(the_geom), 4326);\n\n\n\nALTER TABLE \"ign_departement_france\"\n\tALTER COLUMN the_geom type geography(MultiPolygon)\n\tUSING the_geom::geography(MultiPolygon);\n\nCREATE INDEX commune_idx ON \"ign_commune_france\"\n    USING gist(the_geom);\n*/\n-- CREATE INDEX commune_insee_idx ON \"ign_commune_france\"(\"INSEE_COM\");\nALTER TABLE \"osm_routes_par_departement\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using st_MlineFromWKB(the_geom);\n\nCREATE INDEX geom_osm_routes_dep_idx ON \"osm_routes_par_departement\"\n\tUSING GIST(the_geom);"
       }
     ]
   }
