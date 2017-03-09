@@ -66,6 +66,28 @@
         },
         "sql": "/* UPDATE \"ign_departement_france\"\n\tSET the_geom \u003d st_SetSRID(st_geomfromtext(the_geom), 4326);\n\n\n\nALTER TABLE \"ign_departement_france\"\n\tALTER COLUMN the_geom type geography(MultiPolygon)\n\tUSING the_geom::geography(MultiPolygon);\n*/\nCREATE INDEX commune_idx ON \"ign_commune_france\"\n    USING gist(the_geom);",
         "expandedSql": "/* UPDATE \"ign_departement_france\"\n\tSET the_geom \u003d st_SetSRID(st_geomfromtext(the_geom), 4326);\n\n\n\nALTER TABLE \"ign_departement_france\"\n\tALTER COLUMN the_geom type geography(MultiPolygon)\n\tUSING the_geom::geography(MultiPolygon);\n*/\nCREATE INDEX commune_idx ON \"ign_commune_france\"\n    USING gist(the_geom);"
+      },
+      {
+        "mode": "SQL",
+        "id": "u2QEu6aeqqkY",
+        "runOn": 1489056883517,
+        "runIn": 284,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "gCQX1mUomwaSc6dK",
+        "hash": "f7044c5baeec5a8dea2a079e7c12993b",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "/* UPDATE \"ign_departement_france\"\n\tSET the_geom \u003d st_SetSRID(st_geomfromtext(the_geom), 4326);\n\n\n\nALTER TABLE \"ign_departement_france\"\n\tALTER COLUMN the_geom type geography(MultiPolygon)\n\tUSING the_geom::geography(MultiPolygon);\n\nCREATE INDEX commune_idx ON \"ign_commune_france\"\n    USING gist(the_geom);\n*/\nCREATE INDEX commune_insee idx ON \"ign_commune_france\"(insee_com);",
+        "expandedSql": "/* UPDATE \"ign_departement_france\"\n\tSET the_geom \u003d st_SetSRID(st_geomfromtext(the_geom), 4326);\n\n\n\nALTER TABLE \"ign_departement_france\"\n\tALTER COLUMN the_geom type geography(MultiPolygon)\n\tUSING the_geom::geography(MultiPolygon);\n\nCREATE INDEX commune_idx ON \"ign_commune_france\"\n    USING gist(the_geom);\n*/\nCREATE INDEX commune_insee idx ON \"ign_commune_france\"(insee_com);"
       }
     ]
   }
