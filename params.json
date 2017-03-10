@@ -43,6 +43,13 @@
           "objectType": "DATASET"
         },
         "modes": []
+      },
+      {
+        "objectRef": {
+          "objectId": "departements_wgs84_prep",
+          "objectType": "DATASET"
+        },
+        "modes": []
       }
     ]
   },
@@ -128,16 +135,6 @@
       },
       {
         "type": "DATASET",
-        "localName": "departements_wgs84_prep",
-        "rules": [
-          {
-            "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
-            "appearOnFlow": true
-          }
-        ]
-      },
-      {
-        "type": "DATASET",
         "localName": "IGN_TRONCON_ROUTE_postgis",
         "rules": []
       },
@@ -185,6 +182,20 @@
         "type": "DATASET",
         "localName": "IGN_DEPARTEMENT_FRANCE",
         "rules": [
+          {
+            "targetProject": "ACCIDENTS",
+            "appearOnFlow": true
+          }
+        ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "departements_wgs84_prep",
+        "rules": [
+          {
+            "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
+            "appearOnFlow": true
+          },
           {
             "targetProject": "ACCIDENTS",
             "appearOnFlow": true
@@ -258,11 +269,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489164207053
+    "lastModifiedOn": 1489164288424
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
