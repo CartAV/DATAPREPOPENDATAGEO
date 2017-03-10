@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489076129242
+    "lastModifiedOn": 1489144262989
   },
   "creationTag": {
     "versionNumber": 0,
@@ -43,6 +43,7 @@
     "normalizeDoubles": true,
     "table": "osm_routes_par_commune",
     "tableCreationMode": "auto",
+    "customPostWriteStatements": "-- Il y a 21 géométries vides\nDELETE FROM osm_routes_par_commune\n\tWHERE st_isempty(the_geom);\n\nUPDATE osm_routes_par_commune \n\tSET the_geom \u003d st_multi(the_geom)\n\tWHERE geometrytype(the_geom) \u003d \u0027LINESTRING\u0027\n\n\nALTER TABLE \"osm_routes_par_commune\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n\nCREATE INDEX geom_osm_routes_com_idx ON \"osm_routes_par_commune\"\n\tUSING GIST(the_geom);",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "hasColsWithUnknownTz": false,
