@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489144262989
+    "lastModifiedOn": 1489151622806
   },
   "creationTag": {
     "versionNumber": 0,
@@ -59,7 +59,7 @@
         "maxLength": -1
       },
       {
-        "name": "CODE_DEPT",
+        "name": "CODE_COM",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
