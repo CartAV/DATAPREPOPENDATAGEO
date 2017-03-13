@@ -489,6 +489,30 @@
         "sql": "select * from \"caracteristiques_prep_geo_joined2\" where \"Num_Acc\" \u003d \u0027200600058736\u0027 ",
         "expandedSql": "select * from \"caracteristiques_prep_geo_joined2\" where \"Num_Acc\" \u003d \u0027200600058736\u0027 "
       }
+    ],
+    "vj79utvavdi": [
+      {
+        "mode": "SQL",
+        "id": "lgOLqbzKIkZf",
+        "runOn": 1489424189916,
+        "runIn": -1,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "GbWY282Dg6b0nVIM",
+        "hash": "9dbd735b68f44f1d8616b92d2488429d",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select st_asgeojson(st_union(the_geom)) from\n\"ign_commune_france\" where insee_com \u003d \u002713055\u0027",
+        "expandedSql": "select st_asgeojson(st_union(the_geom)) from\n\"ign_commune_france\" where insee_com \u003d \u002713055\u0027"
+      }
     ]
   }
 }
