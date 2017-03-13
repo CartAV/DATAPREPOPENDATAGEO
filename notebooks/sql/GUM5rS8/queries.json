@@ -622,6 +622,28 @@
         },
         "sql": "select count(1) from --st_asgeojson(st_union(the_geom::geometry)) from\n\"ign_commune_france\" where \"INSEE_COM\" like \u0027132%\u0027",
         "expandedSql": "select count(1) from --st_asgeojson(st_union(the_geom::geometry)) from\n\"ign_commune_france\" where \"INSEE_COM\" like \u0027132%\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "LgkO6EQNouZo",
+        "runOn": 1489424245984,
+        "runIn": 59,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "IVmBlqeHzXOm2rlX",
+        "hash": "c88e21e4b5f1041cd5fdcb2850b0f1e5",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select st_asgeojson(st_union(the_geom::geometry)) from\n\"ign_commune_france\" where \"INSEE_COM\" like \u0027132%\u0027",
+        "expandedSql": "select st_asgeojson(st_union(the_geom::geometry)) from\n\"ign_commune_france\" where \"INSEE_COM\" like \u0027132%\u0027"
       }
     ]
   }
