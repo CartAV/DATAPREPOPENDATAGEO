@@ -6,4 +6,4 @@ FROM
   osm_routes_par_departement as route,
   ign_commune_france as commune
 WHERE
-  st_intersects(commune."the_geom", route."the_geom")
+  commune."the_geom" && route."the_geom"
