@@ -1,134 +1,141 @@
 {
-  "steps": [
+  "explorationFilters": [
     {
-      "type": "FilterOnValue",
-      "params": {
-        "values": [
-          "75056"
-        ],
-        "matchingMode": "FULL_STRING",
-        "normalizationMode": "EXACT",
-        "action": "REMOVE_ROW",
-        "booleanMode": "AND",
-        "appliesTo": "SINGLE_COLUMN",
-        "columns": [
-          "Code INSEE"
-        ]
+      "$$hashKey": "DMB",
+      "type": "global_search"
+    },
+    {
+      "facet": {
+        "sort": "count",
+        "columnType": "ALPHANUM",
+        "column": "Région",
+        "currentMode": "ALPHANUM",
+        "selectedValues": {
+          "Île-de-France": true
+        },
+        "type": "facet"
       },
-      "metaType": "PROCESSOR",
-      "preview": true,
-      "disabled": false,
-      "alwaysShowComment": false
+      "$$hashKey": "DTG",
+      "validityFilter": {
+        "column": "Région",
+        "params": {
+          "nok": true,
+          "empty": true,
+          "ok": true,
+          "type": "Text"
+        },
+        "type": "validity"
+      },
+      "alphanumFilter": {
+        "values": [],
+        "column": "Région",
+        "params": {
+          "normalization": "exact",
+          "mode": "full_string"
+        },
+        "type": "alphanum"
+      },
+      "column": "Région",
+      "currentMode": "FACET",
+      "active": true,
+      "type": "columnFilter"
+    },
+    {
+      "facet": {
+        "sort": "count",
+        "columnType": "ALPHANUM",
+        "column": "Code Département",
+        "currentMode": "ALPHANUM",
+        "selectedValues": {
+          "75": true
+        },
+        "type": "facet"
+      },
+      "$$hashKey": "E58",
+      "validityFilter": {
+        "column": "Code Département",
+        "params": {
+          "nok": true,
+          "empty": true,
+          "ok": true,
+          "type": "Text"
+        },
+        "type": "validity"
+      },
+      "alphanumFilter": {
+        "values": [],
+        "column": "Code Département",
+        "params": {
+          "normalization": "exact",
+          "mode": "full_string"
+        },
+        "type": "alphanum"
+      },
+      "column": "Code Département",
+      "currentMode": "FACET",
+      "active": true,
+      "type": "columnFilter"
     }
   ],
-  "tags": [],
-  "origin": "PREPARE_RECIPE",
+  "maxProcessedMemTableBytes": -1,
+  "analysisColumnData": {},
   "columnsSelection": {
     "mode": "ALL"
   },
+  "globalSearchQuery": "",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "origin": "PREPARE_RECIPE",
+  "sorting": [],
   "coloring": {
-    "scheme": "MEANING_AND_STATUS",
     "individualColumns": [],
+    "scheme": "MEANING_AND_STATUS",
     "valueColoringMode": "HASH"
   },
-  "analysisColumnData": {},
-  "explorationSampling": {
-    "selection": {
-      "samplingMethod": "HEAD_SEQUENTIAL",
-      "partitionSelectionMethod": "ALL",
-      "maxRecords": 100000,
-      "targetRatio": 0.02
-    },
-    "autoRefreshSample": false,
-    "_refreshTrigger": 1
-  },
-  "vizSampling": {
-    "autoRefreshSample": false,
-    "_refreshTrigger": 0
-  },
+  "steps": [
+    {
+      "alwaysShowComment": false,
+      "preview": true,
+      "params": {
+        "matchingMode": "FULL_STRING",
+        "values": [
+          "75056"
+        ],
+        "booleanMode": "AND",
+        "normalizationMode": "EXACT",
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "Code INSEE"
+        ],
+        "action": "REMOVE_ROW"
+      },
+      "type": "FilterOnValue",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    }
+  ],
   "exploreUIParams": {
     "autoRefresh": true
   },
-  "globalSearchQuery": "",
-  "explorationFilters": [
-    {
-      "type": "global_search",
-      "$$hashKey": "DMB"
-    },
-    {
-      "column": "Région",
-      "type": "columnFilter",
-      "currentMode": "FACET",
-      "active": true,
-      "facet": {
-        "type": "facet",
-        "column": "Région",
-        "columnType": "ALPHANUM",
-        "currentMode": "ALPHANUM",
-        "sort": "count",
-        "selectedValues": {
-          "Île-de-France": true
-        }
-      },
-      "alphanumFilter": {
-        "type": "alphanum",
-        "column": "Région",
-        "values": [],
-        "params": {
-          "mode": "full_string",
-          "normalization": "exact"
-        }
-      },
-      "validityFilter": {
-        "type": "validity",
-        "column": "Région",
-        "params": {
-          "type": "Text",
-          "ok": true,
-          "nok": true,
-          "empty": true
-        }
-      },
-      "$$hashKey": "DTG"
-    },
-    {
-      "column": "Code Département",
-      "type": "columnFilter",
-      "currentMode": "FACET",
-      "active": true,
-      "facet": {
-        "type": "facet",
-        "column": "Code Département",
-        "columnType": "ALPHANUM",
-        "currentMode": "ALPHANUM",
-        "sort": "count",
-        "selectedValues": {
-          "75": true
-        }
-      },
-      "alphanumFilter": {
-        "type": "alphanum",
-        "column": "Code Département",
-        "values": [],
-        "params": {
-          "mode": "full_string",
-          "normalization": "exact"
-        }
-      },
-      "validityFilter": {
-        "type": "validity",
-        "column": "Code Département",
-        "params": {
-          "type": "Text",
-          "ok": true,
-          "nok": true,
-          "empty": true
-        }
-      },
-      "$$hashKey": "E58"
-    }
-  ],
   "previewMode": "ALL_ROWS",
-  "charts": [],
-  "chartsEngine": "LINO"
+  "explorationSampling": {
+    "_refreshTrigger": 1,
+    "autoRefreshSample": false,
+    "selection": {
+      "targetRatio": 0.02,
+      "maxRecords": 100000,
+      "maxStoredBytes": -1,
+      "partitionSelectionMethod": "ALL",
+      "withinFirstN": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "latestPartitionsN": 1,
+      "maxReadUncompressedBytes": -1,
+      "filter": {
+        "enabled": false,
+        "distinct": false
+      }
+    }
+  }
 }
