@@ -534,6 +534,28 @@
         },
         "sql": "select st_asgeojson(st_union(the_geom::geometry)) from\n\"ign_commune_france\" where insee_com \u003d \u002713055\u0027",
         "expandedSql": "select st_asgeojson(st_union(the_geom::geometry)) from\n\"ign_commune_france\" where insee_com \u003d \u002713055\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "jjqemgWw5utT",
+        "runOn": 1489424202896,
+        "runIn": 50,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "bhhkx68WAIvNatbq",
+        "hash": "93d554666a58c90f71cc47121bf2a304",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select st_asgeojson(st_union(the_geom::geometry)) from\n\"ign_commune_france\" where INSEE_COM \u003d \u002713055\u0027",
+        "expandedSql": "select st_asgeojson(st_union(the_geom::geometry)) from\n\"ign_commune_france\" where INSEE_COM \u003d \u002713055\u0027"
       }
     ]
   }
