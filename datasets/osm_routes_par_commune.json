@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489409821073
+    "lastModifiedOn": 1489419869543
   },
   "creationTag": {
     "versionNumber": 0,
@@ -59,7 +59,7 @@
         "maxLength": -1
       },
       {
-        "name": "CODE_COM",
+        "name": "INSEE_COM",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
