@@ -471,10 +471,10 @@
         "mode": "SQL",
         "id": "OVLTsRxaryEx",
         "runOn": 1489395829809,
-        "runIn": -1,
+        "runIn": 52,
         "runBy": "grabenertr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "pR2N7uxHct7HGXw6",
         "hash": "db9faa3f6ad70bffa8ca533a0656995f",
         "querySettings": {
