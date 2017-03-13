@@ -465,6 +465,30 @@
         "sql": "--delete from osm_routes_par_departement where geometrytype(the_geom) \u003d \u0027LINESTRING\u0027\n\n--select distinct(geometrytype(the_geom)) as t, count(*) from osm_routes_par_departement group by t\nCREATE INDEX geom_osm_routes_dep_idx ON \"osm_routes_par_departement\"\n\tUSING GIST(the_geom);",
         "expandedSql": "--delete from osm_routes_par_departement where geometrytype(the_geom) \u003d \u0027LINESTRING\u0027\n\n--select distinct(geometrytype(the_geom)) as t, count(*) from osm_routes_par_departement group by t\nCREATE INDEX geom_osm_routes_dep_idx ON \"osm_routes_par_departement\"\n\tUSING GIST(the_geom);"
       }
+    ],
+    "nplenar5bq": [
+      {
+        "mode": "SQL",
+        "id": "OVLTsRxaryEx",
+        "runOn": 1489395829809,
+        "runIn": -1,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "pR2N7uxHct7HGXw6",
+        "hash": "db9faa3f6ad70bffa8ca533a0656995f",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"caracteristiques_prep_geo_joined2\" where \"Num_Acc\" \u003d \u0027200600058736\u0027 ",
+        "expandedSql": "select * from \"caracteristiques_prep_geo_joined2\" where \"Num_Acc\" \u003d \u0027200600058736\u0027 "
+      }
     ]
   }
 }
