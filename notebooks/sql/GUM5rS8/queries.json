@@ -530,6 +530,28 @@
         },
         "sql": "select count(*) as count, \"num_route_or_id\"\nfrom \"osm_routes_par_commune\"\ngroup by  \"num_route_or_id\"\norder by count DESC\nlimit 100",
         "expandedSql": "select count(*) as count, \"num_route_or_id\"\nfrom \"osm_routes_par_commune\"\ngroup by  \"num_route_or_id\"\norder by count DESC\nlimit 100"
+      },
+      {
+        "mode": "SQL",
+        "id": "o0k6pnwJJsof",
+        "runOn": 1489485982828,
+        "runIn": 31786,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "KJSLmQReP1yVIcPk",
+        "hash": "007f2428214f7bed49c1d2165ab77571",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(distinct(\"INSEE_COM\")) as count, \"num_route_or_id\"\nfrom \"osm_routes_par_commune\"\ngroup by  \"num_route_or_id\"\norder by count DESC\nlimit 100",
+        "expandedSql": "select count(distinct(\"INSEE_COM\")) as count, \"num_route_or_id\"\nfrom \"osm_routes_par_commune\"\ngroup by  \"num_route_or_id\"\norder by count DESC\nlimit 100"
       }
     ],
     "nplenar5bq": [
