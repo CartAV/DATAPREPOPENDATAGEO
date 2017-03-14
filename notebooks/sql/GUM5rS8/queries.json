@@ -464,6 +464,28 @@
         },
         "sql": "--delete from osm_routes_par_departement where geometrytype(the_geom) \u003d \u0027LINESTRING\u0027\n\n--select distinct(geometrytype(the_geom)) as t, count(*) from osm_routes_par_departement group by t\nCREATE INDEX geom_osm_routes_dep_idx ON \"osm_routes_par_departement\"\n\tUSING GIST(the_geom);",
         "expandedSql": "--delete from osm_routes_par_departement where geometrytype(the_geom) \u003d \u0027LINESTRING\u0027\n\n--select distinct(geometrytype(the_geom)) as t, count(*) from osm_routes_par_departement group by t\nCREATE INDEX geom_osm_routes_dep_idx ON \"osm_routes_par_departement\"\n\tUSING GIST(the_geom);"
+      },
+      {
+        "mode": "SQL",
+        "id": "zW7pMyn1jvvd",
+        "runOn": 1489485805384,
+        "runIn": 23639,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "nZ6fQP30QXndgElk",
+        "hash": "e61f2ca68437ac9e31066d7c7e505a5a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*) as count, \"num_route_or_id\", \"INSEE_COM\"\nfrom \"osm_routes_par_commune\"\ngroup by \"INSEE_COM\", \"num_route_or_id\"\norder by count DESC\nlimit 100",
+        "expandedSql": "select count(*) as count, \"num_route_or_id\", \"INSEE_COM\"\nfrom \"osm_routes_par_commune\"\ngroup by \"INSEE_COM\", \"num_route_or_id\"\norder by count DESC\nlimit 100"
       }
     ],
     "nplenar5bq": [
