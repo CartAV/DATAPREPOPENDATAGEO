@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489595608289
+    "lastModifiedOn": 1489595683155
   },
   "creationTag": {
     "versionNumber": 0,
@@ -53,12 +53,6 @@
     "columns": [
       {
         "name": "the_geom",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "shp_srs",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
