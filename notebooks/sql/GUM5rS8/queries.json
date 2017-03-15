@@ -972,6 +972,28 @@
         },
         "sql": "\nINSERT INTO \"ign_commune_france\"\n\t(the_geom, \"INSEE_COM\", \"NOM_COM\", \"STATUT\", \"SUPERFICIE\", \"POPULATION\", \"CODE_DEPT\", \"NOM_DEPT\", \"CODE_REG\", \"NOM_REG\")\n\t (SELECT\n          st_multi(st_union(the_geom::geometry)), \u002769123\u0027, \u0027Lyon\u0027, \u0027Commune\u0027, sum(\"SUPERFICIE\"::integer), sum(\"POPULATION\"::integer), max(\"CODE_DEPT\"), max(\"NOM_DEPT\"), max(\"CODE_REG\"), max(\"NOM_REG\")\n          FROM \"ign_commune_france\"\n          WHERE \"INSEE_COM\" like \u00276938%\u0027)",
         "expandedSql": "\nINSERT INTO \"ign_commune_france\"\n\t(the_geom, \"INSEE_COM\", \"NOM_COM\", \"STATUT\", \"SUPERFICIE\", \"POPULATION\", \"CODE_DEPT\", \"NOM_DEPT\", \"CODE_REG\", \"NOM_REG\")\n\t (SELECT\n          st_multi(st_union(the_geom::geometry)), \u002769123\u0027, \u0027Lyon\u0027, \u0027Commune\u0027, sum(\"SUPERFICIE\"::integer), sum(\"POPULATION\"::integer), max(\"CODE_DEPT\"), max(\"NOM_DEPT\"), max(\"CODE_REG\"), max(\"NOM_REG\")\n          FROM \"ign_commune_france\"\n          WHERE \"INSEE_COM\" like \u00276938%\u0027)"
+      },
+      {
+        "mode": "SQL",
+        "id": "ymddqU8sUkUc",
+        "runOn": 1489576525258,
+        "runIn": 108,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "Kooj0OqKdKW28hs2",
+        "hash": "9962f233cacba9a462c641dd4ba6ca4c",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "\nselect * from ign_commune_france where \"INSEE_COM\" in (\u002775056\u0027, \u002713055\u0027, \u002769123\u0027)",
+        "expandedSql": "\nselect * from ign_commune_france where \"INSEE_COM\" in (\u002775056\u0027, \u002713055\u0027, \u002769123\u0027)"
       }
     ],
     "vj79utvavdi": [
