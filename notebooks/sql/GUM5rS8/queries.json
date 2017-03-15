@@ -708,6 +708,28 @@
         },
         "sql": "SELECT\n          st_union(the_geom::geometry), \u002775056\u0027, \u0027Paris\u0027, \u0027Commune\u0027, sum(\"SUPERFICIE\"::integer), sum(\"POPULATION\"::integer), max(\"CODE_DEPT\"), max(\"NOM_DEPT\"), max(\"CODE_REG\"), max(\"NOM_REG\")\n          FROM \"ign_commune_france\"\n          WHERE \"CODE_COM\" like \"751%\"",
         "expandedSql": "SELECT\n          st_union(the_geom::geometry), \u002775056\u0027, \u0027Paris\u0027, \u0027Commune\u0027, sum(\"SUPERFICIE\"::integer), sum(\"POPULATION\"::integer), max(\"CODE_DEPT\"), max(\"NOM_DEPT\"), max(\"CODE_REG\"), max(\"NOM_REG\")\n          FROM \"ign_commune_france\"\n          WHERE \"CODE_COM\" like \"751%\""
+      },
+      {
+        "mode": "SQL",
+        "id": "Dw4BYjV1djJN",
+        "runOn": 1489576131651,
+        "runIn": 408,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "nlMXDAwQh5ukrvQU",
+        "hash": "feab1d9c96947f3cb1ac19891c1aa3a5",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT\n          st_union(the_geom::geometry), \u002775056\u0027, \u0027Paris\u0027, \u0027Commune\u0027, sum(\"SUPERFICIE\"::integer), sum(\"POPULATION\"::integer), max(\"CODE_DEPT\"), max(\"NOM_DEPT\"), max(\"CODE_REG\"), max(\"NOM_REG\")\n          FROM \"ign_commune_france\"\n          WHERE \"CODE_COM\" like \u0027751%\u0027",
+        "expandedSql": "SELECT\n          st_union(the_geom::geometry), \u002775056\u0027, \u0027Paris\u0027, \u0027Commune\u0027, sum(\"SUPERFICIE\"::integer), sum(\"POPULATION\"::integer), max(\"CODE_DEPT\"), max(\"NOM_DEPT\"), max(\"CODE_REG\"), max(\"NOM_REG\")\n          FROM \"ign_commune_france\"\n          WHERE \"CODE_COM\" like \u0027751%\u0027"
       }
     ],
     "vj79utvavdi": [
