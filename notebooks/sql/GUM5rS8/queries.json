@@ -950,6 +950,28 @@
         },
         "sql": "\nINSERT INTO \"ign_commune_france\"\n\t(the_geom, \"INSEE_COM\", \"NOM_COM\", \"STATUT\", \"SUPERFICIE\", \"POPULATION\", \"CODE_DEPT\", \"NOM_DEPT\", \"CODE_REG\", \"NOM_REG\")\n\t (SELECT\n          st_multi(st_union(the_geom::geometry)), \u002713055\u0027, \u0027Marseille\u0027, \u0027Commune\u0027, sum(\"SUPERFICIE\"::integer), sum(\"POPULATION\"::integer), max(\"CODE_DEPT\"), max(\"NOM_DEPT\"), max(\"CODE_REG\"), max(\"NOM_REG\")\n          FROM \"ign_commune_france\"\n          WHERE \"INSEE_COM\" like \u00271352\u0027)",
         "expandedSql": "\nINSERT INTO \"ign_commune_france\"\n\t(the_geom, \"INSEE_COM\", \"NOM_COM\", \"STATUT\", \"SUPERFICIE\", \"POPULATION\", \"CODE_DEPT\", \"NOM_DEPT\", \"CODE_REG\", \"NOM_REG\")\n\t (SELECT\n          st_multi(st_union(the_geom::geometry)), \u002713055\u0027, \u0027Marseille\u0027, \u0027Commune\u0027, sum(\"SUPERFICIE\"::integer), sum(\"POPULATION\"::integer), max(\"CODE_DEPT\"), max(\"NOM_DEPT\"), max(\"CODE_REG\"), max(\"NOM_REG\")\n          FROM \"ign_commune_france\"\n          WHERE \"INSEE_COM\" like \u00271352\u0027)"
+      },
+      {
+        "mode": "SQL",
+        "id": "YHDJ5VB2BClR",
+        "runOn": 1489576487882,
+        "runIn": 83,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "VzhazySY1KvNb1lj",
+        "hash": "50081b6b9a857deac466165675ec839d",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "\nINSERT INTO \"ign_commune_france\"\n\t(the_geom, \"INSEE_COM\", \"NOM_COM\", \"STATUT\", \"SUPERFICIE\", \"POPULATION\", \"CODE_DEPT\", \"NOM_DEPT\", \"CODE_REG\", \"NOM_REG\")\n\t (SELECT\n          st_multi(st_union(the_geom::geometry)), \u002769123\u0027, \u0027Lyon\u0027, \u0027Commune\u0027, sum(\"SUPERFICIE\"::integer), sum(\"POPULATION\"::integer), max(\"CODE_DEPT\"), max(\"NOM_DEPT\"), max(\"CODE_REG\"), max(\"NOM_REG\")\n          FROM \"ign_commune_france\"\n          WHERE \"INSEE_COM\" like \u00276938%\u0027)",
+        "expandedSql": "\nINSERT INTO \"ign_commune_france\"\n\t(the_geom, \"INSEE_COM\", \"NOM_COM\", \"STATUT\", \"SUPERFICIE\", \"POPULATION\", \"CODE_DEPT\", \"NOM_DEPT\", \"CODE_REG\", \"NOM_REG\")\n\t (SELECT\n          st_multi(st_union(the_geom::geometry)), \u002769123\u0027, \u0027Lyon\u0027, \u0027Commune\u0027, sum(\"SUPERFICIE\"::integer), sum(\"POPULATION\"::integer), max(\"CODE_DEPT\"), max(\"NOM_DEPT\"), max(\"CODE_REG\"), max(\"NOM_REG\")\n          FROM \"ign_commune_france\"\n          WHERE \"INSEE_COM\" like \u00276938%\u0027)"
       }
     ],
     "vj79utvavdi": [
