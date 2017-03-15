@@ -642,6 +642,28 @@
         },
         "sql": "SELECT\n          st_union(the_geom::geometry), \u002775056\u0027, \u0027Paris\u0027, \u0027Commune\u0027, sum(\"SUPERFICIE\"), sum(\"POPULATION\"), max(\"CODE_DEPT\"), max(\"NOM_DEPT\"), max(\"CODE_REG\"), max(\"NOM_REG\")\n          FROM \"ign_commune_france\"",
         "expandedSql": "SELECT\n          st_union(the_geom::geometry), \u002775056\u0027, \u0027Paris\u0027, \u0027Commune\u0027, sum(\"SUPERFICIE\"), sum(\"POPULATION\"), max(\"CODE_DEPT\"), max(\"NOM_DEPT\"), max(\"CODE_REG\"), max(\"NOM_REG\")\n          FROM \"ign_commune_france\""
+      },
+      {
+        "mode": "SQL",
+        "id": "S6IE80Gwra6F",
+        "runOn": 1489576105947,
+        "runIn": 76,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "rm1z7D02R1UKPBB4",
+        "hash": "dd8e984d1758623cce5cc5173a2a92a7",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT\n          st_union(the_geom::geometry), \u002775056\u0027, \u0027Paris\u0027, \u0027Commune\u0027, sum(\"SUPERFICIE\"), sum(\"POPULATION\"::int), max(\"CODE_DEPT\"), max(\"NOM_DEPT\"), max(\"CODE_REG\"), max(\"NOM_REG\")\n          FROM \"ign_commune_france\"\n          WHERE \"CODE_COM\" like \"751%\"",
+        "expandedSql": "SELECT\n          st_union(the_geom::geometry), \u002775056\u0027, \u0027Paris\u0027, \u0027Commune\u0027, sum(\"SUPERFICIE\"), sum(\"POPULATION\"::int), max(\"CODE_DEPT\"), max(\"NOM_DEPT\"), max(\"CODE_REG\"), max(\"NOM_REG\")\n          FROM \"ign_commune_france\"\n          WHERE \"CODE_COM\" like \"751%\""
       }
     ],
     "vj79utvavdi": [
