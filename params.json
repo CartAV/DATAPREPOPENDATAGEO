@@ -50,6 +50,13 @@
           "objectType": "DATASET"
         },
         "modes": []
+      },
+      {
+        "objectRef": {
+          "objectId": "CONTOURS_IRIS",
+          "objectType": "DATASET"
+        },
+        "modes": []
       }
     ]
   },
@@ -201,6 +208,16 @@
             "appearOnFlow": true
           }
         ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "CONTOURS_IRIS",
+        "rules": [
+          {
+            "targetProject": "GECODAGE_ACCIDENTS",
+            "appearOnFlow": true
+          }
+        ]
       }
     ]
   },
@@ -269,11 +286,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489164288424
+    "lastModifiedOn": 1489597414961
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
