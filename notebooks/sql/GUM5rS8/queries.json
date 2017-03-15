@@ -911,10 +911,10 @@
         "mode": "SQL",
         "id": "XxbjSse71m1K",
         "runOn": 1489576338264,
-        "runIn": 49,
+        "runIn": 409,
         "runBy": "grabenertr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "LEezeviOMEgfMrrz",
         "hash": "86738123deb78e9acfc7075c451da766",
         "querySettings": {
