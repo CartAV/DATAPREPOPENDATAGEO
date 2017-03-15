@@ -752,6 +752,28 @@
         },
         "sql": "SELECT\n          st_union(the_geom::geometry), \u002775056\u0027, \u0027Paris\u0027, \u0027Commune\u0027, sum(\"SUPERFICIE\"::integer), sum(\"POPULATION\"::integer), max(\"CODE_DEPT\"), max(\"NOM_DEPT\"), max(\"CODE_REG\"), max(\"NOM_REG\")\n          FROM \"ign_commune_france\"\ngroup by \"CODE_COM\"\n          WHERE \"CODE_COM\" like \u0027751%\u0027",
         "expandedSql": "SELECT\n          st_union(the_geom::geometry), \u002775056\u0027, \u0027Paris\u0027, \u0027Commune\u0027, sum(\"SUPERFICIE\"::integer), sum(\"POPULATION\"::integer), max(\"CODE_DEPT\"), max(\"NOM_DEPT\"), max(\"CODE_REG\"), max(\"NOM_REG\")\n          FROM \"ign_commune_france\"\ngroup by \"CODE_COM\"\n          WHERE \"CODE_COM\" like \u0027751%\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "bGISDvdtGr9T",
+        "runOn": 1489576194472,
+        "runIn": 41,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "C9g8i4Md3JNFlC35",
+        "hash": "cbbd6f8db9a1f9ca0f4b691ba7a7ea31",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT\n          st_union(the_geom::geometry), \u002775056\u0027, \u0027Paris\u0027, \u0027Commune\u0027, sum(\"SUPERFICIE\"::integer), sum(\"POPULATION\"::integer), max(\"CODE_DEPT\"), max(\"NOM_DEPT\"), max(\"CODE_REG\"), max(\"NOM_REG\")\n          FROM \"ign_commune_france\"\n\n          WHERE \"CODE_COM\" like \u0027751%\u0027\ngroup by \"CODE_COM\"",
+        "expandedSql": "SELECT\n          st_union(the_geom::geometry), \u002775056\u0027, \u0027Paris\u0027, \u0027Commune\u0027, sum(\"SUPERFICIE\"::integer), sum(\"POPULATION\"::integer), max(\"CODE_DEPT\"), max(\"NOM_DEPT\"), max(\"CODE_REG\"), max(\"NOM_REG\")\n          FROM \"ign_commune_france\"\n\n          WHERE \"CODE_COM\" like \u0027751%\u0027\ngroup by \"CODE_COM\""
       }
     ],
     "vj79utvavdi": [
