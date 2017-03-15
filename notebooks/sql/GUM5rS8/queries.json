@@ -576,6 +576,28 @@
         },
         "sql": "select * from \"caracteristiques_prep_geo_joined2\" where \"Num_Acc\" \u003d \u0027200600058736\u0027 ",
         "expandedSql": "select * from \"caracteristiques_prep_geo_joined2\" where \"Num_Acc\" \u003d \u0027200600058736\u0027 "
+      },
+      {
+        "mode": "SQL",
+        "id": "u39FwBXNZ6jh",
+        "runOn": 1489573830120,
+        "runIn": 52,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "cfLL0fKhfyKCFjWu",
+        "hash": "841218d8744b10423f3426fb87200fef",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT\n          st_union(the_geom), \"75056\", \"Paris\" \"Commune\", sum(\"SUPERFICIE\"), sum(\"POPULATION\"), max(\"CODE_DEPT\"), max(\"NOM_DEPT\"), max(\"CODE_REG\"), max(\"NOM_REG\")\n          FROM \"ign_commune_france\"",
+        "expandedSql": "SELECT\n          st_union(the_geom), \"75056\", \"Paris\" \"Commune\", sum(\"SUPERFICIE\"), sum(\"POPULATION\"), max(\"CODE_DEPT\"), max(\"NOM_DEPT\"), max(\"CODE_REG\"), max(\"NOM_REG\")\n          FROM \"ign_commune_france\""
       }
     ],
     "vj79utvavdi": [
