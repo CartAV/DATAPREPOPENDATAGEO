@@ -1016,6 +1016,28 @@
         },
         "sql": "delete from ign_commune_france where \"INSEE_COM\" \u003d \u002713055\u0027\n--select * from ign_commune_france where \"INSEE_COM\" in (\u002775056\u0027, \u002713055\u0027, \u002769123\u0027)",
         "expandedSql": "delete from ign_commune_france where \"INSEE_COM\" \u003d \u002713055\u0027\n--select * from ign_commune_france where \"INSEE_COM\" in (\u002775056\u0027, \u002713055\u0027, \u002769123\u0027)"
+      },
+      {
+        "mode": "SQL",
+        "id": "hd0PLiozGdYk",
+        "runOn": 1489580748438,
+        "runIn": 49,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "bXLSQvoHQ1x21vdl",
+        "hash": "486126500797150c214f4e3300b4d090",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "--delete from ign_commune_france where \"INSEE_COM\" \u003d \u002713055\u0027\nselect * from ign_commune_france where \"INSEE_COM\" in (\u002775056\u0027, \u002713055\u0027, \u002769123\u0027)",
+        "expandedSql": "--delete from ign_commune_france where \"INSEE_COM\" \u003d \u002713055\u0027\nselect * from ign_commune_france where \"INSEE_COM\" in (\u002775056\u0027, \u002713055\u0027, \u002769123\u0027)"
       }
     ],
     "vj79utvavdi": [
