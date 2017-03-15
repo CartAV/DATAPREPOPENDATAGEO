@@ -818,6 +818,28 @@
         },
         "sql": "SELECT\n          st_union(the_geom::geometry), \u002775056\u0027, \u0027Paris\u0027, \u0027Commune\u0027, sum(\"SUPERFICIE\"::integer), sum(\"POPULATION\"::integer), max(\"CODE_DEPT\"), max(\"NOM_DEPT\"), max(\"CODE_REG\"), max(\"NOM_REG\")\n          FROM \"ign_commune_france\"\n          WHERE \"INSEE_COM\" like \u0027751%\u0027;\n\n--SELECT * from \"ign_commune_france\" where \"CODE_COM\" like \u0027751%\u0027",
         "expandedSql": "SELECT\n          st_union(the_geom::geometry), \u002775056\u0027, \u0027Paris\u0027, \u0027Commune\u0027, sum(\"SUPERFICIE\"::integer), sum(\"POPULATION\"::integer), max(\"CODE_DEPT\"), max(\"NOM_DEPT\"), max(\"CODE_REG\"), max(\"NOM_REG\")\n          FROM \"ign_commune_france\"\n          WHERE \"INSEE_COM\" like \u0027751%\u0027;\n\n--SELECT * from \"ign_commune_france\" where \"CODE_COM\" like \u0027751%\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "m2QkAVh9Qphe",
+        "runOn": 1489576298746,
+        "runIn": 98,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "HxaTQjYXLOx1UPYr",
+        "hash": "1e8fd0f2fb65e2f0a21612ecbe345c7e",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "\nINSERT INTO \"ign_commune_france\"\n\t(the_geom, \"INSEE_COM\", \"NOM_COM\", \"STATUT\", \"SUPERFICIE\", \"POPULATION\", \"CODE_DEPT\", \"NOM_DEPT\", \"CODE_REG\", \"NOM_REG\")\n\tFROM (SELECT\n          st_union(the_geom::geometry), \u002775056\u0027, \u0027Paris\u0027, \u0027Commune\u0027, sum(\"SUPERFICIE\"::integer), sum(\"POPULATION\"::integer), max(\"CODE_DEPT\"), max(\"NOM_DEPT\"), max(\"CODE_REG\"), max(\"NOM_REG\")\n          FROM \"ign_commune_france\"\n          WHERE \"INSEE_COM\" like \u0027751%\u0027;) as paris",
+        "expandedSql": "\nINSERT INTO \"ign_commune_france\"\n\t(the_geom, \"INSEE_COM\", \"NOM_COM\", \"STATUT\", \"SUPERFICIE\", \"POPULATION\", \"CODE_DEPT\", \"NOM_DEPT\", \"CODE_REG\", \"NOM_REG\")\n\tFROM (SELECT\n          st_union(the_geom::geometry), \u002775056\u0027, \u0027Paris\u0027, \u0027Commune\u0027, sum(\"SUPERFICIE\"::integer), sum(\"POPULATION\"::integer), max(\"CODE_DEPT\"), max(\"NOM_DEPT\"), max(\"CODE_REG\"), max(\"NOM_REG\")\n          FROM \"ign_commune_france\"\n          WHERE \"INSEE_COM\" like \u0027751%\u0027;) as paris"
       }
     ],
     "vj79utvavdi": [
