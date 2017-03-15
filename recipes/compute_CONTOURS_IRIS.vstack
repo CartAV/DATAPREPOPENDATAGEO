@@ -9,12 +9,24 @@
       }
     },
     {
-      "index": 0,
-      "originLabel": "CONTOURS_IRIS_FRANCE",
-      "preFilter": {
-        "enabled": false,
-        "distinct": false
-      }
+      "index": 1,
+      "originLabel": "CONTOURS_IRIS_GUADELOUPE",
+      "preFilter": {}
+    },
+    {
+      "index": 2,
+      "originLabel": "CONTOURS_IRIS_GUYANE",
+      "preFilter": {}
+    },
+    {
+      "index": 3,
+      "originLabel": "CONTOURS_IRIS_MARTINIQUE",
+      "preFilter": {}
+    },
+    {
+      "index": 4,
+      "originLabel": "CONTOURS_IRIS_REUNION",
+      "preFilter": {}
     }
   ],
   "engineParams": {
@@ -43,14 +55,13 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
+  "originColumnName": "original_dataset",
   "postFilter": {
     "enabled": false,
     "distinct": false
   },
-  "originColumnName": "original_dataset",
   "selectedColumns": [
     "the_geom",
-    "shp_srs",
     "INSEE_COM",
     "NOM_COM",
     "IRIS",
@@ -59,5 +70,5 @@
     "TYP_IRIS"
   ],
   "addOriginColumn": false,
-  "mode": "UNION"
+  "mode": "CUSTOM"
 }

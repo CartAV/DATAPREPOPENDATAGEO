@@ -12,6 +12,22 @@
         {
           "ref": "CONTOURS_IRIS_FRANCE",
           "deps": []
+        },
+        {
+          "ref": "CONTOURS_IRIS_GUADELOUPE",
+          "deps": []
+        },
+        {
+          "ref": "CONTOURS_IRIS_GUYANE",
+          "deps": []
+        },
+        {
+          "ref": "CONTOURS_IRIS_MARTINIQUE",
+          "deps": []
+        },
+        {
+          "ref": "CONTOURS_IRIS_REUNION",
+          "deps": []
         }
       ]
     }
@@ -27,11 +43,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489595608306
+    "lastModifiedOn": 1489595683370
   },
   "creationTag": {
     "versionNumber": 0,
