@@ -46,13 +46,6 @@
       },
       {
         "objectRef": {
-          "objectId": "departements_wgs84_prep",
-          "objectType": "DATASET"
-        },
-        "modes": []
-      },
-      {
-        "objectRef": {
           "objectId": "CONTOURS_IRIS",
           "objectType": "DATASET"
         },
@@ -197,6 +190,16 @@
       },
       {
         "type": "DATASET",
+        "localName": "CONTOURS_IRIS",
+        "rules": [
+          {
+            "targetProject": "GECODAGE_ACCIDENTS",
+            "appearOnFlow": true
+          }
+        ]
+      },
+      {
+        "type": "DATASET",
         "localName": "departements_wgs84_prep",
         "rules": [
           {
@@ -206,15 +209,9 @@
           {
             "targetProject": "ACCIDENTS",
             "appearOnFlow": true
-          }
-        ]
-      },
-      {
-        "type": "DATASET",
-        "localName": "CONTOURS_IRIS",
-        "rules": [
+          },
           {
-            "targetProject": "GECODAGE_ACCIDENTS",
+            "targetProject": "Accidents_DSCR",
             "appearOnFlow": true
           }
         ]
@@ -286,11 +283,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489597414961
+    "lastModifiedOn": 1489655451178
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
