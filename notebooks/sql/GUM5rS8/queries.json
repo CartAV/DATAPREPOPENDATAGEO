@@ -1192,6 +1192,28 @@
         },
         "sql": "ALTER TABLE \"caracteristiques_postgis\"\n\tALTER COLUMN the_geom type geography(Point) using the_geom::geography(Point);\n\nCREATE INDEX idx_caracteristiques ON \"caracteristiques_postgis\"\n\tUSING GIST(the_geom);",
         "expandedSql": "ALTER TABLE \"caracteristiques_postgis\"\n\tALTER COLUMN the_geom type geography(Point) using the_geom::geography(Point);\n\nCREATE INDEX idx_caracteristiques ON \"caracteristiques_postgis\"\n\tUSING GIST(the_geom);"
+      },
+      {
+        "mode": "SQL",
+        "id": "3DGE4WkoPnWZ",
+        "runOn": 1489681938242,
+        "runIn": 369,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "knyTFFJZjbLKXk1E",
+        "hash": "19b1f6d8e3656eb11d65d998a3c5bc1a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "ALTER TABLE \"contours_iris\"\n\tALTER COLUMN the_geom type geography(MultiPolygon, 4326)\n\tUSING the_geom::geography(MultiPolygon, 4326);\n\nCREATE INDEX idx_contours_iris ON \"contours_iris\"\n    USING gist(the_geom);",
+        "expandedSql": "ALTER TABLE \"contours_iris\"\n\tALTER COLUMN the_geom type geography(MultiPolygon, 4326)\n\tUSING the_geom::geography(MultiPolygon, 4326);\n\nCREATE INDEX idx_contours_iris ON \"contours_iris\"\n    USING gist(the_geom);"
       }
     ],
     "vj79utvavdi": [
