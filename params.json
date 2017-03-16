@@ -32,13 +32,6 @@
       },
       {
         "objectRef": {
-          "objectId": "osm_routes_par_commune",
-          "objectType": "DATASET"
-        },
-        "modes": []
-      },
-      {
-        "objectRef": {
           "objectId": "IGN_DEPARTEMENT_FRANCE",
           "objectType": "DATASET"
         },
@@ -170,16 +163,6 @@
       },
       {
         "type": "DATASET",
-        "localName": "osm_routes_par_commune",
-        "rules": [
-          {
-            "targetProject": "GECODAGE_ACCIDENTS",
-            "appearOnFlow": true
-          }
-        ]
-      },
-      {
-        "type": "DATASET",
         "localName": "IGN_DEPARTEMENT_FRANCE",
         "rules": [
           {
@@ -212,6 +195,20 @@
           },
           {
             "targetProject": "Accidents_DSCR",
+            "appearOnFlow": true
+          }
+        ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "osm_routes_par_commune",
+        "rules": [
+          {
+            "targetProject": "GECODAGE_ACCIDENTS",
+            "appearOnFlow": true
+          },
+          {
+            "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
             "appearOnFlow": true
           }
         ]
@@ -283,11 +280,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 15,
+    "versionNumber": 16,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489655451178
+    "lastModifiedOn": 1489659150824
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
