@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1490092420903
+    "lastModifiedOn": 1490092718561
   },
   "creationTag": {
     "versionNumber": 0,
@@ -50,7 +50,476 @@
   },
   "schema": {
     "userModified": false,
-    "columns": []
+    "columns": [
+      {
+        "name": "the_geom",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "INSEE_COM",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "NOM_COM",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "IRIS",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "CODE_IRIS",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "NOM_IRIS",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "TYP_IRIS",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "REG",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "REG2016",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "DEP",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "UU2010",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "COM",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "LIBCOM",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "TRIRIS",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "GRD_QUART",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "LIBIRIS",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "MODIF_IRIS",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "LAB_IRIS",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_MEN",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_MENPSEUL",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_MENHSEUL",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_MENFSEUL",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_MENSFAM",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_MENFAM",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_MENCOUPSENF",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_MENCOUPAENF",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_MENFAMMONO",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_PMEN",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_PMEN_MENPSEUL",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_PMEN_MENHSEUL",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_PMEN_MENFSEUL",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_PMEN_MENSFAM",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_PMEN_MENFAM",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_PMEN_MENCOUPSENF",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_PMEN_MENCOUPAENF",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_PMEN_MENFAMMONO",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "P13_POP15P",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "P13_POP1524",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "P13_POP2554",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "P13_POP5579",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "P13_POP80P",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "P13_POPMEN15P",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "P13_POPMEN1524",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "P13_POPMEN2554",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "P13_POPMEN5579",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "P13_POPMEN80P",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "P13_POP15P_PSEUL",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "P13_POP1524_PSEUL",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "P13_POP2554_PSEUL",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "P13_POP5579_PSEUL",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "P13_POP80P_PSEUL",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "P13_POP15P_MARIEE",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "P13_POP15P_NONMARIEE",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_MEN_CS1",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_MEN_CS2",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_MEN_CS3",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_MEN_CS4",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_MEN_CS5",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_MEN_CS6",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_MEN_CS7",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_MEN_CS8",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_PMEN_CS1",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_PMEN_CS2",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_PMEN_CS3",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_PMEN_CS4",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_PMEN_CS5",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_PMEN_CS6",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_PMEN_CS7",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_PMEN_CS8",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_FAM",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_COUPAENF",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_FAMMONO",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_COUPSENF",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_NE24F0",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_NE24F1",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_NE24F2",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_NE24F3",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "C13_NE24F4P",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      }
+    ]
   },
   "metrics": {
     "probes": [
