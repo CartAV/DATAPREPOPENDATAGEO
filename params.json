@@ -50,13 +50,6 @@
           "objectType": "DATASET"
         },
         "modes": []
-      },
-      {
-        "objectRef": {
-          "objectId": "departements_wgs84_postgis",
-          "objectType": "DATASET"
-        },
-        "modes": []
       }
     ]
   },
@@ -242,7 +235,7 @@
         "localName": "departements_wgs84_postgis",
         "rules": [
           {
-            "targetProject": "VERBALISATIONLECTRONIQUE",
+            "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
             "appearOnFlow": true
           }
         ]
@@ -314,11 +307,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 18,
+    "versionNumber": 19,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1490114858313
+    "lastModifiedOn": 1490114901570
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
