@@ -1,0 +1,371 @@
+{
+  "virtualInputs": [
+    {
+      "autoSelectColumns": false,
+      "index": 0,
+      "preFilter": {
+        "enabled": false,
+        "distinct": false
+      }
+    },
+    {
+      "autoSelectColumns": false,
+      "index": 1,
+      "preFilter": {
+        "enabled": false,
+        "distinct": false
+      }
+    }
+  ],
+  "joins": [
+    {
+      "table1": 0,
+      "outerJoinOnTheLeft": true,
+      "table2": 1,
+      "conditionsMode": "AND",
+      "on": [],
+      "type": "LEFT"
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL",
+      "inheritConf": "default"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      },
+      "pipelineAllowStart": true,
+      "overwriteOutputSchema": false,
+      "readParams": {
+        "map": {}
+      },
+      "useGlobalMetastore": false
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true
+  },
+  "enableAutoCastInJoinConditions": false,
+  "selectedColumns": [
+    {
+      "name": "the_geom",
+      "table": 0
+    },
+    {
+      "name": "INSEE_COM",
+      "table": 0
+    },
+    {
+      "name": "NOM_COM",
+      "table": 0
+    },
+    {
+      "name": "IRIS",
+      "table": 0
+    },
+    {
+      "name": "CODE_IRIS",
+      "table": 0
+    },
+    {
+      "name": "NOM_IRIS",
+      "table": 0
+    },
+    {
+      "name": "TYP_IRIS",
+      "table": 0
+    },
+    {
+      "name": "REG",
+      "table": 0
+    },
+    {
+      "name": "REG2016",
+      "table": 0
+    },
+    {
+      "name": "DEP",
+      "table": 0
+    },
+    {
+      "name": "UU2010",
+      "table": 0
+    },
+    {
+      "name": "COM",
+      "table": 0
+    },
+    {
+      "name": "LIBCOM",
+      "table": 0
+    },
+    {
+      "name": "TRIRIS",
+      "table": 0
+    },
+    {
+      "name": "GRD_QUART",
+      "table": 0
+    },
+    {
+      "name": "LIBIRIS",
+      "table": 0
+    },
+    {
+      "name": "MODIF_IRIS",
+      "table": 0
+    },
+    {
+      "name": "LAB_IRIS",
+      "table": 0
+    },
+    {
+      "name": "C13_MEN",
+      "table": 0
+    },
+    {
+      "name": "C13_MENPSEUL",
+      "table": 0
+    },
+    {
+      "name": "C13_MENHSEUL",
+      "table": 0
+    },
+    {
+      "name": "C13_MENFSEUL",
+      "table": 0
+    },
+    {
+      "name": "C13_MENSFAM",
+      "table": 0
+    },
+    {
+      "name": "C13_MENFAM",
+      "table": 0
+    },
+    {
+      "name": "C13_MENCOUPSENF",
+      "table": 0
+    },
+    {
+      "name": "C13_MENCOUPAENF",
+      "table": 0
+    },
+    {
+      "name": "C13_MENFAMMONO",
+      "table": 0
+    },
+    {
+      "name": "C13_PMEN",
+      "table": 0
+    },
+    {
+      "name": "C13_PMEN_MENPSEUL",
+      "table": 0
+    },
+    {
+      "name": "C13_PMEN_MENHSEUL",
+      "table": 0
+    },
+    {
+      "name": "C13_PMEN_MENFSEUL",
+      "table": 0
+    },
+    {
+      "name": "C13_PMEN_MENSFAM",
+      "table": 0
+    },
+    {
+      "name": "C13_PMEN_MENFAM",
+      "table": 0
+    },
+    {
+      "name": "C13_PMEN_MENCOUPSENF",
+      "table": 0
+    },
+    {
+      "name": "C13_PMEN_MENCOUPAENF",
+      "table": 0
+    },
+    {
+      "name": "C13_PMEN_MENFAMMONO",
+      "table": 0
+    },
+    {
+      "name": "P13_POP15P",
+      "table": 0
+    },
+    {
+      "name": "P13_POP1524",
+      "table": 0
+    },
+    {
+      "name": "P13_POP2554",
+      "table": 0
+    },
+    {
+      "name": "P13_POP5579",
+      "table": 0
+    },
+    {
+      "name": "P13_POP80P",
+      "table": 0
+    },
+    {
+      "name": "P13_POPMEN15P",
+      "table": 0
+    },
+    {
+      "name": "P13_POPMEN1524",
+      "table": 0
+    },
+    {
+      "name": "P13_POPMEN2554",
+      "table": 0
+    },
+    {
+      "name": "P13_POPMEN5579",
+      "table": 0
+    },
+    {
+      "name": "P13_POPMEN80P",
+      "table": 0
+    },
+    {
+      "name": "P13_POP15P_PSEUL",
+      "table": 0
+    },
+    {
+      "name": "P13_POP1524_PSEUL",
+      "table": 0
+    },
+    {
+      "name": "P13_POP2554_PSEUL",
+      "table": 0
+    },
+    {
+      "name": "P13_POP5579_PSEUL",
+      "table": 0
+    },
+    {
+      "name": "P13_POP80P_PSEUL",
+      "table": 0
+    },
+    {
+      "name": "P13_POP15P_MARIEE",
+      "table": 0
+    },
+    {
+      "name": "P13_POP15P_NONMARIEE",
+      "table": 0
+    },
+    {
+      "name": "C13_MEN_CS1",
+      "table": 0
+    },
+    {
+      "name": "C13_MEN_CS2",
+      "table": 0
+    },
+    {
+      "name": "C13_MEN_CS3",
+      "table": 0
+    },
+    {
+      "name": "C13_MEN_CS4",
+      "table": 0
+    },
+    {
+      "name": "C13_MEN_CS5",
+      "table": 0
+    },
+    {
+      "name": "C13_MEN_CS6",
+      "table": 0
+    },
+    {
+      "name": "C13_MEN_CS7",
+      "table": 0
+    },
+    {
+      "name": "C13_MEN_CS8",
+      "table": 0
+    },
+    {
+      "name": "C13_PMEN_CS1",
+      "table": 0
+    },
+    {
+      "name": "C13_PMEN_CS2",
+      "table": 0
+    },
+    {
+      "name": "C13_PMEN_CS3",
+      "table": 0
+    },
+    {
+      "name": "C13_PMEN_CS4",
+      "table": 0
+    },
+    {
+      "name": "C13_PMEN_CS5",
+      "table": 0
+    },
+    {
+      "name": "C13_PMEN_CS6",
+      "table": 0
+    },
+    {
+      "name": "C13_PMEN_CS7",
+      "table": 0
+    },
+    {
+      "name": "C13_PMEN_CS8",
+      "table": 0
+    },
+    {
+      "name": "C13_FAM",
+      "table": 0
+    },
+    {
+      "name": "C13_COUPAENF",
+      "table": 0
+    },
+    {
+      "name": "C13_FAMMONO",
+      "table": 0
+    },
+    {
+      "name": "C13_COUPSENF",
+      "table": 0
+    },
+    {
+      "name": "C13_NE24F0",
+      "table": 0
+    },
+    {
+      "name": "C13_NE24F1",
+      "table": 0
+    },
+    {
+      "name": "C13_NE24F2",
+      "table": 0
+    },
+    {
+      "name": "C13_NE24F3",
+      "table": 0
+    },
+    {
+      "name": "C13_NE24F4P",
+      "table": 0
+    }
+  ]
+}
