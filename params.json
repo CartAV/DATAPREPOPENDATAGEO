@@ -43,6 +43,13 @@
           "objectType": "DATASET"
         },
         "modes": []
+      },
+      {
+        "objectRef": {
+          "objectId": "CONTOURS_IRIS_POPULATION",
+          "objectType": "DATASET"
+        },
+        "modes": []
       }
     ]
   },
@@ -212,6 +219,16 @@
             "appearOnFlow": true
           }
         ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "CONTOURS_IRIS_POPULATION",
+        "rules": [
+          {
+            "targetProject": "GECODAGE_ACCIDENTS",
+            "appearOnFlow": true
+          }
+        ]
       }
     ]
   },
@@ -280,11 +297,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 16,
+    "versionNumber": 17,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489659150824
+    "lastModifiedOn": 1490093159600
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
