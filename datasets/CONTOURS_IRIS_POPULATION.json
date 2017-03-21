@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1490092718561
+    "lastModifiedOn": 1490092840713
   },
   "creationTag": {
     "versionNumber": 0,
@@ -43,6 +43,7 @@
     "normalizeDoubles": true,
     "table": "contours_iris_population",
     "tableCreationMode": "auto",
+    "customPostWriteStatements": "ALTER TABLE \"contours_iris_population\"\n\tALTER COLUMN the_geom type geography(MultiPolygon, 4326)\n\tUSING the_geom::geography(MultiPolygon, 4326);\n\nCREATE INDEX idx_contours_iris_population ON \"contours_iris_population\"\n    USING gist(the_geom);",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "hasColsWithUnknownTz": false,
