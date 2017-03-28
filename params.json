@@ -50,6 +50,13 @@
           "objectType": "DATASET"
         },
         "modes": []
+      },
+      {
+        "objectRef": {
+          "objectId": "es2_routes_par_commune",
+          "objectType": "DATASET"
+        },
+        "modes": []
       }
     ]
   },
@@ -239,6 +246,16 @@
             "appearOnFlow": true
           }
         ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "es2_routes_par_commune",
+        "rules": [
+          {
+            "targetProject": "ACCIDENTS",
+            "appearOnFlow": true
+          }
+        ]
       }
     ]
   },
@@ -256,7 +273,8 @@
       "moderateDashboards": false,
       "runScenarios": false,
       "manageDashboardAuthorizations": false,
-      "manageExposedElements": false
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false
     },
     {
       "group": "eig",
@@ -269,9 +287,13 @@
       "moderateDashboards": false,
       "runScenarios": false,
       "manageDashboardAuthorizations": false,
-      "manageExposedElements": false
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false
     }
   ],
+  "additionalDashboardUsers": {
+    "users": []
+  },
   "tutorialProject": false,
   "settings": {
     "flowAnchorSourcesAndSinks": true,
@@ -307,11 +329,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 19,
+    "versionNumber": 20,
     "lastModifiedBy": {
-      "login": "grabenertr"
+      "login": "chabouisfr"
     },
-    "lastModifiedOn": 1490114901570
+    "lastModifiedOn": 1490706048518
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
