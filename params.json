@@ -50,6 +50,13 @@
           "objectType": "DATASET"
         },
         "modes": []
+      },
+      {
+        "objectRef": {
+          "objectId": "osm_routes_par_commune_geojson",
+          "objectType": "DATASET"
+        },
+        "modes": []
       }
     ]
   },
@@ -239,6 +246,16 @@
             "appearOnFlow": true
           }
         ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "osm_routes_par_commune_geojson",
+        "rules": [
+          {
+            "targetProject": "ACCIDENTS",
+            "appearOnFlow": true
+          }
+        ]
       }
     ]
   },
@@ -312,11 +329,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 21,
+    "versionNumber": 22,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1490706100793
+    "lastModifiedOn": 1490706121435
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
