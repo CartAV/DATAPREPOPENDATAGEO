@@ -40,7 +40,7 @@
     "main": {
       "items": [
         {
-          "ref": "departements_wgs84",
+          "ref": "departements_wgs84_prep",
           "deps": []
         }
       ]
@@ -57,11 +57,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "grabenertr"
+      "login": "chabouisfr"
     },
-    "lastModifiedOn": 1490108434928
+    "lastModifiedOn": 1491210107700
   },
   "creationTag": {
     "versionNumber": 0,
