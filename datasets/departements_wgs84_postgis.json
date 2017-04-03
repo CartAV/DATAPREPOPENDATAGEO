@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "grabenertr"
+      "login": "chabouisfr"
     },
-    "lastModifiedOn": 1490108431132
+    "lastModifiedOn": 1491210106989
   },
   "creationTag": {
     "versionNumber": 0,
@@ -52,13 +52,6 @@
     "userModified": false,
     "columns": [
       {
-        "name": "the_geom",
-        "type": "string",
-        "meaning": "GeometryMeaning",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "lon",
         "type": "double",
         "meaning": "Longitude",
@@ -67,13 +60,13 @@
       },
       {
         "name": "CODE_REG",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "X_CHF_LIEU",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -85,7 +78,7 @@
       },
       {
         "name": "Y_CHF_LIEU",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -97,7 +90,7 @@
       },
       {
         "name": "CODE_CHF",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -121,13 +114,13 @@
       },
       {
         "name": "Y_CENTROID",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "X_CENTROID",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -137,6 +130,12 @@
         "meaning": "Latitude",
         "timestampNoTzAsDate": false,
         "maxLength": -1
+      },
+      {
+        "name": "chef_lieu_geo",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
       }
     ]
   },
