@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1490106053893
+    "lastModifiedOn": 1491319887756
   },
   "creationTag": {
     "versionNumber": 0,
@@ -43,6 +43,7 @@
     "normalizeDoubles": true,
     "table": "osm_routes_par_commune_geojson",
     "tableCreationMode": "auto",
+    "customPostWriteStatements": "ALTER TABLE \"osm_routes_par_commune_geojson\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n\nCREATE INDEX geom_osm_routes_com_geojson_idx ON \"osm_routes_par_commune_geojson\"\n\tUSING GIST(the_geom);",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "hasColsWithUnknownTz": false,
