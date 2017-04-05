@@ -1460,6 +1460,28 @@
         },
         "sql": "CREATE index departement_code_idx on departements_wgs84_postgis(\"code_dept\");",
         "expandedSql": "CREATE index departement_code_idx on departements_wgs84_postgis(\"code_dept\");"
+      },
+      {
+        "mode": "SQL",
+        "id": "6Csf6qR0smRK",
+        "runOn": 1491378984186,
+        "runIn": 44,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "uzzicBokeWzIk8Y6",
+        "hash": "87c638e79b74bf3cb0ed7ae668d5f6d5",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "CREATE index departement_code_idx on departements_wgs84_postgis(\"CODE_DEPT\");",
+        "expandedSql": "CREATE index departement_code_idx on departements_wgs84_postgis(\"CODE_DEPT\");"
       }
     ]
   }
