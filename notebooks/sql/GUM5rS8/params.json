@@ -66,15 +66,28 @@
         "statementsParseMode": "SPLIT",
         "statementsExecutionMode": "PREPARED"
       }
+    },
+    {
+      "id": "m7po6wecd8",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "inheritConf": "default",
+        "extraConf": [],
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
+      }
     }
   ],
   "automationLocal": false,
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1491378926067
+    "lastModifiedOn": 1491403314792
   },
   "creationTag": {
     "versionNumber": 0,
