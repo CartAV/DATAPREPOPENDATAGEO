@@ -70,6 +70,7 @@
     {
       "id": "m7po6wecd8",
       "type": "QUERY",
+      "name": "Linéaire de voirie",
       "querySettings": {
         "addLimitToStatement": true,
         "statementsOutOfTransaction": false,
@@ -87,7 +88,7 @@
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1491403314792
+    "lastModifiedOn": 1491403322201
   },
   "creationTag": {
     "versionNumber": 0,
