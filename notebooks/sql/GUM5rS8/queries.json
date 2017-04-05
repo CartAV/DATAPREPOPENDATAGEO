@@ -1371,6 +1371,30 @@
         "sql": "select st_asgeojson(st_union(the_geom::geometry)) from\n\"ign_commune_france\" where \"INSEE_COM\" like \u0027132%\u0027",
         "expandedSql": "select st_asgeojson(st_union(the_geom::geometry)) from\n\"ign_commune_france\" where \"INSEE_COM\" like \u0027132%\u0027"
       }
+    ],
+    "8450w3kshro": [
+      {
+        "mode": "SQL",
+        "id": "W71s6JSlOfdk",
+        "runOn": 1491378927548,
+        "runIn": -1,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "BO7GyZ3yGXAl764P",
+        "hash": "1cb63cc8891c8cfe657661bb9a0a03f6",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "CREATE index departement_code_idx on departements_wgs84_postgis(CODE_DEP);",
+        "expandedSql": "CREATE index departement_code_idx on departements_wgs84_postgis(CODE_DEP);"
+      }
     ]
   }
 }
