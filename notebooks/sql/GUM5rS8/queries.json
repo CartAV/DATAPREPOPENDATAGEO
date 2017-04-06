@@ -1903,6 +1903,30 @@
         "sql": "select st_asgeojson(st_ApproximateMedialAxis(st_convexhull(st_union(the_geom::geometry))))\nfrom \"osm_routes_par_departement\" where num_route_or_id \u003d \u0027A 6\u0027",
         "expandedSql": "select st_asgeojson(st_ApproximateMedialAxis(st_convexhull(st_union(the_geom::geometry))))\nfrom \"osm_routes_par_departement\" where num_route_or_id \u003d \u0027A 6\u0027"
       }
+    ],
+    "l0nc3nec7qg": [
+      {
+        "mode": "SQL",
+        "id": "DgL03ATP0Zex",
+        "runOn": 1491482978281,
+        "runIn": -1,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "HjTX3nziIlaCSQci",
+        "hash": "53d2670ace05d518798a252109556e0b",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"osm_routes_par_departement\" where \"the_geom\" like \u0027A6%\u0027",
+        "expandedSql": "select * from \"osm_routes_par_departement\" where \"the_geom\" like \u0027A6%\u0027"
+      }
     ]
   }
 }
