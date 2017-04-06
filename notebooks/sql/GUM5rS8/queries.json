@@ -1682,6 +1682,28 @@
         },
         "sql": "select st_union(the_geom::geometry) as a6,\n        ST_ApproximateMedialAxis(the_geom::geometry)\nfrom \"osm_routes_par_departement\" where num_route_or_id \u003d \u0027A 6\u0027",
         "expandedSql": "select st_union(the_geom::geometry) as a6,\n        ST_ApproximateMedialAxis(the_geom::geometry)\nfrom \"osm_routes_par_departement\" where num_route_or_id \u003d \u0027A 6\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "Xc6qLQKplFWy",
+        "runOn": 1491472250322,
+        "runIn": 65,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "wdCvukyzwUSdVWVe",
+        "hash": "338452456bd281efbbed3114707bd58b",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select st_convexhull(st_union(the_geom::geometry)) as a6,\n        ST_ApproximateMedialAxis(the_geom::geometry)\nfrom \"osm_routes_par_departement\" where num_route_or_id \u003d \u0027A 6\u0027",
+        "expandedSql": "select st_convexhull(st_union(the_geom::geometry)) as a6,\n        ST_ApproximateMedialAxis(the_geom::geometry)\nfrom \"osm_routes_par_departement\" where num_route_or_id \u003d \u0027A 6\u0027"
       }
     ]
   }
