@@ -1638,6 +1638,28 @@
         },
         "sql": "select st_union(the_geom::geometry) from \"osm_routes_par_departement\" where num_route_or_id \u003d \u0027A 6\u0027",
         "expandedSql": "select st_union(the_geom::geometry) from \"osm_routes_par_departement\" where num_route_or_id \u003d \u0027A 6\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "sd5ZVONMnI2V",
+        "runOn": 1491472196984,
+        "runIn": 1226,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "Xp2OcsXddfCIy3nd",
+        "hash": "8cd6e23eb876b52224697cf49b681a80",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select st_union(the_geom::geometry) as a6,\n        ST_ApproximateMedialAxis(a6)\nfrom \"osm_routes_par_departement\" where num_route_or_id \u003d \u0027A 6\u0027",
+        "expandedSql": "select st_union(the_geom::geometry) as a6,\n        ST_ApproximateMedialAxis(a6)\nfrom \"osm_routes_par_departement\" where num_route_or_id \u003d \u0027A 6\u0027"
       }
     ]
   }
