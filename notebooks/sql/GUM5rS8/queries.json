@@ -1753,10 +1753,10 @@
         "mode": "SQL",
         "id": "59Y30fVTID5b",
         "runOn": 1491474405253,
-        "runIn": 554,
+        "runIn": 52,
         "runBy": "grabenertr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "8ucMR16A6bGS7nf3",
         "hash": "71c988785a0623477f024a7ceeb0985f",
         "querySettings": {
