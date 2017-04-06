@@ -1616,6 +1616,28 @@
         },
         "sql": "select st_union(the_geom) from \"osm_routes_par_departement\" where num_route_or_id \u003d \u0027A 6\u0027",
         "expandedSql": "select st_union(the_geom) from \"osm_routes_par_departement\" where num_route_or_id \u003d \u0027A 6\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "frDQq5IItgh0",
+        "runOn": 1491472158675,
+        "runIn": 561,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "UgxW0C5r93kVIoZr",
+        "hash": "2cf11ab23c4ad765b8c4b89fa3f8bc4a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select st_union(the_geom::geometry) from \"osm_routes_par_departement\" where num_route_or_id \u003d \u0027A 6\u0027",
+        "expandedSql": "select st_union(the_geom::geometry) from \"osm_routes_par_departement\" where num_route_or_id \u003d \u0027A 6\u0027"
       }
     ]
   }
