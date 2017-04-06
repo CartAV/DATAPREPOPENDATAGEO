@@ -2019,10 +2019,10 @@
         "mode": "SQL",
         "id": "SE9LxuazJPte",
         "runOn": 1491483615081,
-        "runIn": 628,
+        "runIn": 785,
         "runBy": "grabenertr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "zFFfmgsq9wD1frIr",
         "hash": "885743cb7862437c3e5d4a9aa54291f6",
         "querySettings": {
