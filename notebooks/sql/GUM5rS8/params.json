@@ -70,7 +70,7 @@
     {
       "id": "9dg90i540a",
       "type": "QUERY",
-      "name": "",
+      "name": "Tracé médian",
       "querySettings": {
         "addLimitToStatement": true,
         "statementsOutOfTransaction": false,
@@ -88,7 +88,7 @@
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1491470514337
+    "lastModifiedOn": 1491470519045
   },
   "creationTag": {
     "versionNumber": 0,
