@@ -3207,10 +3207,10 @@
         "mode": "SQL",
         "id": "Rjue1j9z59sb",
         "runOn": 1491496916142,
-        "runIn": 30614,
+        "runIn": 38518,
         "runBy": "grabenertr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "X4XxtEepDZzSWEfb",
         "hash": "44d48d830ad003c52559a7d3d3a8cb11",
         "querySettings": {
