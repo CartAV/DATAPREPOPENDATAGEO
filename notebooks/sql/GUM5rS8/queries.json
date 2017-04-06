@@ -2811,10 +2811,10 @@
         "mode": "SQL",
         "id": "ufuniDhTupSt",
         "runOn": 1491493799494,
-        "runIn": 52,
+        "runIn": 55,
         "runBy": "grabenertr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "GiReWB76jL3jx36R",
         "hash": "3ccaa9bec94090086bc9a62aa2b42591",
         "querySettings": {
