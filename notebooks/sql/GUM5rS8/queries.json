@@ -1992,6 +1992,28 @@
         },
         "sql": "select num_route_or_id from \"osm_routes_par_departement\" where \"num_route_or_id\" like \u0027A 6%\u0027",
         "expandedSql": "select num_route_or_id from \"osm_routes_par_departement\" where \"num_route_or_id\" like \u0027A 6%\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "dcv1CJMWqQQM",
+        "runOn": 1491483584650,
+        "runIn": 505,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "MpCJdDHVKWfRzZ0R",
+        "hash": "bef8085b26ba1f866a9e0cb9c521e33a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select num_route_or_id from \"osm_routes_par_departement\" where \"num_route_or_id\" in (\u0027A 6\u0027, \u0027A 6 - Autoroute du Soleil\u0027, \u0027A 6 - Autoroute du Soleil\u0027)",
+        "expandedSql": "select num_route_or_id from \"osm_routes_par_departement\" where \"num_route_or_id\" in (\u0027A 6\u0027, \u0027A 6 - Autoroute du Soleil\u0027, \u0027A 6 - Autoroute du Soleil\u0027)"
       }
     ]
   }
