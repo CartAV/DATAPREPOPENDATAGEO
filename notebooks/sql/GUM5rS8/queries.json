@@ -3224,6 +3224,28 @@
         },
         "sql": "select st_asgeojson(ST_ApproximateMedialAxis (st_concavehull(ST_Points(st_union((the_geom::geometry))), 0.5)))\n                    from \"osm_routes_par_departement\" where \"num_route_or_id\" in (\u0027A 6\u0027, \u0027A 6 - Autoroute du Soleil\u0027, \u0027A 6 - Autoroute du Soleil\u0027)",
         "expandedSql": "select st_asgeojson(ST_ApproximateMedialAxis (st_concavehull(ST_Points(st_union((the_geom::geometry))), 0.5)))\n                    from \"osm_routes_par_departement\" where \"num_route_or_id\" in (\u0027A 6\u0027, \u0027A 6 - Autoroute du Soleil\u0027, \u0027A 6 - Autoroute du Soleil\u0027)"
+      },
+      {
+        "mode": "SQL",
+        "id": "PufAnkNoAksC",
+        "runOn": 1491497087342,
+        "runIn": 38518,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "Tq4OGqa453T1qOTj",
+        "hash": "64e20129fbb3ac75496e30384ac9bc56",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select postgis_sfcgal_version\n--select st_asgeojson(ST_ApproximateMedialAxis (st_concavehull(ST_Points(st_union((the_geom::geometry))), 0.5)))\n                    --from \"osm_routes_par_departement\" where \"num_route_or_id\" in (\u0027A 6\u0027, \u0027A 6 - Autoroute du Soleil\u0027, \u0027A 6 - Autoroute du Soleil\u0027)",
+        "expandedSql": "select postgis_sfcgal_version\n--select st_asgeojson(ST_ApproximateMedialAxis (st_concavehull(ST_Points(st_union((the_geom::geometry))), 0.5)))\n                    --from \"osm_routes_par_departement\" where \"num_route_or_id\" in (\u0027A 6\u0027, \u0027A 6 - Autoroute du Soleil\u0027, \u0027A 6 - Autoroute du Soleil\u0027)"
       }
     ]
   }
