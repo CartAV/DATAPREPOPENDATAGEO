@@ -2278,6 +2278,28 @@
         },
         "sql": "select st_asgeojson( ST_ApproximateMedialAxis(st_union(the_geom::geometry))) from \"osm_routes_par_departement\" where \"num_route_or_id\" in (\u0027A 6\u0027, \u0027A 6 - Autoroute du Soleil\u0027, \u0027A 6 - Autoroute du Soleil\u0027)",
         "expandedSql": "select st_asgeojson( ST_ApproximateMedialAxis(st_union(the_geom::geometry))) from \"osm_routes_par_departement\" where \"num_route_or_id\" in (\u0027A 6\u0027, \u0027A 6 - Autoroute du Soleil\u0027, \u0027A 6 - Autoroute du Soleil\u0027)"
+      },
+      {
+        "mode": "SQL",
+        "id": "O2X1iGAGuFE1",
+        "runOn": 1491487858727,
+        "runIn": 696,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "NDjQAEEbtEeB6CRQ",
+        "hash": "78600ddea076e250f57693175075071e",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select st_asgeojson( ST_ApproximateMedialAxis(st_convexhull(st_union(the_geom::geometry)))) from \"osm_routes_par_departement\" where \"num_route_or_id\" in (\u0027A 6\u0027, \u0027A 6 - Autoroute du Soleil\u0027, \u0027A 6 - Autoroute du Soleil\u0027)",
+        "expandedSql": "select st_asgeojson( ST_ApproximateMedialAxis(st_convexhull(st_union(the_geom::geometry)))) from \"osm_routes_par_departement\" where \"num_route_or_id\" in (\u0027A 6\u0027, \u0027A 6 - Autoroute du Soleil\u0027, \u0027A 6 - Autoroute du Soleil\u0027)"
       }
     ]
   }
