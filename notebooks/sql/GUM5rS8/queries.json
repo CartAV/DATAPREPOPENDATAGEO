@@ -1948,6 +1948,28 @@
         },
         "sql": "select * from \"osm_routes_par_departement\" where \"the_geom\" like \u0027A 6%\u0027",
         "expandedSql": "select * from \"osm_routes_par_departement\" where \"the_geom\" like \u0027A 6%\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "wpJFAZsQECNE",
+        "runOn": 1491482993785,
+        "runIn": 1662,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "dMYildBG9GyNjNis",
+        "hash": "5cd96fb30aa9f19cc29750689eab0049",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"osm_routes_par_departement\" where \"num_route_or_id\" like \u0027A 6%\u0027",
+        "expandedSql": "select * from \"osm_routes_par_departement\" where \"num_route_or_id\" like \u0027A 6%\u0027"
       }
     ]
   }
