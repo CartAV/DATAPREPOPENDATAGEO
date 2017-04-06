@@ -1572,6 +1572,28 @@
         },
         "sql": "select distinct(\"num_route_or_id\") from \"osm_routes_par_departement\" where num_route_or_id like \u0027A%\u0027",
         "expandedSql": "select distinct(\"num_route_or_id\") from \"osm_routes_par_departement\" where num_route_or_id like \u0027A%\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "kH7pfkjRWTWA",
+        "runOn": 1491470861801,
+        "runIn": 845,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "poRPVZXOZeGrME8b",
+        "hash": "17073dcea32c2e26dac033906828aedc",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select distinct(\"num_route_or_id\") from \"osm_routes_par_departement\" where num_route_or_id like \u0027A 6%\u0027",
+        "expandedSql": "select distinct(\"num_route_or_id\") from \"osm_routes_par_departement\" where num_route_or_id like \u0027A 6%\u0027"
       }
     ]
   }
