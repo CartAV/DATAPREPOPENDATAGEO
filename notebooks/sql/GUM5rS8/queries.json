@@ -1527,6 +1527,30 @@
         "sql": "CREATE index pve_pg_prep_departement_idx on \"2010_2015_pve_pg_prep\"(\"DEPARTEMENT_INFRACTION\")",
         "expandedSql": "CREATE index pve_pg_prep_departement_idx on \"2010_2015_pve_pg_prep\"(\"DEPARTEMENT_INFRACTION\")"
       }
+    ],
+    "9dg90i540a": [
+      {
+        "mode": "SQL",
+        "id": "bzzbz5TFtfUT",
+        "runOn": 1491470559635,
+        "runIn": -1,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "fBzsZtU8YFusMrZO",
+        "hash": "4e6e9f04d1a11b33e8038a95da2048a8",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select distinct(\"num_route_or_id\") from \"osm_routes_par_departement\"",
+        "expandedSql": "select distinct(\"num_route_or_id\") from \"osm_routes_par_departement\""
+      }
     ]
   }
 }
