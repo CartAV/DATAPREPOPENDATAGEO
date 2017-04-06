@@ -3246,6 +3246,28 @@
         },
         "sql": "select postgis_sfcgal_version\n--select st_asgeojson(ST_ApproximateMedialAxis (st_concavehull(ST_Points(st_union((the_geom::geometry))), 0.5)))\n                    --from \"osm_routes_par_departement\" where \"num_route_or_id\" in (\u0027A 6\u0027, \u0027A 6 - Autoroute du Soleil\u0027, \u0027A 6 - Autoroute du Soleil\u0027)",
         "expandedSql": "select postgis_sfcgal_version\n--select st_asgeojson(ST_ApproximateMedialAxis (st_concavehull(ST_Points(st_union((the_geom::geometry))), 0.5)))\n                    --from \"osm_routes_par_departement\" where \"num_route_or_id\" in (\u0027A 6\u0027, \u0027A 6 - Autoroute du Soleil\u0027, \u0027A 6 - Autoroute du Soleil\u0027)"
+      },
+      {
+        "mode": "SQL",
+        "id": "gqb1zmtX339k",
+        "runOn": 1491497095076,
+        "runIn": 63,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "mQPJfLkcruj5QuaR",
+        "hash": "531376018ebc1c1d71799aafda77475d",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select postgis_sfcgal_version()\n--select st_asgeojson(ST_ApproximateMedialAxis (st_concavehull(ST_Points(st_union((the_geom::geometry))), 0.5)))\n                    --from \"osm_routes_par_departement\" where \"num_route_or_id\" in (\u0027A 6\u0027, \u0027A 6 - Autoroute du Soleil\u0027, \u0027A 6 - Autoroute du Soleil\u0027)",
+        "expandedSql": "select postgis_sfcgal_version()\n--select st_asgeojson(ST_ApproximateMedialAxis (st_concavehull(ST_Points(st_union((the_geom::geometry))), 0.5)))\n                    --from \"osm_routes_par_departement\" where \"num_route_or_id\" in (\u0027A 6\u0027, \u0027A 6 - Autoroute du Soleil\u0027, \u0027A 6 - Autoroute du Soleil\u0027)"
       }
     ]
   }
