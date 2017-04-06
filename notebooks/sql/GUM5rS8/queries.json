@@ -2850,6 +2850,28 @@
         },
         "sql": "select st_asgeojson( st_StraightSkeleton( st_buffer(st_union(the_geom::geometry), 0.001)))from \"osm_routes_par_departement\" where \"num_route_or_id\" in (\u0027A 6\u0027, \u0027A 6 - Autoroute du Soleil\u0027, \u0027A 6 - Autoroute du Soleil\u0027)",
         "expandedSql": "select st_asgeojson( st_StraightSkeleton( st_buffer(st_union(the_geom::geometry), 0.001)))from \"osm_routes_par_departement\" where \"num_route_or_id\" in (\u0027A 6\u0027, \u0027A 6 - Autoroute du Soleil\u0027, \u0027A 6 - Autoroute du Soleil\u0027)"
+      },
+      {
+        "mode": "SQL",
+        "id": "OMmGNmPKPjyA",
+        "runOn": 1491494238879,
+        "runIn": 108324,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "GKJSb4oDc4KcrjZ5",
+        "hash": "5b6adc625e0a3f74e289128b465af554",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select st_asgeojson( st_StraightSkeleton( st_concavehull(st_buffer(st_union(the_geom::geometry), 0.001), 0.99)))from \"osm_routes_par_departement\" where \"num_route_or_id\" in (\u0027A 6\u0027, \u0027A 6 - Autoroute du Soleil\u0027, \u0027A 6 - Autoroute du Soleil\u0027)",
+        "expandedSql": "select st_asgeojson( st_StraightSkeleton( st_concavehull(st_buffer(st_union(the_geom::geometry), 0.001), 0.99)))from \"osm_routes_par_departement\" where \"num_route_or_id\" in (\u0027A 6\u0027, \u0027A 6 - Autoroute du Soleil\u0027, \u0027A 6 - Autoroute du Soleil\u0027)"
       }
     ]
   }
