@@ -3292,6 +3292,28 @@
         },
         "sql": "ALTER TABLE \"osm_routes_par_departement\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n",
         "expandedSql": "ALTER TABLE \"osm_routes_par_departement\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "eDUwGdLYhTTn",
+        "runOn": 1491575357120,
+        "runIn": 27435,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "l8nm6xx7QFtiLcmz",
+        "hash": "c5d7a3127976ca7cddbda1a783cfa615",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "\nCREATE INDEX geom_osm_routes_dep_idx ON \"osm_routes_par_departement\"\n\tUSING GIST(the_geom);",
+        "expandedSql": "\nCREATE INDEX geom_osm_routes_dep_idx ON \"osm_routes_par_departement\"\n\tUSING GIST(the_geom);"
       }
     ]
   }
