@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489076140407
+    "lastModifiedOn": 1491571947655
   },
   "creationTag": {
     "versionNumber": 0,
@@ -67,6 +67,12 @@
       {
         "name": "num_route_or_id",
         "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "cummul_km",
+        "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       }
