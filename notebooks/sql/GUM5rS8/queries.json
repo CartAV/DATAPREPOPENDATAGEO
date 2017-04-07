@@ -3358,6 +3358,28 @@
         },
         "sql": "select \"CODE_DEPT\", sum(\"cummul_km\") from \"osm_routes_par_departement\"\ngroup by \"CODE_DEPT\"\n\norder by sum desc",
         "expandedSql": "select \"CODE_DEPT\", sum(\"cummul_km\") from \"osm_routes_par_departement\"\ngroup by \"CODE_DEPT\"\n\norder by sum desc"
+      },
+      {
+        "mode": "SQL",
+        "id": "ZROeIrNfQ99z",
+        "runOn": 1491575470511,
+        "runIn": 764,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "G7BYONGrKsI4wC0P",
+        "hash": "2b29483d0ea5ed7af063166430fa2288",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select  sum(\"cummul_km\") from \"osm_routes_par_departement\"\n--group by \"CODE_DEPT\"\n\norder by sum desc",
+        "expandedSql": "select  sum(\"cummul_km\") from \"osm_routes_par_departement\"\n--group by \"CODE_DEPT\"\n\norder by sum desc"
       }
     ]
   }
