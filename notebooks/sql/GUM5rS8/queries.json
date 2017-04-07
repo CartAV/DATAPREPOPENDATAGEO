@@ -3269,6 +3269,30 @@
         "sql": "select postgis_sfcgal_version()\n--select st_asgeojson(ST_ApproximateMedialAxis (st_concavehull(ST_Points(st_union((the_geom::geometry))), 0.5)))\n                    --from \"osm_routes_par_departement\" where \"num_route_or_id\" in (\u0027A 6\u0027, \u0027A 6 - Autoroute du Soleil\u0027, \u0027A 6 - Autoroute du Soleil\u0027)",
         "expandedSql": "select postgis_sfcgal_version()\n--select st_asgeojson(ST_ApproximateMedialAxis (st_concavehull(ST_Points(st_union((the_geom::geometry))), 0.5)))\n                    --from \"osm_routes_par_departement\" where \"num_route_or_id\" in (\u0027A 6\u0027, \u0027A 6 - Autoroute du Soleil\u0027, \u0027A 6 - Autoroute du Soleil\u0027)"
       }
+    ],
+    "bhc713n7i6s": [
+      {
+        "mode": "SQL",
+        "id": "Y2oYaHbfXfBL",
+        "runOn": 1491575319945,
+        "runIn": -1,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "s1u8AG3iaX5UKWix",
+        "hash": "14606ec078dcbc466ad96f9b2684ea3d",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "ALTER TABLE \"osm_routes_par_departement\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n",
+        "expandedSql": "ALTER TABLE \"osm_routes_par_departement\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n"
+      }
     ]
   }
 }
