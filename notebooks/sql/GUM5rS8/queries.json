@@ -3314,6 +3314,28 @@
         },
         "sql": "\nCREATE INDEX geom_osm_routes_dep_idx ON \"osm_routes_par_departement\"\n\tUSING GIST(the_geom);",
         "expandedSql": "\nCREATE INDEX geom_osm_routes_dep_idx ON \"osm_routes_par_departement\"\n\tUSING GIST(the_geom);"
+      },
+      {
+        "mode": "SQL",
+        "id": "w3h8LtxiD3Rb",
+        "runOn": 1491575421978,
+        "runIn": 41393,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "lJT08UfQUe5fgr94",
+        "hash": "9533ae897c9d4751b2e60f0920b2a291",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select \"CODE_DEPT\", sum(\"cummul_km\") from \"osm_routes_par_departement\"\ngroup by \"CODE_DEPT\"",
+        "expandedSql": "select \"CODE_DEPT\", sum(\"cummul_km\") from \"osm_routes_par_departement\"\ngroup by \"CODE_DEPT\""
       }
     ]
   }
