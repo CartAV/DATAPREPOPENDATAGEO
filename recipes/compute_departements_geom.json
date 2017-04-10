@@ -15,11 +15,11 @@
     "main": {
       "items": [
         {
-          "ref": "departements_wgs84_postgis",
+          "ref": "osm_routes_par_departement",
           "deps": []
         },
         {
-          "ref": "osm_routes_par_departement",
+          "ref": "IGN_DEPARTEMENT_FRANCE",
           "deps": []
         }
       ]
@@ -36,11 +36,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1491812152569
+    "lastModifiedOn": 1491816957465
   },
   "creationTag": {
     "versionNumber": 0,
