@@ -5,7 +5,7 @@ SELECT "CODE_REG",
        "CODE_CHF",
        "NOM_CHF",
        st_asgeojson(the_geom) as geojson,
-       longueur_routes / 1000
+       longueur_routes / 1000 as longueur_routes
   FROM "ign_departement_france" as dep,
   LATERAL (
       SELECT sum("cummul_km") as longueur_routes
