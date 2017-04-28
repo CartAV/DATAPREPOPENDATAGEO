@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489419869543
+    "lastModifiedOn": 1493390916306
   },
   "creationTag": {
     "versionNumber": 0,
@@ -54,6 +54,12 @@
     "columns": [
       {
         "name": "the_geom",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "num_route_com_id",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
