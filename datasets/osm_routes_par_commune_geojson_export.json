@@ -48,11 +48,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1494342277905
+    "lastModifiedOn": 1494342774568
   },
   "creationTag": {
     "versionNumber": 0,
@@ -71,30 +71,6 @@
   "schema": {
     "userModified": false,
     "columns": [
-      {
-        "name": "the_geom",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "num_route_com_id",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "INSEE_COM",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "num_route_or_id",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
       {
         "name": "geojson",
         "type": "string",
