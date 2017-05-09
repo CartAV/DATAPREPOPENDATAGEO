@@ -1,7 +1,7 @@
 {
   "type": "Filesystem",
   "managed": true,
-  "formatType": "json",
+  "formatType": "csv",
   "checklists": {
     "checklists": []
   },
@@ -15,22 +15,44 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "formatParams": {
-    "nestedArraysHandling": "FLATTEN",
-    "extractFromSingleElement": false,
-    "nestedArraysMaxElements": 100,
-    "nestedArraysMaxContentSize": 300000,
-    "headerRow": false
+    "style": "unix",
+    "charset": "utf8",
+    "separator": "],[",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "dateSerializationFormat": "ISO",
+    "arrayMapFormat": "json",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": false,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 0,
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "compress": ""
   },
   "partitioning": {
     "ignoreNonMatchingFile": false,
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1494343846798
+    "lastModifiedOn": 1494343955188
   },
   "creationTag": {
     "versionNumber": 0,
