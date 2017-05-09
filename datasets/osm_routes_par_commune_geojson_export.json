@@ -15,9 +15,8 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "formatParams": {
-    "style": "unix",
+    "style": "no_escape_no_quote",
     "charset": "utf8",
-    "separator": "],[",
     "quoteChar": "\"",
     "escapeChar": "\\",
     "dateSerializationFormat": "ISO",
@@ -36,7 +35,7 @@
     "skipRowsAfterHeader": 0,
     "probableNumberOfRecords": 0,
     "normalizeBooleans": false,
-    "normalizeDoubles": true,
+    "normalizeDoubles": false,
     "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
     "readMissingColumnsBehavior": "DISCARD_SILENT",
     "readDataTypeMismatchBehavior": "DISCARD_WARNING",
@@ -48,11 +47,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1494343955188
+    "lastModifiedOn": 1494344069448
   },
   "creationTag": {
     "versionNumber": 0,
