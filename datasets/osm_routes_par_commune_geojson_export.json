@@ -15,7 +15,7 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "formatParams": {
-    "nestedArraysHandling": "PRESERVE",
+    "nestedArraysHandling": "FLATTEN",
     "extractFromSingleElement": false,
     "nestedArraysMaxElements": 100,
     "nestedArraysMaxContentSize": 300000,
@@ -26,11 +26,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1494343679799
+    "lastModifiedOn": 1494343697239
   },
   "creationTag": {
     "versionNumber": 0,
