@@ -17,6 +17,7 @@
   "formatParams": {
     "style": "no_escape_no_quote",
     "charset": "utf8",
+    "separator": ";",
     "quoteChar": "\"",
     "escapeChar": "\\",
     "dateSerializationFormat": "ISO",
@@ -47,11 +48,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1494344069448
+    "lastModifiedOn": 1494344151127
   },
   "creationTag": {
     "versionNumber": 0,
