@@ -26,11 +26,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1494343697239
+    "lastModifiedOn": 1494343846798
   },
   "creationTag": {
     "versionNumber": 0,
@@ -50,51 +50,10 @@
     "userModified": false,
     "columns": [
       {
-        "name": "properties.the_geom",
+        "name": "geojson",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
-      },
-      {
-        "name": "properties.num_route_com_id",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "properties.INSEE_COM",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "properties.num_route_or_id",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "geometry.type",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "type",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "geometry.coordinates",
-        "type": "array",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1,
-        "arrayContent": {
-          "type": "string",
-          "timestampNoTzAsDate": false,
-          "maxLength": -1
-        }
       }
     ]
   },
