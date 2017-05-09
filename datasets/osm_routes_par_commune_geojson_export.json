@@ -1,7 +1,7 @@
 {
   "type": "Filesystem",
   "managed": true,
-  "formatType": "geojson",
+  "formatType": "json",
   "checklists": {
     "checklists": []
   },
@@ -14,17 +14,24 @@
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
   },
-  "formatParams": {},
+  "formatParams": {
+    "nestedArraysHandling": "PRESERVE",
+    "extractFromSingleElement": true,
+    "rootPath": "type\u003d\"Features\"",
+    "nestedArraysMaxElements": 100,
+    "nestedArraysMaxContentSize": 300000,
+    "headerRow": false
+  },
   "partitioning": {
     "ignoreNonMatchingFile": false,
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1494342840290
+    "lastModifiedOn": 1494343054836
   },
   "creationTag": {
     "versionNumber": 0,
