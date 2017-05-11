@@ -24,7 +24,7 @@
       "params": {
         "matchingMode": "PATTERN",
         "values": [
-          "^(75|77|91|92|93|94|95|78)"
+          "^(75)"
         ],
         "booleanMode": "AND",
         "normalizationMode": "EXACT",
