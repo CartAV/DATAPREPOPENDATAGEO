@@ -21,6 +21,26 @@
     {
       "alwaysShowComment": false,
       "preview": false,
+      "params": {
+        "matchingMode": "PATTERN",
+        "values": [
+          "^(75|77|91|92|93|94|95|78)"
+        ],
+        "booleanMode": "AND",
+        "normalizationMode": "EXACT",
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "INSEE_COM"
+        ],
+        "action": "KEEP_ROW"
+      },
+      "type": "FilterOnValue",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": false,
       "name": "one geojson per line",
       "steps": [
         {
