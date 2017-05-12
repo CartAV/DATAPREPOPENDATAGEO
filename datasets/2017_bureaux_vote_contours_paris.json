@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1494597864053
+    "lastModifiedOn": 1494598008914
   },
   "creationTag": {
     "versionNumber": 0,
@@ -83,6 +83,7 @@
       {
         "name": "Identifiant du bureau de vote",
         "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
