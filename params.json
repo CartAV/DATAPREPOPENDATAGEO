@@ -253,6 +253,16 @@
             "appearOnFlow": true
           }
         ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "2017_bureaux_vote_contours_paris",
+        "rules": [
+          {
+            "targetProject": "ELECTIONS",
+            "appearOnFlow": true
+          }
+        ]
       }
     ]
   },
@@ -326,11 +336,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 23,
+    "versionNumber": 24,
     "lastModifiedBy": {
-      "login": "chabouisfr"
+      "login": "antoinefa"
     },
-    "lastModifiedOn": 1491223249852
+    "lastModifiedOn": 1494597712609
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
