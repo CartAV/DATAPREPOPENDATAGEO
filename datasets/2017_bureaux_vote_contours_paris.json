@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1494597639053
+    "lastModifiedOn": 1494597864053
   },
   "creationTag": {
     "versionNumber": 0,
@@ -52,15 +52,15 @@
     "columns": [
       {
         "name": "ObjectID",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
-        "maxLength": 16200
+        "maxLength": -1
       },
       {
         "name": "Numéro du bureau de vote",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
-        "maxLength": 16200
+        "maxLength": -1
       },
       {
         "name": "Libellé du bureau de vote",
@@ -76,9 +76,9 @@
       },
       {
         "name": "Code Postal",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
-        "maxLength": 16200
+        "maxLength": -1
       },
       {
         "name": "Identifiant du bureau de vote",
