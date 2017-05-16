@@ -22,14 +22,14 @@
         "partitionSelectionMethod": "ALL",
         "latestPartitionsN": 1,
         "samplingMethod": "CLASS_REBALANCE_TARGET_NB_APPROX",
-        "maxRecords": 3000,
+        "maxRecords": 3020,
         "targetRatio": 0.02,
         "column": "dep_code",
         "withinFirstN": -1,
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 3
+      "_refreshTrigger": 4
     },
     "vizSampling": {
       "autoRefreshSample": false,
