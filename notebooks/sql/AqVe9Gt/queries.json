@@ -1,0 +1,28 @@
+{
+  "queries": {
+    "k63odrz5jx": [
+      {
+        "mode": "SQL",
+        "id": "tZ8UC0xagikq",
+        "runOn": 1494949071513,
+        "runIn": -1,
+        "runBy": "marquaillech",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "LidAkh6ups4OYGby",
+        "hash": "e698a8d5b7470be8dd8e787a8f449052",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT name, dep_code FROM \"2016_geohisto_communes_prep\"",
+        "expandedSql": "SELECT name, dep_code FROM \"2016_geohisto_communes_prep\""
+      }
+    ]
+  }
+}
