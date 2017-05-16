@@ -1,14 +1,28 @@
 {
   "connection": "datalabmaster",
   "name": "marquaillech\u0027s notebook on datalabmaster",
-  "cells": [],
+  "cells": [
+    {
+      "id": "k63odrz5jx",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "inheritConf": "default",
+        "extraConf": [],
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
+      }
+    }
+  ],
   "automationLocal": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "marquaillech"
     },
-    "lastModifiedOn": 1494949010358
+    "lastModifiedOn": 1494949013479
   },
   "creationTag": {
     "versionNumber": 0,
