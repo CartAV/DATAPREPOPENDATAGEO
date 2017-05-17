@@ -396,6 +396,28 @@
         },
         "sql": "SELECT a.* FROM (\n  SELECT  row_number() over () as \u0027rang\u0027, \n          newest_name as \u0027COMMUNE\u0027, \n          newest_dep_code as \u0027CODE DEPARTEMENT\u0027 \n  FROM    \"2016_geohisto_communes_prep\"\n  ORDER BY RANDOM()  \n) a\nWHERE a.rang \u003c\u003d ROUND( RANDOM() * 3000 ) + 1",
         "expandedSql": "SELECT a.* FROM (\n  SELECT  row_number() over () as \u0027rang\u0027, \n          newest_name as \u0027COMMUNE\u0027, \n          newest_dep_code as \u0027CODE DEPARTEMENT\u0027 \n  FROM    \"2016_geohisto_communes_prep\"\n  ORDER BY RANDOM()  \n) a\nWHERE a.rang \u003c\u003d ROUND( RANDOM() * 3000 ) + 1"
+      },
+      {
+        "mode": "SQL",
+        "id": "BMip3SmatJKa",
+        "runOn": 1495005429596,
+        "runIn": 115,
+        "runBy": "marquaillech",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "hfAY3ouhoKMUEGCL",
+        "hash": "36dd0f1e78c48a2368ba6459f1c164d3",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT a.* FROM (\n  SELECT  row_number() over (partition by newest_dep_code) as \u0027rang\u0027, \n          newest_name as \u0027COMMUNE\u0027, \n          newest_dep_code as \u0027CODE DEPARTEMENT\u0027 \n  FROM    \"2016_geohisto_communes_prep\"\n  ORDER BY RANDOM()  \n) a\nWHERE a.rang \u003c\u003d ROUND( RANDOM() * 200 ) + 1",
+        "expandedSql": "SELECT a.* FROM (\n  SELECT  row_number() over (partition by newest_dep_code) as \u0027rang\u0027, \n          newest_name as \u0027COMMUNE\u0027, \n          newest_dep_code as \u0027CODE DEPARTEMENT\u0027 \n  FROM    \"2016_geohisto_communes_prep\"\n  ORDER BY RANDOM()  \n) a\nWHERE a.rang \u003c\u003d ROUND( RANDOM() * 200 ) + 1"
       }
     ]
   }
