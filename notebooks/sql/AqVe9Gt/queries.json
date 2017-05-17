@@ -132,6 +132,28 @@
         },
         "sql": "SELECT row_number() over (partition by id), newest_name, newest_dep_code FROM \"2016_geohisto_communes_prep\"",
         "expandedSql": "SELECT row_number() over (partition by id), newest_name, newest_dep_code FROM \"2016_geohisto_communes_prep\""
+      },
+      {
+        "mode": "SQL",
+        "id": "nTKTlcISB8EI",
+        "runOn": 1495004459304,
+        "runIn": 60,
+        "runBy": "marquaillech",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "6ahSC6Btj7QWsJ1E",
+        "hash": "f5900c9c81cb6d7a2ef19da80902f6d8",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT row_number() over (partition by id), id,\nnewest_name, \nnewest_dep_code \nFROM \"2016_geohisto_communes_prep\"",
+        "expandedSql": "SELECT row_number() over (partition by id), id,\nnewest_name, \nnewest_dep_code \nFROM \"2016_geohisto_communes_prep\""
       }
     ]
   }
