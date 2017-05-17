@@ -27,10 +27,10 @@
         "mode": "SQL",
         "id": "gPw7zsOiCWZY",
         "runOn": 1495004317859,
-        "runIn": 79,
+        "runIn": 58,
         "runBy": "marquaillech",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "UdiKLnZez3BcH9Aj",
         "hash": "85646375ec94ea59cec7c183af4f484c",
         "querySettings": {
