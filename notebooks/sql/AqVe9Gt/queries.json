@@ -418,6 +418,28 @@
         },
         "sql": "SELECT a.* FROM (\n  SELECT  row_number() over (partition by newest_dep_code) as \u0027rang\u0027, \n          newest_name as \u0027COMMUNE\u0027, \n          newest_dep_code as \u0027CODE DEPARTEMENT\u0027 \n  FROM    \"2016_geohisto_communes_prep\"\n  ORDER BY RANDOM()  \n) a\nWHERE a.rang \u003c\u003d ROUND( RANDOM() * 200 ) + 1",
         "expandedSql": "SELECT a.* FROM (\n  SELECT  row_number() over (partition by newest_dep_code) as \u0027rang\u0027, \n          newest_name as \u0027COMMUNE\u0027, \n          newest_dep_code as \u0027CODE DEPARTEMENT\u0027 \n  FROM    \"2016_geohisto_communes_prep\"\n  ORDER BY RANDOM()  \n) a\nWHERE a.rang \u003c\u003d ROUND( RANDOM() * 200 ) + 1"
+      },
+      {
+        "mode": "SQL",
+        "id": "0zahqulyVyO0",
+        "runOn": 1495005518208,
+        "runIn": 125,
+        "runBy": "marquaillech",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "0z1PtPyd90SQM3ew",
+        "hash": "eacca65c9ee105bfb6073c0ee31bf974",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT a.* FROM (\n  SELECT  row_number() over (partition by newest_dep_code) as \u0027rang\u0027, \n          newest_name as \u0027COMMUNE\u0027, \n          newest_dep_code as \u0027CODE DEPARTEMENT\u0027 \n  FROM    \"2016_geohisto_communes_prep\"\n  ORDER BY RANDOM()  \n) a\nWHERE a.rang \u003c\u003d ROUND( RANDOM() * 99 ) + 1",
+        "expandedSql": "SELECT a.* FROM (\n  SELECT  row_number() over (partition by newest_dep_code) as \u0027rang\u0027, \n          newest_name as \u0027COMMUNE\u0027, \n          newest_dep_code as \u0027CODE DEPARTEMENT\u0027 \n  FROM    \"2016_geohisto_communes_prep\"\n  ORDER BY RANDOM()  \n) a\nWHERE a.rang \u003c\u003d ROUND( RANDOM() * 99 ) + 1"
       }
     ]
   }
