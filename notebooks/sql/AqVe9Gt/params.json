@@ -5,7 +5,7 @@
     {
       "id": "k63odrz5jx",
       "type": "QUERY",
-      "name": "selection aleatoire de communes",
+      "name": "selection aleatoire de communes dans chaque département",
       "querySettings": {
         "addLimitToStatement": true,
         "statementsOutOfTransaction": false,
@@ -23,7 +23,7 @@
     "lastModifiedBy": {
       "login": "marquaillech"
     },
-    "lastModifiedOn": 1495005957030
+    "lastModifiedOn": 1495005962918
   },
   "creationTag": {
     "versionNumber": 0,
