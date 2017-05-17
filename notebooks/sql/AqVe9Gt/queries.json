@@ -176,6 +176,28 @@
         },
         "sql": "SELECT row_number() over (partition by insee_code), \nnewest_name, \nnewest_dep_code \nFROM \"2016_geohisto_communes_prep\"",
         "expandedSql": "SELECT row_number() over (partition by insee_code), \nnewest_name, \nnewest_dep_code \nFROM \"2016_geohisto_communes_prep\""
+      },
+      {
+        "mode": "SQL",
+        "id": "pGuEdBSCArGq",
+        "runOn": 1495004497372,
+        "runIn": 98,
+        "runBy": "marquaillech",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "WQb13doOZxsh07IG",
+        "hash": "2514c8a8dd1f0c52002f1d9413e14dbf",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT row_number() over (partition by insee_code), insee_code,\nnewest_name, \nnewest_dep_code \nFROM \"2016_geohisto_communes_prep\"",
+        "expandedSql": "SELECT row_number() over (partition by insee_code), insee_code,\nnewest_name, \nnewest_dep_code \nFROM \"2016_geohisto_communes_prep\""
       }
     ]
   }
