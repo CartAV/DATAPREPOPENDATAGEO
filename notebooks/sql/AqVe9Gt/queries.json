@@ -242,6 +242,28 @@
         },
         "sql": "SELECT row_number() over (), name,\nnewest_name, \nnewest_dep_code \nFROM \"2016_geohisto_communes_prep\"",
         "expandedSql": "SELECT row_number() over (), name,\nnewest_name, \nnewest_dep_code \nFROM \"2016_geohisto_communes_prep\""
+      },
+      {
+        "mode": "SQL",
+        "id": "4iESrr2t6S26",
+        "runOn": 1495004612564,
+        "runIn": 71,
+        "runBy": "marquaillech",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "8WGYaiqsVQCjbLVy",
+        "hash": "246c95b5dc93cc3451545281b5cfea0d",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT row_number() over (), name,\nnewest_name, \nnewest_dep_code \nFROM \"2016_geohisto_communes_prep\"\norder by rand()",
+        "expandedSql": "SELECT row_number() over (), name,\nnewest_name, \nnewest_dep_code \nFROM \"2016_geohisto_communes_prep\"\norder by rand()"
       }
     ]
   }
