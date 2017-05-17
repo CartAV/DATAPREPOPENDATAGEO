@@ -374,6 +374,28 @@
         },
         "sql": "SELECT a.* FROM (\n  SELECT  row_number() over () as \u0027rang\u0027, \n          newest_name as \u0027COMMUNE\u0027, \n          newest_dep_code as \u0027CODE DEPARTEMENT\u0027 \n  FROM    \"2016_geohisto_communes_prep\"\n) a\nWHERE a.rang \u003c\u003d ROUND( RANDOM() * 3000 ) + 1",
         "expandedSql": "SELECT a.* FROM (\n  SELECT  row_number() over () as \u0027rang\u0027, \n          newest_name as \u0027COMMUNE\u0027, \n          newest_dep_code as \u0027CODE DEPARTEMENT\u0027 \n  FROM    \"2016_geohisto_communes_prep\"\n) a\nWHERE a.rang \u003c\u003d ROUND( RANDOM() * 3000 ) + 1"
+      },
+      {
+        "mode": "SQL",
+        "id": "rl0wVrHjJw4X",
+        "runOn": 1495005198162,
+        "runIn": 71,
+        "runBy": "marquaillech",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "OBcaxiNuxjhfAuSq",
+        "hash": "50fb5cd5a36af5e48bf2c0f26f197d95",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT a.* FROM (\n  SELECT  row_number() over () as \u0027rang\u0027, \n          newest_name as \u0027COMMUNE\u0027, \n          newest_dep_code as \u0027CODE DEPARTEMENT\u0027 \n  FROM    \"2016_geohisto_communes_prep\"\n  ORDER BY RANDOM()  \n) a\nWHERE a.rang \u003c\u003d ROUND( RANDOM() * 3000 ) + 1",
+        "expandedSql": "SELECT a.* FROM (\n  SELECT  row_number() over () as \u0027rang\u0027, \n          newest_name as \u0027COMMUNE\u0027, \n          newest_dep_code as \u0027CODE DEPARTEMENT\u0027 \n  FROM    \"2016_geohisto_communes_prep\"\n  ORDER BY RANDOM()  \n) a\nWHERE a.rang \u003c\u003d ROUND( RANDOM() * 3000 ) + 1"
       }
     ]
   }
