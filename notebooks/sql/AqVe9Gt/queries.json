@@ -184,7 +184,7 @@
         "runIn": 98,
         "runBy": "marquaillech",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "WQb13doOZxsh07IG",
         "hash": "2514c8a8dd1f0c52002f1d9413e14dbf",
         "querySettings": {
