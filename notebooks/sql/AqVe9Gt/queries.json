@@ -286,6 +286,28 @@
         },
         "sql": "SELECT row_number() over (), name,\nnewest_name, \nnewest_dep_code \nFROM \"2016_geohisto_communes_prep\"\norder by random()",
         "expandedSql": "SELECT row_number() over (), name,\nnewest_name, \nnewest_dep_code \nFROM \"2016_geohisto_communes_prep\"\norder by random()"
+      },
+      {
+        "mode": "SQL",
+        "id": "XVBwYcMOyjK6",
+        "runOn": 1495005016404,
+        "runIn": 134,
+        "runBy": "marquaillech",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "7OBQlbpm3aCRMnS4",
+        "hash": "b38aef9cb1ae02a6787ae487d5304f66",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT * FROM (\n  SELECT  row_number() over () as \u0027rang\u0027, \n          newest_name as \u0027COMMUNE\u0027, \n          newest_dep_code \u0027as CODE DEPARTEMENT\u0027 \n  FROM    \"2016_geohisto_communes_prep\"\n)\nWHERE rang \u003d ROUND( RANDOM() * 3000 ) + 1",
+        "expandedSql": "SELECT * FROM (\n  SELECT  row_number() over () as \u0027rang\u0027, \n          newest_name as \u0027COMMUNE\u0027, \n          newest_dep_code \u0027as CODE DEPARTEMENT\u0027 \n  FROM    \"2016_geohisto_communes_prep\"\n)\nWHERE rang \u003d ROUND( RANDOM() * 3000 ) + 1"
       }
     ]
   }
