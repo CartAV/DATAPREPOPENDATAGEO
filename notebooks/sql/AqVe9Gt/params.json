@@ -5,7 +5,7 @@
     {
       "id": "k63odrz5jx",
       "type": "QUERY",
-      "name": "selection aleatoire",
+      "name": "selection aleatoire de communes",
       "querySettings": {
         "addLimitToStatement": true,
         "statementsOutOfTransaction": false,
@@ -19,11 +19,11 @@
   ],
   "automationLocal": false,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "marquaillech"
     },
-    "lastModifiedOn": 1495004751902
+    "lastModifiedOn": 1495005957030
   },
   "creationTag": {
     "versionNumber": 0,
