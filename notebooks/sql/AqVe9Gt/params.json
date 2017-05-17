@@ -5,6 +5,7 @@
     {
       "id": "k63odrz5jx",
       "type": "QUERY",
+      "name": "selection aleatoire",
       "querySettings": {
         "addLimitToStatement": true,
         "statementsOutOfTransaction": false,
@@ -18,11 +19,11 @@
   ],
   "automationLocal": false,
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "marquaillech"
     },
-    "lastModifiedOn": 1494949013479
+    "lastModifiedOn": 1495004751902
   },
   "creationTag": {
     "versionNumber": 0,
