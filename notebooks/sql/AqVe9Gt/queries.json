@@ -462,6 +462,28 @@
         },
         "sql": "SELECT a.* FROM (\n  SELECT  row_number() over (partition by newest_dep_code) as \u0027rang\u0027, \n          newest_name as \u0027COMMUNE\u0027, \n          newest_dep_code as \u0027CODE DEPARTEMENT\u0027,\n          latitude,\n          longitude\n  FROM    \"2016_geohisto_communes_prep\"\n  ORDER BY RANDOM()  \n) a\nWHERE a.rang \u003c\u003d ROUND( RANDOM() * 99 ) + 1",
         "expandedSql": "SELECT a.* FROM (\n  SELECT  row_number() over (partition by newest_dep_code) as \u0027rang\u0027, \n          newest_name as \u0027COMMUNE\u0027, \n          newest_dep_code as \u0027CODE DEPARTEMENT\u0027,\n          latitude,\n          longitude\n  FROM    \"2016_geohisto_communes_prep\"\n  ORDER BY RANDOM()  \n) a\nWHERE a.rang \u003c\u003d ROUND( RANDOM() * 99 ) + 1"
+      },
+      {
+        "mode": "SQL",
+        "id": "12NHXLhaPPmO",
+        "runOn": 1495006122625,
+        "runIn": 143,
+        "runBy": "marquaillech",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "Kz7L4SKAr6LovdHc",
+        "hash": "ff21595e3ef899c6f7006c7b90667a1d",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT a.* FROM (\n  SELECT  row_number() over (partition by newest_dep_code) as \u0027rang\u0027, \n          newest_insee_code as \u0027CODE COMMUNE\u0027,\n          newest_name as \u0027COMMUNE\u0027, \n          newest_dep_code as \u0027CODE DEPARTEMENT\u0027,\n          latitude,\n          longitude\n  FROM    \"2016_geohisto_communes_prep\"\n  ORDER BY RANDOM()  \n) a\nWHERE a.rang \u003c\u003d ROUND( RANDOM() * 99 ) + 1",
+        "expandedSql": "SELECT a.* FROM (\n  SELECT  row_number() over (partition by newest_dep_code) as \u0027rang\u0027, \n          newest_insee_code as \u0027CODE COMMUNE\u0027,\n          newest_name as \u0027COMMUNE\u0027, \n          newest_dep_code as \u0027CODE DEPARTEMENT\u0027,\n          latitude,\n          longitude\n  FROM    \"2016_geohisto_communes_prep\"\n  ORDER BY RANDOM()  \n) a\nWHERE a.rang \u003c\u003d ROUND( RANDOM() * 99 ) + 1"
       }
     ]
   }
