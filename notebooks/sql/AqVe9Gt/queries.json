@@ -401,10 +401,10 @@
         "mode": "SQL",
         "id": "BMip3SmatJKa",
         "runOn": 1495005429596,
-        "runIn": 115,
+        "runIn": 125,
         "runBy": "marquaillech",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "hfAY3ouhoKMUEGCL",
         "hash": "36dd0f1e78c48a2368ba6459f1c164d3",
         "querySettings": {
