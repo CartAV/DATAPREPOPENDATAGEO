@@ -506,6 +506,28 @@
         },
         "sql": "SELECT a.* FROM (\n  SELECT  row_number() over (partition by newest_dep_code) as \u0027rang\u0027, \n          newest_insee_code::text as \u0027CODE COMMUNE\u0027,\n          newest_name as \u0027COMMUNE\u0027, \n          newest_dep_code as \u0027CODE DEPARTEMENT\u0027,\n          latitude,\n          longitude\n  FROM    \"2016_geohisto_communes_prep\"\n  ORDER BY RANDOM()  \n) a\nWHERE a.rang \u003c\u003d ROUND( RANDOM() * 99 ) + 1",
         "expandedSql": "SELECT a.* FROM (\n  SELECT  row_number() over (partition by newest_dep_code) as \u0027rang\u0027, \n          newest_insee_code::text as \u0027CODE COMMUNE\u0027,\n          newest_name as \u0027COMMUNE\u0027, \n          newest_dep_code as \u0027CODE DEPARTEMENT\u0027,\n          latitude,\n          longitude\n  FROM    \"2016_geohisto_communes_prep\"\n  ORDER BY RANDOM()  \n) a\nWHERE a.rang \u003c\u003d ROUND( RANDOM() * 99 ) + 1"
+      },
+      {
+        "mode": "SQL",
+        "id": "0oDdx1ghOy9d",
+        "runOn": 1495006154408,
+        "runIn": 54,
+        "runBy": "marquaillech",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "MqrWmRSiejjVCV3V",
+        "hash": "2665e04c3f5fddd10a6f48e5b5442476",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT a.* FROM (\n  SELECT  row_number() over (partition by newest_dep_code) as \u0027rang\u0027, \n          newest_insee_code::string as \u0027CODE COMMUNE\u0027,\n          newest_name as \u0027COMMUNE\u0027, \n          newest_dep_code as \u0027CODE DEPARTEMENT\u0027,\n          latitude,\n          longitude\n  FROM    \"2016_geohisto_communes_prep\"\n  ORDER BY RANDOM()  \n) a\nWHERE a.rang \u003c\u003d ROUND( RANDOM() * 99 ) + 1",
+        "expandedSql": "SELECT a.* FROM (\n  SELECT  row_number() over (partition by newest_dep_code) as \u0027rang\u0027, \n          newest_insee_code::string as \u0027CODE COMMUNE\u0027,\n          newest_name as \u0027COMMUNE\u0027, \n          newest_dep_code as \u0027CODE DEPARTEMENT\u0027,\n          latitude,\n          longitude\n  FROM    \"2016_geohisto_communes_prep\"\n  ORDER BY RANDOM()  \n) a\nWHERE a.rang \u003c\u003d ROUND( RANDOM() * 99 ) + 1"
       }
     ]
   }
