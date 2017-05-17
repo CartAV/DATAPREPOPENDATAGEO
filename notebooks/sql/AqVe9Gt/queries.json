@@ -44,6 +44,28 @@
         },
         "sql": "SELECT rownum, newest_name, newest_dep_code FROM \"2016_geohisto_communes_prep\" order by rand()",
         "expandedSql": "SELECT rownum, newest_name, newest_dep_code FROM \"2016_geohisto_communes_prep\" order by rand()"
+      },
+      {
+        "mode": "SQL",
+        "id": "OFWNyvuJsRl4",
+        "runOn": 1495004352232,
+        "runIn": 58,
+        "runBy": "marquaillech",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "EAsZoLt64BFpUCXw",
+        "hash": "e72d235a90b601c19c73856840bc141f",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT row_number, newest_name, newest_dep_code FROM \"2016_geohisto_communes_prep\" order by rand()",
+        "expandedSql": "SELECT row_number, newest_name, newest_dep_code FROM \"2016_geohisto_communes_prep\" order by rand()"
       }
     ]
   }
