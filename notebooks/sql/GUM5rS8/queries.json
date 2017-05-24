@@ -3426,6 +3426,28 @@
         },
         "sql": "select * from \"osm_routes_par_departement\"\nwhere \"osm_name\" \u003d \u0027D 37\u0027",
         "expandedSql": "select * from \"osm_routes_par_departement\"\nwhere \"osm_name\" \u003d \u0027D 37\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "iekP1JACKZOW",
+        "runOn": 1495636107156,
+        "runIn": 107,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "9Oz0SRyprgYOs8a5",
+        "hash": "677eafb56d11fe206c057e0e7998b57e",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"osm_routes_par_departement\"\nwhere \"num_route_or_id\" \u003d \u0027D 37\u0027",
+        "expandedSql": "select * from \"osm_routes_par_departement\"\nwhere \"num_route_or_id\" \u003d \u0027D 37\u0027"
       }
     ]
   }
