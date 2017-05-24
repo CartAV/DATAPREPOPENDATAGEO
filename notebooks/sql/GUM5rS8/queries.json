@@ -3448,6 +3448,28 @@
         },
         "sql": "select * from \"osm_routes_par_departement\"\nwhere \"num_route_or_id\" \u003d \u0027D 37\u0027",
         "expandedSql": "select * from \"osm_routes_par_departement\"\nwhere \"num_route_or_id\" \u003d \u0027D 37\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "FjKDO5FUXq17",
+        "runOn": 1495636138905,
+        "runIn": 2810,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "dRbLAkZFVQ1LETGk",
+        "hash": "35dafdfdfcf43241645d90203dd0fd93",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select CODE_DEPT, route_dep_id from \"osm_routes_par_departement\"\nwhere \"num_route_or_id\" \u003d \u0027D 37\u0027",
+        "expandedSql": "select CODE_DEPT, route_dep_id from \"osm_routes_par_departement\"\nwhere \"num_route_or_id\" \u003d \u0027D 37\u0027"
       }
     ]
   }
