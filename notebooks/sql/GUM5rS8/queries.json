@@ -3492,6 +3492,28 @@
         },
         "sql": "select \"CODE_DEPT\", route_dep_id from \"osm_routes_par_departement\"\nwhere \"num_route_or_id\" \u003d \u0027D 37\u0027",
         "expandedSql": "select \"CODE_DEPT\", route_dep_id from \"osm_routes_par_departement\"\nwhere \"num_route_or_id\" \u003d \u0027D 37\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "EKTPI6ISr7aU",
+        "runOn": 1495636174989,
+        "runIn": 2741,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "KH5pokBYYDlVridD",
+        "hash": "39c8eafd70c6fd0cc52721739d82af1e",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select \"CODE_DEPT\", route_dep_id from \"osm_routes_par_departement\"\nwhere \"num_route_or_id\" \u003d \u0027D 37\u0027 and \"CODE_DEPT\" \u003d \u002713\u0027",
+        "expandedSql": "select \"CODE_DEPT\", route_dep_id from \"osm_routes_par_departement\"\nwhere \"num_route_or_id\" \u003d \u0027D 37\u0027 and \"CODE_DEPT\" \u003d \u002713\u0027"
       }
     ]
   }
