@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
-      "login": "grabenertr"
+      "login": "chabouisfr"
     },
-    "lastModifiedOn": 1489580813450
+    "lastModifiedOn": 1495637274634
   },
   "creationTag": {
     "versionNumber": 0,
@@ -43,7 +43,7 @@
     "normalizeDoubles": true,
     "table": "ign_commune_france",
     "tableCreationMode": "auto",
-    "customPostWriteStatements": "UPDATE \"ign_commune_france\"\n\tSET the_geom \u003d st_SetSRID(st_geomfromtext(the_geom), 4326);\n\nALTER TABLE \"ign_commune_france\"\n\tALTER COLUMN the_geom type geography(MultiPolygon)\n\tUSING the_geom::geography(MultiPolygon);\n\nCREATE INDEX commune_idx ON \"ign_commune_france\"\n    USING gist(the_geom);\n\nCREATE INDEX commune_insee_idx ON \"ign_commune_france\"(\"INSEE_COM\");\n\nINSERT INTO \"ign_commune_france\"\n\t(the_geom, \"INSEE_COM\", \"NOM_COM\", \"STATUT\", \"SUPERFICIE\", \"POPULATION\", \"CODE_DEPT\", \"NOM_DEPT\", \"CODE_REG\", \"NOM_REG\")\n\t (SELECT\n          st_multi(st_union(the_geom::geometry)), \u002775056\u0027, \u0027Paris\u0027, \u0027Commune\u0027, sum(\"SUPERFICIE\"::integer), sum(\"POPULATION\"::integer), max(\"CODE_DEPT\"), max(\"NOM_DEPT\"), max(\"CODE_REG\"), max(\"NOM_REG\")\n          FROM \"ign_commune_france\"\n          WHERE \"INSEE_COM\" like \u0027751%\u0027)\n\nINSERT INTO \"ign_commune_france\"\n\t(the_geom, \"INSEE_COM\", \"NOM_COM\", \"STATUT\", \"SUPERFICIE\", \"POPULATION\", \"CODE_DEPT\", \"NOM_DEPT\", \"CODE_REG\", \"NOM_REG\")\n\t (SELECT\n          st_multi(st_union(the_geom::geometry)), \u002713055\u0027, \u0027Marseille\u0027, \u0027Commune\u0027, sum(\"SUPERFICIE\"::integer), sum(\"POPULATION\"::integer), max(\"CODE_DEPT\"), max(\"NOM_DEPT\"), max(\"CODE_REG\"), max(\"NOM_REG\")\n          FROM \"ign_commune_france\"\n          WHERE \"INSEE_COM\" like \u0027132%\u0027)\n\nINSERT INTO \"ign_commune_france\"\n\t(the_geom, \"INSEE_COM\", \"NOM_COM\", \"STATUT\", \"SUPERFICIE\", \"POPULATION\", \"CODE_DEPT\", \"NOM_DEPT\", \"CODE_REG\", \"NOM_REG\")\n\t (SELECT\n          st_multi(st_union(the_geom::geometry)), \u002769123\u0027, \u0027Lyon\u0027, \u0027Commune\u0027, sum(\"SUPERFICIE\"::integer), sum(\"POPULATION\"::integer), max(\"CODE_DEPT\"), max(\"NOM_DEPT\"), max(\"CODE_REG\"), max(\"NOM_REG\")\n          FROM \"ign_commune_france\"\n          WHERE \"INSEE_COM\" like \u00276938%\u0027)",
+    "customPostWriteStatements": "UPDATE \"ign_commune_france\"\n\tSET the_geom \u003d st_SetSRID(st_geomfromtext(the_geom), 4326);\n\nALTER TABLE \"ign_commune_france\"\n\tALTER COLUMN the_geom type geography(MultiPolygon)\n\tUSING the_geom::geography(MultiPolygon);\n\nCREATE INDEX commune_idx ON \"ign_commune_france\"\n    USING gist(the_geom);\n\nCREATE INDEX commune_insee_idx ON \"ign_commune_france\"(\"INSEE_COM\");\n\nINSERT INTO \"ign_commune_france\"\n\t(the_geom, \"INSEE_COM\", \"NOM_COM\", \"STATUT\", \"SUPERFICIE\", \"POPULATION\", \"CODE_DEPT\", \"NOM_DEPT\", \"CODE_REG\", \"NOM_REG\")\n\t (SELECT\n          st_multi(st_union(the_geom::geometry)), \u002775056\u0027, \u0027Paris\u0027, \u0027Commune\u0027, sum(\"SUPERFICIE\"::integer), sum(\"POPULATION\"::integer), max(\"CODE_DEPT\"), max(\"NOM_DEPT\"), max(\"CODE_REG\"), max(\"NOM_REG\")\n          FROM \"ign_commune_france\"\n          WHERE \"INSEE_COM\" like \u0027751%\u0027);\n\nINSERT INTO \"ign_commune_france\"\n\t(the_geom, \"INSEE_COM\", \"NOM_COM\", \"STATUT\", \"SUPERFICIE\", \"POPULATION\", \"CODE_DEPT\", \"NOM_DEPT\", \"CODE_REG\", \"NOM_REG\")\n\t (SELECT\n          st_multi(st_union(the_geom::geometry)), \u002713055\u0027, \u0027Marseille\u0027, \u0027Commune\u0027, sum(\"SUPERFICIE\"::integer), sum(\"POPULATION\"::integer), max(\"CODE_DEPT\"), max(\"NOM_DEPT\"), max(\"CODE_REG\"), max(\"NOM_REG\")\n          FROM \"ign_commune_france\"\n          WHERE \"INSEE_COM\" like \u0027132%\u0027);\n\nINSERT INTO \"ign_commune_france\"\n\t(the_geom, \"INSEE_COM\", \"NOM_COM\", \"STATUT\", \"SUPERFICIE\", \"POPULATION\", \"CODE_DEPT\", \"NOM_DEPT\", \"CODE_REG\", \"NOM_REG\")\n\t (SELECT\n          st_multi(st_union(the_geom::geometry)), \u002769123\u0027, \u0027Lyon\u0027, \u0027Commune\u0027, sum(\"SUPERFICIE\"::integer), sum(\"POPULATION\"::integer), max(\"CODE_DEPT\"), max(\"NOM_DEPT\"), max(\"CODE_REG\"), max(\"NOM_REG\")\n          FROM \"ign_commune_france\"\n          WHERE \"INSEE_COM\" like \u00276938%\u0027);",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "hasColsWithUnknownTz": false,
