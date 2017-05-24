@@ -28,7 +28,9 @@
           "objectId": "IGN_COMMUNE_FRANCE",
           "objectType": "DATASET"
         },
-        "modes": []
+        "modes": [
+          "READ"
+        ]
       },
       {
         "objectRef": {
@@ -160,16 +162,6 @@
       },
       {
         "type": "DATASET",
-        "localName": "IGN_COMMUNE_FRANCE",
-        "rules": [
-          {
-            "targetProject": "GECODAGE_ACCIDENTS",
-            "appearOnFlow": true
-          }
-        ]
-      },
-      {
-        "type": "DATASET",
         "localName": "IGN_DEPARTEMENT_FRANCE",
         "rules": [
           {
@@ -263,6 +255,20 @@
             "appearOnFlow": true
           }
         ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "IGN_COMMUNE_FRANCE",
+        "rules": [
+          {
+            "targetProject": "GECODAGE_ACCIDENTS",
+            "appearOnFlow": true
+          },
+          {
+            "targetProject": "BRICBRACPROPITAIRE",
+            "appearOnFlow": true
+          }
+        ]
       }
     ]
   },
@@ -336,11 +342,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 24,
+    "versionNumber": 25,
     "lastModifiedBy": {
-      "login": "antoinefa"
+      "login": "grabenertr"
     },
-    "lastModifiedOn": 1494597712609
+    "lastModifiedOn": 1495627068813
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
