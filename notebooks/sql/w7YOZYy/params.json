@@ -14,6 +14,19 @@
         "statementsParseMode": "SPLIT",
         "statementsExecutionMode": "PREPARED"
       }
+    },
+    {
+      "id": "y7ne0n2glok",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "inheritConf": "default",
+        "extraConf": [],
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
+      }
     }
   ],
   "automationLocal": false,
@@ -22,7 +35,7 @@
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1497021739904
+    "lastModifiedOn": 1497022330593
   },
   "creationTag": {
     "versionNumber": 0,
