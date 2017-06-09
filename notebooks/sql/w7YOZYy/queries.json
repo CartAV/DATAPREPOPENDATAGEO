@@ -44,6 +44,28 @@
         },
         "sql": "select CODE_DEPT from \"osm_routes_par_departement\" order by CODE_DEPT desc limit 100;",
         "expandedSql": "select CODE_DEPT from \"osm_routes_par_departement\" order by CODE_DEPT desc limit 100;"
+      },
+      {
+        "mode": "SQL",
+        "id": "RtjPzxepDMxh",
+        "runOn": 1497022045441,
+        "runIn": 44,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "TFCYAFjlKd3gZKvR",
+        "hash": "f60027711eb2bfbcd02e4977495b4570",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select CODE_DEPT from \"osm_routes_par_departement\"",
+        "expandedSql": "select CODE_DEPT from \"osm_routes_par_departement\""
       }
     ]
   }
