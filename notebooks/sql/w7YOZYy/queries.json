@@ -132,6 +132,28 @@
         },
         "sql": "select \"CODE_DEPT\" from \"osm_routes_par_departement\"",
         "expandedSql": "select \"CODE_DEPT\" from \"osm_routes_par_departement\""
+      },
+      {
+        "mode": "SQL",
+        "id": "ULOdnYLCZwYM",
+        "runOn": 1497022169595,
+        "runIn": 42,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "ELebvdVE6EH9nbyr",
+        "hash": "affdf16294b3945ccf32385092356f20",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select \"CODE_DEPT\" from \"osm_routes_par_departement\" order by \"CODE_DEPT\" desc",
+        "expandedSql": "select \"CODE_DEPT\" from \"osm_routes_par_departement\" order by \"CODE_DEPT\" desc"
       }
     ]
   }
