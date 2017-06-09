@@ -1,0 +1,28 @@
+{
+  "queries": {
+    "wlwybzhlneh": [
+      {
+        "mode": "SQL",
+        "id": "PC4fBMrDbYOw",
+        "runOn": 1497021868921,
+        "runIn": -1,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "aqMiLv8rbv1k074L",
+        "hash": "09c6e3c06941f317d34d4f4aacd9dd90",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select x1 from \"osm_france\" order by x1 asc limit 100;",
+        "expandedSql": "select x1 from \"osm_france\" order by x1 asc limit 100;"
+      }
+    ]
+  }
+}
