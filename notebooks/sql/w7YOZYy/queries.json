@@ -22,6 +22,28 @@
         },
         "sql": "select x1 from \"osm_france\" order by x1 asc limit 100;",
         "expandedSql": "select x1 from \"osm_france\" order by x1 asc limit 100;"
+      },
+      {
+        "mode": "SQL",
+        "id": "Mprah7yRh6wG",
+        "runOn": 1497022017512,
+        "runIn": 47,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "n8aldHfLGR96jA6p",
+        "hash": "ab0bcc69bf83891a9ae7cbbb37e733bf",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select CODE_DEPT from \"osm_routes_par_departement\" order by CODE_DEPT desc limit 100;",
+        "expandedSql": "select CODE_DEPT from \"osm_routes_par_departement\" order by CODE_DEPT desc limit 100;"
       }
     ]
   }
