@@ -1,0 +1,74 @@
+{
+  "virtualInputs": [
+    {
+      "index": 0,
+      "originLabel": "osm_mayotte",
+      "preFilter": {
+        "enabled": false,
+        "distinct": false
+      }
+    },
+    {
+      "index": 1,
+      "originLabel": "osm_france",
+      "preFilter": {
+        "enabled": false,
+        "distinct": false
+      }
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL",
+      "inheritConf": "default"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      },
+      "pipelineAllowStart": true,
+      "overwriteOutputSchema": false,
+      "readParams": {
+        "map": {}
+      },
+      "useGlobalMetastore": false
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true
+  },
+  "postFilter": {
+    "enabled": false,
+    "distinct": false
+  },
+  "originColumnName": "original_dataset",
+  "selectedColumns": [
+    "id",
+    "osm_id",
+    "osm_name",
+    "osm_meta",
+    "osm_source_id",
+    "osm_target_id",
+    "clazz",
+    "flags",
+    "source",
+    "target",
+    "km",
+    "kmh",
+    "cost",
+    "reverse_cost",
+    "x1",
+    "y1",
+    "x2",
+    "y2",
+    "geom_way"
+  ],
+  "addOriginColumn": false,
+  "mode": "UNION"
+}
