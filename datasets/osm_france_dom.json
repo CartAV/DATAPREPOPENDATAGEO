@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1497355126188
+    "lastModifiedOn": 1497355319811
   },
   "creationTag": {
     "versionNumber": 0,
@@ -43,7 +43,7 @@
     "normalizeDoubles": true,
     "table": "osm_france_dom",
     "tableCreationMode": "auto",
-    "customPostWriteStatements": "-- Il y a 5 LineString qui empêche de typer correctement en MultiLineString\nUPDATE osm_france_dom\n\tSET the_geom \u003d ST_MULTI(the_geom);\n\nALTER TABLE \"osm_france_dom\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n\nCREATE INDEX geom_osm_france_dom_idx ON \"osm_france_dom\"\n\tUSING GIST(the_geom);",
+    "customPostWriteStatements": "-- Il y a 5 LineString qui empêche de typer correctement en MultiLineString\nUPDATE osm_france_dom\n\tSET geom_way \u003d ST_MULTI(geom_way);\n\nALTER TABLE \"osm_france_dom\"\n\tALTER COLUMN geom_way type geography(MultiLineString) using geom_way::geography(MultiLineString);\n\nCREATE INDEX geom_osm_france_dom_idx ON \"osm_france_dom\"\n\tUSING GIST(geom_way);",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "hasColsWithUnknownTz": false,
