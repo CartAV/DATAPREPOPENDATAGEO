@@ -16,6 +16,22 @@
         {
           "ref": "osm_france",
           "deps": []
+        },
+        {
+          "ref": "osm_guadeloupe",
+          "deps": []
+        },
+        {
+          "ref": "osm_guyane",
+          "deps": []
+        },
+        {
+          "ref": "osm_martinique",
+          "deps": []
+        },
+        {
+          "ref": "osm_reunion",
+          "deps": []
         }
       ]
     }
@@ -31,11 +47,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1497354895076
+    "lastModifiedOn": 1497354953949
   },
   "creationTag": {
     "versionNumber": 0,
