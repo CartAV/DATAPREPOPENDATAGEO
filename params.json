@@ -66,6 +66,13 @@
           "objectType": "DATASET"
         },
         "modes": []
+      },
+      {
+        "objectRef": {
+          "objectId": "departements_wgs84_prep",
+          "objectType": "DATASET"
+        },
+        "modes": []
       }
     ]
   },
@@ -140,24 +147,6 @@
         "rules": [
           {
             "targetProject": "GECODAGE_ACCIDENTS",
-            "appearOnFlow": true
-          }
-        ]
-      },
-      {
-        "type": "DATASET",
-        "localName": "departements_wgs84_prep",
-        "rules": [
-          {
-            "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
-            "appearOnFlow": true
-          },
-          {
-            "targetProject": "ACCIDENTS",
-            "appearOnFlow": true
-          },
-          {
-            "targetProject": "Accidents_DSCR",
             "appearOnFlow": true
           }
         ]
@@ -247,6 +236,20 @@
             "appearOnFlow": true
           }
         ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "departements_wgs84_prep",
+        "rules": [
+          {
+            "targetProject": "ACCIDENTS",
+            "appearOnFlow": true
+          },
+          {
+            "targetProject": "Accidents_DSCR",
+            "appearOnFlow": true
+          }
+        ]
       }
     ]
   },
@@ -320,11 +323,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 31,
+    "versionNumber": 32,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1497454798232
+    "lastModifiedOn": 1497454815240
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
