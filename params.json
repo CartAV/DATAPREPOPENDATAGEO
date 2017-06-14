@@ -59,6 +59,13 @@
           "objectType": "DATASET"
         },
         "modes": []
+      },
+      {
+        "objectRef": {
+          "objectId": "osm_routes_par_commune",
+          "objectType": "DATASET"
+        },
+        "modes": []
       }
     ]
   },
@@ -189,20 +196,6 @@
       },
       {
         "type": "DATASET",
-        "localName": "osm_routes_par_commune",
-        "rules": [
-          {
-            "targetProject": "GECODAGE_ACCIDENTS",
-            "appearOnFlow": true
-          },
-          {
-            "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
-            "appearOnFlow": true
-          }
-        ]
-      },
-      {
-        "type": "DATASET",
         "localName": "CONTOURS_IRIS_POPULATION",
         "rules": [
           {
@@ -269,6 +262,16 @@
           },
           {
             "targetProject": "VERBALISATIONLECTRONIQUEDSCR",
+            "appearOnFlow": true
+          }
+        ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "osm_routes_par_commune",
+        "rules": [
+          {
+            "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
             "appearOnFlow": true
           }
         ]
@@ -345,11 +348,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 26,
+    "versionNumber": 27,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1497454271985
+    "lastModifiedOn": 1497454547382
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
