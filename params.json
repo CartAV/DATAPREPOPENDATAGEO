@@ -66,6 +66,13 @@
           "objectType": "DATASET"
         },
         "modes": []
+      },
+      {
+        "objectRef": {
+          "objectId": "2016_osm_kmroutes_prep",
+          "objectType": "DATASET"
+        },
+        "modes": []
       }
     ]
   },
@@ -81,24 +88,6 @@
           },
           {
             "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
-            "appearOnFlow": true
-          },
-          {
-            "targetProject": "VERBALISATIONLECTRONIQUEDSCR",
-            "appearOnFlow": true
-          }
-        ]
-      },
-      {
-        "type": "DATASET",
-        "localName": "2016_osm_kmroutes_prep",
-        "rules": [
-          {
-            "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
-            "appearOnFlow": true
-          },
-          {
-            "targetProject": "CROISEMENTACCIDENTSVERBALISATION",
             "appearOnFlow": true
           },
           {
@@ -261,6 +250,20 @@
             "appearOnFlow": true
           }
         ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "2016_osm_kmroutes_prep",
+        "rules": [
+          {
+            "targetProject": "CROISEMENTACCIDENTSVERBALISATION",
+            "appearOnFlow": true
+          },
+          {
+            "targetProject": "VERBALISATIONLECTRONIQUEDSCR",
+            "appearOnFlow": true
+          }
+        ]
       }
     ]
   },
@@ -334,11 +337,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 29,
+    "versionNumber": 30,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1497454748935
+    "lastModifiedOn": 1497454767449
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
