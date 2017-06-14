@@ -73,29 +73,18 @@
           "objectType": "DATASET"
         },
         "modes": []
+      },
+      {
+        "objectRef": {
+          "objectId": "2016_geohisto_communes_prep",
+          "objectType": "DATASET"
+        },
+        "modes": []
       }
     ]
   },
   "exposedObjects": {
     "objects": [
-      {
-        "type": "DATASET",
-        "localName": "2016_geohisto_communes_prep",
-        "rules": [
-          {
-            "targetProject": "CROISEMENTACCIDENTSVERBALISATION",
-            "appearOnFlow": true
-          },
-          {
-            "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
-            "appearOnFlow": true
-          },
-          {
-            "targetProject": "VERBALISATIONLECTRONIQUEDSCR",
-            "appearOnFlow": true
-          }
-        ]
-      },
       {
         "type": "DATASET",
         "localName": "departements_wgs84_prepared",
@@ -250,6 +239,20 @@
             "appearOnFlow": true
           }
         ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "2016_geohisto_communes_prep",
+        "rules": [
+          {
+            "targetProject": "CROISEMENTACCIDENTSVERBALISATION",
+            "appearOnFlow": true
+          },
+          {
+            "targetProject": "VERBALISATIONLECTRONIQUEDSCR",
+            "appearOnFlow": true
+          }
+        ]
       }
     ]
   },
@@ -323,11 +326,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 32,
+    "versionNumber": 33,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1497454815240
+    "lastModifiedOn": 1497454853072
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
