@@ -18,13 +18,6 @@
       },
       {
         "objectRef": {
-          "objectId": "osm_france",
-          "objectType": "DATASET"
-        },
-        "modes": []
-      },
-      {
-        "objectRef": {
           "objectId": "IGN_COMMUNE_FRANCE",
           "objectType": "DATASET"
         },
@@ -96,16 +89,6 @@
       {
         "type": "DATASET",
         "localName": "geohisto_pg",
-        "rules": [
-          {
-            "targetProject": "GECODAGE_ACCIDENTS",
-            "appearOnFlow": true
-          }
-        ]
-      },
-      {
-        "type": "DATASET",
-        "localName": "osm_france",
         "rules": [
           {
             "targetProject": "GECODAGE_ACCIDENTS",
@@ -309,11 +292,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 34,
+    "versionNumber": 35,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1497454965302
+    "lastModifiedOn": 1497455586289
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
