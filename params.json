@@ -66,13 +66,6 @@
           "objectType": "DATASET"
         },
         "modes": []
-      },
-      {
-        "objectRef": {
-          "objectId": "2016_codes_postaux_prep",
-          "objectType": "DATASET"
-        },
-        "modes": []
       }
     ]
   },
@@ -268,16 +261,6 @@
             "appearOnFlow": true
           }
         ]
-      },
-      {
-        "type": "DATASET",
-        "localName": "2016_codes_postaux_prep",
-        "rules": [
-          {
-            "targetProject": "VERBALISATIONLECTRONIQUEDSCR",
-            "appearOnFlow": true
-          }
-        ]
       }
     ]
   },
@@ -351,11 +334,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 28,
+    "versionNumber": 29,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1497454588978
+    "lastModifiedOn": 1497454748935
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
