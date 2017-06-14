@@ -62,13 +62,6 @@
       },
       {
         "objectRef": {
-          "objectId": "osm_routes_par_commune",
-          "objectType": "DATASET"
-        },
-        "modes": []
-      },
-      {
-        "objectRef": {
           "objectId": "2016_osm_kmroutes_prep",
           "objectType": "DATASET"
         },
@@ -243,16 +236,6 @@
       },
       {
         "type": "DATASET",
-        "localName": "osm_routes_par_commune",
-        "rules": [
-          {
-            "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
-            "appearOnFlow": true
-          }
-        ]
-      },
-      {
-        "type": "DATASET",
         "localName": "2016_osm_kmroutes_prep",
         "rules": [
           {
@@ -337,11 +320,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 30,
+    "versionNumber": 31,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1497454767449
+    "lastModifiedOn": 1497454798232
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
