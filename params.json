@@ -52,29 +52,18 @@
           "objectType": "DATASET"
         },
         "modes": []
+      },
+      {
+        "objectRef": {
+          "objectId": "201601_INSEE_pyramide_ages_prep",
+          "objectType": "DATASET"
+        },
+        "modes": []
       }
     ]
   },
   "exposedObjects": {
     "objects": [
-      {
-        "type": "DATASET",
-        "localName": "201601_INSEE_pyramide_ages_prep",
-        "rules": [
-          {
-            "targetProject": "CROISEMENTACCIDENTSVERBALISATION",
-            "appearOnFlow": true
-          },
-          {
-            "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
-            "appearOnFlow": true
-          },
-          {
-            "targetProject": "VERBALISATIONLECTRONIQUEDSCR",
-            "appearOnFlow": true
-          }
-        ]
-      },
       {
         "type": "DATASET",
         "localName": "2016_geohisto_communes_prep",
@@ -269,6 +258,20 @@
             "appearOnFlow": true
           }
         ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "201601_INSEE_pyramide_ages_prep",
+        "rules": [
+          {
+            "targetProject": "CROISEMENTACCIDENTSVERBALISATION",
+            "appearOnFlow": true
+          },
+          {
+            "targetProject": "VERBALISATIONLECTRONIQUEDSCR",
+            "appearOnFlow": true
+          }
+        ]
       }
     ]
   },
@@ -342,11 +345,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 25,
+    "versionNumber": 26,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1495627068813
+    "lastModifiedOn": 1497454271985
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
