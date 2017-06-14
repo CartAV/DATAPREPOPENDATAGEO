@@ -34,13 +34,6 @@
       },
       {
         "objectRef": {
-          "objectId": "IGN_DEPARTEMENT_FRANCE",
-          "objectType": "DATASET"
-        },
-        "modes": []
-      },
-      {
-        "objectRef": {
           "objectId": "CONTOURS_IRIS",
           "objectType": "DATASET"
         },
@@ -116,16 +109,6 @@
         "rules": [
           {
             "targetProject": "GECODAGE_ACCIDENTS",
-            "appearOnFlow": true
-          }
-        ]
-      },
-      {
-        "type": "DATASET",
-        "localName": "IGN_DEPARTEMENT_FRANCE",
-        "rules": [
-          {
-            "targetProject": "ACCIDENTS",
             "appearOnFlow": true
           }
         ]
@@ -326,11 +309,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 33,
+    "versionNumber": 34,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1497454853072
+    "lastModifiedOn": 1497454965302
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
