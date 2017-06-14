@@ -27,13 +27,6 @@
       },
       {
         "objectRef": {
-          "objectId": "CONTOURS_IRIS",
-          "objectType": "DATASET"
-        },
-        "modes": []
-      },
-      {
-        "objectRef": {
           "objectId": "201601_INSEE_pyramide_ages_prep",
           "objectType": "DATASET"
         },
@@ -82,16 +75,6 @@
       {
         "type": "DATASET",
         "localName": "geohisto_pg",
-        "rules": [
-          {
-            "targetProject": "GECODAGE_ACCIDENTS",
-            "appearOnFlow": true
-          }
-        ]
-      },
-      {
-        "type": "DATASET",
-        "localName": "CONTOURS_IRIS",
         "rules": [
           {
             "targetProject": "GECODAGE_ACCIDENTS",
@@ -275,11 +258,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 36,
+    "versionNumber": 37,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1497455606355
+    "lastModifiedOn": 1497455918003
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
