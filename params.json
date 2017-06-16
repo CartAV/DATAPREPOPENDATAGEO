@@ -52,6 +52,13 @@
           "objectType": "DATASET"
         },
         "modes": []
+      },
+      {
+        "objectRef": {
+          "objectId": "osm_routes_par_commune_geojson",
+          "objectType": "DATASET"
+        },
+        "modes": []
       }
     ]
   },
@@ -86,20 +93,6 @@
         "type": "DATASET",
         "localName": "departements_wgs84_postgis",
         "rules": [
-          {
-            "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
-            "appearOnFlow": true
-          }
-        ]
-      },
-      {
-        "type": "DATASET",
-        "localName": "osm_routes_par_commune_geojson",
-        "rules": [
-          {
-            "targetProject": "ACCIDENTS",
-            "appearOnFlow": true
-          },
           {
             "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
             "appearOnFlow": true
@@ -185,6 +178,24 @@
             "appearOnFlow": true
           }
         ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "osm_routes_par_commune_geojson",
+        "rules": [
+          {
+            "targetProject": "ACCIDENTS",
+            "appearOnFlow": true
+          },
+          {
+            "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
+            "appearOnFlow": true
+          },
+          {
+            "targetProject": "GECODAGE_ACCIDENTS",
+            "appearOnFlow": true
+          }
+        ]
       }
     ]
   },
@@ -258,11 +269,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 37,
+    "versionNumber": 38,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1497455918003
+    "lastModifiedOn": 1497626288404
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
