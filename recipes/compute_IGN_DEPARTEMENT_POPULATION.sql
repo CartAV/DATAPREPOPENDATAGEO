@@ -3,8 +3,8 @@ SELECT dep.*,
   FROM "ign_departement_france" as dep
   LEFT JOIN (
       SELECT sum(commune."POPULATION"::int) as population,
-             "CODE_DEPT"
+             "NOM_DEPT"
         FROM "ign_commune_france" as commune
-        GROUP BY "CODE_DEPT"
+        GROUP BY "NOM_DEPT"
       ) AS pop
-    ON pop."CODE_DEPT" = dep."CODE_DEPT"
+    ON pop."NOM_DEPT" = dep."NOM_DEPT"
