@@ -63,11 +63,11 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
+  "originColumnName": "original_dataset",
   "postFilter": {
     "enabled": false,
     "distinct": false
   },
-  "originColumnName": "original_dataset",
   "selectedColumns": [
     "the_geom",
     "shp_srs",
