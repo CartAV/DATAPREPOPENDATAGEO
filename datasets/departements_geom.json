@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1498227239124
+    "lastModifiedOn": 1498230556433
   },
   "creationTag": {
     "versionNumber": 0,
@@ -49,7 +49,7 @@
     "readColsWithUnknownTzAsDates": false
   },
   "schema": {
-    "userModified": true,
+    "userModified": false,
     "columns": [
       {
         "name": "CODE_REG",
@@ -88,9 +88,14 @@
         "maxLength": -1
       },
       {
+        "name": "population",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "geojson",
         "type": "string",
-        "meaning": "GeometryMeaning",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
