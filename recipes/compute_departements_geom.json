@@ -19,7 +19,7 @@
           "deps": []
         },
         {
-          "ref": "IGN_DEPARTEMENT_FRANCE",
+          "ref": "IGN_DEPARTEMENT_POPULATION",
           "deps": []
         }
       ]
@@ -36,11 +36,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1491818045298
+    "lastModifiedOn": 1498230525524
   },
   "creationTag": {
     "versionNumber": 0,
