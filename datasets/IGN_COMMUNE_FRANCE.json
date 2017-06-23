@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1498229653514
+    "lastModifiedOn": 1498229762318
   },
   "creationTag": {
     "versionNumber": 0,
@@ -132,7 +132,7 @@
       },
       {
         "name": "POPULATION",
-        "type": "string",
+        "type": "int",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
