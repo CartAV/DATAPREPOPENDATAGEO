@@ -4,6 +4,7 @@ SELECT "CODE_REG",
        "NOM_DEPT",
        "CODE_CHF",
        "NOM_CHF",
+       population,
        st_asgeojson(the_geom) as geojson,
        longueur_routes
   FROM "ign_departement_population" as dep,
