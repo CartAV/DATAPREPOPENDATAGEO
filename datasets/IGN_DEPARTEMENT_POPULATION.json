@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1498229316116
+    "lastModifiedOn": 1498229915643
   },
   "creationTag": {
     "versionNumber": 0,
@@ -130,56 +130,8 @@
         "maxLength": -1
       },
       {
-        "name": "CODE_COM",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "INSEE_COM",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "NOM_COM",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "STATUT",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "Z_MOYEN",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "SUPERFICIE",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "POPULATION",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "CODE_ARR",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "computed_column_1",
-        "type": "double",
+        "name": "population",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       }
