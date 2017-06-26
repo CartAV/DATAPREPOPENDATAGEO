@@ -3515,6 +3515,30 @@
         "sql": "select \"CODE_DEPT\", route_dep_id from \"osm_routes_par_departement\"\nwhere \"num_route_or_id\" \u003d \u0027D 37\u0027 and \"CODE_DEPT\" \u003d \u002713\u0027",
         "expandedSql": "select \"CODE_DEPT\", route_dep_id from \"osm_routes_par_departement\"\nwhere \"num_route_or_id\" \u003d \u0027D 37\u0027 and \"CODE_DEPT\" \u003d \u002713\u0027"
       }
+    ],
+    "ddx1xqtoe05": [
+      {
+        "mode": "SQL",
+        "id": "nOW7pKVIyzRE",
+        "runOn": 1498489040027,
+        "runIn": -1,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "oEtGiDSl10HmgmEJ",
+        "hash": "7709633a88c47597128491ac741df149",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select sum(longueure_route) from \"departements_geom_noms_region\" group by \"CODE_REG\"",
+        "expandedSql": "select sum(longueure_route) from \"departements_geom_noms_region\" group by \"CODE_REG\""
+      }
     ]
   }
 }
