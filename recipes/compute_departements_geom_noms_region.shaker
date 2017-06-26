@@ -10,14 +10,109 @@
     "_refreshTrigger": 0,
     "autoRefreshSample": false
   },
+  "origin": "PREPARE_RECIPE",
   "sorting": [],
   "coloring": {
     "individualColumns": [],
     "scheme": "MEANING_AND_STATUS",
     "valueColoringMode": "HASH"
   },
-  "steps": [],
-  "exploreUIParams": {},
+  "steps": [
+    {
+      "alwaysShowComment": false,
+      "preview": true,
+      "params": {
+        "matching": "SUBSTRING",
+        "stopAfterFirstMatch": false,
+        "appliesTo": "SINGLE_COLUMN",
+        "normalization": "EXACT",
+        "columns": [
+          "NOM_REG"
+        ],
+        "mapping": [
+          {
+            "to": "Martinique",
+            "from": "MARTINIQUE"
+          },
+          {
+            "to": "Bourgogne-Franche-Comté",
+            "from": "BOURGOGNE-FRANCHE-COMTE"
+          },
+          {
+            "to": "Auvergne-Rhône-Alpes",
+            "from": "AUVERGNE-RHONE-ALPES"
+          },
+          {
+            "to": "Normandie",
+            "from": "NORMANDIE"
+          },
+          {
+            "to": "Grand Est",
+            "from": "ALSACE-CHAMPAGNE-ARDENNE-LORRAINE"
+          },
+          {
+            "to": "Centre-Val de Loire",
+            "from": "CENTRE-VAL DE LOIRE"
+          },
+          {
+            "to": "Nouvelle-Aquitaine",
+            "from": "AQUITAINE-LIMOUSIN-POITOU-CHARENTES"
+          },
+          {
+            "to": "Île-de-France",
+            "from": "ILE-DE-FRANCE"
+          },
+          {
+            "to": "Hauts-de-France",
+            "from": "NORD-PAS-DE-CALAIS-PICARDIE"
+          },
+          {
+            "to": "Bretagne",
+            "from": "BRETAGNE"
+          },
+          {
+            "to": "Occitanie",
+            "from": "LANGUEDOC-ROUSSILLON-MIDI-PYRENEES"
+          },
+          {
+            "to": "Pays de la Loire",
+            "from": "PAYS DE LA LOIRE"
+          },
+          {
+            "to": " Provence-Alpes-Côte d\u0027Azur",
+            "from": "PROVENCE-ALPES-COTE D\u0027AZUR"
+          },
+          {
+            "to": "Corse",
+            "from": "CORSE"
+          },
+          {
+            "to": "Guadeloupe",
+            "from": "GUADELOUPE"
+          },
+          {
+            "to": "Guyane",
+            "from": "GUYANE"
+          },
+          {
+            "to": "Mayotte",
+            "from": "MAYOTTE"
+          },
+          {
+            "to": "La Réunion",
+            "from": "LA REUNION"
+          }
+        ],
+        "output": ""
+      },
+      "type": "FindReplace",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    }
+  ],
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "previewMode": "ALL_ROWS",
   "explorationSampling": {
     "_refreshTrigger": 0,
