@@ -3538,6 +3538,28 @@
         },
         "sql": "select sum(longueure_route) from \"departements_geom_noms_region\" group by \"CODE_REG\"",
         "expandedSql": "select sum(longueure_route) from \"departements_geom_noms_region\" group by \"CODE_REG\""
+      },
+      {
+        "mode": "SQL",
+        "id": "6kQ9LcPenbv9",
+        "runOn": 1498489052797,
+        "runIn": 82,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "yfqI7BPTmqdW5wCW",
+        "hash": "49da1333bd3294e3ec0eb3967c0ba4d0",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select \"NOM_REG\", sum(longueur_route) from \"departements_geom_noms_region\" group by \"NOM_REG\"",
+        "expandedSql": "select \"NOM_REG\", sum(longueur_route) from \"departements_geom_noms_region\" group by \"NOM_REG\""
       }
     ]
   }
