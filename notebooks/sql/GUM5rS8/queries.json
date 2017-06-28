@@ -3648,6 +3648,28 @@
         },
         "sql": "select sum(\"km\") as km, \"osm_name\" from \"osm_france_dom\" group by \"osm_name\" order by km desc",
         "expandedSql": "select sum(\"km\") as km, \"osm_name\" from \"osm_france_dom\" group by \"osm_name\" order by km desc"
+      },
+      {
+        "mode": "SQL",
+        "id": "CNbfyvQ5IVfX",
+        "runOn": 1498638631421,
+        "runIn": 2971,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "kMSNauEOsjVg3DE6",
+        "hash": "3082d548526700bc0a3f2ebd91c91aee",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select sum(\"km\") as km, replace(replace(\"osm_name\", \u0027Avenue \u0027, \u0027\u0027), \u0027Rue \u0027, \u0027\u0027) from \"osm_france_dom\" group by \"osm_name\" order by km desc",
+        "expandedSql": "select sum(\"km\") as km, replace(replace(\"osm_name\", \u0027Avenue \u0027, \u0027\u0027), \u0027Rue \u0027, \u0027\u0027) from \"osm_france_dom\" group by \"osm_name\" order by km desc"
       }
     ]
   }
