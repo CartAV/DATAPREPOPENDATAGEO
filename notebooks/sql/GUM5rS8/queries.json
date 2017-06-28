@@ -3626,6 +3626,28 @@
         },
         "sql": "select sum(\"km\"), \"osm_name\" from \"osm_france_dom\" group by \"osm_name\"",
         "expandedSql": "select sum(\"km\"), \"osm_name\" from \"osm_france_dom\" group by \"osm_name\""
+      },
+      {
+        "mode": "SQL",
+        "id": "fGDfzKM7wXLY",
+        "runOn": 1498638114590,
+        "runIn": 11662,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "9n1kjwUAsXVkw980",
+        "hash": "e15589c792b915db492d807edeaf2ae0",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select sum(\"km\") as km, \"osm_name\" from \"osm_france_dom\" group by \"osm_name\" order by km desc",
+        "expandedSql": "select sum(\"km\") as km, \"osm_name\" from \"osm_france_dom\" group by \"osm_name\" order by km desc"
       }
     ]
   }
