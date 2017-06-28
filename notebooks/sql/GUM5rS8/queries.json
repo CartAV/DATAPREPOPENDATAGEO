@@ -3824,6 +3824,28 @@
         },
         "sql": "select sum(km)/count(1) as km, \nreplace(\nreplace(\nreplace(\nreplace(\nreplace(\nreplace(\nreplace(\"osm_name\", \u0027Avenue \u0027, \u0027\u0027),\n    \u0027Rue \u0027, \u0027\u0027),\n    \u0027Chemin \u0027, \u0027\u0027),\n    \u0027Route \u0027, \u0027\u0027),\n    \u0027de \u0027, \u0027\u0027),\n    \u0027la \u0027, \u0027\u0027),\n    \u0027du \u0027, \u0027\u0027) as nom\nfrom \"osm_france_dom\"\nwhere osm_name not like \u0027D %\u0027 \nand osm_name not like \u0027A %\u0027\nand osm_name not like \u0027N %\u0027\nand osm_name not like \u0027C %\u0027\ngroup by nom order by km desc",
         "expandedSql": "select sum(km)/count(1) as km, \nreplace(\nreplace(\nreplace(\nreplace(\nreplace(\nreplace(\nreplace(\"osm_name\", \u0027Avenue \u0027, \u0027\u0027),\n    \u0027Rue \u0027, \u0027\u0027),\n    \u0027Chemin \u0027, \u0027\u0027),\n    \u0027Route \u0027, \u0027\u0027),\n    \u0027de \u0027, \u0027\u0027),\n    \u0027la \u0027, \u0027\u0027),\n    \u0027du \u0027, \u0027\u0027) as nom\nfrom \"osm_france_dom\"\nwhere osm_name not like \u0027D %\u0027 \nand osm_name not like \u0027A %\u0027\nand osm_name not like \u0027N %\u0027\nand osm_name not like \u0027C %\u0027\ngroup by nom order by km desc"
+      },
+      {
+        "mode": "SQL",
+        "id": "ehOIKnCXgSD6",
+        "runOn": 1498639191572,
+        "runIn": 7076,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "gcjhvPgvi2xHwgcM",
+        "hash": "a9ea416dc235450e2507fe563a46650f",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select sum(km)/count(1) as km, \nreplace(\nreplace(\nreplace(\nreplace(\nreplace(\nreplace(\nreplace(\"osm_name\", \u0027Avenue \u0027, \u0027\u0027),\n    \u0027Rue \u0027, \u0027\u0027),\n    \u0027Chemin \u0027, \u0027\u0027),\n    \u0027Route \u0027, \u0027\u0027),\n    \u0027de \u0027, \u0027\u0027),\n    \u0027la \u0027, \u0027\u0027),\n    \u0027du \u0027, \u0027\u0027) as nom\nfrom \"osm_routes_par_commune\"\nwhere osm_name not like \u0027D %\u0027 \nand osm_name not like \u0027A %\u0027\nand osm_name not like \u0027N %\u0027\nand osm_name not like \u0027C %\u0027\ngroup by nom order by km desc",
+        "expandedSql": "select sum(km)/count(1) as km, \nreplace(\nreplace(\nreplace(\nreplace(\nreplace(\nreplace(\nreplace(\"osm_name\", \u0027Avenue \u0027, \u0027\u0027),\n    \u0027Rue \u0027, \u0027\u0027),\n    \u0027Chemin \u0027, \u0027\u0027),\n    \u0027Route \u0027, \u0027\u0027),\n    \u0027de \u0027, \u0027\u0027),\n    \u0027la \u0027, \u0027\u0027),\n    \u0027du \u0027, \u0027\u0027) as nom\nfrom \"osm_routes_par_commune\"\nwhere osm_name not like \u0027D %\u0027 \nand osm_name not like \u0027A %\u0027\nand osm_name not like \u0027N %\u0027\nand osm_name not like \u0027C %\u0027\ngroup by nom order by km desc"
       }
     ]
   }
