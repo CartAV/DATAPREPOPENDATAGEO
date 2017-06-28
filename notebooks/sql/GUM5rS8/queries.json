@@ -3692,6 +3692,28 @@
         },
         "sql": "select sum(\"km\") as km, replace(replace(\"osm_name\", \u0027Avenue \u0027, \u0027\u0027), \u0027Rue \u0027, \u0027\u0027) as nom\nfrom \"osm_france_dom\"\nwhere osm_name not like \u0027D %\u0027 \nand osm_name note like \u0027A %\u0027\ngroup by nom order by km desc",
         "expandedSql": "select sum(\"km\") as km, replace(replace(\"osm_name\", \u0027Avenue \u0027, \u0027\u0027), \u0027Rue \u0027, \u0027\u0027) as nom\nfrom \"osm_france_dom\"\nwhere osm_name not like \u0027D %\u0027 \nand osm_name note like \u0027A %\u0027\ngroup by nom order by km desc"
+      },
+      {
+        "mode": "SQL",
+        "id": "qAGoGn4wawW5",
+        "runOn": 1498638723592,
+        "runIn": 44,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "OnZGSzF9yT5rf0jf",
+        "hash": "05e1ba3e3fe531d5ed9817b114f18a73",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select sum(\"km\") as km, replace(replace(\"osm_name\", \u0027Avenue \u0027, \u0027\u0027), \u0027Rue \u0027, \u0027\u0027) as nom\nfrom \"osm_france_dom\"\nwhere osm_name not like \u0027D %\u0027 \nand osm_name not like \u0027A %\u0027\ngroup by nom order by km desc",
+        "expandedSql": "select sum(\"km\") as km, replace(replace(\"osm_name\", \u0027Avenue \u0027, \u0027\u0027), \u0027Rue \u0027, \u0027\u0027) as nom\nfrom \"osm_france_dom\"\nwhere osm_name not like \u0027D %\u0027 \nand osm_name not like \u0027A %\u0027\ngroup by nom order by km desc"
       }
     ]
   }
