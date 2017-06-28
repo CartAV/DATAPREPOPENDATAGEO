@@ -3758,6 +3758,28 @@
         },
         "sql": "select sum(\"km\") as km, \nreplace(\nreplace(\nreplace(\nreplace(\"osm_name\", \u0027Avenue \u0027, \u0027\u0027),\n    \u0027Rue \u0027, \u0027\u0027),\n    \u0027Chemin \u0027, \u0027\u0027),\n    \u0027Route \u0027, \u0027\u0027) as nom\nfrom \"osm_france_dom\"\nwhere osm_name not like \u0027D %\u0027 \nand osm_name not like \u0027A %\u0027\nand osm_name not like \u0027N %\u0027\nand osm_name not like \u0027C %\u0027\ngroup by nom order by km desc",
         "expandedSql": "select sum(\"km\") as km, \nreplace(\nreplace(\nreplace(\nreplace(\"osm_name\", \u0027Avenue \u0027, \u0027\u0027),\n    \u0027Rue \u0027, \u0027\u0027),\n    \u0027Chemin \u0027, \u0027\u0027),\n    \u0027Route \u0027, \u0027\u0027) as nom\nfrom \"osm_france_dom\"\nwhere osm_name not like \u0027D %\u0027 \nand osm_name not like \u0027A %\u0027\nand osm_name not like \u0027N %\u0027\nand osm_name not like \u0027C %\u0027\ngroup by nom order by km desc"
+      },
+      {
+        "mode": "SQL",
+        "id": "ku1vnkNNo9kV",
+        "runOn": 1498639036367,
+        "runIn": 5221,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "7l0T5klEMFLWWBXI",
+        "hash": "734f51689ad8c236bbb87b82a2b4b270",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select sum(\"km\") as km, \nreplace(\nreplace(\nreplace(\nreplace(\nreplace(\nreplace(\nreplace(\"osm_name\", \u0027Avenue \u0027, \u0027\u0027),\n    \u0027Rue \u0027, \u0027\u0027),\n    \u0027Chemin \u0027, \u0027\u0027),\n    \u0027Route \u0027, \u0027\u0027),\n    \u0027de \u0027, \u0027\u0027),\n    \u0027la \u0027, \u0027\u0027),\n    \u0027du \u0027, \u0027\u0027) as nom\nfrom \"osm_france_dom\"\nwhere osm_name not like \u0027D %\u0027 \nand osm_name not like \u0027A %\u0027\nand osm_name not like \u0027N %\u0027\nand osm_name not like \u0027C %\u0027\ngroup by nom order by km desc",
+        "expandedSql": "select sum(\"km\") as km, \nreplace(\nreplace(\nreplace(\nreplace(\nreplace(\nreplace(\nreplace(\"osm_name\", \u0027Avenue \u0027, \u0027\u0027),\n    \u0027Rue \u0027, \u0027\u0027),\n    \u0027Chemin \u0027, \u0027\u0027),\n    \u0027Route \u0027, \u0027\u0027),\n    \u0027de \u0027, \u0027\u0027),\n    \u0027la \u0027, \u0027\u0027),\n    \u0027du \u0027, \u0027\u0027) as nom\nfrom \"osm_france_dom\"\nwhere osm_name not like \u0027D %\u0027 \nand osm_name not like \u0027A %\u0027\nand osm_name not like \u0027N %\u0027\nand osm_name not like \u0027C %\u0027\ngroup by nom order by km desc"
       }
     ]
   }
