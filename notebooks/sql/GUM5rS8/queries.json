@@ -3670,6 +3670,28 @@
         },
         "sql": "select sum(\"km\") as km, replace(replace(\"osm_name\", \u0027Avenue \u0027, \u0027\u0027), \u0027Rue \u0027, \u0027\u0027) from \"osm_france_dom\" group by \"osm_name\" order by km desc",
         "expandedSql": "select sum(\"km\") as km, replace(replace(\"osm_name\", \u0027Avenue \u0027, \u0027\u0027), \u0027Rue \u0027, \u0027\u0027) from \"osm_france_dom\" group by \"osm_name\" order by km desc"
+      },
+      {
+        "mode": "SQL",
+        "id": "y4K4IhzM66FY",
+        "runOn": 1498638714120,
+        "runIn": 3170,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "V8fKBWB8f07Fc8TV",
+        "hash": "34119645230450561c1799dfbfac4671",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select sum(\"km\") as km, replace(replace(\"osm_name\", \u0027Avenue \u0027, \u0027\u0027), \u0027Rue \u0027, \u0027\u0027) as nom\nfrom \"osm_france_dom\"\nwhere osm_name not like \u0027D %\u0027 \nand osm_name note like \u0027A %\u0027\ngroup by nom order by km desc",
+        "expandedSql": "select sum(\"km\") as km, replace(replace(\"osm_name\", \u0027Avenue \u0027, \u0027\u0027), \u0027Rue \u0027, \u0027\u0027) as nom\nfrom \"osm_france_dom\"\nwhere osm_name not like \u0027D %\u0027 \nand osm_name note like \u0027A %\u0027\ngroup by nom order by km desc"
       }
     ]
   }
