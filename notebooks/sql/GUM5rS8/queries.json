@@ -3582,6 +3582,28 @@
         },
         "sql": "select \"NOM_REG\", sum(longueur_routes) from \"departements_geom_noms_region\" group by \"NOM_REG\"",
         "expandedSql": "select \"NOM_REG\", sum(longueur_routes) from \"departements_geom_noms_region\" group by \"NOM_REG\""
+      },
+      {
+        "mode": "SQL",
+        "id": "jRXrFAJUtKQF",
+        "runOn": 1498638026945,
+        "runIn": 42,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "zeiyDqQJVy5vELqp",
+        "hash": "e1c6be2a909a5685f655abb6adef2b26",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select sum(\"km\"), \"osm_name\" from \"osm_france_dom\" group by \"km\"",
+        "expandedSql": "select sum(\"km\"), \"osm_name\" from \"osm_france_dom\" group by \"km\""
       }
     ]
   }
