@@ -3807,10 +3807,10 @@
         "mode": "SQL",
         "id": "3Xut6zCFqKGO",
         "runOn": 1498639144231,
-        "runIn": 6690,
+        "runIn": 7076,
         "runBy": "grabenertr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "D0VM3riZDT7jIR5W",
         "hash": "cf9c2afbac1fb7e35999cd07d938ea54",
         "querySettings": {
