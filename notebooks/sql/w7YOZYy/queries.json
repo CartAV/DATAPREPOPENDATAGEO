@@ -290,6 +290,28 @@
         },
         "sql": "select b1.*, b2.\"route\", b2.\"pr\", b2.\"X\", b2.\"Y\" from \"bornes_routes\" as b1, \"bornes_routes\" as b2\n    where b2.\"route\" \u003d b1.\"route\" and \n    b2.\"cote\" \u003d b1.\"cote\" and\n    b2.\"pr\" \u003d b1.\"pr\"+1",
         "expandedSql": "select b1.*, b2.\"route\", b2.\"pr\", b2.\"X\", b2.\"Y\" from \"bornes_routes\" as b1, \"bornes_routes\" as b2\n    where b2.\"route\" \u003d b1.\"route\" and \n    b2.\"cote\" \u003d b1.\"cote\" and\n    b2.\"pr\" \u003d b1.\"pr\"+1"
+      },
+      {
+        "mode": "SQL",
+        "id": "1dgK7Fi7neHU",
+        "runOn": 1499348929705,
+        "runIn": 1471,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "vEU41zmyXIS4pXBm",
+        "hash": "53a3c1d8173a473247ceb3f1095ee7c5",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*),route, pr, depPr from \"public\".\"bornes_routes\" group by route, pr, depPr",
+        "expandedSql": "select count(*),route, pr, depPr from \"public\".\"bornes_routes\" group by route, pr, depPr"
       }
     ]
   }
