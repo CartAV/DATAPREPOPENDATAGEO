@@ -334,6 +334,28 @@
         },
         "sql": "select count(*),\"route\", \"pr\", \"depPr\" from \"public\".\"bornes_routes\" group by \"route\", \"pr\", \"depPr\"",
         "expandedSql": "select count(*),\"route\", \"pr\", \"depPr\" from \"public\".\"bornes_routes\" group by \"route\", \"pr\", \"depPr\""
+      },
+      {
+        "mode": "SQL",
+        "id": "FUzF79RP5o8R",
+        "runOn": 1499348970236,
+        "runIn": 63,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "SNSSz3hYUuOoMI22",
+        "hash": "2b77a96a7b38dab7e230447d6fd92842",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*),\"route\", \"pr\", \"depPr\" from \"public\".\"bornes_routes\" group by \"route\", \"pr\", \"depPr\" order by count desc",
+        "expandedSql": "select count(*),\"route\", \"pr\", \"depPr\" from \"public\".\"bornes_routes\" group by \"route\", \"pr\", \"depPr\" order by count desc"
       }
     ]
   }
