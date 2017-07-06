@@ -246,6 +246,28 @@
         },
         "sql": "select b1.*, b2.\"pr\", b2.\"X\", b2.\"Y\" from \"bornes_routes\" as b1, \"bornes_routes\" as b2\n    where b2.\"route\" \u003d b1.\"route\" and \n    b2.\"depPr\" \u003d b1.\"depPr\" and\n    b2.\"pr\" \u003d b1.\"pr\"+1",
         "expandedSql": "select b1.*, b2.\"pr\", b2.\"X\", b2.\"Y\" from \"bornes_routes\" as b1, \"bornes_routes\" as b2\n    where b2.\"route\" \u003d b1.\"route\" and \n    b2.\"depPr\" \u003d b1.\"depPr\" and\n    b2.\"pr\" \u003d b1.\"pr\"+1"
+      },
+      {
+        "mode": "SQL",
+        "id": "sPV6Ny0fn6mh",
+        "runOn": 1499347028985,
+        "runIn": 1221,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "8j9xoESmbNi053Ve",
+        "hash": "e3af3daf846e85124486023f3094c8b7",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select b1.*, b2.\"route\", b2.\"pr\", b2.\"X\", b2.\"Y\" from \"bornes_routes\" as b1, \"bornes_routes\" as b2\n    where b2.\"route\" \u003d b1.\"route\" and \n    b2.\"depPr\" \u003d b1.\"depPr\" and\n    b2.\"pr\" \u003d b1.\"pr\"+1",
+        "expandedSql": "select b1.*, b2.\"route\", b2.\"pr\", b2.\"X\", b2.\"Y\" from \"bornes_routes\" as b1, \"bornes_routes\" as b2\n    where b2.\"route\" \u003d b1.\"route\" and \n    b2.\"depPr\" \u003d b1.\"depPr\" and\n    b2.\"pr\" \u003d b1.\"pr\"+1"
       }
     ]
   }
