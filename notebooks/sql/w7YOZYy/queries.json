@@ -312,6 +312,28 @@
         },
         "sql": "select count(*),route, pr, depPr from \"public\".\"bornes_routes\" group by route, pr, depPr",
         "expandedSql": "select count(*),route, pr, depPr from \"public\".\"bornes_routes\" group by route, pr, depPr"
+      },
+      {
+        "mode": "SQL",
+        "id": "tlO7womapFtb",
+        "runOn": 1499348956637,
+        "runIn": 38,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "JOqxe4KXh4XnXaDn",
+        "hash": "98f7294c4074a6c51df487bc68655150",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*),\"route\", \"pr\", \"depPr\" from \"public\".\"bornes_routes\" group by \"route\", \"pr\", \"depPr\"",
+        "expandedSql": "select count(*),\"route\", \"pr\", \"depPr\" from \"public\".\"bornes_routes\" group by \"route\", \"pr\", \"depPr\""
       }
     ]
   }
