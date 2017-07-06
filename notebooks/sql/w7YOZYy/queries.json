@@ -179,6 +179,30 @@
         "sql": "select * from \"osm_france\"",
         "expandedSql": "select * from \"osm_france\""
       }
+    ],
+    "4sjr1e2cpwa": [
+      {
+        "mode": "SQL",
+        "id": "Dys8EhiG8poz",
+        "runOn": 1499346844203,
+        "runIn": -1,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "st4Q7Kaf3T2rLG5X",
+        "hash": "1e950df8456bb013b01b5c5a53062e5f",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select b1.* from \"bornes_routes\" as b1, \"bornes_routes\" as b2\n    where b2.\"route\" \u003d b1.\"route\" and \n    b2.\"depPr\" \u003d b1.\"depPr\" and\n    b2.\"pr\" \u003d b1.\"pr\"+1",
+        "expandedSql": "select b1.* from \"bornes_routes\" as b1, \"bornes_routes\" as b2\n    where b2.\"route\" \u003d b1.\"route\" and \n    b2.\"depPr\" \u003d b1.\"depPr\" and\n    b2.\"pr\" \u003d b1.\"pr\"+1"
+      }
     ]
   }
 }
