@@ -10,14 +10,38 @@
     "_refreshTrigger": 0,
     "autoRefreshSample": false
   },
+  "origin": "PREPARE_RECIPE",
   "sorting": [],
   "coloring": {
     "individualColumns": [],
     "scheme": "MEANING_AND_STATUS",
     "valueColoringMode": "HASH"
   },
-  "steps": [],
-  "exploreUIParams": {},
+  "steps": [
+    {
+      "alwaysShowComment": false,
+      "preview": true,
+      "params": {
+        "matchingMode": "PATTERN",
+        "values": [
+          "^[0-9]+[A-Z]9"
+        ],
+        "booleanMode": "AND",
+        "normalizationMode": "EXACT",
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "route"
+        ],
+        "action": "REMOVE_ROW"
+      },
+      "type": "FilterOnValue",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    }
+  ],
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "previewMode": "ALL_ROWS",
   "explorationSampling": {
     "_refreshTrigger": 0,

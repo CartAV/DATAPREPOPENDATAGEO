@@ -12,7 +12,12 @@
           "conf": []
         },
         "readParams": {
-          "map": {}
+          "map": {
+            "bornage_reseau_routier_national": {
+              "repartition": 10,
+              "cache": false
+            }
+          }
         }
       },
       "hadoopConfigKeys": [],
@@ -44,11 +49,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499345175308
+    "lastModifiedOn": 1499345387416
   },
   "creationTag": {
     "versionNumber": 0,
