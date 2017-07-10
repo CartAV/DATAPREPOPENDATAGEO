@@ -1064,6 +1064,28 @@
         },
         "sql": "select * from \"public\".\"bornes_routes_communes_2016\" order by route, pr, concession ",
         "expandedSql": "select * from \"public\".\"bornes_routes_communes_2016\" order by route, pr, concession "
+      },
+      {
+        "mode": "SQL",
+        "id": "IaprZPUUigyU",
+        "runOn": 1499692364514,
+        "runIn": 134,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "tfmPznlPQ14rAdLa",
+        "hash": "47ea440c5e8fbb038ab8463059cd3ed5",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"public\".\"bornes_routes_communes_2016\" where route\u003d\u0027A0001\u0027 and pr\u003c\u003d2",
+        "expandedSql": "select * from \"public\".\"bornes_routes_communes_2016\" where route\u003d\u0027A0001\u0027 and pr\u003c\u003d2"
       }
     ]
   }
