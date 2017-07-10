@@ -930,6 +930,28 @@
         },
         "sql": "with b1 as (select * from \"public\".\"bornes_routes_communes_2016\"), select * from b1",
         "expandedSql": "with b1 as (select * from \"public\".\"bornes_routes_communes_2016\"), select * from b1"
+      },
+      {
+        "mode": "SQL",
+        "id": "0MkBQqquA1nk",
+        "runOn": 1499685837871,
+        "runIn": 46,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "gs6bJhtr4s3p2B8S",
+        "hash": "799293b40f1b9f392c094187366ee688",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "with b1 as (select * from \"public\".\"bornes_routes_communes_2016\") select * from b1",
+        "expandedSql": "with b1 as (select * from \"public\".\"bornes_routes_communes_2016\") select * from b1"
       }
     ]
   }
