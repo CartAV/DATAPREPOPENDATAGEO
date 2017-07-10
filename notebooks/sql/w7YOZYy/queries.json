@@ -1328,6 +1328,28 @@
         },
         "sql": "select * from \"public\".\"bornes_routes_2016\" where route \u003d \u0027A0001\u0027 and pr \u003c\u003d 2 order by pr and cote \u003d \u0027D\u0027",
         "expandedSql": "select * from \"public\".\"bornes_routes_2016\" where route \u003d \u0027A0001\u0027 and pr \u003c\u003d 2 order by pr and cote \u003d \u0027D\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "X99opWNsvBnN",
+        "runOn": 1499692702490,
+        "runIn": 54,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "8XPGNcs7EqspCfS1",
+        "hash": "80329d6e1ca192d630fc5fca049eb4f0",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"public\".\"bornes_routes_2016\" where route \u003d \u0027A0001\u0027 and pr \u003c\u003d 2 and cote \u003d \u0027D\u0027 order by pr",
+        "expandedSql": "select * from \"public\".\"bornes_routes_2016\" where route \u003d \u0027A0001\u0027 and pr \u003c\u003d 2 and cote \u003d \u0027D\u0027 order by pr"
       }
     ]
   }
