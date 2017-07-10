@@ -1,22 +1,22 @@
 {
   "explorationFilters": [],
   "maxProcessedMemTableBytes": -1,
+  "analysisColumnData": {},
   "columnsSelection": {
     "mode": "ALL"
   },
-  "analysisColumnData": {},
   "globalSearchQuery": "",
   "vizSampling": {
     "_refreshTrigger": 0,
     "autoRefreshSample": false
   },
   "origin": "PREPARE_RECIPE",
+  "sorting": [],
   "coloring": {
     "individualColumns": [],
     "scheme": "MEANING_AND_STATUS",
     "valueColoringMode": "HASH"
   },
-  "sorting": [],
   "steps": [
     {
       "alwaysShowComment": false,
@@ -26,17 +26,17 @@
         "values": [
           "^[0-9]+[A-Z]9"
         ],
-        "normalizationMode": "EXACT",
         "booleanMode": "AND",
+        "normalizationMode": "EXACT",
         "appliesTo": "SINGLE_COLUMN",
-        "action": "REMOVE_ROW",
         "columns": [
           "route"
-        ]
+        ],
+        "action": "REMOVE_ROW"
       },
       "type": "FilterOnValue",
-      "metaType": "PROCESSOR",
-      "disabled": false
+      "disabled": false,
+      "metaType": "PROCESSOR"
     },
     {
       "alwaysShowComment": false,
@@ -49,8 +49,8 @@
         "extractAllOccurrences": false
       },
       "type": "RegexpExtractor",
-      "metaType": "PROCESSOR",
-      "disabled": false
+      "disabled": false,
+      "metaType": "PROCESSOR"
     },
     {
       "alwaysShowComment": false,
@@ -64,8 +64,8 @@
         "join": " "
       },
       "type": "ColumnsConcat",
-      "metaType": "PROCESSOR",
-      "disabled": false
+      "disabled": false,
+      "metaType": "PROCESSOR"
     }
   ],
   "exploreUIParams": {
@@ -74,20 +74,20 @@
   "previewMode": "ALL_ROWS",
   "explorationSampling": {
     "_refreshTrigger": 0,
+    "autoRefreshSample": false,
     "selection": {
-      "maxStoredBytes": -1,
-      "maxRecords": 10000,
       "targetRatio": 0.02,
+      "maxRecords": 10000,
+      "maxStoredBytes": -1,
       "partitionSelectionMethod": "ALL",
       "withinFirstN": -1,
-      "latestPartitionsN": 1,
       "samplingMethod": "HEAD_SEQUENTIAL",
+      "latestPartitionsN": 1,
       "maxReadUncompressedBytes": -1,
       "filter": {
         "enabled": false,
         "distinct": false
       }
-    },
-    "autoRefreshSample": false
+    }
   }
 }

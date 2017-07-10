@@ -16,6 +16,10 @@
             "bornage_reseau_routier_national": {
               "repartition": 10,
               "cache": false
+            },
+            "bornage_reseau_routier_national_2016": {
+              "repartition": 10,
+              "cache": false
             }
           }
         }
@@ -49,11 +53,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499678664130
+    "lastModifiedOn": 1499678941754
   },
   "creationTag": {
     "versionNumber": 0,
