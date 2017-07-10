@@ -1314,7 +1314,7 @@
         "runIn": 54,
         "runBy": "chabouisfr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "Xa4RWOofxGTJb3Sh",
         "hash": "c7360f0dd1832cada92bc1f6361b2d1d",
         "querySettings": {
