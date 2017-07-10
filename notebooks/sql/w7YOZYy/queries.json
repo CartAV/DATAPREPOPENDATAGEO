@@ -466,6 +466,28 @@
         },
         "sql": "with count_pr as (select count(*),\"route\", \"pr\", \"depPr\", \"cote\" from \"public\".\"bornes_routes_2016\" group by \"route\", \"pr\", \"depPr\", \"cote\" order by count desc) \nselect count_pr.count, \"public\".\"bornes_routes_2016\".* \nfrom \"public\".\"bornes_routes_2016\", count_pr \nwhere count_pr.route \u003d route and count_pr.pr \u003d pr and count_pr.depPr \u003d depPr and count_pr.cote \u003d cote",
         "expandedSql": "with count_pr as (select count(*),\"route\", \"pr\", \"depPr\", \"cote\" from \"public\".\"bornes_routes_2016\" group by \"route\", \"pr\", \"depPr\", \"cote\" order by count desc) \nselect count_pr.count, \"public\".\"bornes_routes_2016\".* \nfrom \"public\".\"bornes_routes_2016\", count_pr \nwhere count_pr.route \u003d route and count_pr.pr \u003d pr and count_pr.depPr \u003d depPr and count_pr.cote \u003d cote"
+      },
+      {
+        "mode": "SQL",
+        "id": "HHCrStlVUfOX",
+        "runOn": 1499679338781,
+        "runIn": 46,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "5NG9PdR18lWMbS8v",
+        "hash": "ce0425713f1388deb1073904a2ef3e5a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "with count_pr as (select count(*),\"route\", \"pr\", \"depPr\", \"cote\" from \"public\".\"bornes_routes_2016\" group by \"route\", \"pr\", \"depPr\", \"cote\" order by count desc) \nselect count_pr.count, \"public\".\"bornes_routes_2016\".* \nfrom \"public\".\"bornes_routes_2016\" as pr, count_pr \nwhere count_pr.route \u003d pr.route and count_pr.pr \u003d pr.pr and count_pr.depPr \u003d pr.depPr and count_pr.cote \u003d pr.cote",
+        "expandedSql": "with count_pr as (select count(*),\"route\", \"pr\", \"depPr\", \"cote\" from \"public\".\"bornes_routes_2016\" group by \"route\", \"pr\", \"depPr\", \"cote\" order by count desc) \nselect count_pr.count, \"public\".\"bornes_routes_2016\".* \nfrom \"public\".\"bornes_routes_2016\" as pr, count_pr \nwhere count_pr.route \u003d pr.route and count_pr.pr \u003d pr.pr and count_pr.depPr \u003d pr.depPr and count_pr.cote \u003d pr.cote"
       }
     ]
   }
