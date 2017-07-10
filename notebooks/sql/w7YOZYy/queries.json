@@ -1262,6 +1262,28 @@
         },
         "sql": "select * from \"public\".\"bornes_routes_2016\" where route \u003d \u0027A0001\u0027",
         "expandedSql": "select * from \"public\".\"bornes_routes_2016\" where route \u003d \u0027A0001\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "d37MnwdPxuB0",
+        "runOn": 1499692631330,
+        "runIn": 64,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "3dD9icotTMLiP5RV",
+        "hash": "4181adeb24acd5f00683758063f7b7ca",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"public\".\"bornes_routes_2016\" where route \u003d \u0027A0001\u0027 and pr \u003c\u003d 2",
+        "expandedSql": "select * from \"public\".\"bornes_routes_2016\" where route \u003d \u0027A0001\u0027 and pr \u003c\u003d 2"
       }
     ]
   }
