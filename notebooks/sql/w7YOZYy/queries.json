@@ -1634,6 +1634,28 @@
         },
         "sql": "with b1 as (select * from \"public\".\"bornes_routes_2016\") \nselect b1.lon, b1.lat, st_distance(ST_SetSRID(ST_MakePoint(b1.lon, b1.lat),4326)::geography, ST_SetSRID(ST_MakePoint(b2.lon, b2.lat),4326)::geography) as distance, b2.* \nfrom \"public\".\"bornes_routes_2016\" b2 left outer join b1\nON b1.route \u003d b2.route and b1.pr \u003d b2.pr + 1 and b1.concession \u003d b2.concession and b1.cote \u003d b2.cote and st_distance(ST_SetSRID(ST_MakePoint(b1.lon, b1.lat),4326)::geography, ST_SetSRID(ST_MakePoint(b2.lon, b2.lat),4326)::geography)\u003c1600\nwhere b2.route \u003d \u0027A0001\u0027\norder by route, pr, concession , distance",
         "expandedSql": "with b1 as (select * from \"public\".\"bornes_routes_2016\") \nselect b1.lon, b1.lat, st_distance(ST_SetSRID(ST_MakePoint(b1.lon, b1.lat),4326)::geography, ST_SetSRID(ST_MakePoint(b2.lon, b2.lat),4326)::geography) as distance, b2.* \nfrom \"public\".\"bornes_routes_2016\" b2 left outer join b1\nON b1.route \u003d b2.route and b1.pr \u003d b2.pr + 1 and b1.concession \u003d b2.concession and b1.cote \u003d b2.cote and st_distance(ST_SetSRID(ST_MakePoint(b1.lon, b1.lat),4326)::geography, ST_SetSRID(ST_MakePoint(b2.lon, b2.lat),4326)::geography)\u003c1600\nwhere b2.route \u003d \u0027A0001\u0027\norder by route, pr, concession , distance"
+      },
+      {
+        "mode": "SQL",
+        "id": "rmo9a98RxHQC",
+        "runOn": 1499694878825,
+        "runIn": 110,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "LFL9RqCi9PuZiFGv",
+        "hash": "bd27c2f3a8c2651f47653e6175a81fc1",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "with b1 as (select * from \"public\".\"bornes_routes_2016\") \nselect b1.lon, b1.lat, st_distance(ST_SetSRID(ST_MakePoint(b1.lon, b1.lat),4326)::geography, ST_SetSRID(ST_MakePoint(b2.lon, b2.lat),4326)::geography) as distance, b2.* \nfrom \"public\".\"bornes_routes_2016\" b2 left outer join b1\nON b1.route \u003d b2.route and b1.pr \u003d b2.pr + 1 and b1.cote \u003d b2.cote and st_distance(ST_SetSRID(ST_MakePoint(b1.lon, b1.lat),4326)::geography, ST_SetSRID(ST_MakePoint(b2.lon, b2.lat),4326)::geography)\u003c1600\nwhere b2.route \u003d \u0027A0001\u0027\norder by route, pr, concession , distance",
+        "expandedSql": "with b1 as (select * from \"public\".\"bornes_routes_2016\") \nselect b1.lon, b1.lat, st_distance(ST_SetSRID(ST_MakePoint(b1.lon, b1.lat),4326)::geography, ST_SetSRID(ST_MakePoint(b2.lon, b2.lat),4326)::geography) as distance, b2.* \nfrom \"public\".\"bornes_routes_2016\" b2 left outer join b1\nON b1.route \u003d b2.route and b1.pr \u003d b2.pr + 1 and b1.cote \u003d b2.cote and st_distance(ST_SetSRID(ST_MakePoint(b1.lon, b1.lat),4326)::geography, ST_SetSRID(ST_MakePoint(b2.lon, b2.lat),4326)::geography)\u003c1600\nwhere b2.route \u003d \u0027A0001\u0027\norder by route, pr, concession , distance"
       }
     ],
     "asqqwyofmzi": [
