@@ -444,6 +444,28 @@
         },
         "sql": "with count_pr as (select count(*),\"route\", \"pr\", \"depPr\", \"cote\" from \"public\".\"bornes_routes_2016\" group by \"route\", \"pr\", \"depPr\", \"cote\" order by count desc) select \"public\".\"bornes_routes_2016\".* from \"public\".\"bornes_routes_2016\"",
         "expandedSql": "with count_pr as (select count(*),\"route\", \"pr\", \"depPr\", \"cote\" from \"public\".\"bornes_routes_2016\" group by \"route\", \"pr\", \"depPr\", \"cote\" order by count desc) select \"public\".\"bornes_routes_2016\".* from \"public\".\"bornes_routes_2016\""
+      },
+      {
+        "mode": "SQL",
+        "id": "Tj3XXV7eCSsD",
+        "runOn": 1499679301041,
+        "runIn": 70,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "a4tOTHn7k25uld2S",
+        "hash": "43d3376b0390c1de2f600a1f714b13ce",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "with count_pr as (select count(*),\"route\", \"pr\", \"depPr\", \"cote\" from \"public\".\"bornes_routes_2016\" group by \"route\", \"pr\", \"depPr\", \"cote\" order by count desc) \nselect count_pr.count, \"public\".\"bornes_routes_2016\".* \nfrom \"public\".\"bornes_routes_2016\", count_pr \nwhere count_pr.route \u003d route and count_pr.pr \u003d pr and count_pr.depPr \u003d depPr and count_pr.cote \u003d cote",
+        "expandedSql": "with count_pr as (select count(*),\"route\", \"pr\", \"depPr\", \"cote\" from \"public\".\"bornes_routes_2016\" group by \"route\", \"pr\", \"depPr\", \"cote\" order by count desc) \nselect count_pr.count, \"public\".\"bornes_routes_2016\".* \nfrom \"public\".\"bornes_routes_2016\", count_pr \nwhere count_pr.route \u003d route and count_pr.pr \u003d pr and count_pr.depPr \u003d depPr and count_pr.cote \u003d cote"
       }
     ]
   }
