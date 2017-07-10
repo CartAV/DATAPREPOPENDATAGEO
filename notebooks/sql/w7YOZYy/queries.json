@@ -819,6 +819,30 @@
         "sql": "with count_pr as (select count(*),\"route\", \"pr\", \"depPr\", \"cote\" from \"public\".\"bornes_routes_2016\" group by \"route\", \"pr\", \"depPr\", \"cote\" order by count desc) \nselect count_pr.count, pr.* \nfrom \"public\".\"bornes_routes_2016\" AS pr, count_pr \nwhere count_pr.route \u003d pr.route and count_pr.pr \u003d pr.pr and count_pr.\"depPr\" \u003d pr.\"depPr\" and count_pr.cote \u003d pr.cote\norder by count desc, route, pr, \"depPr\", cote",
         "expandedSql": "with count_pr as (select count(*),\"route\", \"pr\", \"depPr\", \"cote\" from \"public\".\"bornes_routes_2016\" group by \"route\", \"pr\", \"depPr\", \"cote\" order by count desc) \nselect count_pr.count, pr.* \nfrom \"public\".\"bornes_routes_2016\" AS pr, count_pr \nwhere count_pr.route \u003d pr.route and count_pr.pr \u003d pr.pr and count_pr.\"depPr\" \u003d pr.\"depPr\" and count_pr.cote \u003d pr.cote\norder by count desc, route, pr, \"depPr\", cote"
       }
+    ],
+    "0imra3prmaph": [
+      {
+        "mode": "SQL",
+        "id": "0wd4pPFp4Ij5",
+        "runOn": 1499681139551,
+        "runIn": -1,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "9fUWb1suj9fCzjZK",
+        "hash": "b1ffd3cb681c1f1eaced1119b8ec67f1",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select c.\"INSEE_COM\", c.\"NOM_COM\", b.* from \"public\".\"ign_commune_france\" c, \"public\".\"bornes_routes_2016\" b \nwhere ST_CONTAINS(c.the_geom, ST_SetSRID(ST_MakePoint(b.lon, b.lat),4326) limit 10",
+        "expandedSql": "select c.\"INSEE_COM\", c.\"NOM_COM\", b.* from \"public\".\"ign_commune_france\" c, \"public\".\"bornes_routes_2016\" b \nwhere ST_CONTAINS(c.the_geom, ST_SetSRID(ST_MakePoint(b.lon, b.lat),4326) limit 10"
+      }
     ]
   }
 }
