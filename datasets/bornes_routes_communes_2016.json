@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499681583482
+    "lastModifiedOn": 1499692306873
   },
   "creationTag": {
     "versionNumber": 0,
@@ -83,7 +83,7 @@
       },
       {
         "name": "route_element_2",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
