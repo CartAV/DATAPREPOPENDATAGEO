@@ -842,6 +842,28 @@
         },
         "sql": "select c.\"INSEE_COM\", c.\"NOM_COM\", b.* from \"public\".\"ign_commune_france\" c, \"public\".\"bornes_routes_2016\" b \nwhere ST_CONTAINS(c.the_geom, ST_SetSRID(ST_MakePoint(b.lon, b.lat),4326) limit 10",
         "expandedSql": "select c.\"INSEE_COM\", c.\"NOM_COM\", b.* from \"public\".\"ign_commune_france\" c, \"public\".\"bornes_routes_2016\" b \nwhere ST_CONTAINS(c.the_geom, ST_SetSRID(ST_MakePoint(b.lon, b.lat),4326) limit 10"
+      },
+      {
+        "mode": "SQL",
+        "id": "qQ5TWZAbmK8k",
+        "runOn": 1499681153695,
+        "runIn": 48,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "DroyrXGCZa9aAqf0",
+        "hash": "b80d31882fd06b6e3635112d00b98984",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select c.\"INSEE_COM\", c.\"NOM_COM\", b.* from \"public\".\"ign_commune_france\" c, \"public\".\"bornes_routes_2016\" b \nwhere ST_CONTAINS(c.the_geom, ST_SetSRID(ST_MakePoint(b.lon, b.lat),4326)) limit 10",
+        "expandedSql": "select c.\"INSEE_COM\", c.\"NOM_COM\", b.* from \"public\".\"ign_commune_france\" c, \"public\".\"bornes_routes_2016\" b \nwhere ST_CONTAINS(c.the_geom, ST_SetSRID(ST_MakePoint(b.lon, b.lat),4326)) limit 10"
       }
     ]
   }
