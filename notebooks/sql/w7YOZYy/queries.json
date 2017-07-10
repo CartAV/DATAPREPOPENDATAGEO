@@ -422,6 +422,28 @@
         },
         "sql": "with count_pr as (select count(*),\"route\", \"pr\", \"depPr\", \"cote\" from \"public\".\"bornes_routes_2016\" group by \"route\", \"pr\", \"depPr\", \"cote\" order by count desc) select * from count_pr",
         "expandedSql": "with count_pr as (select count(*),\"route\", \"pr\", \"depPr\", \"cote\" from \"public\".\"bornes_routes_2016\" group by \"route\", \"pr\", \"depPr\", \"cote\" order by count desc) select * from count_pr"
+      },
+      {
+        "mode": "SQL",
+        "id": "7gth8puyxAtY",
+        "runOn": 1499679191617,
+        "runIn": 94,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "nInV5Z6kYudnpq4V",
+        "hash": "7c02e8edf483f39f373138ddfbf36796",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "with count_pr as (select count(*),\"route\", \"pr\", \"depPr\", \"cote\" from \"public\".\"bornes_routes_2016\" group by \"route\", \"pr\", \"depPr\", \"cote\" order by count desc) select \"public\".\"bornes_routes_2016\".* from \"public\".\"bornes_routes_2016\"",
+        "expandedSql": "with count_pr as (select count(*),\"route\", \"pr\", \"depPr\", \"cote\" from \"public\".\"bornes_routes_2016\" group by \"route\", \"pr\", \"depPr\", \"cote\" order by count desc) select \"public\".\"bornes_routes_2016\".* from \"public\".\"bornes_routes_2016\""
       }
     ]
   }
