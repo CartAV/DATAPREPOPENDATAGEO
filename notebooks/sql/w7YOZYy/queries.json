@@ -1111,10 +1111,10 @@
         "mode": "SQL",
         "id": "VophCtlXmv3u",
         "runOn": 1499693025552,
-        "runIn": 48,
+        "runIn": 1524,
         "runBy": "chabouisfr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "VHGGJrHWKHPf4hgA",
         "hash": "f780877c891dfd9309bf135f58db7692",
         "querySettings": {
