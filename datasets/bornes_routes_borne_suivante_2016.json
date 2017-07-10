@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499695302653
+    "lastModifiedOn": 1499696114380
   },
   "creationTag": {
     "versionNumber": 0,
@@ -52,19 +52,19 @@
     "userModified": false,
     "columns": [
       {
-        "name": "lon",
+        "name": "lon_next",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "lat",
+        "name": "lat_next",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "distance",
+        "name": "distance_next",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -184,13 +184,13 @@
         "maxLength": -1
       },
       {
-        "name": "lat_1",
+        "name": "lat",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "lon_1",
+        "name": "lon",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
