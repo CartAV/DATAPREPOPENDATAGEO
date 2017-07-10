@@ -952,6 +952,28 @@
         },
         "sql": "with b1 as (select * from \"public\".\"bornes_routes_communes_2016\") select * from b1",
         "expandedSql": "with b1 as (select * from \"public\".\"bornes_routes_communes_2016\") select * from b1"
+      },
+      {
+        "mode": "SQL",
+        "id": "Iul7JMVQ4kt7",
+        "runOn": 1499687389753,
+        "runIn": 72,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "abSxvchyGYjX47uB",
+        "hash": "f65b530036a6653d1f2d191609bc3f94",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "with b1 as (select * from \"public\".\"bornes_routes_communes_2016\") \nselect b1.lon, b1.lat, st_distance(ST_SetSRID(ST_MakePoint(b1.lon, b.lat),4326), ST_SetSRID(ST_MakePoint(b2.lon, b2.lat),4326)) as distance, b2.* \nfrom \"public\".\"bornes_routes_communes_2016\" b2 left outer join b1\nON b1.route \u003d b2.route and b1.pr \u003d b2.pr + 1 and b1.concession \u003d b2.concession\norder by route, pr, concession , distance",
+        "expandedSql": "with b1 as (select * from \"public\".\"bornes_routes_communes_2016\") \nselect b1.lon, b1.lat, st_distance(ST_SetSRID(ST_MakePoint(b1.lon, b.lat),4326), ST_SetSRID(ST_MakePoint(b2.lon, b2.lat),4326)) as distance, b2.* \nfrom \"public\".\"bornes_routes_communes_2016\" b2 left outer join b1\nON b1.route \u003d b2.route and b1.pr \u003d b2.pr + 1 and b1.concession \u003d b2.concession\norder by route, pr, concession , distance"
       }
     ]
   }
