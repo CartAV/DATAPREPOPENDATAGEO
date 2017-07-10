@@ -1130,6 +1130,28 @@
         },
         "sql": "select * from \"public\".\"bornes_routes_communes_2016\" where route \u003d\u003d \u0027A0001\u0027",
         "expandedSql": "select * from \"public\".\"bornes_routes_communes_2016\" where route \u003d\u003d \u0027A0001\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "GM1ev9GZfmke",
+        "runOn": 1499692404638,
+        "runIn": 48,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "FdegzRGgQSnBXpqW",
+        "hash": "755270c346d5ee0b41e56e3c9d2d6a41",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"public\".\"bornes_routes_communes_2016\" where route \u003d \u0027A0001\u0027",
+        "expandedSql": "select * from \"public\".\"bornes_routes_communes_2016\" where route \u003d \u0027A0001\u0027"
       }
     ]
   }
