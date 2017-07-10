@@ -1331,10 +1331,10 @@
         "mode": "SQL",
         "id": "ftsDL26AKPsg",
         "runOn": 1499693961788,
-        "runIn": 82,
+        "runIn": 44,
         "runBy": "chabouisfr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "PL5NB3L2BDzX6Gfh",
         "hash": "78a627258a5be940390978c240117be7",
         "querySettings": {
