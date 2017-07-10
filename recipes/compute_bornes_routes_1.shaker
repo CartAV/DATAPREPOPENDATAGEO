@@ -1,0 +1,93 @@
+{
+  "explorationFilters": [],
+  "maxProcessedMemTableBytes": -1,
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "analysisColumnData": {},
+  "globalSearchQuery": "",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "origin": "PREPARE_RECIPE",
+  "coloring": {
+    "individualColumns": [],
+    "scheme": "MEANING_AND_STATUS",
+    "valueColoringMode": "HASH"
+  },
+  "sorting": [],
+  "steps": [
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "matchingMode": "PATTERN",
+        "values": [
+          "^[0-9]+[A-Z]9"
+        ],
+        "normalizationMode": "EXACT",
+        "booleanMode": "AND",
+        "appliesTo": "SINGLE_COLUMN",
+        "action": "REMOVE_ROW",
+        "columns": [
+          "route"
+        ]
+      },
+      "type": "FilterOnValue",
+      "metaType": "PROCESSOR",
+      "disabled": false
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "pattern": "[0-9]*([A-Z])0*([0-9]*)",
+        "found_col": false,
+        "prefix": "route_element_",
+        "column": "route",
+        "extractAllOccurrences": false
+      },
+      "type": "RegexpExtractor",
+      "metaType": "PROCESSOR",
+      "disabled": false
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": true,
+      "params": {
+        "outputColumn": "nom_courant_route",
+        "columns": [
+          "route_element_1",
+          "route_element_2"
+        ],
+        "join": " "
+      },
+      "type": "ColumnsConcat",
+      "metaType": "PROCESSOR",
+      "disabled": false
+    }
+  ],
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "previewMode": "ALL_ROWS",
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "maxStoredBytes": -1,
+      "maxRecords": 10000,
+      "targetRatio": 0.02,
+      "partitionSelectionMethod": "ALL",
+      "withinFirstN": -1,
+      "latestPartitionsN": 1,
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxReadUncompressedBytes": -1,
+      "filter": {
+        "enabled": false,
+        "distinct": false
+      }
+    },
+    "autoRefreshSample": false
+  }
+}
