@@ -1,5 +1,42 @@
 {
-  "explorationFilters": [],
+  "explorationFilters": [
+    {
+      "facet": {
+        "sort": "count",
+        "columnType": "ALPHANUM",
+        "column": "route",
+        "currentMode": "ALPHANUM",
+        "selectedValues": {
+          "A0006A": true
+        },
+        "type": "facet"
+      },
+      "$$hashKey": "4YL",
+      "validityFilter": {
+        "column": "route",
+        "params": {
+          "nok": true,
+          "empty": true,
+          "ok": true,
+          "type": "Text"
+        },
+        "type": "validity"
+      },
+      "alphanumFilter": {
+        "values": [],
+        "column": "route",
+        "params": {
+          "normalization": "exact",
+          "mode": "full_string"
+        },
+        "type": "alphanum"
+      },
+      "column": "route",
+      "currentMode": "FACET",
+      "active": true,
+      "type": "columnFilter"
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "analysisColumnData": {},
   "columnsSelection": {
@@ -42,7 +79,7 @@
       "alwaysShowComment": false,
       "preview": false,
       "params": {
-        "pattern": "[0-9]*([A-Z])0*([0-9]*)",
+        "pattern": "[0-9]*([a-zA-Z])0*([a-zA-Z0-9]*)",
         "found_col": false,
         "prefix": "route_element_",
         "column": "route",
