@@ -2078,6 +2078,28 @@
         },
         "sql": "SELECT route, nom_courant_route, pr, \"depPr\", concession, gestionnai, avg(lat), avg(lon)\n  FROM \"bornes_routes_2016\" group by route, pr, \"depPr\", concession, gestionnai order by route, pr",
         "expandedSql": "SELECT route, nom_courant_route, pr, \"depPr\", concession, gestionnai, avg(lat), avg(lon)\n  FROM \"bornes_routes_2016\" group by route, pr, \"depPr\", concession, gestionnai order by route, pr"
+      },
+      {
+        "mode": "SQL",
+        "id": "Nn5vDIpV5JCF",
+        "runOn": 1499861235552,
+        "runIn": 96,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "fCyo0QjmeS4LWTf9",
+        "hash": "896ca3fd2927591d168520ff304d5275",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT route, nom_courant_route, pr, \"depPr\", concession, gestionnai, avg(lat), avg(lon)\n  FROM \"bornes_routes_2016\" group by route, nom_courant_route, pr, \"depPr\", concession, gestionnai order by route, pr",
+        "expandedSql": "SELECT route, nom_courant_route, pr, \"depPr\", concession, gestionnai, avg(lat), avg(lon)\n  FROM \"bornes_routes_2016\" group by route, nom_courant_route, pr, \"depPr\", concession, gestionnai order by route, pr"
       }
     ]
   }
