@@ -1990,6 +1990,28 @@
         },
         "sql": "SELECT *\n  FROM \"bornes_routes_borne_suivante_2016\"",
         "expandedSql": "SELECT *\n  FROM \"bornes_routes_borne_suivante_2016\""
+      },
+      {
+        "mode": "SQL",
+        "id": "PID3vTxTb0fr",
+        "runOn": 1499860622895,
+        "runIn": 96,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "J9pTE08vCbUemdYd",
+        "hash": "71385dd63d0a9f7717ce8642fde7642c",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT *\n  FROM \"bornes_routes_2016\"",
+        "expandedSql": "SELECT *\n  FROM \"bornes_routes_2016\""
       }
     ]
   }
