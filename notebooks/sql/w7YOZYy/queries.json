@@ -2017,10 +2017,10 @@
         "mode": "SQL",
         "id": "qYD1GhJeuLgk",
         "runOn": 1499860682366,
-        "runIn": 90,
+        "runIn": 180,
         "runBy": "chabouisfr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "sW5iDIaEsYIwExGV",
         "hash": "24404520028f9a1f584670242faa0f80",
         "querySettings": {
