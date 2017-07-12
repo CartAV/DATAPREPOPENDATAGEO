@@ -15,11 +15,11 @@
     "main": {
       "items": [
         {
-          "ref": "bornes_routes_2016",
+          "ref": "IGN_COMMUNE_FRANCE",
           "deps": []
         },
         {
-          "ref": "IGN_COMMUNE_FRANCE",
+          "ref": "bornes_routes_milieu_2016",
           "deps": []
         }
       ]
@@ -36,11 +36,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499848344591
+    "lastModifiedOn": 1499861483838
   },
   "creationTag": {
     "versionNumber": 0,
