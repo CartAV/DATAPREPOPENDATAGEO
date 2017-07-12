@@ -2034,6 +2034,28 @@
         },
         "sql": "SELECT *\n  FROM \"bornes_routes_2016\" order by route, pr",
         "expandedSql": "SELECT *\n  FROM \"bornes_routes_2016\" order by route, pr"
+      },
+      {
+        "mode": "SQL",
+        "id": "SZmOF3cZs755",
+        "runOn": 1499861157641,
+        "runIn": 180,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "NNvTJ9UAMoOcJ23R",
+        "hash": "4204e0badc147f27620207ff1b0c8e01",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT route, nom_courant_route, pr, \"depPr\", concession, gestionnaire, avg(lat), avg(lon)\n  FROM \"bornes_routes_2016\" group by route, pr, \"depPr\", concession, gestionnaire order by route, pr",
+        "expandedSql": "SELECT route, nom_courant_route, pr, \"depPr\", concession, gestionnaire, avg(lat), avg(lon)\n  FROM \"bornes_routes_2016\" group by route, pr, \"depPr\", concession, gestionnaire order by route, pr"
       }
     ]
   }
