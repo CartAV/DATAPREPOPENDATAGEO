@@ -1,106 +1,114 @@
 {
-  "steps": [],
-  "tags": [],
-  "columnsSelection": {
-    "mode": "ALL"
-  },
-  "coloring": {
-    "scheme": "MEANING_AND_STATUS",
-    "individualColumns": [],
-    "valueColoringMode": "HASH"
-  },
-  "analysisColumnData": {},
-  "explorationSampling": {
-    "selection": {
-      "samplingMethod": "HEAD_SEQUENTIAL",
-      "partitionSelectionMethod": "ALL",
-      "maxRecords": 100000,
-      "targetRatio": 0.02
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
     },
-    "autoRefreshSample": false,
-    "_refreshTrigger": 1
-  },
-  "vizSampling": {
-    "autoRefreshSample": false,
-    "_refreshTrigger": 0
-  },
-  "exploreUIParams": {
-    "autoRefresh": true
-  },
-  "globalSearchQuery": "",
-  "explorationFilters": [
-    {
-      "column": "Région",
-      "type": "columnFilter",
-      "currentMode": "FACET",
-      "active": true,
-      "facet": {
-        "type": "facet",
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxStoredBytes": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 100000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 1
+    },
+    "vizSampling": {
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [
+      {
+        "active": true,
+        "alphanumFilter": {
+          "column": "Région",
+          "params": {
+            "mode": "full_string",
+            "normalization": "exact"
+          },
+          "type": "alphanum",
+          "values": []
+        },
         "column": "Région",
-        "columnType": "ALPHANUM",
-        "currentMode": "ALPHANUM",
-        "sort": "count",
-        "selectedValues": {
-          "Île-de-France": true
+        "currentMode": "FACET",
+        "facet": {
+          "column": "Région",
+          "columnType": "ALPHANUM",
+          "currentMode": "ALPHANUM",
+          "selectedValues": {
+            "Île-de-France": true
+          },
+          "sort": "count",
+          "type": "facet"
+        },
+        "type": "columnFilter",
+        "validityFilter": {
+          "column": "Région",
+          "params": {
+            "empty": true,
+            "nok": true,
+            "ok": true,
+            "type": "Text"
+          },
+          "type": "validity"
         }
       },
-      "alphanumFilter": {
-        "type": "alphanum",
-        "column": "Région",
-        "values": [],
-        "params": {
-          "mode": "full_string",
-          "normalization": "exact"
-        }
-      },
-      "validityFilter": {
-        "type": "validity",
-        "column": "Région",
-        "params": {
-          "type": "Text",
-          "ok": true,
-          "nok": true,
-          "empty": true
+      {
+        "active": true,
+        "alphanumFilter": {
+          "column": "Département",
+          "params": {
+            "mode": "full_string",
+            "normalization": "exact"
+          },
+          "type": "alphanum",
+          "values": []
+        },
+        "column": "Département",
+        "currentMode": "FACET",
+        "facet": {
+          "column": "Département",
+          "columnType": "ALPHANUM",
+          "currentMode": "ALPHANUM",
+          "selectedValues": {},
+          "sort": "count",
+          "type": "facet"
+        },
+        "type": "columnFilter",
+        "validityFilter": {
+          "column": "Département",
+          "params": {
+            "empty": true,
+            "nok": true,
+            "ok": true,
+            "type": "Text"
+          },
+          "type": "validity"
         }
       }
-    },
-    {
-      "column": "Département",
-      "type": "columnFilter",
-      "currentMode": "FACET",
-      "active": true,
-      "facet": {
-        "type": "facet",
-        "column": "Département",
-        "columnType": "ALPHANUM",
-        "currentMode": "ALPHANUM",
-        "sort": "count",
-        "selectedValues": {
-          "Paris": true
-        }
-      },
-      "alphanumFilter": {
-        "type": "alphanum",
-        "column": "Département",
-        "values": [],
-        "params": {
-          "mode": "full_string",
-          "normalization": "exact"
-        }
-      },
-      "validityFilter": {
-        "type": "validity",
-        "column": "Département",
-        "params": {
-          "type": "Text",
-          "ok": true,
-          "nok": true,
-          "empty": true
-        }
-      }
-    }
-  ],
-  "previewMode": "ALL_ROWS",
-  "charts": [],
-  "chartsEngine": "LINO"
+    ],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": []
 }
