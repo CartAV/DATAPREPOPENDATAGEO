@@ -19,22 +19,25 @@
   },
   "steps": [
     {
-      "alwaysShowComment": false,
+      "alwaysShowComment": true,
       "preview": false,
       "params": {
-        "expression": "if(clazz\u003d\u003d11,\"autoroute\",\"\")",
+        "expression": "if(or(clazz\u003d\u003d11, clazz\u003d\u003d12),\"autoroute\",\"\")\n\n\n\n\n\n",
         "column": "cat_route_osm"
       },
+      "comment": "D\u0027après le fichier de config de osm2po : \nwtr.tag.highway.motorway \u003d       1,  11, 120, car\n wtr.tag.highway.motorway_link \u003d  1,  12, 30,  car",
       "type": "CreateColumnWithGREL",
       "disabled": false,
       "metaType": "PROCESSOR"
     },
     {
-      "alwaysShowComment": false,
+      "alwaysShowComment": true,
       "preview": true,
       "params": {
+        "expression": "if(and(clazz\u003e\u003d13, clazz\u003c\u003d16),\"route principale\",\"\")",
         "column": "cat_route_osm"
       },
+      "comment": "wtr.tag.highway.trunk \u003d          1,  13, 90,  car\nwtr.tag.highway.trunk_link \u003d     1,  14, 30,  car\nwtr.tag.highway.primary \u003d        1,  15, 70,  car\nwtr.tag.highway.primary_link \u003d   1,  16, 30,  car",
       "type": "CreateColumnWithGREL",
       "disabled": false,
       "metaType": "PROCESSOR"
