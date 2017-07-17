@@ -8,7 +8,8 @@ SELECT
              WHEN "reverse_cost" < 1000000.0 THEN km
              ELSE km * 2
         END
-    ) as cummul_km
+    ) as cummul_km,
+    route.cat_route_osm
         
   FROM osm_france_dom_catr as route, IGN_DEPARTEMENT_FRANCE as dep
   WHERE st_within(route.geom_way::geometry, dep.the_geom::geometry)
