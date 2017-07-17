@@ -10,14 +10,39 @@
     "_refreshTrigger": 0,
     "autoRefreshSample": false
   },
+  "origin": "PREPARE_RECIPE",
   "sorting": [],
   "coloring": {
     "individualColumns": [],
     "scheme": "MEANING_AND_STATUS",
     "valueColoringMode": "HASH"
   },
-  "steps": [],
-  "exploreUIParams": {},
+  "steps": [
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "expression": "if(clazz\u003d\u003d11,\"autoroute\",\"\")",
+        "column": "cat_route_osm"
+      },
+      "type": "CreateColumnWithGREL",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": true,
+      "params": {
+        "column": "cat_route_osm"
+      },
+      "type": "CreateColumnWithGREL",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    }
+  ],
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "previewMode": "ALL_ROWS",
   "explorationSampling": {
     "_refreshTrigger": 0,
