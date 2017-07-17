@@ -19,7 +19,7 @@
           "deps": []
         },
         {
-          "ref": "osm_france_dom",
+          "ref": "osm_france_dom_catr",
           "deps": []
         }
       ]
@@ -36,11 +36,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
-      "login": "grabenertr"
+      "login": "chabouisfr"
     },
-    "lastModifiedOn": 1497355715688
+    "lastModifiedOn": 1500299446590
   },
   "creationTag": {
     "versionNumber": 0,
