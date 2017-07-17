@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
-      "login": "grabenertr"
+      "login": "chabouisfr"
     },
-    "lastModifiedOn": 1493390179523
+    "lastModifiedOn": 1500299642111
   },
   "creationTag": {
     "versionNumber": 0,
@@ -79,6 +79,12 @@
       {
         "name": "cummul_km",
         "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "cat_route_osm",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       }
