@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1500298394668
+    "lastModifiedOn": 1500298625051
   },
   "creationTag": {
     "versionNumber": 0,
@@ -90,6 +90,12 @@
       {
         "name": "clazz",
         "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "cat_route_osm",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
