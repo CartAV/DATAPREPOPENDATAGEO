@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
-      "login": "grabenertr"
+      "login": "chabouisfr"
     },
-    "lastModifiedOn": 1493393819398
+    "lastModifiedOn": 1500377388597
   },
   "creationTag": {
     "versionNumber": 0,
@@ -72,6 +72,12 @@
       },
       {
         "name": "num_route_or_id",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "cat_route_osm",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
