@@ -2124,6 +2124,28 @@
         },
         "sql": "select * from \"public\".\"osm_routes_par_commune\" where \"num_route_or_id\" \u003d \u0027A 86\u0027",
         "expandedSql": "select * from \"public\".\"osm_routes_par_commune\" where \"num_route_or_id\" \u003d \u0027A 86\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "gDPMuvYKfTAJ",
+        "runOn": 1500387012563,
+        "runIn": 728,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "mJC4GBaOQg6zOUiU",
+        "hash": "6a5af2d58b7fa566739c17015314fef6",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"osm_france_dom_catr\" where \"osm_name\" \u003d \u0027A 86\u0027",
+        "expandedSql": "select * from \"osm_france_dom_catr\" where \"osm_name\" \u003d \u0027A 86\u0027"
       }
     ]
   }
