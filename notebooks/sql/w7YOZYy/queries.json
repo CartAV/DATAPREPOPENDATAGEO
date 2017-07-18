@@ -2101,6 +2101,30 @@
         "sql": "SELECT route, nom_courant_route, pr, \"depPr\", concession, gestionnai, avg(lat), avg(lon)\n  FROM \"bornes_routes_2016\" group by route, nom_courant_route, pr, \"depPr\", concession, gestionnai order by route, pr",
         "expandedSql": "SELECT route, nom_courant_route, pr, \"depPr\", concession, gestionnai, avg(lat), avg(lon)\n  FROM \"bornes_routes_2016\" group by route, nom_courant_route, pr, \"depPr\", concession, gestionnai order by route, pr"
       }
+    ],
+    "tjncvpwfzg": [
+      {
+        "mode": "SQL",
+        "id": "MyBxQ6BzyUMl",
+        "runOn": 1500386877083,
+        "runIn": -1,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "cSIMbXn8rfnK9zuw",
+        "hash": "1ed6acd8a04103e54f17d4bf65f482a6",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"public\".\"osm_routes_par_commune\" where \"num_route_or_id\" \u003d \u0027A 86\u0027",
+        "expandedSql": "select * from \"public\".\"osm_routes_par_commune\" where \"num_route_or_id\" \u003d \u0027A 86\u0027"
+      }
     ]
   }
 }
