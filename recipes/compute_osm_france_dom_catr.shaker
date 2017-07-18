@@ -19,26 +19,16 @@
   },
   "steps": [
     {
-      "alwaysShowComment": true,
-      "preview": false,
-      "params": {
-        "expression": "if(or(clazz\u003d\u003d11, clazz\u003d\u003d12),\"autoroute\",\"\")\n\n\n\n\n\n",
-        "column": "cat_route_osm"
-      },
-      "comment": "D\u0027après le fichier de config de osm2po : \nwtr.tag.highway.motorway \u003d       1,  11, 120, car\n wtr.tag.highway.motorway_link \u003d  1,  12, 30,  car",
-      "type": "CreateColumnWithGREL",
-      "disabled": false,
-      "metaType": "PROCESSOR"
-    },
-    {
-      "alwaysShowComment": true,
+      "alwaysShowComment": false,
       "preview": true,
       "params": {
-        "expression": "if(and(clazz\u003e\u003d13, clazz\u003c\u003d16),\"route principale\",\"\")",
-        "column": "cat_route_osm"
+        "usePythonUnicode": true,
+        "stopOnError": true,
+        "column": "cat_route_osm",
+        "pythonSourceCode": "# Modify the process function to fit your needs\ndef process(row):\n    if int(row[\u0027clazz\u0027]) \u003d\u003d 11 or int(row[\u0027clazz\u0027]) \u003d\u003d 12:\n        return \u0027autoroute\u0027\n    elif int(row[\u0027clazz\u0027]) \u003e\u003d 13 and int(row[\u0027clazz\u0027]) \u003c\u003d 16:\n        return \u0027route principale\u0027\n    else:\n        return \u0027\u0027\n\n# D\u0027après le fichier de config de osm2po : \n\n# wtr.tag.highway.motorway \u003d       1,  11, 120, car\n# wtr.tag.highway.motorway_link \u003d  1,  12, 30,  car\n\n# et\n\n# wtr.tag.highway.trunk \u003d          1,  13, 90,  car\n# wtr.tag.highway.trunk_link \u003d     1,  14, 30,  car\n# wtr.tag.highway.primary \u003d        1,  15, 70,  car\n# wtr.tag.highway.primary_link \u003d   1,  16, 30,  car",
+        "mode": "CELL"
       },
-      "comment": "wtr.tag.highway.trunk \u003d          1,  13, 90,  car\nwtr.tag.highway.trunk_link \u003d     1,  14, 30,  car\nwtr.tag.highway.primary \u003d        1,  15, 70,  car\nwtr.tag.highway.primary_link \u003d   1,  16, 30,  car",
-      "type": "CreateColumnWithGREL",
+      "type": "PythonUDF",
       "disabled": false,
       "metaType": "PROCESSOR"
     }
