@@ -2,7 +2,7 @@ SELECT
   st_linemerge(st_intersection(commune."the_geom", route."the_geom")::geometry) as the_geom,
   route.num_route_or_id || "INSEE_COM"::text as num_route_com_id,
   "INSEE_COM",
-  route.num_route_or_id
+  route.num_route_or_id,
   route.cat_route_osm
 FROM
   osm_routes_par_departement as route,
