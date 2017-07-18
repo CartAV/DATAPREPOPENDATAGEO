@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1500298625051
+    "lastModifiedOn": 1500387471372
   },
   "creationTag": {
     "versionNumber": 0,
@@ -90,12 +90,6 @@
       {
         "name": "clazz",
         "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "cat_route_osm",
-        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -168,6 +162,13 @@
       {
         "name": "geom_way",
         "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "cat_route_osm",
+        "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       }
