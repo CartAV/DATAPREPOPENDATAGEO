@@ -3,6 +3,7 @@ SELECT
   route.num_route_or_id || "INSEE_COM"::text as num_route_com_id,
   "INSEE_COM",
   route.num_route_or_id
+  route.cat_route_osm
 FROM
   osm_routes_par_departement as route,
   ign_commune_france as commune
