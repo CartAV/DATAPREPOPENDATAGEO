@@ -2168,6 +2168,28 @@
         },
         "sql": "select * from \"osm_france_dom_catr\" where \"osm_name\" \u003d \u0027A 86\u0027",
         "expandedSql": "select * from \"osm_france_dom_catr\" where \"osm_name\" \u003d \u0027A 86\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "DVOvktwoqIVe",
+        "runOn": 1500388732459,
+        "runIn": 262,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "bEGNushsoGERyqB6",
+        "hash": "6a5af2d58b7fa566739c17015314fef6",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"osm_france_dom_catr\" where \"osm_name\" \u003d \u0027A 86\u0027",
+        "expandedSql": "select * from \"osm_france_dom_catr\" where \"osm_name\" \u003d \u0027A 86\u0027"
       }
     ]
   }
