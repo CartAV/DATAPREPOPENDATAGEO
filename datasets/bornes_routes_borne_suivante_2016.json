@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1500458083401
+    "lastModifiedOn": 1500458169636
   },
   "creationTag": {
     "versionNumber": 0,
@@ -51,24 +51,6 @@
   "schema": {
     "userModified": false,
     "columns": [
-      {
-        "name": "lon_next",
-        "type": "double",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "lat_next",
-        "type": "double",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "distance_next",
-        "type": "double",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
       {
         "name": "INSEE_COM",
         "type": "string",
@@ -125,6 +107,24 @@
       },
       {
         "name": "lon",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "lon_next",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "lat_next",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "distance_next",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
