@@ -10,14 +10,39 @@
     "_refreshTrigger": 0,
     "autoRefreshSample": false
   },
+  "origin": "PREPARE_RECIPE",
   "sorting": [],
   "coloring": {
     "individualColumns": [],
     "scheme": "MEANING_AND_STATUS",
     "valueColoringMode": "HASH"
   },
-  "steps": [],
-  "exploreUIParams": {},
+  "steps": [
+    {
+      "alwaysShowComment": false,
+      "preview": true,
+      "params": {
+        "matchingMode": "FULL_STRING",
+        "values": [
+          "G"
+        ],
+        "booleanMode": "AND",
+        "normalizationMode": "EXACT",
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "cote"
+        ],
+        "action": "REMOVE_ROW"
+      },
+      "comment": "on ne garde que les côtés Droits et indéterminés. Le but est que le point utilisé pour projeter sur le segment de route soit forcément pile sur la route en question.",
+      "type": "FilterOnValue",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    }
+  ],
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "previewMode": "ALL_ROWS",
   "explorationSampling": {
     "_refreshTrigger": 0,
