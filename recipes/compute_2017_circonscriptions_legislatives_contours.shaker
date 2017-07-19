@@ -59,7 +59,7 @@
     },
     {
       "alwaysShowComment": false,
-      "preview": true,
+      "preview": false,
       "params": {
         "matching": "PATTERN",
         "stopAfterFirstMatch": false,
@@ -85,6 +85,25 @@
         "output": ""
       },
       "type": "FindReplace",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": true,
+      "params": {
+        "renamings": [
+          {
+            "to": "Latitude",
+            "from": "Geo Point_0"
+          },
+          {
+            "to": "Longitude",
+            "from": "Geo Point_1"
+          }
+        ]
+      },
+      "type": "ColumnRenamer",
       "disabled": false,
       "metaType": "PROCESSOR"
     }
