@@ -10,7 +10,7 @@ next as (
 next2 as (
     select next.*, b1.lon as lon_next2, b1.lat as lat_next2, st_distance(ST_SetSRID(ST_MakePoint(b1.lon, b1.lat),4326)::geography, ST_SetSRID(ST_MakePoint(next.lon, next.lat),4326)::geography) as distance_next2 
     from next left outer join b1
-    ON b1.route = next.route and b1.pr = next.pr + 2 and st_distance(ST_SetSRID(ST_MakePoint(b1.lon, b1.lat),4326)::geography, ST_SetSRID(ST_MakePoint(next.lon, next.lat),4326)::geography)<1600
+    ON b1.route = next.route and b1.pr = next.pr + 2 and st_distance(ST_SetSRID(ST_MakePoint(b1.lon, b1.lat),4326)::geography, ST_SetSRID(ST_MakePoint(next.lon, next.lat),4326)::geography)<3200
     order by route, pr, concession , distance_next
 )
 
