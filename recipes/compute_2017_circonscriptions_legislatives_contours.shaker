@@ -17,7 +17,78 @@
     "scheme": "MEANING_AND_STATUS",
     "valueColoringMode": "HASH"
   },
-  "steps": [],
+  "steps": [
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "matching": "PATTERN",
+        "stopAfterFirstMatch": false,
+        "appliesTo": "SINGLE_COLUMN",
+        "normalization": "EXACT",
+        "columns": [
+          "Département - Circonscription"
+        ],
+        "mapping": [
+          {
+            "to": "- 0$1",
+            "from": "- (\\d)$"
+          }
+        ],
+        "output": ""
+      },
+      "type": "FindReplace",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "limit": 0,
+        "inCol": "Geo Point",
+        "outColPrefix": "Geo Point_",
+        "target": "COLUMNS",
+        "limitOutput": false,
+        "keepEmptyChunks": false,
+        "separator": ", "
+      },
+      "type": "ColumnSplitter",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": true,
+      "params": {
+        "matching": "PATTERN",
+        "stopAfterFirstMatch": false,
+        "appliesTo": "SINGLE_COLUMN",
+        "normalization": "EXACT",
+        "columns": [
+          "Geo Shape"
+        ],
+        "mapping": [
+          {
+            "to": "MULTIPOLYGON",
+            "from": ".*coordinates\":"
+          },
+          {
+            "to": "(",
+            "from": "\\["
+          },
+          {
+            "to": ")",
+            "from": "\\]"
+          }
+        ],
+        "output": ""
+      },
+      "type": "FindReplace",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    }
+  ],
   "exploreUIParams": {
     "autoRefresh": true
   },
