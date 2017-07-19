@@ -12,7 +12,12 @@
           "conf": []
         },
         "readParams": {
-          "map": {}
+          "map": {
+            "circonscriptions_legislatives_2017": {
+              "repartition": 10,
+              "cache": false
+            }
+          }
         }
       },
       "hadoopConfigKeys": [],
@@ -44,11 +49,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
-      "login": "antoinefa"
+      "login": "chouakial"
     },
-    "lastModifiedOn": 1494607703188
+    "lastModifiedOn": 1500483374841
   },
   "creationTag": {
     "versionNumber": 0,
