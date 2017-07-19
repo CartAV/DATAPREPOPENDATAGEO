@@ -1,58 +1,58 @@
 {
-  "type": "shaker",
+  "checklists": {
+    "checklists": []
+  }, 
+  "customMeta": {
+    "kv": {}
+  }, 
   "inputs": {
     "main": {
       "items": [
         {
-          "ref": "2016_geohisto_communes",
-          "deps": []
+          "deps": [], 
+          "ref": "2016_geohisto_communes"
         }
       ]
-    },
+    }, 
     "scriptDeps": {
       "items": [
         {
-          "ref": "2016_geohisto_communes_prep",
-          "deps": []
-        },
+          "deps": [], 
+          "ref": "2016_geohisto_communes_prep"
+        }, 
         {
-          "ref": "2016_geoapi_communes_wgs84",
-          "deps": []
+          "deps": [], 
+          "ref": "2016_geoapi_communes_wgs84"
         }
       ]
     }
-  },
+  }, 
+  "neverRecomputeExistingPartitions": false, 
+  "optionalDependencies": false, 
   "outputs": {
     "main": {
       "items": [
         {
-          "ref": "2016_geohisto_communes_prep",
-          "appendMode": false
+          "appendMode": false, 
+          "ref": "2016_geohisto_communes_prep"
         }
       ]
     }
-  },
-  "neverRecomputeExistingPartitions": false,
-  "optionalDependencies": false,
+  }, 
   "params": {
-    "engine": "DSS_STREAM",
+    "engineType": "DSS", 
     "hadoopConfigKeys": []
-  },
-  "checklists": {
-    "checklists": []
-  },
-  "tags": [],
+  }, 
+  "redispatchPartitioning": false, 
+  "tags": [], 
+  "type": "shaker", 
   "versionTag": {
-    "versionNumber": 17,
     "lastModifiedBy": {
-      "login": "antoinefa",
-      "displayName": "Fabien Antoine",
-      "email": "fabien.antoine@interieur.gouv.fr"
-    },
-    "lastModifiedOn": 1485867118223
-  },
-  "customMeta": {
-    "kv": {}
-  },
-  "redispatchPartitioning": false
+      "displayName": "Fabien Antoine", 
+      "email": "fabien.antoine@interieur.gouv.fr", 
+      "login": "antoinefa"
+    }, 
+    "lastModifiedOn": 1485867118223, 
+    "versionNumber": 17
+  }
 }

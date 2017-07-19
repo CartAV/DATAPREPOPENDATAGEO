@@ -1,46 +1,46 @@
 {
-  "type": "shaker",
+  "checklists": {
+    "checklists": []
+  }, 
+  "customMeta": {
+    "kv": {}
+  }, 
   "inputs": {
     "main": {
       "items": [
         {
-          "ref": "201601_INSEE_pyramide_ages",
-          "deps": []
+          "deps": [], 
+          "ref": "201601_INSEE_pyramide_ages"
         }
       ]
     }
-  },
+  }, 
+  "neverRecomputeExistingPartitions": false, 
+  "optionalDependencies": false, 
   "outputs": {
     "main": {
       "items": [
         {
-          "ref": "201601_INSEE_pyramide_ages_prep",
-          "appendMode": false
+          "appendMode": false, 
+          "ref": "201601_INSEE_pyramide_ages_prep"
         }
       ]
     }
-  },
-  "neverRecomputeExistingPartitions": false,
-  "optionalDependencies": false,
+  }, 
   "params": {
-    "engine": "DSS_STREAM",
+    "engineType": "DSS", 
     "hadoopConfigKeys": []
-  },
-  "checklists": {
-    "checklists": []
-  },
-  "tags": [],
+  }, 
+  "redispatchPartitioning": false, 
+  "tags": [], 
+  "type": "shaker", 
   "versionTag": {
-    "versionNumber": 5,
     "lastModifiedBy": {
-      "login": "antoinefa",
-      "displayName": "Fabien Antoine",
-      "email": "fabien.antoine@interieur.gouv.fr"
-    },
-    "lastModifiedOn": 1484751615519
-  },
-  "customMeta": {
-    "kv": {}
-  },
-  "redispatchPartitioning": false
+      "displayName": "Fabien Antoine", 
+      "email": "fabien.antoine@interieur.gouv.fr", 
+      "login": "antoinefa"
+    }, 
+    "lastModifiedOn": 1484751615519, 
+    "versionNumber": 5
+  }
 }

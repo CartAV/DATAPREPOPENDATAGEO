@@ -1,46 +1,46 @@
 {
-  "type": "shaker",
+  "checklists": {
+    "checklists": []
+  }, 
+  "customMeta": {
+    "kv": {}
+  }, 
   "inputs": {
     "main": {
       "items": [
         {
-          "ref": "geohisto_geohisto",
-          "deps": []
+          "deps": [], 
+          "ref": "geohisto_geohisto"
         }
       ]
     }
-  },
+  }, 
+  "neverRecomputeExistingPartitions": false, 
+  "optionalDependencies": false, 
   "outputs": {
     "main": {
       "items": [
         {
-          "ref": "geohisto",
-          "appendMode": false
+          "appendMode": false, 
+          "ref": "geohisto"
         }
       ]
     }
-  },
-  "neverRecomputeExistingPartitions": false,
-  "optionalDependencies": false,
+  }, 
   "params": {
-    "engine": "DSS_STREAM",
+    "engineType": "DSS", 
     "hadoopConfigKeys": []
-  },
-  "checklists": {
-    "checklists": []
-  },
-  "tags": [],
+  }, 
+  "redispatchPartitioning": false, 
+  "tags": [], 
+  "type": "shaker", 
   "versionTag": {
-    "versionNumber": 11,
     "lastModifiedBy": {
-      "login": "grabenertr",
-      "displayName": "Tristam Gräbener",
-      "email": "tristam.grabener@interieur.gouv.fr"
-    },
-    "lastModifiedOn": 1487176037171
-  },
-  "customMeta": {
-    "kv": {}
-  },
-  "redispatchPartitioning": false
+      "displayName": "Tristam Gr\u00e4bener", 
+      "email": "tristam.grabener@interieur.gouv.fr", 
+      "login": "grabenertr"
+    }, 
+    "lastModifiedOn": 1487176037171, 
+    "versionNumber": 11
+  }
 }

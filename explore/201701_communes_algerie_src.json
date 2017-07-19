@@ -1,35 +1,38 @@
 {
-  "steps": [],
-  "tags": [],
-  "columnsSelection": {
-    "mode": "ALL"
-  },
-  "coloring": {
-    "scheme": "MEANING_AND_STATUS",
-    "individualColumns": [],
-    "valueColoringMode": "HASH"
-  },
-  "analysisColumnData": {},
-  "explorationSampling": {
-    "selection": {
-      "samplingMethod": "HEAD_SEQUENTIAL",
-      "partitionSelectionMethod": "ALL",
-      "maxRecords": 10000,
-      "targetRatio": 0.02
-    },
-    "autoRefreshSample": false,
-    "_refreshTrigger": 0
-  },
-  "vizSampling": {
-    "autoRefreshSample": false,
-    "_refreshTrigger": 0
-  },
-  "exploreUIParams": {
-    "autoRefresh": true
-  },
-  "globalSearchQuery": "",
-  "explorationFilters": [],
-  "previewMode": "ALL_ROWS",
-  "charts": [],
-  "chartsEngine": "LINO"
+  "charts": [], 
+  "script": {
+    "analysisColumnData": {}, 
+    "charts": [], 
+    "chartsEngine": "LINO", 
+    "coloring": {
+      "individualColumns": [], 
+      "scheme": "MEANING_AND_STATUS", 
+      "valueColoringMode": "HASH"
+    }, 
+    "columnsSelection": {
+      "mode": "ALL"
+    }, 
+    "explorationFilters": [], 
+    "explorationSampling": {
+      "_refreshTrigger": 0, 
+      "autoRefreshSample": false, 
+      "selection": {
+        "maxRecords": 10000, 
+        "partitionSelectionMethod": "ALL", 
+        "samplingMethod": "HEAD_SEQUENTIAL", 
+        "targetRatio": 0.02
+      }
+    }, 
+    "exploreUIParams": {
+      "autoRefresh": true
+    }, 
+    "globalSearchQuery": "", 
+    "previewMode": "ALL_ROWS", 
+    "steps": [], 
+    "tags": [], 
+    "vizSampling": {
+      "_refreshTrigger": 0, 
+      "autoRefreshSample": false
+    }
+  }
 }

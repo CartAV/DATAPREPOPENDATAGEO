@@ -1,135 +1,138 @@
 {
-  "steps": [],
-  "tags": [],
-  "columnsSelection": {
-    "mode": "ALL"
-  },
-  "coloring": {
-    "scheme": "MEANING_AND_STATUS",
-    "individualColumns": [],
-    "valueColoringMode": "HASH"
-  },
-  "analysisColumnData": {},
-  "explorationSampling": {
-    "selection": {
-      "samplingMethod": "HEAD_SEQUENTIAL",
-      "partitionSelectionMethod": "ALL",
-      "maxRecords": 100000,
-      "targetRatio": 0.02
-    },
-    "autoRefreshSample": false,
-    "_refreshTrigger": 2
-  },
-  "vizSampling": {
-    "autoRefreshSample": false,
-    "_refreshTrigger": 0
-  },
-  "exploreUIParams": {
-    "autoRefresh": true
-  },
-  "globalSearchQuery": "",
-  "explorationFilters": [
-    {
-      "column": "Commune",
-      "type": "columnFilter",
-      "currentMode": "FACET",
-      "active": true,
-      "facet": {
-        "type": "facet",
-        "column": "Commune",
-        "columnType": "ALPHANUM",
-        "currentMode": "ALPHANUM",
-        "sort": "count",
-        "selectedValues": {}
-      },
-      "alphanumFilter": {
-        "type": "alphanum",
-        "column": "Commune",
-        "values": [],
-        "params": {
-          "mode": "full_string",
-          "normalization": "exact"
+  "charts": [], 
+  "script": {
+    "analysisColumnData": {}, 
+    "charts": [], 
+    "chartsEngine": "LINO", 
+    "coloring": {
+      "individualColumns": [], 
+      "scheme": "MEANING_AND_STATUS", 
+      "valueColoringMode": "HASH"
+    }, 
+    "columnsSelection": {
+      "mode": "ALL"
+    }, 
+    "explorationFilters": [
+      {
+        "active": true, 
+        "alphanumFilter": {
+          "column": "Commune", 
+          "params": {
+            "mode": "full_string", 
+            "normalization": "exact"
+          }, 
+          "type": "alphanum", 
+          "values": []
+        }, 
+        "column": "Commune", 
+        "currentMode": "FACET", 
+        "facet": {
+          "column": "Commune", 
+          "columnType": "ALPHANUM", 
+          "currentMode": "ALPHANUM", 
+          "selectedValues": {}, 
+          "sort": "count", 
+          "type": "facet"
+        }, 
+        "type": "columnFilter", 
+        "validityFilter": {
+          "column": "Commune", 
+          "params": {
+            "empty": true, 
+            "nok": true, 
+            "ok": true, 
+            "type": "Text"
+          }, 
+          "type": "validity"
         }
-      },
-      "validityFilter": {
-        "type": "validity",
-        "column": "Commune",
-        "params": {
-          "type": "Text",
-          "ok": true,
-          "nok": true,
-          "empty": true
+      }, 
+      {
+        "active": true, 
+        "alphanumFilter": {
+          "column": "D\u00e9partement", 
+          "params": {
+            "mode": "full_string", 
+            "normalization": "exact"
+          }, 
+          "type": "alphanum", 
+          "values": []
+        }, 
+        "column": "D\u00e9partement", 
+        "currentMode": "FACET", 
+        "facet": {
+          "column": "D\u00e9partement", 
+          "columnType": "ALPHANUM", 
+          "currentMode": "ALPHANUM", 
+          "selectedValues": {}, 
+          "sort": "count", 
+          "type": "facet"
+        }, 
+        "type": "columnFilter", 
+        "validityFilter": {
+          "column": "D\u00e9partement", 
+          "params": {
+            "empty": true, 
+            "nok": true, 
+            "ok": true, 
+            "type": "Text"
+          }, 
+          "type": "validity"
         }
-      }
-    },
-    {
-      "column": "Département",
-      "type": "columnFilter",
-      "currentMode": "FACET",
-      "active": true,
-      "facet": {
-        "type": "facet",
-        "column": "Département",
-        "columnType": "ALPHANUM",
-        "currentMode": "ALPHANUM",
-        "sort": "count",
-        "selectedValues": {}
-      },
-      "alphanumFilter": {
-        "type": "alphanum",
-        "column": "Département",
-        "values": [],
-        "params": {
-          "mode": "full_string",
-          "normalization": "exact"
-        }
-      },
-      "validityFilter": {
-        "type": "validity",
-        "column": "Département",
-        "params": {
-          "type": "Text",
-          "ok": true,
-          "nok": true,
-          "empty": true
-        }
-      }
-    },
-    {
-      "column": "Code Département",
-      "type": "columnFilter",
-      "currentMode": "FACET",
-      "active": true,
-      "facet": {
-        "type": "facet",
-        "column": "Code Département",
-        "columnType": "ALPHANUM",
-        "currentMode": "ALPHANUM",
-        "sort": "count",
-        "selectedValues": {}
-      },
-      "alphanumFilter": {
-        "type": "alphanum",
-        "column": "Code Département",
-        "values": [],
-        "params": {
-          "mode": "full_string",
-          "normalization": "exact"
-        }
-      },
-      "validityFilter": {
-        "type": "validity",
-        "column": "Code Département",
-        "params": {
-          "type": "Text",
-          "ok": true,
-          "nok": true,
-          "empty": true
+      }, 
+      {
+        "active": true, 
+        "alphanumFilter": {
+          "column": "Code D\u00e9partement", 
+          "params": {
+            "mode": "full_string", 
+            "normalization": "exact"
+          }, 
+          "type": "alphanum", 
+          "values": []
+        }, 
+        "column": "Code D\u00e9partement", 
+        "currentMode": "FACET", 
+        "facet": {
+          "column": "Code D\u00e9partement", 
+          "columnType": "ALPHANUM", 
+          "currentMode": "ALPHANUM", 
+          "selectedValues": {}, 
+          "sort": "count", 
+          "type": "facet"
+        }, 
+        "type": "columnFilter", 
+        "validityFilter": {
+          "column": "Code D\u00e9partement", 
+          "params": {
+            "empty": true, 
+            "nok": true, 
+            "ok": true, 
+            "type": "Text"
+          }, 
+          "type": "validity"
         }
       }
+    ], 
+    "explorationSampling": {
+      "_refreshTrigger": 2, 
+      "autoRefreshSample": false, 
+      "selection": {
+        "maxRecords": 100000, 
+        "partitionSelectionMethod": "ALL", 
+        "samplingMethod": "HEAD_SEQUENTIAL", 
+        "targetRatio": 0.02
+      }
+    }, 
+    "exploreUIParams": {
+      "autoRefresh": true
+    }, 
+    "globalSearchQuery": "", 
+    "previewMode": "ALL_ROWS", 
+    "steps": [], 
+    "tags": [], 
+    "vizSampling": {
+      "_refreshTrigger": 0, 
+      "autoRefreshSample": false
     }
-  ],
-  "previewMode": "ALL_ROWS",
-  "charts": [],
-  "chartsEngine": "LINO"
+  }
 }

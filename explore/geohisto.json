@@ -1,69 +1,146 @@
 {
-  "steps": [],
-  "tags": [],
-  "columnsSelection": {
-    "mode": "ALL"
-  },
-  "coloring": {
-    "scheme": "MEANING_AND_STATUS",
-    "individualColumns": [],
-    "valueColoringMode": "HASH"
-  },
-  "analysisColumnData": {},
-  "explorationSampling": {
-    "selection": {
-      "samplingMethod": "HEAD_SEQUENTIAL",
-      "partitionSelectionMethod": "ALL",
-      "maxRecords": 100000,
-      "targetRatio": 0.02
-    },
-    "autoRefreshSample": false,
-    "_refreshTrigger": 1
-  },
-  "vizSampling": {
-    "autoRefreshSample": false,
-    "_refreshTrigger": 0
-  },
-  "exploreUIParams": {
-    "autoRefresh": true
-  },
-  "globalSearchQuery": "",
-  "explorationFilters": [
-    {
-      "column": "insee_code",
-      "type": "columnFilter",
-      "currentMode": "FACET",
-      "active": false,
-      "facet": {
-        "type": "facet",
-        "column": "insee_code",
-        "columnType": "NUMERICAL",
-        "currentMode": "ALPHANUM",
-        "sort": "count",
-        "selectedValues": {}
-      },
-      "alphanumFilter": {
-        "type": "alphanum",
-        "column": "insee_code",
-        "values": [],
-        "params": {
-          "mode": "full_string",
-          "normalization": "exact"
+    "charts": [
+        {
+            "refreshableSelection": {
+                "autoRefreshSample": false, 
+                "selection": {
+                    "maxRecords": 100000, 
+                    "partitionSelectionMethod": "ALL", 
+                    "targetRatio": 0.02, 
+                    "samplingMethod": "HEAD_SEQUENTIAL"
+                }, 
+                "_refreshTrigger": 1
+            }, 
+            "def": {
+                "userEditedName": false, 
+                "showLegend": true, 
+                "axis1LogScale": false, 
+                "disableSafetyLimits": false, 
+                "uaShape": [], 
+                "yDimension": [], 
+                "groupDimension": [], 
+                "includeZero": true, 
+                "sizeMeasure": [], 
+                "xAxisMode": "NORMAL", 
+                "colorPaletteType": "LINEAR", 
+                "xMeasure": [], 
+                "useLiveProcessingIfAvailable": true, 
+                "mapGridOptions": {
+                    "gridLatDeg": 0.6, 
+                    "gridLonDeg": 0.6
+                }, 
+                "computeMode": "NORMAL", 
+                "uaXDimension": [], 
+                "smoothing": false, 
+                "yMeasure": [], 
+                "type": "grouped_columns", 
+                "tooltipMeasures": [], 
+                "strokeWidth": 1, 
+                "yAxisMode": "NORMAL", 
+                "uaSize": [], 
+                "variant": "normal", 
+                "bubblesOptions": {
+                    "defaultRadius": 5.0
+                }, 
+                "hexbinRadius": 0, 
+                "uaTooltip": [], 
+                "showXAxis": false, 
+                "xDimension": [], 
+                "uaColor": [], 
+                "boxplotValue": [], 
+                "colorMeasure": [], 
+                "scatterOptions": {
+                    "equalScales": false, 
+                    "identityLine": false
+                }, 
+                "boxplotBreakdownDim": [], 
+                "mapOptions": {
+                    "tilesLayer": "cartodb-positron", 
+                    "lockSquareGrid": false
+                }, 
+                "name": "Chart", 
+                "axis2LogScale": false, 
+                "geometry": [], 
+                "uaYDimension": [], 
+                "pieOptions": {
+                    "donutHoleSize": 50.0
+                }, 
+                "colorOptions": {
+                    "ccScaleMode": "NORMAL", 
+                    "singleColor": "#659a88", 
+                    "colorPalette": "default", 
+                    "transparency": 0.75
+                }
+            }
         }
-      },
-      "validityFilter": {
-        "type": "validity",
-        "column": "insee_code",
-        "params": {
-          "type": "LongMeaning",
-          "ok": true,
-          "nok": true,
-          "empty": true
-        }
-      }
+    ], 
+    "script": {
+        "coloring": {
+            "scheme": "MEANING_AND_STATUS", 
+            "individualColumns": [], 
+            "valueColoringMode": "HASH"
+        }, 
+        "columnsSelection": {
+            "mode": "ALL"
+        }, 
+        "tags": [], 
+        "analysisColumnData": {}, 
+        "charts": [], 
+        "exploreUIParams": {
+            "autoRefresh": true
+        }, 
+        "vizSampling": {
+            "autoRefreshSample": false, 
+            "_refreshTrigger": 0
+        }, 
+        "steps": [], 
+        "globalSearchQuery": "", 
+        "previewMode": "ALL_ROWS", 
+        "chartsEngine": "LINO", 
+        "explorationSampling": {
+            "autoRefreshSample": false, 
+            "selection": {
+                "maxRecords": 100000, 
+                "partitionSelectionMethod": "ALL", 
+                "targetRatio": 0.02, 
+                "samplingMethod": "HEAD_SEQUENTIAL"
+            }, 
+            "_refreshTrigger": 1
+        }, 
+        "explorationFilters": [
+            {
+                "column": "insee_code", 
+                "alphanumFilter": {
+                    "column": "insee_code", 
+                    "type": "alphanum", 
+                    "params": {
+                        "mode": "full_string", 
+                        "normalization": "exact"
+                    }, 
+                    "values": []
+                }, 
+                "currentMode": "FACET", 
+                "facet": {
+                    "sort": "count", 
+                    "columnType": "NUMERICAL", 
+                    "column": "insee_code", 
+                    "selectedValues": {}, 
+                    "currentMode": "ALPHANUM", 
+                    "type": "facet"
+                }, 
+                "active": false, 
+                "validityFilter": {
+                    "column": "insee_code", 
+                    "type": "validity", 
+                    "params": {
+                        "type": "LongMeaning", 
+                        "ok": true, 
+                        "empty": true, 
+                        "nok": true
+                    }
+                }, 
+                "type": "columnFilter"
+            }
+        ]
     }
-  ],
-  "previewMode": "ALL_ROWS",
-  "charts": [],
-  "chartsEngine": "LINO"
 }

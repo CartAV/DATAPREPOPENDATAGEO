@@ -1,46 +1,46 @@
 {
-  "type": "shaker",
+  "checklists": {
+    "checklists": []
+  }, 
+  "customMeta": {
+    "kv": {}
+  }, 
   "inputs": {
     "main": {
       "items": [
         {
-          "ref": "departements_wgs84",
-          "deps": []
+          "deps": [], 
+          "ref": "departements_wgs84"
         }
       ]
     }
-  },
+  }, 
+  "neverRecomputeExistingPartitions": false, 
+  "optionalDependencies": false, 
   "outputs": {
     "main": {
       "items": [
         {
-          "ref": "departements_wgs84_prep",
-          "appendMode": false
+          "appendMode": false, 
+          "ref": "departements_wgs84_prep"
         }
       ]
     }
-  },
-  "neverRecomputeExistingPartitions": false,
-  "optionalDependencies": false,
+  }, 
   "params": {
-    "engine": "DSS_STREAM",
+    "engineType": "DSS", 
     "hadoopConfigKeys": []
-  },
-  "checklists": {
-    "checklists": []
-  },
-  "tags": [],
+  }, 
+  "redispatchPartitioning": false, 
+  "tags": [], 
+  "type": "shaker", 
   "versionTag": {
-    "versionNumber": 7,
     "lastModifiedBy": {
-      "login": "grabenertr",
-      "displayName": "Tristam Gräbener",
-      "email": "tristam.grabener@interieur.gouv.fr"
-    },
-    "lastModifiedOn": 1486573755155
-  },
-  "customMeta": {
-    "kv": {}
-  },
-  "redispatchPartitioning": false
+      "displayName": "Tristam Gr\u00e4bener", 
+      "email": "tristam.grabener@interieur.gouv.fr", 
+      "login": "grabenertr"
+    }, 
+    "lastModifiedOn": 1486573755155, 
+    "versionNumber": 7
+  }
 }

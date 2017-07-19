@@ -1,54 +1,54 @@
 {
-  "type": "shaker",
+  "checklists": {
+    "checklists": []
+  }, 
+  "customMeta": {
+    "kv": {}
+  }, 
   "inputs": {
     "main": {
       "items": [
         {
-          "ref": "2016_codes_postaux",
-          "deps": []
+          "deps": [], 
+          "ref": "2016_codes_postaux"
         }
       ]
-    },
+    }, 
     "scriptDeps": {
       "items": [
         {
-          "ref": "2016_geoapi_communes_wgs84",
-          "deps": []
+          "deps": [], 
+          "ref": "2016_geoapi_communes_wgs84"
         }
       ]
     }
-  },
+  }, 
+  "neverRecomputeExistingPartitions": false, 
+  "optionalDependencies": false, 
   "outputs": {
     "main": {
       "items": [
         {
-          "ref": "2016_codes_postaux_prep",
-          "appendMode": false
+          "appendMode": false, 
+          "ref": "2016_codes_postaux_prep"
         }
       ]
     }
-  },
-  "neverRecomputeExistingPartitions": false,
-  "optionalDependencies": false,
+  }, 
   "params": {
-    "engine": "DSS_STREAM",
+    "engineType": "DSS", 
     "hadoopConfigKeys": []
-  },
-  "checklists": {
-    "checklists": []
-  },
-  "tags": [],
+  }, 
+  "redispatchPartitioning": false, 
+  "tags": [], 
+  "type": "shaker", 
   "versionTag": {
-    "versionNumber": 5,
     "lastModifiedBy": {
-      "login": "antoinefa",
-      "displayName": "Fabien Antoine",
-      "email": "fabien.antoine@interieur.gouv.fr"
-    },
-    "lastModifiedOn": 1485792572133
-  },
-  "customMeta": {
-    "kv": {}
-  },
-  "redispatchPartitioning": false
+      "displayName": "Fabien Antoine", 
+      "email": "fabien.antoine@interieur.gouv.fr", 
+      "login": "antoinefa"
+    }, 
+    "lastModifiedOn": 1485792572133, 
+    "versionNumber": 5
+  }
 }

@@ -1,67 +1,68 @@
 {
-  "inputDatasetSmartName": "2016_geoapi_communes_wgs84",
-  "script": {
-    "steps": [],
-    "tags": [],
-    "columnsSelection": {
-      "mode": "ALL"
-    },
-    "coloring": {
-      "scheme": "MEANING_AND_STATUS",
-      "individualColumns": [],
-      "valueColoringMode": "HASH"
-    },
-    "analysisColumnData": {
-      "Codes Postaux": {
-        "meaning": "Text"
-      },
-      "Code Département": {
-        "meaning": "Text"
-      },
-      "Code INSEE": {
-        "meaning": "Text"
-      }
-    },
-    "explorationSampling": {
-      "selection": {
-        "samplingMethod": "HEAD_SEQUENTIAL",
-        "partitionSelectionMethod": "ALL",
-        "maxRecords": 10000,
-        "targetRatio": 0.02
-      },
-      "autoRefreshSample": false,
-      "_refreshTrigger": 0
-    },
-    "vizSampling": {
-      "autoRefreshSample": false,
-      "_refreshTrigger": 0
-    },
-    "exploreUIParams": {},
-    "globalSearchQuery": "",
-    "explorationFilters": [],
-    "previewMode": "ALL_ROWS",
-    "charts": [],
-    "chartsEngine": "LINO"
-  },
-  "versionTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "chabouisfr",
-      "displayName": "Francis Chabouis"
-    },
-    "lastModifiedOn": 1488298173149
-  },
-  "creationTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "chabouisfr",
-      "displayName": "Francis Chabouis"
-    },
-    "lastModifiedOn": 1488298173149
-  },
-  "name": "Analyze 2016_geoapi_communes_wgs84",
-  "tags": [],
+  "charts": [], 
   "checklists": {
     "checklists": []
+  }, 
+  "creationTag": {
+    "lastModifiedBy": {
+      "displayName": "Francis Chabouis", 
+      "login": "chabouisfr"
+    }, 
+    "lastModifiedOn": 1488298173149, 
+    "versionNumber": 0
+  }, 
+  "inputDatasetSmartName": "2016_geoapi_communes_wgs84", 
+  "name": "Analyze 2016_geoapi_communes_wgs84", 
+  "script": {
+    "analysisColumnData": {
+      "Code D\u00e9partement": {
+        "meaning": "Text"
+      }, 
+      "Code INSEE": {
+        "meaning": "Text"
+      }, 
+      "Codes Postaux": {
+        "meaning": "Text"
+      }
+    }, 
+    "charts": [], 
+    "chartsEngine": "LINO", 
+    "coloring": {
+      "individualColumns": [], 
+      "scheme": "MEANING_AND_STATUS", 
+      "valueColoringMode": "HASH"
+    }, 
+    "columnsSelection": {
+      "mode": "ALL"
+    }, 
+    "explorationFilters": [], 
+    "explorationSampling": {
+      "_refreshTrigger": 0, 
+      "autoRefreshSample": false, 
+      "selection": {
+        "maxRecords": 10000, 
+        "partitionSelectionMethod": "ALL", 
+        "samplingMethod": "HEAD_SEQUENTIAL", 
+        "targetRatio": 0.02
+      }
+    }, 
+    "exploreUIParams": {}, 
+    "globalSearchQuery": "", 
+    "previewMode": "ALL_ROWS", 
+    "steps": [], 
+    "tags": [], 
+    "vizSampling": {
+      "_refreshTrigger": 0, 
+      "autoRefreshSample": false
+    }
+  }, 
+  "tags": [], 
+  "versionTag": {
+    "lastModifiedBy": {
+      "displayName": "Francis Chabouis", 
+      "login": "chabouisfr"
+    }, 
+    "lastModifiedOn": 1488298173149, 
+    "versionNumber": 0
   }
 }

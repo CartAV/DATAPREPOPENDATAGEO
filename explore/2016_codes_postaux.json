@@ -73,40 +73,5 @@
                 }
             }
         }
-    ], 
-    "script": {
-        "coloring": {
-            "scheme": "MEANING_AND_STATUS", 
-            "individualColumns": [], 
-            "valueColoringMode": "HASH"
-        }, 
-        "columnsSelection": {
-            "mode": "ALL"
-        }, 
-        "tags": [], 
-        "analysisColumnData": {}, 
-        "charts": [], 
-        "exploreUIParams": {
-            "autoRefresh": true
-        }, 
-        "vizSampling": {
-            "autoRefreshSample": false, 
-            "_refreshTrigger": 0
-        }, 
-        "steps": [], 
-        "globalSearchQuery": "97", 
-        "previewMode": "ALL_ROWS", 
-        "chartsEngine": "LINO", 
-        "explorationSampling": {
-            "autoRefreshSample": false, 
-            "selection": {
-                "maxRecords": 10000, 
-                "partitionSelectionMethod": "ALL", 
-                "targetRatio": 0.02, 
-                "samplingMethod": "HEAD_SEQUENTIAL"
-            }, 
-            "_refreshTrigger": 0
-        }, 
-        "explorationFilters": []
-    }
+    ]
 }
