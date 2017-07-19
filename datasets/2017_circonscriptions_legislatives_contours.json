@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
-      "login": "antoinefa"
+      "login": "chouakial"
     },
-    "lastModifiedOn": 1494607703169
+    "lastModifiedOn": 1500485151854
   },
   "creationTag": {
     "versionNumber": 0,
@@ -55,6 +55,18 @@
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
+      },
+      {
+        "name": "Geo Point_0",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "Geo Point_1",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
       },
       {
         "name": "Geo Shape",
