@@ -1,7 +1,7 @@
 PG_TABLE=ign_commune_france
 
 OUT_PATH=/tmp
-OUT_FILE=communes
+OUT_FILE=communes.shp
 
 PG_HOST=192.168.3.100
 PG_DB=datalab-master
