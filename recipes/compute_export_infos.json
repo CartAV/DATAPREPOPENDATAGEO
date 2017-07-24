@@ -3,8 +3,9 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "autoInferSchema": false,
-    "expectHeaders": false,
+    "pipeOut": "export_infos",
+    "autoInferSchema": true,
+    "expectHeaders": true,
     "sendHeaders": false,
     "skipPrerunValidate": false
   },
@@ -33,11 +34,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1500900026742
+    "lastModifiedOn": 1500900610077
   },
   "creationTag": {
     "versionNumber": 0,
