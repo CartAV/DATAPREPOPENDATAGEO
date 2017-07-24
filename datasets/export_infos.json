@@ -48,11 +48,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1500900611478
+    "lastModifiedOn": 1500900820289
   },
   "creationTag": {
     "versionNumber": 0,
@@ -72,7 +72,7 @@
     "userModified": false,
     "columns": [
       {
-        "name": "Table;Output path;Output file;Command output",
+        "name": "Table,Output path,Output file,Command output",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
