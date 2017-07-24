@@ -8,6 +8,7 @@ PG_DB=datalab-master
 PG_PASS='gF2&NcPcC7Pb*b4o'
 PG_USER=dss
 
+
 RESULT=$(ogr2ogr -overwrite -f "ESRI Shapefile" $OUT_PATH/$OUT_FILE PG:"host=$PG_HOST user=$PG_USER dbname=$PG_DB password=$PG_PASS" -sql "SELECT * FROM $PG_TABLE" 2>&1)
 RESULT=$(echo $RESULT | tr '\n' '\\n')
 
