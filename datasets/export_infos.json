@@ -48,11 +48,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1500900820289
+    "lastModifiedOn": 1500901077567
   },
   "creationTag": {
     "versionNumber": 0,
@@ -72,7 +72,31 @@
     "userModified": false,
     "columns": [
       {
-        "name": "Table,Output path,Output file,Command output",
+        "name": "Table",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "Output path",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "Output file",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "Date",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "Command output",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
