@@ -10,14 +10,45 @@
     "_refreshTrigger": 0,
     "autoRefreshSample": false
   },
+  "origin": "PREPARE_RECIPE",
   "sorting": [],
   "coloring": {
     "individualColumns": [],
     "scheme": "MEANING_AND_STATUS",
     "valueColoringMode": "HASH"
   },
-  "steps": [],
-  "exploreUIParams": {},
+  "steps": [
+    {
+      "alwaysShowComment": false,
+      "preview": true,
+      "params": {
+        "matching": "SUBSTRING",
+        "stopAfterFirstMatch": false,
+        "appliesTo": "SINGLE_COLUMN",
+        "normalization": "EXACT",
+        "columns": [
+          "route"
+        ],
+        "mapping": [
+          {
+            "to": "Boulevard Périphérique Interieur",
+            "from": "75000C01"
+          },
+          {
+            "to": "Boulevard Périphérique Exterieur",
+            "from": "75000C02"
+          }
+        ],
+        "output": ""
+      },
+      "type": "FindReplace",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    }
+  ],
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "previewMode": "ALL_ROWS",
   "explorationSampling": {
     "_refreshTrigger": 0,

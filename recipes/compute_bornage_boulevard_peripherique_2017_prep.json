@@ -12,7 +12,12 @@
           "conf": []
         },
         "readParams": {
-          "map": {}
+          "map": {
+            "bornage_boulevard_peripherique_2017": {
+              "repartition": 10,
+              "cache": false
+            }
+          }
         }
       },
       "hadoopConfigKeys": [],
@@ -44,11 +49,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1500987988889
+    "lastModifiedOn": 1500988066534
   },
   "creationTag": {
     "versionNumber": 0,
