@@ -80,10 +80,21 @@
     },
     {
       "alwaysShowComment": false,
-      "preview": true,
+      "preview": false,
       "params": {
         "expression": "\"Boulevard Périphérique\"",
         "column": "nom_courant_route"
+      },
+      "type": "CreateColumnWithGREL",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": true,
+      "params": {
+        "expression": "\"BP\"",
+        "column": "route"
       },
       "type": "CreateColumnWithGREL",
       "disabled": false,
