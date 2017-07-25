@@ -25,7 +25,7 @@
                 "input": "num_route_or_id",
                 "operator": "contains",
                 "col": "num_route_com_id",
-                "string": "periph",
+                "string": "Périph",
                 "num": 0.0
               }
             ]
@@ -40,7 +40,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 1
+      "_refreshTrigger": 2
     },
     "vizSampling": {
       "autoRefreshSample": false,
