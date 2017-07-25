@@ -20,7 +20,7 @@
   "steps": [
     {
       "alwaysShowComment": false,
-      "preview": true,
+      "preview": false,
       "params": {
         "matching": "SUBSTRING",
         "stopAfterFirstMatch": false,
@@ -42,6 +42,39 @@
         "output": ""
       },
       "type": "FindReplace",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "renamings": [
+          {
+            "to": "date",
+            "from": "dateRefere"
+          }
+        ]
+      },
+      "type": "ColumnRenamer",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "appliesTo": "COLUMNS",
+        "columns": [
+          "sectionn_1",
+          "sectionnem",
+          "accrochage",
+          "voie",
+          "objetID"
+        ],
+        "keep": false
+      },
+      "type": "ColumnsSelector",
       "disabled": false,
       "metaType": "PROCESSOR"
     }
