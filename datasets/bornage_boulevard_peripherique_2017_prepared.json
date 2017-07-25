@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1500988763122
+    "lastModifiedOn": 1500990580436
   },
   "creationTag": {
     "versionNumber": 0,
@@ -59,12 +59,6 @@
       },
       {
         "name": "route",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "nom_courant_route",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -145,6 +139,12 @@
       {
         "name": "lat",
         "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "nom_courant_route",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       }
