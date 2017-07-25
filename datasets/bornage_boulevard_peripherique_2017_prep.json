@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1500987988877
+    "lastModifiedOn": 1500988275466
   },
   "creationTag": {
     "versionNumber": 0,
@@ -51,13 +51,7 @@
     "userModified": false,
     "columns": [
       {
-        "name": "objetID",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "dateRefere",
+        "name": "date",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
@@ -123,18 +117,6 @@
         "maxLength": 16200
       },
       {
-        "name": "voie",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "accrochage",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
-      {
         "name": "longueurd",
         "type": "bigint",
         "timestampNoTzAsDate": false,
@@ -145,18 +127,6 @@
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
-      },
-      {
-        "name": "sectionnem",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "sectionn_1",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
       },
       {
         "name": "lon",
