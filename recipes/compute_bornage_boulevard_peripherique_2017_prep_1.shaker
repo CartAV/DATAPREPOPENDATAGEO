@@ -1,0 +1,104 @@
+{
+  "explorationFilters": [],
+  "maxProcessedMemTableBytes": -1,
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "analysisColumnData": {},
+  "globalSearchQuery": "",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "origin": "PREPARE_RECIPE",
+  "coloring": {
+    "individualColumns": [],
+    "scheme": "MEANING_AND_STATUS",
+    "valueColoringMode": "HASH"
+  },
+  "sorting": [],
+  "steps": [
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "matching": "SUBSTRING",
+        "stopAfterFirstMatch": false,
+        "normalization": "EXACT",
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "route"
+        ],
+        "mapping": [
+          {
+            "to": "Boulevard Périphérique Intérieur",
+            "from": "75000C01"
+          },
+          {
+            "to": "Boulevard Périphérique Extérieur",
+            "from": "75000C02"
+          }
+        ],
+        "output": ""
+      },
+      "type": "FindReplace",
+      "metaType": "PROCESSOR",
+      "disabled": false
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "renamings": [
+          {
+            "to": "date",
+            "from": "dateRefere"
+          }
+        ]
+      },
+      "type": "ColumnRenamer",
+      "metaType": "PROCESSOR",
+      "disabled": false
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "appliesTo": "COLUMNS",
+        "columns": [
+          "sectionn_1",
+          "sectionnem",
+          "accrochage",
+          "voie",
+          "objetID"
+        ],
+        "keep": false
+      },
+      "type": "ColumnsSelector",
+      "metaType": "PROCESSOR",
+      "disabled": false
+    }
+  ],
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "previewMode": "ALL_ROWS",
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "maxStoredBytes": -1,
+      "maxRecords": 10000,
+      "targetRatio": 0.02,
+      "partitionSelectionMethod": "ALL",
+      "withinFirstN": -1,
+      "latestPartitionsN": 1,
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxReadUncompressedBytes": -1,
+      "filter": {
+        "enabled": false,
+        "distinct": false
+      }
+    },
+    "autoRefreshSample": false
+  }
+}
