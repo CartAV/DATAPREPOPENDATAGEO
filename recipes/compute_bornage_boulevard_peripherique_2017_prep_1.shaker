@@ -39,7 +39,7 @@
             "from": "75000C02"
           }
         ],
-        "output": "nom_courant_route"
+        "output": "cote"
       },
       "type": "FindReplace",
       "disabled": false,
@@ -75,6 +75,17 @@
         "keep": false
       },
       "type": "ColumnsSelector",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": true,
+      "params": {
+        "expression": "\"Boulevard Périphérique\"",
+        "column": "nom_courant_route"
+      },
+      "type": "CreateColumnWithGREL",
       "disabled": false,
       "metaType": "PROCESSOR"
     }
