@@ -39,7 +39,7 @@
             "from": "75000C02"
           }
         ],
-        "output": ""
+        "output": "nom_courant_route"
       },
       "type": "FindReplace",
       "disabled": false,
