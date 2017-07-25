@@ -31,11 +31,11 @@
         ],
         "mapping": [
           {
-            "to": "Boulevard Périphérique Interieur",
+            "to": "Boulevard Périphérique Intérieur",
             "from": "75000C01"
           },
           {
-            "to": "Boulevard Périphérique Exterieur",
+            "to": "Boulevard Périphérique Extérieur",
             "from": "75000C02"
           }
         ],
