@@ -1,6 +1,6 @@
 PG_TABLE=ign_commune_france
 
-OUT_PATH=/tmp
+OUT_PATH=/data/tableau/exports_shapefile_dss
 OUT_FILE=communes.shp
 
 PG_HOST=192.168.3.100
