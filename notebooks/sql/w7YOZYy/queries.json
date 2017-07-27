@@ -2366,6 +2366,28 @@
         },
         "sql": ", select geojson, num_route_or_id, \"INSEE_COM\" from \"public\".\"osm_routes_par_commune_geojson\" where \"num_route_or_id\" like \u0027%Boulevard Périphérique%\u0027 and \"INSEE_COM\" like \u0027%75%\u0027",
         "expandedSql": ", select geojson, num_route_or_id, \"INSEE_COM\" from \"public\".\"osm_routes_par_commune_geojson\" where \"num_route_or_id\" like \u0027%Boulevard Périphérique%\u0027 and \"INSEE_COM\" like \u0027%75%\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "QuQ3OFD7Cvmk",
+        "runOn": 1501147787861,
+        "runIn": 42,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "HByFB3AYmfu0n8dR",
+        "hash": "a6818d014ab813fa19ac2ff5d6b80296",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select geojson, num_route_or_id, \"INSEE_COM\" from \"public\".\"osm_routes_par_commune_geojson\" where \"num_route_or_id\" like \u0027%Boulevard Périphérique%\u0027 and \"INSEE_COM\" like \u0027%75%\u0027",
+        "expandedSql": "select geojson, num_route_or_id, \"INSEE_COM\" from \"public\".\"osm_routes_par_commune_geojson\" where \"num_route_or_id\" like \u0027%Boulevard Périphérique%\u0027 and \"INSEE_COM\" like \u0027%75%\u0027"
       }
     ]
   }
