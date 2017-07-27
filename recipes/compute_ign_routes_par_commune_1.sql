@@ -5,7 +5,7 @@ SELECT
   route.num_route_or_id,
   route.cat_route_osm
 FROM
-  osm_routes_par_departement as route,
+  osm_routes_par_departement_general as route,
   ign_commune_france as commune
 WHERE
   commune."the_geom" && route."the_geom"
