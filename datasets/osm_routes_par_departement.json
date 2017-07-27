@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1501159928633
+    "lastModifiedOn": 1501159935552
   },
   "creationTag": {
     "versionNumber": 0,
@@ -55,6 +55,7 @@
       {
         "name": "the_geom",
         "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
