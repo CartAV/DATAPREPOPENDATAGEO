@@ -2476,6 +2476,28 @@
         },
         "sql": "select  num_route_or_id, \"INSEE_COM\", cat_route_osm, geojson from \"public\".\"osm_routes_par_commune_geojson\" where \"num_route_or_id\" like \u0027%Pont Amont%\u0027 and \"INSEE_COM\" like \u0027%75%\u0027",
         "expandedSql": "select  num_route_or_id, \"INSEE_COM\", cat_route_osm, geojson from \"public\".\"osm_routes_par_commune_geojson\" where \"num_route_or_id\" like \u0027%Pont Amont%\u0027 and \"INSEE_COM\" like \u0027%75%\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "h2QDIamvgv34",
+        "runOn": 1501149795385,
+        "runIn": 1306,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "a76UkAnzBa62e9Ih",
+        "hash": "8e9da58c76c43650b93da98cff9f0122",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select  num_route_or_id, \"INSEE_COM\", cat_route_osm, geojson from \"public\".\"osm_routes_par_commune_geojson\" where \"num_route_or_id\" like \u0027%Pont Amont%\u0027 and (\"INSEE_COM\" like \u0027%75%\u0027 or \"INSEE_COM\" like \u0027%94%\u0027)",
+        "expandedSql": "select  num_route_or_id, \"INSEE_COM\", cat_route_osm, geojson from \"public\".\"osm_routes_par_commune_geojson\" where \"num_route_or_id\" like \u0027%Pont Amont%\u0027 and (\"INSEE_COM\" like \u0027%75%\u0027 or \"INSEE_COM\" like \u0027%94%\u0027)"
       }
     ]
   }
