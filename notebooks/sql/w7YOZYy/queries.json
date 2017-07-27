@@ -2278,6 +2278,28 @@
         },
         "sql": "select * from \"public\".\"osm_routes_par_commune\" where \"num_route_or_id\" like \u0027%Boulevard Périphérique%\u0027",
         "expandedSql": "select * from \"public\".\"osm_routes_par_commune\" where \"num_route_or_id\" like \u0027%Boulevard Périphérique%\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "M3oLWVAQKZuR",
+        "runOn": 1501147669845,
+        "runIn": 4711,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "5XyNyaL3YfeVpkrE",
+        "hash": "63b26822fa8d39cfae4095d3beadbf48",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"public\".\"osm_routes_par_commune\" where \"num_route_or_id\" like \u0027%Boulevard Périphérique%\u0027 and \"INSEE_COM\" like \u0027%75%\u0027",
+        "expandedSql": "select * from \"public\".\"osm_routes_par_commune\" where \"num_route_or_id\" like \u0027%Boulevard Périphérique%\u0027 and \"INSEE_COM\" like \u0027%75%\u0027"
       }
     ]
   }
