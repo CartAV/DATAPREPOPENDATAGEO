@@ -2190,6 +2190,28 @@
         },
         "sql": "select * from \"osm_france_dom_catr\" where \"osm_name\" \u003d \u0027A 86\u0027",
         "expandedSql": "select * from \"osm_france_dom_catr\" where \"osm_name\" \u003d \u0027A 86\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "hVNFXUGg51ZP",
+        "runOn": 1501147582456,
+        "runIn": 5021,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "pC0tbjEbzgZ2eWi7",
+        "hash": "d0e705725546a6c067adbb06f73f3c30",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"osm_route_par_commune\" where \"num_route_or_id\" like \"%Boulevard Périphérique%\"",
+        "expandedSql": "select * from \"osm_route_par_commune\" where \"num_route_or_id\" like \"%Boulevard Périphérique%\""
       }
     ]
   }
