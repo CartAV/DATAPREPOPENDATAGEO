@@ -2234,6 +2234,28 @@
         },
         "sql": "select * from \"public\".\"osm_route_par_commune\" where \"num_route_or_id\" like \"%Boulevard Périphérique%\"",
         "expandedSql": "select * from \"public\".\"osm_route_par_commune\" where \"num_route_or_id\" like \"%Boulevard Périphérique%\""
+      },
+      {
+        "mode": "SQL",
+        "id": "QJBY4dpVlYU7",
+        "runOn": 1501147604449,
+        "runIn": 40,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "hy6S9NCrmRQwXk1t",
+        "hash": "2bec7b1cc3a299ca94a2e25b8e7fd14b",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"public\".\"osm_routes_par_commune\" where \"num_route_or_id\" like \"%Boulevard Périphérique%\"",
+        "expandedSql": "select * from \"public\".\"osm_routes_par_commune\" where \"num_route_or_id\" like \"%Boulevard Périphérique%\""
       }
     ]
   }
