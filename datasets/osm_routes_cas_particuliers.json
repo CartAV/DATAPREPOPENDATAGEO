@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1501160208614
+    "lastModifiedOn": 1501161470515
   },
   "creationTag": {
     "versionNumber": 0,
@@ -58,7 +58,13 @@
         "maxLength": -1
       },
       {
-        "name": "CODE_DEPT",
+        "name": "num_route_com_id",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "INSEE_COM",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -66,18 +72,6 @@
       {
         "name": "num_route_or_id",
         "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "route_dep_id",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "cummul_km",
-        "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
