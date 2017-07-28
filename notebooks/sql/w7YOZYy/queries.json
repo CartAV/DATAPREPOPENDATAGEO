@@ -2630,6 +2630,28 @@
         },
         "sql": "SELECT * from \"information_schema\".columns where table_name\u003d\u0027osm_routes_par_commune\u0027",
         "expandedSql": "SELECT * from \"information_schema\".columns where table_name\u003d\u0027osm_routes_par_commune\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "RbQx7SLAizAW",
+        "runOn": 1501228682529,
+        "runIn": 74,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "tfMbc744QJ6mJ11L",
+        "hash": "062dd06e6fcc33c59e21b6501c82af44",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT * from \"information_schema\".columns where table_name\u003d\u0027osm_routes_par_departement\u0027",
+        "expandedSql": "SELECT * from \"information_schema\".columns where table_name\u003d\u0027osm_routes_par_departement\u0027"
       }
     ]
   }
