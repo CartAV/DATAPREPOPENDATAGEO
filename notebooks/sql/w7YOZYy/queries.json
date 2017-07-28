@@ -2682,7 +2682,7 @@
         "runIn": 64,
         "runBy": "chabouisfr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "FlYceg0DMVSBt5Wa",
         "hash": "e7fcb26e16a331e574bb7c0db93b8c9e",
         "querySettings": {
