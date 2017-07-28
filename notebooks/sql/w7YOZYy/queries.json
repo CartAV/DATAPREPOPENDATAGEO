@@ -2696,6 +2696,28 @@
         },
         "sql": "SELECT * from \"information_schema\".columns where table_name\u003d\u0027osm_routes_cas_particuliers\u0027",
         "expandedSql": "SELECT * from \"information_schema\".columns where table_name\u003d\u0027osm_routes_cas_particuliers\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "eczASTa8XOcB",
+        "runOn": 1501229096853,
+        "runIn": 64,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "lFXNuu9fCyuM2kMM",
+        "hash": "e7fcb26e16a331e574bb7c0db93b8c9e",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT * from \"information_schema\".columns where table_name\u003d\u0027osm_routes_cas_particuliers\u0027",
+        "expandedSql": "SELECT * from \"information_schema\".columns where table_name\u003d\u0027osm_routes_cas_particuliers\u0027"
       }
     ]
   }
