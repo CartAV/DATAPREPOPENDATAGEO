@@ -18,18 +18,18 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1501229089985
+    "lastModifiedOn": 1501161470515
   },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1501229075616
+    "lastModifiedOn": 1501160167328
   },
   "tags": [
     "creator:chabouisfr"
@@ -41,7 +41,7 @@
     "partitioned": false,
     "partitioningType": "custom",
     "normalizeDoubles": true,
-    "table": "osm_routes_par_departement_cas_particuliers",
+    "table": "osm_routes_cas_particuliers",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",

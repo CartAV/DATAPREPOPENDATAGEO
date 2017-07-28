@@ -1,12 +1,7 @@
 {
-  "type": "sql_query",
+  "type": "vstack",
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
-  "params": {
-    "allowMultipleConnections": false,
-    "displayExecutionPlan": true,
-    "skipPrerunValidate": false
-  },
   "customMeta": {
     "kv": {}
   },
@@ -15,7 +10,11 @@
     "main": {
       "items": [
         {
-          "ref": "osm_routes_par_departement",
+          "ref": "osm_routes_par_commune",
+          "deps": []
+        },
+        {
+          "ref": "osm_routes_cas_particuliers",
           "deps": []
         }
       ]
@@ -25,25 +24,25 @@
     "main": {
       "items": [
         {
-          "ref": "osm_routes_par_departement_cas_particuliers",
+          "ref": "osm_routes_par_commune_stacked",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1501229077947
+    "lastModifiedOn": 1501228364112
   },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1501229077947
+    "lastModifiedOn": 1501227857333
   },
   "tags": [],
   "checklists": {
