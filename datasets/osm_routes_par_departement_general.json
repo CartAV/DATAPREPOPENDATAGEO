@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1501227961591
+    "lastModifiedOn": 1501227964114
   },
   "creationTag": {
     "versionNumber": 0,
@@ -73,6 +73,7 @@
       {
         "name": "route_dep_id",
         "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
