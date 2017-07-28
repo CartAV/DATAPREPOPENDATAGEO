@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
-      "login": "grabenertr"
+      "login": "chabouisfr"
     },
-    "lastModifiedOn": 1498485187252
+    "lastModifiedOn": 1501255920274
   },
   "creationTag": {
     "versionNumber": 0,
@@ -66,6 +66,7 @@
       {
         "name": "CODE_DEPT",
         "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
