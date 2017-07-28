@@ -1,5 +1,40 @@
 {
-  "explorationFilters": [],
+  "explorationFilters": [
+    {
+      "facet": {
+        "sort": "count",
+        "columnType": "NUMERICAL",
+        "column": "CODE_DEPT",
+        "currentMode": "ALPHANUM",
+        "selectedValues": {},
+        "type": "facet"
+      },
+      "$$hashKey": "F4X",
+      "validityFilter": {
+        "column": "CODE_DEPT",
+        "params": {
+          "nok": true,
+          "empty": true,
+          "ok": true,
+          "type": "LongMeaning"
+        },
+        "type": "validity"
+      },
+      "alphanumFilter": {
+        "values": [],
+        "column": "CODE_DEPT",
+        "params": {
+          "normalization": "exact",
+          "mode": "full_string"
+        },
+        "type": "alphanum"
+      },
+      "column": "CODE_DEPT",
+      "currentMode": "FACET",
+      "active": true,
+      "type": "columnFilter"
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "analysisColumnData": {},
   "columnsSelection": {
@@ -11,7 +46,12 @@
     "autoRefreshSample": false
   },
   "origin": "PREPARE_RECIPE",
-  "sorting": [],
+  "sorting": [
+    {
+      "column": "CODE_DEPT",
+      "ascending": true
+    }
+  ],
   "coloring": {
     "individualColumns": [],
     "scheme": "MEANING_AND_STATUS",
@@ -20,7 +60,7 @@
   "steps": [
     {
       "alwaysShowComment": false,
-      "preview": true,
+      "preview": false,
       "params": {
         "matching": "SUBSTRING",
         "stopAfterFirstMatch": false,
@@ -106,6 +146,20 @@
         "output": ""
       },
       "type": "FindReplace",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": true,
+      "preview": true,
+      "params": {
+        "usePythonUnicode": true,
+        "stopOnError": true,
+        "pythonSourceCode": "d \u003d {\n    \"Guadeloupe\": 971,\n    \"Martinique\": 972,\n    \"Guyane\": 973,\n    \"La Réunion\": 974,\n    \"Mayotte\": 976\n}\n\ndef process(row):\n    region \u003d row[\"NOM_REG\"]\n    if region in d:\n        row[\"CODE_DEPT\"] \u003d d[region]\n    return row\n",
+        "mode": "ROW"
+      },
+      "comment": "correction des numéros des départements outre-mer",
+      "type": "PythonUDF",
       "disabled": false,
       "metaType": "PROCESSOR"
     }
