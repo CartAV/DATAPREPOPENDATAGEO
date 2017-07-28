@@ -15,7 +15,7 @@
     "main": {
       "items": [
         {
-          "ref": "osm_routes_par_commune",
+          "ref": "osm_routes_par_commune_stacked",
           "deps": []
         }
       ]
@@ -32,11 +32,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1500377390879
+    "lastModifiedOn": 1501229596420
   },
   "creationTag": {
     "versionNumber": 0,
