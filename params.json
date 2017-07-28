@@ -87,6 +87,13 @@
           "objectType": "DATASET"
         },
         "modes": []
+      },
+      {
+        "objectRef": {
+          "objectId": "departements_geom_noms_region",
+          "objectType": "DATASET"
+        },
+        "modes": []
       }
     ]
   },
@@ -268,6 +275,16 @@
             "appearOnFlow": true
           }
         ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "departements_geom_noms_region",
+        "rules": [
+          {
+            "targetProject": "ACCIDENTS",
+            "appearOnFlow": true
+          }
+        ]
       }
     ]
   },
@@ -341,11 +358,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 43,
+    "versionNumber": 44,
     "lastModifiedBy": {
-      "login": "grabenertr"
+      "login": "chabouisfr"
     },
-    "lastModifiedOn": 1500988321626
+    "lastModifiedOn": 1501247071331
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
