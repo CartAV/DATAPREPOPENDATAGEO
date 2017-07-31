@@ -94,6 +94,13 @@
           "objectType": "DATASET"
         },
         "modes": []
+      },
+      {
+        "objectRef": {
+          "objectId": "IGN_DEPARTEMENT_FRANCE",
+          "objectType": "DATASET"
+        },
+        "modes": []
       }
     ]
   },
@@ -289,6 +296,16 @@
             "appearOnFlow": true
           }
         ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "IGN_DEPARTEMENT_FRANCE",
+        "rules": [
+          {
+            "targetProject": "ALITEST",
+            "appearOnFlow": true
+          }
+        ]
       }
     ]
   },
@@ -362,11 +379,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 45,
+    "versionNumber": 46,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1501492647453
+    "lastModifiedOn": 1501493522885
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
