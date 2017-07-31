@@ -260,6 +260,16 @@
       },
       {
         "type": "DATASET",
+        "localName": "departements_geom_noms_region",
+        "rules": [
+          {
+            "targetProject": "ACCIDENTS",
+            "appearOnFlow": true
+          }
+        ]
+      },
+      {
+        "type": "DATASET",
         "localName": "IGN_COMMUNE_FRANCE",
         "rules": [
           {
@@ -273,15 +283,9 @@
           {
             "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
             "appearOnFlow": true
-          }
-        ]
-      },
-      {
-        "type": "DATASET",
-        "localName": "departements_geom_noms_region",
-        "rules": [
+          },
           {
-            "targetProject": "ACCIDENTS",
+            "targetProject": "ALITEST",
             "appearOnFlow": true
           }
         ]
@@ -358,11 +362,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 44,
+    "versionNumber": 45,
     "lastModifiedBy": {
-      "login": "chabouisfr"
+      "login": "grabenertr"
     },
-    "lastModifiedOn": 1501247071331
+    "lastModifiedOn": 1501492647453
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
