@@ -323,7 +323,7 @@
       "moderateDashboards": false,
       "runScenarios": false,
       "manageDashboardAuthorizations": false,
-      "manageExposedElements": false,
+      "manageExposedElements": true,
       "manageAdditionalDashboardUsers": false
     },
     {
@@ -379,11 +379,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 47,
+    "versionNumber": 48,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1501494864480
+    "lastModifiedOn": 1503996394632
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
