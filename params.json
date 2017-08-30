@@ -143,16 +143,6 @@
       },
       {
         "type": "DATASET",
-        "localName": "2017_bureaux_vote_contours_paris",
-        "rules": [
-          {
-            "targetProject": "ELECTIONS",
-            "appearOnFlow": true
-          }
-        ]
-      },
-      {
-        "type": "DATASET",
         "localName": "201601_INSEE_pyramide_ages_prep",
         "rules": [
           {
@@ -316,6 +306,20 @@
             "appearOnFlow": true
           }
         ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "2017_bureaux_vote_contours_paris",
+        "rules": [
+          {
+            "targetProject": "ELECTIONS",
+            "appearOnFlow": true
+          },
+          {
+            "targetProject": "ALITEST",
+            "appearOnFlow": true
+          }
+        ]
       }
     ]
   },
@@ -389,11 +393,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 49,
+    "versionNumber": 50,
     "lastModifiedBy": {
-      "login": "antoinefa"
+      "login": "chouakial"
     },
-    "lastModifiedOn": 1504083289196
+    "lastModifiedOn": 1504095049235
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
