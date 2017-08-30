@@ -306,6 +306,16 @@
             "appearOnFlow": true
           }
         ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "geohisto",
+        "rules": [
+          {
+            "targetProject": "COLBERTIMPORT",
+            "appearOnFlow": true
+          }
+        ]
       }
     ]
   },
@@ -379,11 +389,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 48,
+    "versionNumber": 49,
     "lastModifiedBy": {
-      "login": "grabenertr"
+      "login": "antoinefa"
     },
-    "lastModifiedOn": 1503996394632
+    "lastModifiedOn": 1504083289196
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
