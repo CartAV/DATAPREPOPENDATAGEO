@@ -247,16 +247,6 @@
       },
       {
         "type": "DATASET",
-        "localName": "bornes_routes_2016_commune",
-        "rules": [
-          {
-            "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
-            "appearOnFlow": true
-          }
-        ]
-      },
-      {
-        "type": "DATASET",
         "localName": "departements_geom_noms_region",
         "rules": [
           {
@@ -313,6 +303,20 @@
         "rules": [
           {
             "targetProject": "ELECTIONS",
+            "appearOnFlow": true
+          },
+          {
+            "targetProject": "ALITEST",
+            "appearOnFlow": true
+          }
+        ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "bornes_routes_2016_commune",
+        "rules": [
+          {
+            "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
             "appearOnFlow": true
           },
           {
@@ -393,11 +397,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 50,
+    "versionNumber": 51,
     "lastModifiedBy": {
       "login": "chouakial"
     },
-    "lastModifiedOn": 1504095049235
+    "lastModifiedOn": 1504198815318
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
