@@ -334,6 +334,16 @@
             "appearOnFlow": true
           }
         ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "circonscriptions_legislatives_2017_shapefile",
+        "rules": [
+          {
+            "targetProject": "ALITEST",
+            "appearOnFlow": true
+          }
+        ]
       }
     ]
   },
@@ -407,11 +417,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 52,
+    "versionNumber": 53,
     "lastModifiedBy": {
       "login": "chouakial"
     },
-    "lastModifiedOn": 1504199151722
+    "lastModifiedOn": 1504199597219
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
