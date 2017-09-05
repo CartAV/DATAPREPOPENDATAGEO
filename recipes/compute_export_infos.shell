@@ -1,7 +1,7 @@
 PG_TABLE=ign_commune_france
 
-OUT_PATH=/data/tableau
-OUT_FILE=IGN_communes.shp
+OUT_PATH=/data/tableau/
+OUT_FILE=IGN_communes_0917.shp
 
 PG_HOST=192.168.3.100
 PG_DB=datalab-master
