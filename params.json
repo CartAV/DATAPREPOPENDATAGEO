@@ -353,7 +353,7 @@
     {
       "group": "opendata",
       "admin": false,
-      "readProjectContent": false,
+      "readProjectContent": true,
       "writeProjectContent": true,
       "exportDatasetsData": true,
       "readDashboards": false,
@@ -370,6 +370,20 @@
       "readProjectContent": false,
       "writeProjectContent": false,
       "exportDatasetsData": false,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false
+    },
+    {
+      "group": "DSCR",
+      "admin": false,
+      "readProjectContent": true,
+      "writeProjectContent": false,
+      "exportDatasetsData": true,
       "readDashboards": false,
       "writeDashboards": false,
       "moderateDashboards": false,
@@ -417,11 +431,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 53,
+    "versionNumber": 54,
     "lastModifiedBy": {
-      "login": "chouakial"
+      "login": "antoinefa"
     },
-    "lastModifiedOn": 1504199597219
+    "lastModifiedOn": 1504807247434
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
