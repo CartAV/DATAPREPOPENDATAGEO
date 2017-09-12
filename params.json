@@ -180,6 +180,10 @@
           {
             "targetProject": "Accidents_DSCR",
             "appearOnFlow": true
+          },
+          {
+            "targetProject": "DATALAB_LOGS",
+            "appearOnFlow": true
           }
         ]
       },
@@ -431,11 +435,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 54,
+    "versionNumber": 55,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1504807247434
+    "lastModifiedOn": 1505236549452
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
