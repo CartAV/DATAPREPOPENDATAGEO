@@ -138,6 +138,10 @@
           {
             "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
             "appearOnFlow": true
+          },
+          {
+            "targetProject": "LIVRAISONSVLPN",
+            "appearOnFlow": true
           }
         ]
       },
@@ -435,11 +439,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 55,
+    "versionNumber": 56,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1505236549452
+    "lastModifiedOn": 1505325561012
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
