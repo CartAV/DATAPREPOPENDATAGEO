@@ -188,6 +188,10 @@
           {
             "targetProject": "DATALAB_LOGS",
             "appearOnFlow": true
+          },
+          {
+            "targetProject": "DPFSO",
+            "appearOnFlow": true
           }
         ]
       },
@@ -439,11 +443,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 56,
+    "versionNumber": 57,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1505325561012
+    "lastModifiedOn": 1506438554982
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
