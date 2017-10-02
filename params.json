@@ -104,13 +104,6 @@
       },
       {
         "objectRef": {
-          "objectId": "communes_boundaries",
-          "objectType": "DATASET"
-        },
-        "modes": []
-      },
-      {
-        "objectRef": {
           "objectId": "communes_boundaries_geojson",
           "objectType": "DATASET"
         },
@@ -373,16 +366,6 @@
       },
       {
         "type": "DATASET",
-        "localName": "communes_boundaries",
-        "rules": [
-          {
-            "targetProject": "BASESDEPRODUCTION",
-            "appearOnFlow": true
-          }
-        ]
-      },
-      {
-        "type": "DATASET",
         "localName": "communes_boundaries_geojson",
         "rules": [
           {
@@ -477,11 +460,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 59,
+    "versionNumber": 60,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1506943803938
+    "lastModifiedOn": 1506943861947
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
