@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1506939207274
+    "lastModifiedOn": 1506957897469
   },
   "creationTag": {
     "versionNumber": 0,
@@ -49,7 +49,7 @@
     "readColsWithUnknownTzAsDates": false
   },
   "schema": {
-    "userModified": false,
+    "userModified": true,
     "columns": [
       {
         "name": "the_geom",
@@ -120,6 +120,7 @@
       {
         "name": "CODE_DEPT",
         "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
