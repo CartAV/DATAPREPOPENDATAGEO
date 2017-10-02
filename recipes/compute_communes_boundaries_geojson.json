@@ -1,0 +1,52 @@
+{
+  "type": "sql_query",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "allowMultipleConnections": false,
+    "displayExecutionPlan": true,
+    "skipPrerunValidate": false
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "communes_boundaries_postgis",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "communes_boundaries_geojson",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "chabouisfr"
+    },
+    "lastModifiedOn": 1506939164982
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "chabouisfr"
+    },
+    "lastModifiedOn": 1506939164982
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
+}
