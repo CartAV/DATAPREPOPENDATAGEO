@@ -4002,6 +4002,28 @@
         },
         "sql": "select count(*), substring(\"INSEE_COM\" from 1 for 2) as dep from \"osm_routes_par_commune\" group by dep",
         "expandedSql": "select count(*), substring(\"INSEE_COM\" from 1 for 2) as dep from \"osm_routes_par_commune\" group by dep"
+      },
+      {
+        "mode": "SQL",
+        "id": "YoKOLdsawPU9",
+        "runOn": 1507117493536,
+        "runIn": 4661,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "OGstvmqpiIr4SoT9",
+        "hash": "dcc7b3cdf439e221c47f1b551c69eaa8",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*), substring(\"INSEE_COM\" from 1 for 2) as dep from \"osm_routes_par_commune\" group by dep order by count DESC",
+        "expandedSql": "select count(*), substring(\"INSEE_COM\" from 1 for 2) as dep from \"osm_routes_par_commune\" group by dep order by count DESC"
       }
     ]
   }
