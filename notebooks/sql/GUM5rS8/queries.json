@@ -3847,6 +3847,30 @@
         "sql": "select sum(km)/count(1) as km, \nreplace(\nreplace(\nreplace(\nreplace(\nreplace(\nreplace(\nreplace(\"osm_name\", \u0027Avenue \u0027, \u0027\u0027),\n    \u0027Rue \u0027, \u0027\u0027),\n    \u0027Chemin \u0027, \u0027\u0027),\n    \u0027Route \u0027, \u0027\u0027),\n    \u0027de \u0027, \u0027\u0027),\n    \u0027la \u0027, \u0027\u0027),\n    \u0027du \u0027, \u0027\u0027) as nom\nfrom \"osm_routes_par_commune\"\nwhere osm_name not like \u0027D %\u0027 \nand osm_name not like \u0027A %\u0027\nand osm_name not like \u0027N %\u0027\nand osm_name not like \u0027C %\u0027\ngroup by nom order by km desc",
         "expandedSql": "select sum(km)/count(1) as km, \nreplace(\nreplace(\nreplace(\nreplace(\nreplace(\nreplace(\nreplace(\"osm_name\", \u0027Avenue \u0027, \u0027\u0027),\n    \u0027Rue \u0027, \u0027\u0027),\n    \u0027Chemin \u0027, \u0027\u0027),\n    \u0027Route \u0027, \u0027\u0027),\n    \u0027de \u0027, \u0027\u0027),\n    \u0027la \u0027, \u0027\u0027),\n    \u0027du \u0027, \u0027\u0027) as nom\nfrom \"osm_routes_par_commune\"\nwhere osm_name not like \u0027D %\u0027 \nand osm_name not like \u0027A %\u0027\nand osm_name not like \u0027N %\u0027\nand osm_name not like \u0027C %\u0027\ngroup by nom order by km desc"
       }
+    ],
+    "hop47a8p70t": [
+      {
+        "mode": "SQL",
+        "id": "gihiWRPUMyZz",
+        "runOn": 1507117406402,
+        "runIn": -1,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "3BnyMparS7qfXBY8",
+        "hash": "6a0b92605a64066a7160ca9b6748fbdd",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select substring(\u0027INSEE_COM\u0027 from 0 to 2) from \"osm_routes_par_commune\" limit 10",
+        "expandedSql": "select substring(\u0027INSEE_COM\u0027 from 0 to 2) from \"osm_routes_par_commune\" limit 10"
+      }
     ]
   }
 }
