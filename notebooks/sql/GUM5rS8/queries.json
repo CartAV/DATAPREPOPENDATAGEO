@@ -3870,6 +3870,28 @@
         },
         "sql": "select substring(\u0027INSEE_COM\u0027 from 0 to 2) from \"osm_routes_par_commune\" limit 10",
         "expandedSql": "select substring(\u0027INSEE_COM\u0027 from 0 to 2) from \"osm_routes_par_commune\" limit 10"
+      },
+      {
+        "mode": "SQL",
+        "id": "irUYkmbNM8zX",
+        "runOn": 1507117411768,
+        "runIn": 71,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "PmAINJyuEDOJdwA2",
+        "hash": "d18238fa6c84d6299ce173e02f0a70d8",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select substring(\u0027INSEE_COM\u0027 from 1 to 2) from \"osm_routes_par_commune\" limit 10",
+        "expandedSql": "select substring(\u0027INSEE_COM\u0027 from 1 to 2) from \"osm_routes_par_commune\" limit 10"
       }
     ]
   }
