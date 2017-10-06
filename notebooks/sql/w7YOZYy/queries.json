@@ -2762,6 +2762,28 @@
         },
         "sql": "select * from IGN_COMMUNE_FRANCE where \"CODE_DEPT\"\u003d\u002769\u0027 order by \"NOM_COM\"",
         "expandedSql": "select * from IGN_COMMUNE_FRANCE where \"CODE_DEPT\"\u003d\u002769\u0027 order by \"NOM_COM\""
+      },
+      {
+        "mode": "SQL",
+        "id": "4ulk0SU1NQ42",
+        "runOn": 1507281300912,
+        "runIn": 110,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "bubHyM6J4RvuA9mR",
+        "hash": "1125a7539c77a8696d52544e38d9b991",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from IGN_COMMUNE_FRANCE where \"CODE_DEPT\"\u003d\u002775\u0027 order by \"NOM_COM\"",
+        "expandedSql": "select * from IGN_COMMUNE_FRANCE where \"CODE_DEPT\"\u003d\u002775\u0027 order by \"NOM_COM\""
       }
     ]
   }
