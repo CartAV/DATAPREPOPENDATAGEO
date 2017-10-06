@@ -2674,6 +2674,28 @@
         },
         "sql": "SELECT * from \"information_schema\".columns where table_name\u003d\u0027osm_routes_cas_particuliers\u0027",
         "expandedSql": "SELECT * from \"information_schema\".columns where table_name\u003d\u0027osm_routes_cas_particuliers\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "p3QBx7AqoSNW",
+        "runOn": 1507281135352,
+        "runIn": 62,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "URRfC9qFfvGaJ5cC",
+        "hash": "71ea86931545eec292d20f0e9a71ef60",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from IGN_COMMUNE_FRANCE where \"CODE_DEPT\"\u003d\u002713\u0027",
+        "expandedSql": "select * from IGN_COMMUNE_FRANCE where \"CODE_DEPT\"\u003d\u002713\u0027"
       }
     ]
   }
