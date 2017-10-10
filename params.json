@@ -41,13 +41,6 @@
       },
       {
         "objectRef": {
-          "objectId": "departements_wgs84_prep",
-          "objectType": "DATASET"
-        },
-        "modes": []
-      },
-      {
-        "objectRef": {
           "objectId": "2016_geohisto_communes_prep",
           "objectType": "DATASET"
         },
@@ -162,28 +155,6 @@
           },
           {
             "targetProject": "VERBALISATIONLECTRONIQUEDSCR",
-            "appearOnFlow": true
-          }
-        ]
-      },
-      {
-        "type": "DATASET",
-        "localName": "departements_wgs84_prep",
-        "rules": [
-          {
-            "targetProject": "ACCIDENTS",
-            "appearOnFlow": true
-          },
-          {
-            "targetProject": "Accidents_DSCR",
-            "appearOnFlow": true
-          },
-          {
-            "targetProject": "DATALAB_LOGS",
-            "appearOnFlow": true
-          },
-          {
-            "targetProject": "DPFSO",
             "appearOnFlow": true
           }
         ]
@@ -341,6 +312,24 @@
             "appearOnFlow": true
           }
         ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "departements_wgs84_prep",
+        "rules": [
+          {
+            "targetProject": "Accidents_DSCR",
+            "appearOnFlow": true
+          },
+          {
+            "targetProject": "DATALAB_LOGS",
+            "appearOnFlow": true
+          },
+          {
+            "targetProject": "DPFSO",
+            "appearOnFlow": true
+          }
+        ]
       }
     ]
   },
@@ -428,11 +417,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 63,
+    "versionNumber": 64,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1507628749716
+    "lastModifiedOn": 1507628771293
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
