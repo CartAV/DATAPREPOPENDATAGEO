@@ -55,13 +55,6 @@
       },
       {
         "objectRef": {
-          "objectId": "osm_routes_par_commune_geojson",
-          "objectType": "DATASET"
-        },
-        "modes": []
-      },
-      {
-        "objectRef": {
           "objectId": "bornes_routes_borne_suivante_2016",
           "objectType": "DATASET"
         },
@@ -211,24 +204,6 @@
       },
       {
         "type": "DATASET",
-        "localName": "osm_routes_par_commune_geojson",
-        "rules": [
-          {
-            "targetProject": "ACCIDENTS",
-            "appearOnFlow": true
-          },
-          {
-            "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
-            "appearOnFlow": true
-          },
-          {
-            "targetProject": "GECODAGE_ACCIDENTS",
-            "appearOnFlow": true
-          }
-        ]
-      },
-      {
-        "type": "DATASET",
         "localName": "bornes_routes_borne_suivante_2016",
         "rules": [
           {
@@ -352,6 +327,20 @@
             "appearOnFlow": true
           }
         ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "osm_routes_par_commune_geojson",
+        "rules": [
+          {
+            "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
+            "appearOnFlow": true
+          },
+          {
+            "targetProject": "GECODAGE_ACCIDENTS",
+            "appearOnFlow": true
+          }
+        ]
       }
     ]
   },
@@ -439,11 +428,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 62,
+    "versionNumber": 63,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1507628692326
+    "lastModifiedOn": 1507628749716
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
