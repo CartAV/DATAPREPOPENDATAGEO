@@ -76,13 +76,6 @@
       },
       {
         "objectRef": {
-          "objectId": "bornes_routes_pour_projection",
-          "objectType": "DATASET"
-        },
-        "modes": []
-      },
-      {
-        "objectRef": {
           "objectId": "bornes_routes_2016_commune",
           "objectType": "DATASET"
         },
@@ -247,16 +240,6 @@
       {
         "type": "DATASET",
         "localName": "bornes_routes_2016_pour_interpolation",
-        "rules": [
-          {
-            "targetProject": "GECODAGE_ACCIDENTS",
-            "appearOnFlow": true
-          }
-        ]
-      },
-      {
-        "type": "DATASET",
-        "localName": "bornes_routes_pour_projection",
         "rules": [
           {
             "targetProject": "GECODAGE_ACCIDENTS",
@@ -460,11 +443,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 60,
+    "versionNumber": 61,
     "lastModifiedBy": {
-      "login": "chabouisfr"
+      "login": "grabenertr"
     },
-    "lastModifiedOn": 1506943861947
+    "lastModifiedOn": 1507628481392
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
