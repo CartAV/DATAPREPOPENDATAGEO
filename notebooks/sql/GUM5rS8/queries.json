@@ -4024,6 +4024,28 @@
         },
         "sql": "select count(*), substring(\"INSEE_COM\" from 1 for 2) as dep from \"osm_routes_par_commune\" group by dep order by count DESC",
         "expandedSql": "select count(*), substring(\"INSEE_COM\" from 1 for 2) as dep from \"osm_routes_par_commune\" group by dep order by count DESC"
+      },
+      {
+        "mode": "SQL",
+        "id": "Yc2kyTnpawfD",
+        "runOn": 1507713667561,
+        "runIn": 1261,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "5sdDdIw7ZOGRwevp",
+        "hash": "95c4e6e617b2e0c8256b83a1adb796da",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "--select count(*), substring(\"INSEE_COM\" from 1 for 2) as dep from \"osm_routes_par_commune\" group by dep order by count DESC\nCREATE INDEX commune_dep_idx ON \"ign_commune_france\"(\"CODE_DEPT\");",
+        "expandedSql": "--select count(*), substring(\"INSEE_COM\" from 1 for 2) as dep from \"osm_routes_par_commune\" group by dep order by count DESC\nCREATE INDEX commune_dep_idx ON \"ign_commune_france\"(\"CODE_DEPT\");"
       }
     ]
   }
