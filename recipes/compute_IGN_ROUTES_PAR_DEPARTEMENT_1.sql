@@ -9,6 +9,7 @@ SELECT
              ELSE km * 2
         END
     ) as cummul_km,
+    osm_name,
     route.cat_route_osm
         
   FROM osm_france_dom_catr as route, IGN_DEPARTEMENT_FRANCE as dep
