@@ -2811,10 +2811,10 @@
         "mode": "SQL",
         "id": "115fbwYHSszK",
         "runOn": 1508334799644,
-        "runIn": 90,
+        "runIn": 3969,
         "runBy": "chabouisfr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "PccBTzinWrSSJp5G",
         "hash": "d124ba0677d16de91cb8d54182e34946",
         "querySettings": {
