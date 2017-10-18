@@ -9,3 +9,4 @@ FROM
   ign_commune_france as commune
 WHERE
   commune."the_geom" && route."the_geom"::geography
+  AND "INSEE_COM" NOT IN ('75056', '13055', '69123')
