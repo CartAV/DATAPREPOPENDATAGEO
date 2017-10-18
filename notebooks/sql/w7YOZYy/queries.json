@@ -2806,6 +2806,28 @@
         },
         "sql": "select * from osm_routes_par_commune limit 10",
         "expandedSql": "select * from osm_routes_par_commune limit 10"
+      },
+      {
+        "mode": "SQL",
+        "id": "115fbwYHSszK",
+        "runOn": 1508334799644,
+        "runIn": 90,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "PccBTzinWrSSJp5G",
+        "hash": "d124ba0677d16de91cb8d54182e34946",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from osm_routes_par_commune where num_route_or_id like \u0027%Rue des Archives%\u0027",
+        "expandedSql": "select * from osm_routes_par_commune where num_route_or_id like \u0027%Rue des Archives%\u0027"
       }
     ]
   }
