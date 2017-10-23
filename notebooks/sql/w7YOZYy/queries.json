@@ -2960,6 +2960,28 @@
         },
         "sql": "select * from \"osm_routes_par_departement_general\" where \"num_route_or_id\" like \"%Rue du Temple%\"\n",
         "expandedSql": "select * from \"osm_routes_par_departement_general\" where \"num_route_or_id\" like \"%Rue du Temple%\"\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "lKdi7YEKEbwf",
+        "runOn": 1508759513653,
+        "runIn": 76,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "Ag1QJZeZLuYaqWlO",
+        "hash": "8862fc3147df2ca498d697ade0779f09",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"osm_routes_par_departement_general\" where \"num_route_or_id\" like \u0027%Rue du Temple%\u0027\n",
+        "expandedSql": "select * from \"osm_routes_par_departement_general\" where \"num_route_or_id\" like \u0027%Rue du Temple%\u0027\n"
       }
     ]
   }
