@@ -10,30 +10,27 @@
     },
     {
       "index": 1,
-      "originLabel": "osm_france",
-      "preFilter": {
-        "enabled": false,
-        "distinct": false
-      }
-    },
-    {
-      "index": 2,
       "originLabel": "osm_guadeloupe",
       "preFilter": {}
     },
     {
-      "index": 3,
+      "index": 2,
       "originLabel": "osm_guyane",
       "preFilter": {}
     },
     {
-      "index": 4,
+      "index": 3,
       "originLabel": "osm_martinique",
       "preFilter": {}
     },
     {
-      "index": 5,
+      "index": 4,
       "originLabel": "osm_reunion",
+      "preFilter": {}
+    },
+    {
+      "index": 5,
+      "originLabel": "osm_france_2017-10-23",
       "preFilter": {}
     }
   ],
@@ -63,11 +60,11 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
-  "originColumnName": "original_dataset",
   "postFilter": {
     "enabled": false,
     "distinct": false
   },
+  "originColumnName": "original_dataset",
   "selectedColumns": [
     "id",
     "osm_id",
