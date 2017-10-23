@@ -3092,6 +3092,28 @@
         },
         "sql": "select * from osm_france_dom where \"osm_name\" like \u0027%Rue du Temple%\u0027 and x1 \u003e 2.352 and x1 \u003c 2.354\n\n/* select st_asgeojson(the_geom) from \"osm_routes_par_departement_general\" where \"num_route_or_id\" like \u0027%Rue du Temple%\u0027 and \"CODE_DEPT\" \u003d \u002775\u0027 */\n",
         "expandedSql": "select * from osm_france_dom where \"osm_name\" like \u0027%Rue du Temple%\u0027 and x1 \u003e 2.352 and x1 \u003c 2.354\n\n/* select st_asgeojson(the_geom) from \"osm_routes_par_departement_general\" where \"num_route_or_id\" like \u0027%Rue du Temple%\u0027 and \"CODE_DEPT\" \u003d \u002775\u0027 */\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "H4oQgKo0KkBO",
+        "runOn": 1508760107116,
+        "runIn": 1472,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "aTTvchd337nZMEzz",
+        "hash": "760847a015632843b9747dde0ff1e16a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select st_asgeojson(geom_way) from osm_france_dom where \"osm_name\" like \u0027%Rue du Temple%\u0027 and x1 \u003e 2.352 and x1 \u003c 2.354\n\n/* select st_asgeojson(the_geom) from \"osm_routes_par_departement_general\" where \"num_route_or_id\" like \u0027%Rue du Temple%\u0027 and \"CODE_DEPT\" \u003d \u002775\u0027 */\n",
+        "expandedSql": "select st_asgeojson(geom_way) from osm_france_dom where \"osm_name\" like \u0027%Rue du Temple%\u0027 and x1 \u003e 2.352 and x1 \u003c 2.354\n\n/* select st_asgeojson(the_geom) from \"osm_routes_par_departement_general\" where \"num_route_or_id\" like \u0027%Rue du Temple%\u0027 and \"CODE_DEPT\" \u003d \u002775\u0027 */\n"
       }
     ]
   }
