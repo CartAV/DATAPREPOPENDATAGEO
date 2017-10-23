@@ -2938,6 +2938,28 @@
         },
         "sql": "select * from osm_routes_par_commune where num_route_or_id like \u0027%Rue du Temple%\u0027 order by \"INSEE_COM\"",
         "expandedSql": "select * from osm_routes_par_commune where num_route_or_id like \u0027%Rue du Temple%\u0027 order by \"INSEE_COM\""
+      },
+      {
+        "mode": "SQL",
+        "id": "0Lkz7AJpkRi5",
+        "runOn": 1508759501359,
+        "runIn": 4062,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "437SPMkwoZg10q1R",
+        "hash": "ce7c3b8848015395d733ab09cc455b37",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"osm_routes_par_departement_general\" where \"num_route_or_id\" like \"%Rue du Temple%\"\n",
+        "expandedSql": "select * from \"osm_routes_par_departement_general\" where \"num_route_or_id\" like \"%Rue du Temple%\"\n"
       }
     ]
   }
