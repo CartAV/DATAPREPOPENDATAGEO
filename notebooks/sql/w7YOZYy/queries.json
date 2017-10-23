@@ -2982,6 +2982,28 @@
         },
         "sql": "select * from \"osm_routes_par_departement_general\" where \"num_route_or_id\" like \u0027%Rue du Temple%\u0027\n",
         "expandedSql": "select * from \"osm_routes_par_departement_general\" where \"num_route_or_id\" like \u0027%Rue du Temple%\u0027\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "z7ZN40e2mKFI",
+        "runOn": 1508759549056,
+        "runIn": 969,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "by9IdPSGekMJUnxK",
+        "hash": "8c9f4da858b3687b021712fa7aa3daa6",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"osm_routes_par_departement_general\" where \"num_route_or_id\" like \u0027%Rue du Temple%\u0027 and \"CODE_DEPT\" \u003d \u002775\u0027\n",
+        "expandedSql": "select * from \"osm_routes_par_departement_general\" where \"num_route_or_id\" like \u0027%Rue du Temple%\u0027 and \"CODE_DEPT\" \u003d \u002775\u0027\n"
       }
     ]
   }
