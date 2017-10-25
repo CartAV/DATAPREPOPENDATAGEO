@@ -3202,6 +3202,28 @@
         },
         "sql": "/* select st_asgeojson(geom_way) from osm_france_dom where \"osm_name\" like \u0027%Rue du Temple%\u0027 and x1 \u003e 2.35 and x1 \u003c 2.36 order by y1 asc */\n\n/* select st_asgeojson(the_geom) from \"osm_routes_par_departement_general\" where \"num_route_or_id\" like \u0027%Rue du Temple%\u0027 and \"CODE_DEPT\" \u003d \u002775\u0027 */\n\nselect * from osm_routes_par_commune_geojson where \"num_route_or_id\" like \u0027%Rue du Temple%\u0027 and \"CODE_DEPT\" \u003d \u002775\u0027",
         "expandedSql": "/* select st_asgeojson(geom_way) from osm_france_dom where \"osm_name\" like \u0027%Rue du Temple%\u0027 and x1 \u003e 2.35 and x1 \u003c 2.36 order by y1 asc */\n\n/* select st_asgeojson(the_geom) from \"osm_routes_par_departement_general\" where \"num_route_or_id\" like \u0027%Rue du Temple%\u0027 and \"CODE_DEPT\" \u003d \u002775\u0027 */\n\nselect * from osm_routes_par_commune_geojson where \"num_route_or_id\" like \u0027%Rue du Temple%\u0027 and \"CODE_DEPT\" \u003d \u002775\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "1tKMZ7sfiILx",
+        "runOn": 1508941599185,
+        "runIn": 195,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "JHz3NoYUIEoXQ0ZM",
+        "hash": "bef14c952c9bcb8ca0db95b38d5e8297",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "/* select st_asgeojson(geom_way) from osm_france_dom where \"osm_name\" like \u0027%Rue du Temple%\u0027 and x1 \u003e 2.35 and x1 \u003c 2.36 order by y1 asc */\n\n/* select st_asgeojson(the_geom) from \"osm_routes_par_departement_general\" where \"num_route_or_id\" like \u0027%Rue du Temple%\u0027 and \"CODE_DEPT\" \u003d \u002775\u0027 */\n\nselect * from osm_routes_par_commune_geojson where \"num_route_or_id\" like \u0027%Rue du Temple%\u0027",
+        "expandedSql": "/* select st_asgeojson(geom_way) from osm_france_dom where \"osm_name\" like \u0027%Rue du Temple%\u0027 and x1 \u003e 2.35 and x1 \u003c 2.36 order by y1 asc */\n\n/* select st_asgeojson(the_geom) from \"osm_routes_par_departement_general\" where \"num_route_or_id\" like \u0027%Rue du Temple%\u0027 and \"CODE_DEPT\" \u003d \u002775\u0027 */\n\nselect * from osm_routes_par_commune_geojson where \"num_route_or_id\" like \u0027%Rue du Temple%\u0027"
       }
     ]
   }
