@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1509098194811
+    "lastModifiedOn": 1509098345051
   },
   "creationTag": {
     "versionNumber": 0,
@@ -43,7 +43,7 @@
     "normalizeDoubles": true,
     "table": "osm_routes_par_departement_general",
     "tableCreationMode": "auto",
-    "customPostWriteStatements": "ALTER TABLE osm_routes_par_departement_general\n  ALTER COLUMN the_geom type geography(MultiLineString) USING the_geom::geography(MultiLineString);\nCREATE index idx_route_par_dep_geom on osm_routes_par_departement_general USING GIST(the_geom);",
+    "customPostWriteStatements": "ALTER TABLE osm_routes_par_departement_general\n  ALTER COLUMN the_geom type geography(MultiLineString) USING the_geom::geography(MultiLineString);\n\nCREATE index idx_route_par_dep_geom on osm_routes_par_departement_general USING GIST(the_geom);\n\nCREATE index idx_route_par_dep_dep on osm_routes_par_departement_general(\"CODE_DEPT\");",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "hasColsWithUnknownTz": false,
