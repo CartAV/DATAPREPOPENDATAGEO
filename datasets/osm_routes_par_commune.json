@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
-      "login": "chabouisfr"
+      "login": "grabenertr"
     },
-    "lastModifiedOn": 1501227985034
+    "lastModifiedOn": 1509097215853
   },
   "creationTag": {
     "versionNumber": 0,
@@ -50,10 +50,10 @@
     "readColsWithUnknownTzAsDates": false
   },
   "schema": {
-    "userModified": true,
+    "userModified": false,
     "columns": [
       {
-        "name": "the_geom",
+        "name": "geojson",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -67,7 +67,6 @@
       {
         "name": "INSEE_COM",
         "type": "string",
-        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
