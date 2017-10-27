@@ -198,6 +198,28 @@
         },
         "sql": "-- select \"CODE_DEPT\" from \"osm_routes_par_departement\" order by \"CODE_DEPT\" desc\nselect INSEE_COM, geojson from osm_routes_par_commune_geojson where \"num_route_com_id\" like \u0027%Rue du Temple75%\u0027 ",
         "expandedSql": "-- select \"CODE_DEPT\" from \"osm_routes_par_departement\" order by \"CODE_DEPT\" desc\nselect INSEE_COM, geojson from osm_routes_par_commune_geojson where \"num_route_com_id\" like \u0027%Rue du Temple75%\u0027 "
+      },
+      {
+        "mode": "SQL",
+        "id": "XL3aLK5tRls3",
+        "runOn": 1509097316311,
+        "runIn": 62,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "HgMFjFt7yVYxUY60",
+        "hash": "6e39ce33cbb48dc555f4733c8b2d23ee",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "-- select \"CODE_DEPT\" from \"osm_routes_par_departement\" order by \"CODE_DEPT\" desc\nselect \"INSEE_COM\", geojson from osm_routes_par_commune_geojson where \"num_route_com_id\" like \u0027%Rue du Temple75%\u0027 ",
+        "expandedSql": "-- select \"CODE_DEPT\" from \"osm_routes_par_departement\" order by \"CODE_DEPT\" desc\nselect \"INSEE_COM\", geojson from osm_routes_par_commune_geojson where \"num_route_com_id\" like \u0027%Rue du Temple75%\u0027 "
       }
     ],
     "y7ne0n2glok": [
