@@ -10,4 +10,4 @@ FROM
 WHERE
   commune."the_geom" && route."the_geom"::geography
   AND "INSEE_COM" NOT IN ('75056', '13055', '69123')
-  AND ign_commune_france."CODE_DEPT" = osm_routes_par_departement_general."CODE_DEPT"
+  AND commune."CODE_DEPT" = route."CODE_DEPT"
