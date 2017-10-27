@@ -286,6 +286,28 @@
         },
         "sql": "-- select \"CODE_DEPT\" from \"osm_routes_par_departement\" order by \"CODE_DEPT\" desc\n-- select \"INSEE_COM\", geojson from osm_routes_par_commune_geojson where \"num_route_com_id\" like \u0027%Rue du Temple75%\u0027 \n\nALTER TABLE osm_routes_par_departement_general\n  ALTER COLUMN the_geom type geography(MultiLineString) USING the_geom::geography(MultiLineString)\n-- CREATE index idx_route_par_dep_geom on osm_routes_par_departement_general USING GIST(the_geom);",
         "expandedSql": "-- select \"CODE_DEPT\" from \"osm_routes_par_departement\" order by \"CODE_DEPT\" desc\n-- select \"INSEE_COM\", geojson from osm_routes_par_commune_geojson where \"num_route_com_id\" like \u0027%Rue du Temple75%\u0027 \n\nALTER TABLE osm_routes_par_departement_general\n  ALTER COLUMN the_geom type geography(MultiLineString) USING the_geom::geography(MultiLineString)\n-- CREATE index idx_route_par_dep_geom on osm_routes_par_departement_general USING GIST(the_geom);"
+      },
+      {
+        "mode": "SQL",
+        "id": "KJSIWWmonpem",
+        "runOn": 1509098200094,
+        "runIn": 31413,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "EoBsb24A0mYkJBTL",
+        "hash": "dd23b1bcdec8cd11540f27b703cc626b",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "-- select \"CODE_DEPT\" from \"osm_routes_par_departement\" order by \"CODE_DEPT\" desc\n-- select \"INSEE_COM\", geojson from osm_routes_par_commune_geojson where \"num_route_com_id\" like \u0027%Rue du Temple75%\u0027 \n\n\nCREATE index idx_route_par_dep_geom on osm_routes_par_departement_general USING GIST(the_geom);",
+        "expandedSql": "-- select \"CODE_DEPT\" from \"osm_routes_par_departement\" order by \"CODE_DEPT\" desc\n-- select \"INSEE_COM\", geojson from osm_routes_par_commune_geojson where \"num_route_com_id\" like \u0027%Rue du Temple75%\u0027 \n\n\nCREATE index idx_route_par_dep_geom on osm_routes_par_departement_general USING GIST(the_geom);"
       }
     ],
     "y7ne0n2glok": [
