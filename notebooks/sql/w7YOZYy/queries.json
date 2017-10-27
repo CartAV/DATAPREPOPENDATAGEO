@@ -308,6 +308,28 @@
         },
         "sql": "-- select \"CODE_DEPT\" from \"osm_routes_par_departement\" order by \"CODE_DEPT\" desc\n-- select \"INSEE_COM\", geojson from osm_routes_par_commune_geojson where \"num_route_com_id\" like \u0027%Rue du Temple75%\u0027 \n\n\nCREATE index idx_route_par_dep_geom on osm_routes_par_departement_general USING GIST(the_geom);",
         "expandedSql": "-- select \"CODE_DEPT\" from \"osm_routes_par_departement\" order by \"CODE_DEPT\" desc\n-- select \"INSEE_COM\", geojson from osm_routes_par_commune_geojson where \"num_route_com_id\" like \u0027%Rue du Temple75%\u0027 \n\n\nCREATE index idx_route_par_dep_geom on osm_routes_par_departement_general USING GIST(the_geom);"
+      },
+      {
+        "mode": "SQL",
+        "id": "lpvM1zBTeHxj",
+        "runOn": 1509098305050,
+        "runIn": 80372,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "7yRbXrhrGNOYRyrk",
+        "hash": "314e7a982622186faecd447cca9c7d78",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "-- select \"CODE_DEPT\" from \"osm_routes_par_departement\" order by \"CODE_DEPT\" desc\n-- select \"INSEE_COM\", geojson from osm_routes_par_commune_geojson where \"num_route_com_id\" like \u0027%Rue du Temple75%\u0027 \n\n\n-- CREATE index idx_route_par_dep_geom on osm_routes_par_departement_general USING GIST(the_geom);\nCREATE index idx_route_par_dep_dep on osm_routes_par_departement_general(\"CODE_DEPT\");",
+        "expandedSql": "-- select \"CODE_DEPT\" from \"osm_routes_par_departement\" order by \"CODE_DEPT\" desc\n-- select \"INSEE_COM\", geojson from osm_routes_par_commune_geojson where \"num_route_com_id\" like \u0027%Rue du Temple75%\u0027 \n\n\n-- CREATE index idx_route_par_dep_geom on osm_routes_par_departement_general USING GIST(the_geom);\nCREATE index idx_route_par_dep_dep on osm_routes_par_departement_general(\"CODE_DEPT\");"
       }
     ],
     "y7ne0n2glok": [
