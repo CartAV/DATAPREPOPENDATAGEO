@@ -1,6 +1,6 @@
 SELECT
-  st_linemerge(st_intersection(commune."the_geom", route."the_geom"::geography)::geometry) as the_geom,
-  st_asgeojson(the_geom) as geojson,
+  st_linemerge(st_intersection(commune."the_geom", route."the_geom"::geography)::geometry) as the_geom2,
+  st_asgeojson(the_geom2) as geojson,
   route.num_route_or_id || "INSEE_COM"::text as num_route_com_id,
   "INSEE_COM",
   route.num_route_or_id,
