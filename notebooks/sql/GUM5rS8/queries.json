@@ -4112,6 +4112,28 @@
         },
         "sql": "--select \"INSEE_COM\", num_route_com_id from osm_routes_par_commune where \"num_route_com_id\" like \u0027%Périphérique%\u0027 AND \"INSEE_COM\" like \u002775\u0027\n\nSELECT st_astext(ST_UNION(the_geom::geometry)) as the_geom, \u002775\u0027 as \"CODE_DEPT\", \u0027Boulevard Périphérique\u0027 as num_route_or_id, \u0027route principale\u0027 as cat_route_osm\n  FROM \"osm_routes_par_departement\"\n  WHERE (\"CODE_DEPT\" \u003d \u002775\u0027 AND \"num_route_or_id\" like \u0027%Boulevard Périphérique%\u0027 AND \"cat_route_osm\" \u003d \u0027route principale\u0027)",
         "expandedSql": "--select \"INSEE_COM\", num_route_com_id from osm_routes_par_commune where \"num_route_com_id\" like \u0027%Périphérique%\u0027 AND \"INSEE_COM\" like \u002775\u0027\n\nSELECT st_astext(ST_UNION(the_geom::geometry)) as the_geom, \u002775\u0027 as \"CODE_DEPT\", \u0027Boulevard Périphérique\u0027 as num_route_or_id, \u0027route principale\u0027 as cat_route_osm\n  FROM \"osm_routes_par_departement\"\n  WHERE (\"CODE_DEPT\" \u003d \u002775\u0027 AND \"num_route_or_id\" like \u0027%Boulevard Périphérique%\u0027 AND \"cat_route_osm\" \u003d \u0027route principale\u0027)"
+      },
+      {
+        "mode": "SQL",
+        "id": "XlQTsda3bMJ8",
+        "runOn": 1509357509154,
+        "runIn": 104,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "bXJwqgYN4NcjLdFZ",
+        "hash": "c81cf19eabe86c2c08257a44119d2700",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "--select \"INSEE_COM\", num_route_com_id from osm_routes_par_commune where \"num_route_com_id\" like \u0027%Périphérique%\u0027 AND \"INSEE_COM\" like \u002775\u0027\n\nSELECT st_astext(ST_UNION(the_geom::geometry)) as the_geom, \u002775\u0027 as \"CODE_DEPT\", \u0027Boulevard Périphérique\u0027 as num_route_or_id, \u0027route principale\u0027 as cat_route_osm\n  FROM \"osm_routes_par_departement\"\n  WHERE (\"CODE_DEPT\" \u003d \u002775\u0027 AND \"num_route_or_id\" like \u0027%Boulevard Périphérique%\u0027 \u0027)",
+        "expandedSql": "--select \"INSEE_COM\", num_route_com_id from osm_routes_par_commune where \"num_route_com_id\" like \u0027%Périphérique%\u0027 AND \"INSEE_COM\" like \u002775\u0027\n\nSELECT st_astext(ST_UNION(the_geom::geometry)) as the_geom, \u002775\u0027 as \"CODE_DEPT\", \u0027Boulevard Périphérique\u0027 as num_route_or_id, \u0027route principale\u0027 as cat_route_osm\n  FROM \"osm_routes_par_departement\"\n  WHERE (\"CODE_DEPT\" \u003d \u002775\u0027 AND \"num_route_or_id\" like \u0027%Boulevard Périphérique%\u0027 \u0027)"
       }
     ]
   }
