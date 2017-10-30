@@ -396,6 +396,28 @@
         },
         "sql": "-- select \"CODE_DEPT\" from \"osm_routes_par_departement\" order by \"CODE_DEPT\" desc\nselect \"INSEE_COM\", num_route_com_id from osm_routes_par_commune where \"num_route_com_id\" like \u0027%Périphérique%\u0027 AND \"INSEE_COM\" like \"75%\"\n\n\n-- CREATE index idx_route_par_dep_geom on osm_routes_par_departement_general USING GIST(the_geom);\n--CREATE index idx_route_par_dep_dep on osm_routes_par_departement_general(\"CODE_DEPT\");\n",
         "expandedSql": "-- select \"CODE_DEPT\" from \"osm_routes_par_departement\" order by \"CODE_DEPT\" desc\nselect \"INSEE_COM\", num_route_com_id from osm_routes_par_commune where \"num_route_com_id\" like \u0027%Périphérique%\u0027 AND \"INSEE_COM\" like \"75%\"\n\n\n-- CREATE index idx_route_par_dep_geom on osm_routes_par_departement_general USING GIST(the_geom);\n--CREATE index idx_route_par_dep_dep on osm_routes_par_departement_general(\"CODE_DEPT\");\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "eky14CzECxaB",
+        "runOn": 1509357155556,
+        "runIn": 54,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "rl8Wmq9vYD887it9",
+        "hash": "a22608b33f4d28f2373d6fb908182755",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "-- select \"CODE_DEPT\" from \"osm_routes_par_departement\" order by \"CODE_DEPT\" desc\nselect \"INSEE_COM\", num_route_com_id from osm_routes_par_commune where \"num_route_com_id\" like \u0027%Périphérique%\u0027 AND \"INSEE_COM\" like \u002775%\u0027\n\n\n-- CREATE index idx_route_par_dep_geom on osm_routes_par_departement_general USING GIST(the_geom);\n--CREATE index idx_route_par_dep_dep on osm_routes_par_departement_general(\"CODE_DEPT\");\n",
+        "expandedSql": "-- select \"CODE_DEPT\" from \"osm_routes_par_departement\" order by \"CODE_DEPT\" desc\nselect \"INSEE_COM\", num_route_com_id from osm_routes_par_commune where \"num_route_com_id\" like \u0027%Périphérique%\u0027 AND \"INSEE_COM\" like \u002775%\u0027\n\n\n-- CREATE index idx_route_par_dep_geom on osm_routes_par_departement_general USING GIST(the_geom);\n--CREATE index idx_route_par_dep_dep on osm_routes_par_departement_general(\"CODE_DEPT\");\n"
       }
     ],
     "y7ne0n2glok": [
