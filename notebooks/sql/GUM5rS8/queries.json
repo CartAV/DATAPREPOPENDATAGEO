@@ -4227,10 +4227,10 @@
         "mode": "SQL",
         "id": "yU0phE116Mzl",
         "runOn": 1509384265289,
-        "runIn": 105,
+        "runIn": 226,
         "runBy": "grabenertr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "dMQvoQqKlkBzZRQx",
         "hash": "6f82a4626bf99c1df8d6838b4483b6da",
         "querySettings": {
