@@ -4161,10 +4161,10 @@
         "mode": "SQL",
         "id": "LPOTPcp193LT",
         "runOn": 1509357530400,
-        "runIn": 185,
+        "runIn": 106,
         "runBy": "grabenertr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "LWyDVk5odKP8eRHf",
         "hash": "7e635bc660589d98d3fff6c81df034dd",
         "querySettings": {
