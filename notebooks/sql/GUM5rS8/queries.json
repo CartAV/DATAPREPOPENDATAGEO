@@ -4117,10 +4117,10 @@
         "mode": "SQL",
         "id": "XlQTsda3bMJ8",
         "runOn": 1509357509154,
-        "runIn": 104,
+        "runIn": 45,
         "runBy": "grabenertr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "bXJwqgYN4NcjLdFZ",
         "hash": "c81cf19eabe86c2c08257a44119d2700",
         "querySettings": {
