@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1508230428578
+    "lastModifiedOn": 1509357839549
   },
   "creationTag": {
     "versionNumber": 0,
@@ -79,12 +79,6 @@
       {
         "name": "cummul_km",
         "type": "double",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "osm_name",
-        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
