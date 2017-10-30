@@ -4046,6 +4046,28 @@
         },
         "sql": "--select count(*), substring(\"INSEE_COM\" from 1 for 2) as dep from \"osm_routes_par_commune\" group by dep order by count DESC\nCREATE INDEX commune_dep_idx ON \"ign_commune_france\"(\"CODE_DEPT\");",
         "expandedSql": "--select count(*), substring(\"INSEE_COM\" from 1 for 2) as dep from \"osm_routes_par_commune\" group by dep order by count DESC\nCREATE INDEX commune_dep_idx ON \"ign_commune_france\"(\"CODE_DEPT\");"
+      },
+      {
+        "mode": "SQL",
+        "id": "MuTkNzUGk4SR",
+        "runOn": 1509357337525,
+        "runIn": 277,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "hBqux93kSEwOmOXL",
+        "hash": "4b6ad124d8080fcc06167aeedeb0f5dc",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select \"INSEE_COM\", num_route_com_id from osm_routes_par_commune where \"num_route_com_id\" like \u0027%Périphérique%\u0027 AND \"INSEE_COM\" like \u002775%\u0027",
+        "expandedSql": "select \"INSEE_COM\", num_route_com_id from osm_routes_par_commune where \"num_route_com_id\" like \u0027%Périphérique%\u0027 AND \"INSEE_COM\" like \u002775%\u0027"
       }
     ]
   }
