@@ -87,6 +87,13 @@
           "objectType": "DATASET"
         },
         "modes": []
+      },
+      {
+        "objectRef": {
+          "objectId": "osm_routes_par_commune",
+          "objectType": "DATASET"
+        },
+        "modes": []
       }
     ]
   },
@@ -340,7 +347,7 @@
             "appearOnFlow": true
           },
           {
-            "targetProject": "VERBALISATIONLECTRONIQUE",
+            "targetProject": "VERBALISATIONLECTRONIQUEPARTAGE",
             "appearOnFlow": true
           }
         ]
@@ -431,11 +438,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 66,
+    "versionNumber": 67,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1509459178252
+    "lastModifiedOn": 1509459517717
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
