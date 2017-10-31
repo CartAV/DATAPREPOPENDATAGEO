@@ -4315,10 +4315,10 @@
         "mode": "SQL",
         "id": "CIxisAWBYttY",
         "runOn": 1509446332835,
-        "runIn": 9183,
+        "runIn": 1381,
         "runBy": "grabenertr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "99ObY1tcw1fOxXNQ",
         "hash": "fac6719074f20ff62f5598e424ff4db5",
         "querySettings": {
