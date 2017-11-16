@@ -94,6 +94,13 @@
           "objectType": "DATASET"
         },
         "modes": []
+      },
+      {
+        "objectRef": {
+          "objectId": "2016_codes_postaux_prep",
+          "objectType": "DATASET"
+        },
+        "modes": []
       }
     ]
   },
@@ -351,6 +358,16 @@
             "appearOnFlow": true
           }
         ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "2016_codes_postaux_prep",
+        "rules": [
+          {
+            "targetProject": "AURIGE",
+            "appearOnFlow": true
+          }
+        ]
       }
     ]
   },
@@ -438,11 +455,11 @@
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 67,
+    "versionNumber": 68,
     "lastModifiedBy": {
-      "login": "grabenertr"
+      "login": "antoinefa"
     },
-    "lastModifiedOn": 1509459517717
+    "lastModifiedOn": 1510829533843
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [],
