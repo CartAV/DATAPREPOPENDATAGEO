@@ -1,67 +1,74 @@
 {
+  "explorationFilters": [
+    {
+      "$$hashKey": "5OS",
+      "type": "global_search"
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "analysisColumnData": {},
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "globalSearchQuery": "",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "origin": "PREPARE_RECIPE",
+  "sorting": [],
+  "coloring": {
+    "individualColumns": [],
+    "scheme": "MEANING_AND_STATUS",
+    "valueColoringMode": "HASH"
+  },
   "steps": [
     {
-      "type": "MemoryEquiJoiner",
+      "alwaysShowComment": false,
+      "preview": false,
       "params": {
-        "leftCol": "Code_commune_INSEE",
         "rightInput": "2016_geoapi_communes_wgs84",
+        "leftCol": "Code_commune_INSEE",
         "rightCol": "Code INSEE",
+        "clearStopWords": false,
+        "maxLevenshtein": 1,
+        "sortAlphabetically": false,
         "copyColumns": [
           "latitude",
           "longitude"
         ],
+        "normalize": false,
         "copyPrefix": "",
         "fuzzy": false,
-        "maxLevenshtein": 1,
-        "forceRawLevenshteinEngine": false,
-        "sortAlphabetically": false,
-        "clearStopWords": false,
-        "normalize": false,
+        "language": "english",
         "stem": false,
-        "language": "english"
+        "forceRawLevenshteinEngine": false
       },
-      "metaType": "PROCESSOR",
-      "preview": false,
-      "disabled": true,
-      "alwaysShowComment": false
+      "type": "MemoryEquiJoiner",
+      "disabled": false,
+      "metaType": "PROCESSOR"
     }
   ],
-  "tags": [],
-  "origin": "PREPARE_RECIPE",
-  "columnsSelection": {
-    "mode": "ALL"
-  },
-  "coloring": {
-    "scheme": "MEANING_AND_STATUS",
-    "individualColumns": [],
-    "valueColoringMode": "HASH"
-  },
-  "analysisColumnData": {},
-  "explorationSampling": {
-    "selection": {
-      "samplingMethod": "HEAD_SEQUENTIAL",
-      "partitionSelectionMethod": "ALL",
-      "maxRecords": 100000,
-      "targetRatio": 0.02
-    },
-    "autoRefreshSample": false,
-    "_refreshTrigger": 1
-  },
-  "vizSampling": {
-    "autoRefreshSample": false,
-    "_refreshTrigger": 0
-  },
   "exploreUIParams": {
     "autoRefresh": true
   },
-  "globalSearchQuery": "75120",
-  "explorationFilters": [
-    {
-      "type": "global_search",
-      "$$hashKey": "5OS"
-    }
-  ],
   "previewMode": "ALL_ROWS",
-  "charts": [],
-  "chartsEngine": "LINO"
+  "explorationSampling": {
+    "_refreshTrigger": 1,
+    "autoRefreshSample": false,
+    "selection": {
+      "targetRatio": 0.02,
+      "maxRecords": 100000,
+      "maxStoredBytes": -1,
+      "partitionSelectionMethod": "ALL",
+      "withinFirstN": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "latestPartitionsN": 1,
+      "maxReadUncompressedBytes": -1,
+      "filter": {
+        "enabled": false,
+        "distinct": false
+      }
+    }
+  }
 }

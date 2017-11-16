@@ -1,54 +1,75 @@
 {
-  "checklists": {
-    "checklists": []
-  }, 
+  "type": "shaker",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "engineType": "DSS",
+    "engineParams": {
+      "spark": {
+        "pipelineAllowStart": true,
+        "pipelineAllowMerge": true,
+        "sparkConfig": {
+          "inheritConf": "default",
+          "conf": []
+        },
+        "readParams": {
+          "map": {
+            "2016_codes_postaux": {
+              "repartition": 10,
+              "cache": false
+            },
+            "2016_geoapi_communes_wgs84": {
+              "repartition": 10,
+              "cache": false
+            }
+          }
+        }
+      },
+      "hadoopConfigKeys": [],
+      "maxThreads": 8
+    }
+  },
   "customMeta": {
     "kv": {}
-  }, 
+  },
+  "redispatchPartitioning": false,
   "inputs": {
     "main": {
       "items": [
         {
-          "deps": [], 
-          "ref": "2016_codes_postaux"
+          "ref": "2016_codes_postaux",
+          "deps": []
         }
       ]
-    }, 
+    },
     "scriptDeps": {
       "items": [
         {
-          "deps": [], 
-          "ref": "2016_geoapi_communes_wgs84"
+          "ref": "2016_geoapi_communes_wgs84",
+          "deps": []
         }
       ]
     }
-  }, 
-  "neverRecomputeExistingPartitions": false, 
-  "optionalDependencies": false, 
+  },
   "outputs": {
     "main": {
       "items": [
         {
-          "appendMode": false, 
-          "ref": "2016_codes_postaux_prep"
+          "ref": "2016_codes_postaux_prep",
+          "appendMode": false
         }
       ]
     }
-  }, 
-  "params": {
-    "engineType": "DSS", 
-    "hadoopConfigKeys": []
-  }, 
-  "redispatchPartitioning": false, 
-  "tags": [], 
-  "type": "shaker", 
+  },
   "versionTag": {
+    "versionNumber": 6,
     "lastModifiedBy": {
-      "displayName": "Fabien Antoine", 
-      "email": "fabien.antoine@interieur.gouv.fr", 
       "login": "antoinefa"
-    }, 
-    "lastModifiedOn": 1485792572133, 
-    "versionNumber": 5
+    },
+    "lastModifiedOn": 1510829508668
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
   }
 }
