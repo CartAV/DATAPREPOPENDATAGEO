@@ -362,12 +362,7 @@
       {
         "type": "DATASET",
         "localName": "2016_codes_postaux_prep",
-        "rules": [
-          {
-            "targetProject": "AURIGE",
-            "appearOnFlow": true
-          }
-        ]
+        "rules": []
       }
     ]
   },
@@ -535,11 +530,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 69,
+    "versionNumber": 70,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1518201499315
+    "lastModifiedOn": 1518201537874
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [
