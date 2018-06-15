@@ -1,0 +1,68 @@
+{
+  "type": "vstack",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "IGN_DEPARTEMENT_MARTINIQUE",
+          "deps": []
+        },
+        {
+          "ref": "IGN_DEPARTEMENT",
+          "deps": []
+        },
+        {
+          "ref": "IGN_DEPARTEMENT_GUADELOUPE",
+          "deps": []
+        },
+        {
+          "ref": "IGN_DEPARTEMENT_GUYANE",
+          "deps": []
+        },
+        {
+          "ref": "IGN_DEPARTEMENT_MAYOTTE",
+          "deps": []
+        },
+        {
+          "ref": "IGN_DEPARTEMENT_REUNION",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "IGN_DEP_FRANCE",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "nouwopsi"
+    },
+    "lastModifiedOn": 1529079536460
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "nouwopsi"
+    },
+    "lastModifiedOn": 1529079536460
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
+}
