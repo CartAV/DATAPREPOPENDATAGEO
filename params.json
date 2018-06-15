@@ -475,6 +475,9 @@
     "impalaEngineCreationSettings": {
       "useGlobal": true,
       "streamMode": true
+    },
+    "cluster": {
+      "clusterMode": "INHERIT"
     }
   },
   "name": "Dataprep opendata geo",
@@ -530,11 +533,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 70,
+    "versionNumber": 71,
     "lastModifiedBy": {
-      "login": "antoinefa"
+      "login": "nouwopsi"
     },
-    "lastModifiedOn": 1518201537874
+    "lastModifiedOn": 1529079734034
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [
