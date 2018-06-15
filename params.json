@@ -363,6 +363,16 @@
         "type": "DATASET",
         "localName": "2016_codes_postaux_prep",
         "rules": []
+      },
+      {
+        "type": "DATASET",
+        "localName": "ign_departement_FR",
+        "rules": [
+          {
+            "targetProject": "AURIGEEXAMENPRATIQUE",
+            "appearOnFlow": true
+          }
+        ]
       }
     ]
   },
@@ -533,11 +543,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 71,
+    "versionNumber": 72,
     "lastModifiedBy": {
       "login": "nouwopsi"
     },
-    "lastModifiedOn": 1529079734034
+    "lastModifiedOn": 1529080324400
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [
