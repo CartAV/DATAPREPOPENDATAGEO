@@ -373,6 +373,16 @@
             "appearOnFlow": true
           }
         ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "correspondance_regions_FR",
+        "rules": [
+          {
+            "targetProject": "AURIGEACTIVITES",
+            "appearOnFlow": true
+          }
+        ]
       }
     ]
   },
@@ -543,11 +553,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 72,
+    "versionNumber": 73,
     "lastModifiedBy": {
       "login": "nouwopsi"
     },
-    "lastModifiedOn": 1529080324400
+    "lastModifiedOn": 1529414753615
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [
