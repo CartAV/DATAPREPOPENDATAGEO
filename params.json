@@ -383,6 +383,16 @@
             "appearOnFlow": true
           }
         ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "ZEAT_regions_departements",
+        "rules": [
+          {
+            "targetProject": "AURIGEACTIVITES",
+            "appearOnFlow": true
+          }
+        ]
       }
     ]
   },
@@ -553,11 +563,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 73,
+    "versionNumber": 74,
     "lastModifiedBy": {
       "login": "nouwopsi"
     },
-    "lastModifiedOn": 1529414753615
+    "lastModifiedOn": 1529414842058
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [
