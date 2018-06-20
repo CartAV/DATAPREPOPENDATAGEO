@@ -1,15 +1,58 @@
 {
   "type": "CustomPython_geohisto_geohisto",
+  "managed": false,
+  "checklists": {
+    "checklists": []
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "antoinefa"
+    },
+    "lastModifiedOn": 1529515019897
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "antoinefa"
+    },
+    "lastModifiedOn": 1529515019900
+  },
+  "tags": [
+    "creator_grabenertr"
+  ],
   "params": {
     "customConfig": {
-      "source": "https://raw.githubusercontent.com/etalab/geohisto/master/exports/towns/towns.csv",
+      "source": "https://raw.githubusercontent.com/etalab/geohisto/master/exports/communes/communes.csv",
       "proxy": "http://proxy-1:3128"
     },
+    "notReadyIfEmpty": false,
     "previewAllPartitions": false
   },
-  "managed": false,
   "schema": {
-    "userModified": false,
+    "userModified": true,
     "columns": [
       {
         "name": "id",
@@ -61,23 +104,6 @@
       }
     ]
   },
-  "partitioning": {
-    "ignoreNonMatchingFile": false,
-    "dimensions": []
-  },
-  "tags": [
-    "creator_grabenertr"
-  ],
-  "checklists": {
-    "checklists": []
-  },
-  "flowOptions": {
-    "rebuildBehavior": "NORMAL",
-    "crossProjectBuildBehavior": "DEFAULT"
-  },
-  "customMeta": {
-    "kv": {}
-  },
   "metrics": {
     "probes": [
       {
@@ -105,17 +131,28 @@
       "padRunsWithMetrics": false,
       "hive": {
         "active": true,
-        "extraConf": [],
-        "addDkuUdf": false
+        "extraConf": []
       },
       "basic": {},
       "dss": {
         "active": true,
         "selection": {
-          "samplingMethod": "FULL",
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
           "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
           "maxRecords": 10000,
-          "targetRatio": 0.02
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
         }
       },
       "sql": {
@@ -127,6 +164,7 @@
       "python": {}
     },
     "displayedState": {
+      "columns": [],
       "metrics": [
         "basic:COUNT_COLUMNS",
         "records:COUNT_RECORDS"
