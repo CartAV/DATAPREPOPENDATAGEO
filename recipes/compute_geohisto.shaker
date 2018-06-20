@@ -1,80 +1,91 @@
 {
-  "steps": [
+  "explorationFilters": [
     {
-      "type": "DateParser",
-      "params": {
-        "outCol": "",
-        "lang": "auto",
-        "timezone_id": "UTC",
-        "formats": [
-          "yyyy-MM-dd HH:mm:ss"
-        ],
-        "appliesTo": "SINGLE_COLUMN",
-        "columns": [
-          "start_datetime"
-        ]
-      },
-      "metaType": "PROCESSOR",
-      "preview": false,
-      "disabled": false,
-      "alwaysShowComment": false
-    },
-    {
-      "type": "DateParser",
-      "params": {
-        "outCol": "",
-        "lang": "auto",
-        "timezone_id": "UTC",
-        "formats": [
-          "yyyy-MM-dd HH:mm:ss"
-        ],
-        "appliesTo": "SINGLE_COLUMN",
-        "columns": [
-          "end_datetime"
-        ]
-      },
-      "metaType": "PROCESSOR",
-      "preview": false,
-      "disabled": false,
-      "alwaysShowComment": false
+      "$$hashKey": "32A",
+      "type": "global_search"
     }
   ],
-  "tags": [],
-  "origin": "PREPARE_RECIPE",
+  "maxProcessedMemTableBytes": -1,
+  "analysisColumnData": {},
   "columnsSelection": {
     "mode": "ALL"
   },
+  "globalSearchQuery": "",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "origin": "PREPARE_RECIPE",
+  "sorting": [],
   "coloring": {
-    "scheme": "MEANING_AND_STATUS",
     "individualColumns": [],
+    "scheme": "MEANING_AND_STATUS",
     "valueColoringMode": "HASH"
   },
-  "analysisColumnData": {},
-  "explorationSampling": {
-    "selection": {
-      "samplingMethod": "HEAD_SEQUENTIAL",
-      "partitionSelectionMethod": "ALL",
-      "maxRecords": 10000,
-      "targetRatio": 0.02
+  "steps": [
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "outCol": "",
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "start_datetime"
+        ],
+        "timezone_id": "UTC",
+        "lang": "auto",
+        "formats": [
+          "yyyy-MM-dd HH:mm:ss"
+        ]
+      },
+      "type": "DateParser",
+      "disabled": false,
+      "metaType": "PROCESSOR"
     },
-    "autoRefreshSample": false,
-    "_refreshTrigger": 0
-  },
-  "vizSampling": {
-    "autoRefreshSample": false,
-    "_refreshTrigger": 0
-  },
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "outCol": "",
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "end_datetime"
+        ],
+        "timezone_id": "UTC",
+        "lang": "auto",
+        "formats": [
+          "yyyy-MM-dd HH:mm:ss"
+        ]
+      },
+      "type": "DateParser",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    }
+  ],
   "exploreUIParams": {
     "autoRefresh": true
   },
-  "globalSearchQuery": "",
-  "explorationFilters": [
-    {
-      "type": "global_search",
-      "$$hashKey": "32A"
-    }
-  ],
   "previewMode": "ALL_ROWS",
-  "charts": [],
-  "chartsEngine": "LINO"
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false,
+    "selection": {
+      "targetRatio": 0.02,
+      "maxRecords": 10000,
+      "maxStoredBytes": -1,
+      "partitionSelectionMethod": "ALL",
+      "withinFirstN": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "maxReadUncompressedBytes": -1,
+      "filter": {
+        "enabled": false,
+        "distinct": false
+      }
+    }
+  }
 }

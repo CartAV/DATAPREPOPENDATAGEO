@@ -1,46 +1,65 @@
 {
-  "checklists": {
-    "checklists": []
-  }, 
+  "type": "shaker",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "engineType": "DSS",
+    "engineParams": {
+      "spark": {
+        "pipelineAllowStart": true,
+        "pipelineAllowMerge": true,
+        "sparkConfig": {
+          "inheritConf": "default",
+          "conf": []
+        },
+        "readParams": {
+          "map": {
+            "geohisto_geohisto": {
+              "repartition": 10,
+              "cache": false
+            }
+          }
+        },
+        "useGlobalMetastore": false
+      },
+      "hadoopConfigKeys": [],
+      "maxThreads": 8
+    }
+  },
   "customMeta": {
     "kv": {}
-  }, 
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
   "inputs": {
     "main": {
       "items": [
         {
-          "deps": [], 
-          "ref": "geohisto_geohisto"
+          "ref": "geohisto_geohisto",
+          "deps": []
         }
       ]
     }
-  }, 
-  "neverRecomputeExistingPartitions": false, 
-  "optionalDependencies": false, 
+  },
   "outputs": {
     "main": {
       "items": [
         {
-          "appendMode": false, 
-          "ref": "geohisto"
+          "ref": "geohisto",
+          "appendMode": false
         }
       ]
     }
-  }, 
-  "params": {
-    "engineType": "DSS", 
-    "hadoopConfigKeys": []
-  }, 
-  "redispatchPartitioning": false, 
-  "tags": [], 
-  "type": "shaker", 
+  },
   "versionTag": {
+    "versionNumber": 12,
     "lastModifiedBy": {
-      "displayName": "Tristam Gr\u00e4bener", 
-      "email": "tristam.grabener@interieur.gouv.fr", 
-      "login": "grabenertr"
-    }, 
-    "lastModifiedOn": 1487176037171, 
-    "versionNumber": 11
+      "login": "antoinefa"
+    },
+    "lastModifiedOn": 1529515046511
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
   }
 }
