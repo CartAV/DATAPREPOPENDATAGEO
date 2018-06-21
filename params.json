@@ -411,6 +411,16 @@
             "appearOnFlow": true
           }
         ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "Geo_api_departements",
+        "rules": [
+          {
+            "targetProject": "AURIGEEXAMENPRATIQUE",
+            "appearOnFlow": true
+          }
+        ]
       }
     ]
   },
@@ -581,11 +591,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 76,
+    "versionNumber": 77,
     "lastModifiedBy": {
       "login": "nouwopsi"
     },
-    "lastModifiedOn": 1529504280478
+    "lastModifiedOn": 1529584770323
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [
