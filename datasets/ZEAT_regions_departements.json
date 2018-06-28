@@ -71,7 +71,9 @@
     },
     "lastModifiedOn": 1529414803591
   },
-  "tags": [],
+  "tags": [
+    "aurige_delais"
+  ],
   "params": {
     "sources": [
       {
