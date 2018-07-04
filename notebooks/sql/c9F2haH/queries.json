@@ -110,6 +110,28 @@
         },
         "sql": "SELECT the_geom\nFROM IGN_COMMUNE_FRANCE\nWHERE \"INSEE_COM\" \u003d \u002744109\u0027",
         "expandedSql": "SELECT the_geom\nFROM IGN_COMMUNE_FRANCE\nWHERE \"INSEE_COM\" \u003d \u002744109\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "ZPvEbp1J1Bzn",
+        "runOn": 1530704650711,
+        "runIn": 47,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "BxMESXx8",
+        "hash": "cfd95442cdf7f2fad014503ceff52ea3",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT ST_AsText(the_geom)\nFROM IGN_COMMUNE_FRANCE\nWHERE \"INSEE_COM\" \u003d \u002744109\u0027",
+        "expandedSql": "SELECT ST_AsText(the_geom)\nFROM IGN_COMMUNE_FRANCE\nWHERE \"INSEE_COM\" \u003d \u002744109\u0027"
       }
     ]
   }
