@@ -44,6 +44,28 @@
         },
         "sql": "SELECT *\nFROM IGN_COMMUNE_FRANCE\nWHERE \"CODE_COM\" \u003d \u002744109\u0027",
         "expandedSql": "SELECT *\nFROM IGN_COMMUNE_FRANCE\nWHERE \"CODE_COM\" \u003d \u002744109\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "AJGzv4snjQOF",
+        "runOn": 1530704542437,
+        "runIn": 115,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "3JHnMr0A",
+        "hash": "ed53a706f350ec5e202d58772c9a2852",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT *\nFROM IGN_COMMUNE_FRANCE\nWHERE \"CODE_COM\" \u003d \u0027109\u0027",
+        "expandedSql": "SELECT *\nFROM IGN_COMMUNE_FRANCE\nWHERE \"CODE_COM\" \u003d \u0027109\u0027"
       }
     ]
   }
