@@ -399,6 +399,10 @@
           {
             "targetProject": "AURIGEEXAMENPRATIQUE",
             "appearOnFlow": true
+          },
+          {
+            "targetProject": "AURIGEAUTOMATION",
+            "appearOnFlow": true
           }
         ]
       },
@@ -418,6 +422,10 @@
         "rules": [
           {
             "targetProject": "AURIGEEXAMENPRATIQUE",
+            "appearOnFlow": true
+          },
+          {
+            "targetProject": "AURIGEAUTOMATION",
             "appearOnFlow": true
           }
         ]
@@ -591,11 +599,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 77,
+    "versionNumber": 79,
     "lastModifiedBy": {
       "login": "nouwopsi"
     },
-    "lastModifiedOn": 1529584770323
+    "lastModifiedOn": 1532422521127
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [
