@@ -526,10 +526,14 @@
         "preventOverride": false
       }
     },
+    "container": {
+      "containerMode": "NONE"
+    },
     "datasetsCreationSettings": {
       "useGlobal": true,
       "preferedStorageFormats": "CSV_ESCAPING_NOGZIP_FORHIVE,CSV_EXCEL_GZIP,PARQUET_HIVE",
-      "virtualizable": false
+      "virtualizable": false,
+      "allowUploadsWithoutConnection": true
     },
     "hiveEngineCreationSettings": {
       "useGlobal": true,
@@ -542,9 +546,13 @@
       "useGlobal": true,
       "streamMode": true
     },
+    "wikiSettings": {
+      "promoted": false
+    },
     "cluster": {
       "clusterMode": "INHERIT"
-    }
+    },
+    "path": "/Opendata"
   },
   "name": "Dataprep opendata geo",
   "projectStatus": "Sandbox",
@@ -599,11 +607,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 79,
+    "versionNumber": 80,
     "lastModifiedBy": {
-      "login": "nouwopsi"
+      "login": "antoinefa"
     },
-    "lastModifiedOn": 1532422521127
+    "lastModifiedOn": 1533461896678
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [
