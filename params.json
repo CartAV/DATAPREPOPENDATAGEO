@@ -425,7 +425,7 @@
             "appearOnFlow": true
           },
           {
-            "targetProject": "AURIGEAUTOMATION",
+            "targetProject": "DSR_AURIGE_EXAMENS",
             "appearOnFlow": true
           }
         ]
@@ -607,11 +607,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 81,
+    "versionNumber": 82,
     "lastModifiedBy": {
       "login": "nouwopsi"
     },
-    "lastModifiedOn": 1535718228079
+    "lastModifiedOn": 1535718278250
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [
