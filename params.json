@@ -403,6 +403,10 @@
           {
             "targetProject": "DSR_AURIGE_EXAMENS",
             "appearOnFlow": true
+          },
+          {
+            "targetProject": "POLEX",
+            "appearOnFlow": true
           }
         ]
       },
@@ -426,6 +430,10 @@
           },
           {
             "targetProject": "DSR_AURIGE_EXAMENS",
+            "appearOnFlow": true
+          },
+          {
+            "targetProject": "POLEX",
             "appearOnFlow": true
           }
         ]
@@ -607,11 +615,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 82,
+    "versionNumber": 84,
     "lastModifiedBy": {
-      "login": "nouwopsi"
+      "login": "dupontlau"
     },
-    "lastModifiedOn": 1535718278250
+    "lastModifiedOn": 1536053697748
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [
