@@ -41,7 +41,7 @@
       "\b"
     ],
     "skipRowsBeforeHeader": 0,
-    "parseHeaderRow": false,
+    "parseHeaderRow": true,
     "skipRowsAfterHeader": 0,
     "probableNumberOfRecords": 0,
     "normalizeBooleans": false,
@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "nouwopsi"
     },
-    "lastModifiedOn": 1536146995167
+    "lastModifiedOn": 1536147008486
   },
   "creationTag": {
     "versionNumber": 0,
