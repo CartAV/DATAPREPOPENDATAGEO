@@ -133,6 +133,30 @@
         "sql": "SELECT ST_AsText(the_geom)\nFROM IGN_COMMUNE_FRANCE\nWHERE \"INSEE_COM\" \u003d \u002744109\u0027",
         "expandedSql": "SELECT ST_AsText(the_geom)\nFROM IGN_COMMUNE_FRANCE\nWHERE \"INSEE_COM\" \u003d \u002744109\u0027"
       }
+    ],
+    "udb35eh9vqc": [
+      {
+        "mode": "SQL",
+        "id": "CjvMWIxOoqaZ",
+        "runOn": 1538139306098,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "oRo7Ur4r",
+        "hash": "0a7cbec98a66d66c3a0d1c24ee8ba613",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT COUNT(*) c, \"nom_courant_route\" FROM \"bornes_routes_2016_pour_interpolation\"\nGROUP BY \"nom_courant_route\"\nORDER BY c DESC\n",
+        "expandedSql": "SELECT COUNT(*) c, \"nom_courant_route\" FROM \"bornes_routes_2016_pour_interpolation\"\nGROUP BY \"nom_courant_route\"\nORDER BY c DESC\n"
+      }
     ]
   }
 }
