@@ -399,10 +399,6 @@
           {
             "targetProject": "AURIGEEXAMENPRATIQUE",
             "appearOnFlow": true
-          },
-          {
-            "targetProject": "POLEX",
-            "appearOnFlow": true
           }
         ]
       },
@@ -422,10 +418,6 @@
         "rules": [
           {
             "targetProject": "AURIGEEXAMENPRATIQUE",
-            "appearOnFlow": true
-          },
-          {
-            "targetProject": "POLEX",
             "appearOnFlow": true
           }
         ]
@@ -607,11 +599,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 85,
+    "versionNumber": 87,
     "lastModifiedBy": {
-      "login": "nouwopsi"
+      "login": "dupontlau"
     },
-    "lastModifiedOn": 1536250849329
+    "lastModifiedOn": 1538659994706
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [
