@@ -213,7 +213,7 @@
       "concatDistinct": false,
       "sum2": false,
       "min": false,
-      "countDistinct": false,
+      "countDistinct": true,
       "avg": false,
       "stddev": false,
       "first": false,
@@ -564,11 +564,11 @@
       "mode": "\u0026\u0026",
       "conditions": [
         {
-          "input": "dep_code_last",
+          "input": "dep_code_distinct",
           "col": "norm_name",
           "string": "1",
-          "num": 0,
-          "operator": "\u003d\u003d [string]"
+          "num": 1,
+          "operator": "\u003e  [number]"
         }
       ]
     },
@@ -578,6 +578,10 @@
           {
             "name": "norm_name",
             "type": "string"
+          },
+          {
+            "name": "dep_code_distinct",
+            "type": "bigint"
           },
           {
             "name": "dep_code_last",
@@ -596,6 +600,6 @@
       "message": "Filter expression is invalid"
     },
     "distinct": false,
-    "enabled": false
+    "enabled": true
   }
 }
