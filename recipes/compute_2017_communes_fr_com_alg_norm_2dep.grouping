@@ -527,7 +527,7 @@
       "first": false
     }
   ],
-  "globalCount": true,
+  "globalCount": false,
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -556,6 +556,7 @@
   },
   "enlargeYourBits": true,
   "outputColumnNameOverrides": {
+    "dep_code_distinct": "ambiguité",
     "dep_code_last": "dep_code"
   },
   "computedColumns": [],
@@ -586,10 +587,6 @@
           {
             "name": "dep_code_last",
             "type": "string"
-          },
-          {
-            "name": "count",
-            "type": "bigint"
           }
         ],
         "userModified": false
