@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1545600842134
+    "lastModifiedOn": 1545601135984
   },
   "creationTag": {
     "versionNumber": 0,
@@ -63,17 +63,13 @@
         "maxLength": 16200
       },
       {
-        "name": "dep_code_distinct",
+        "name": "ambiguité",
         "type": "bigint"
       },
       {
         "name": "dep_code",
         "type": "string",
         "maxLength": 16200
-      },
-      {
-        "name": "count",
-        "type": "bigint"
       }
     ],
     "userModified": true
