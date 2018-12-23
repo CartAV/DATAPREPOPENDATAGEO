@@ -600,6 +600,6 @@
       "message": "Filter expression is invalid"
     },
     "distinct": false,
-    "enabled": true
+    "enabled": false
   }
 }
