@@ -1,7 +1,32 @@
 {
   "preFilter": {
+    "uiData": {
+      "mode": "\u0026\u0026",
+      "conditions": [
+        {
+          "input": "validity",
+          "col": "CODEISO3",
+          "string": "true",
+          "num": 0,
+          "operator": "\u003d\u003d [string]"
+        },
+        {
+          "input": "CODEISO3",
+          "col": "CODEISO3",
+          "string": "FRA",
+          "num": 0,
+          "operator": "contains"
+        }
+      ]
+    },
+    "$status": {
+      "validated": true,
+      "fullyTranslated": false,
+      "ok": false,
+      "message": "Filter expression is invalid"
+    },
     "distinct": false,
-    "enabled": false
+    "enabled": true
   },
   "keys": [
     {
