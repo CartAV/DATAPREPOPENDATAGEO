@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1545600722347
+    "lastModifiedOn": 1545600842134
   },
   "creationTag": {
     "versionNumber": 0,
@@ -61,6 +61,10 @@
         "name": "norm_name",
         "type": "string",
         "maxLength": 16200
+      },
+      {
+        "name": "dep_code_distinct",
+        "type": "bigint"
       },
       {
         "name": "dep_code",
