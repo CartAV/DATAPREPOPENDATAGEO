@@ -21,18 +21,18 @@
     "main": {
       "items": [
         {
-          "ref": "2017_communes_fr_com_alg_norm_2dep",
+          "ref": "2017_communes_fr_com_2dep",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 17,
+    "versionNumber": 18,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1545603125506
+    "lastModifiedOn": 1545603173315
   },
   "creationTag": {
     "versionNumber": 0,
