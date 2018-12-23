@@ -14,6 +14,18 @@
       {
         "column": "norm_name",
         "ascending": true
+      },
+      {
+        "column": "id",
+        "ascending": true
+      },
+      {
+        "column": "end_datetime",
+        "ascending": false
+      },
+      {
+        "column": "start_datetime",
+        "ascending": false
       }
     ],
     "analysisColumnData": {},
