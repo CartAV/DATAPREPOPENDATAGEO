@@ -1,0 +1,48 @@
+{
+  "type": "window",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "2017_communes_fr_com_alg_norm",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "2017_communes_fr_com_alg_norm_dep",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "antoinefa"
+    },
+    "lastModifiedOn": 1545600370236
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "antoinefa"
+    },
+    "lastModifiedOn": 1545600370236
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
+}
