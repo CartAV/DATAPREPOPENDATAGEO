@@ -4,6 +4,7 @@
     "enabled": false
   },
   "ntileValues": "10",
+  "keys": [],
   "values": [
     {
       "last": false,
@@ -12,9 +13,11 @@
       "firstLastNotNull": false,
       "column": "id",
       "count": false,
+      "$idx": 0,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -35,9 +38,11 @@
       "firstLastNotNull": false,
       "column": "CODEISO3",
       "count": false,
+      "$idx": 1,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -58,9 +63,11 @@
       "firstLastNotNull": false,
       "column": "insee_code",
       "count": false,
+      "$idx": 2,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -81,9 +88,11 @@
       "firstLastNotNull": false,
       "column": "start_datetime",
       "count": false,
+      "$idx": 3,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -104,9 +113,11 @@
       "firstLastNotNull": false,
       "column": "end_datetime",
       "count": false,
+      "$idx": 4,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -127,9 +138,11 @@
       "firstLastNotNull": false,
       "column": "name",
       "count": false,
+      "$idx": 5,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -150,9 +163,11 @@
       "firstLastNotNull": false,
       "column": "norm_name",
       "count": false,
+      "$idx": 6,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -173,9 +188,11 @@
       "firstLastNotNull": false,
       "column": "newest_id",
       "count": false,
+      "$idx": 7,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -196,9 +213,11 @@
       "firstLastNotNull": false,
       "column": "insee_code_history",
       "count": false,
+      "$idx": 8,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -219,9 +238,11 @@
       "firstLastNotNull": false,
       "column": "dep_history",
       "count": false,
+      "$idx": 9,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -242,9 +263,11 @@
       "firstLastNotNull": false,
       "column": "population",
       "count": false,
+      "$idx": 10,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -265,9 +288,11 @@
       "firstLastNotNull": false,
       "column": "dep_code",
       "count": false,
+      "$idx": 11,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -288,9 +313,11 @@
       "firstLastNotNull": false,
       "column": "newest_insee_code",
       "count": false,
+      "$idx": 12,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -311,9 +338,11 @@
       "firstLastNotNull": false,
       "column": "validity",
       "count": false,
+      "$idx": 13,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -334,9 +363,11 @@
       "firstLastNotNull": false,
       "column": "newest_name",
       "count": false,
+      "$idx": 14,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -357,9 +388,11 @@
       "firstLastNotNull": false,
       "column": "newest_dep_code",
       "count": false,
+      "$idx": 15,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -380,9 +413,11 @@
       "firstLastNotNull": false,
       "column": "surface",
       "count": false,
+      "$idx": 16,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -403,9 +438,11 @@
       "firstLastNotNull": false,
       "column": "latitude",
       "count": false,
+      "$idx": 17,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -426,9 +463,11 @@
       "firstLastNotNull": false,
       "column": "longitude",
       "count": false,
+      "$idx": 18,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -449,9 +488,11 @@
       "firstLastNotNull": false,
       "column": "geopoint_2d",
       "count": false,
+      "$idx": 19,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -472,9 +513,11 @@
       "firstLastNotNull": false,
       "column": "Code ONS",
       "count": false,
+      "$idx": 20,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -495,9 +538,11 @@
       "firstLastNotNull": false,
       "column": "Commune",
       "count": false,
+      "$idx": 21,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -518,9 +563,11 @@
       "firstLastNotNull": false,
       "column": "dep",
       "count": false,
+      "$idx": 22,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -541,9 +588,11 @@
       "firstLastNotNull": false,
       "column": "Dates changement",
       "count": false,
+      "$idx": 23,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -564,9 +613,11 @@
       "firstLastNotNull": false,
       "column": "Daira",
       "count": false,
+      "$idx": 24,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -587,9 +638,11 @@
       "firstLastNotNull": false,
       "column": "Code postal",
       "count": false,
+      "$idx": 25,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -610,9 +663,11 @@
       "firstLastNotNull": false,
       "column": "ambiguity",
       "count": false,
+      "$idx": 26,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -633,9 +688,11 @@
       "firstLastNotNull": false,
       "column": "norm_rank",
       "count": false,
+      "$idx": 27,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -656,9 +713,11 @@
       "firstLastNotNull": false,
       "column": "insee_rank",
       "count": false,
+      "$idx": 28,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -673,6 +732,161 @@
       "first": false
     }
   ],
+  "windows": [
+    {
+      "windowUpperBound": 0,
+      "enablePartitioning": true,
+      "enableOrdering": true,
+      "precedingRows": 0,
+      "limitFollowing": false,
+      "orders": [
+        {
+          "column": "norm_name",
+          "desc": false
+        },
+        {
+          "column": "start_datetime",
+          "desc": false
+        }
+      ],
+      "limitPreceding": false,
+      "followingRows": 0,
+      "windowLowerBound": 0,
+      "enableLimits": false,
+      "partitioningColumns": [
+        "norm_name"
+      ]
+    }
+  ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "name": "CODEISO3",
+            "type": "string"
+          },
+          {
+            "name": "insee_code",
+            "type": "string"
+          },
+          {
+            "name": "start_datetime",
+            "type": "string"
+          },
+          {
+            "name": "end_datetime",
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "norm_name",
+            "type": "string"
+          },
+          {
+            "name": "newest_id",
+            "type": "string"
+          },
+          {
+            "name": "insee_code_history",
+            "type": "string"
+          },
+          {
+            "name": "dep_history",
+            "type": "string"
+          },
+          {
+            "name": "population",
+            "type": "string"
+          },
+          {
+            "name": "dep_code",
+            "type": "string"
+          },
+          {
+            "name": "newest_insee_code",
+            "type": "string"
+          },
+          {
+            "name": "validity",
+            "type": "string"
+          },
+          {
+            "name": "newest_name",
+            "type": "string"
+          },
+          {
+            "name": "newest_dep_code",
+            "type": "string"
+          },
+          {
+            "name": "surface",
+            "type": "string"
+          },
+          {
+            "name": "latitude",
+            "type": "string"
+          },
+          {
+            "name": "longitude",
+            "type": "string"
+          },
+          {
+            "name": "geopoint_2d",
+            "type": "string"
+          },
+          {
+            "name": "Code ONS",
+            "type": "string"
+          },
+          {
+            "name": "Commune",
+            "type": "string"
+          },
+          {
+            "name": "dep",
+            "type": "string"
+          },
+          {
+            "name": "Dates changement",
+            "type": "string"
+          },
+          {
+            "name": "Daira",
+            "type": "string"
+          },
+          {
+            "name": "Code postal",
+            "type": "string"
+          },
+          {
+            "name": "ambiguity",
+            "type": "string"
+          },
+          {
+            "name": "norm_rank",
+            "type": "string"
+          },
+          {
+            "name": "insee_rank",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
+    "distinct": false,
+    "enabled": false
+  },
+  "cumeDist": false,
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -702,25 +916,6 @@
   "ntile": false,
   "rank": false,
   "denseRank": false,
-  "windows": [
-    {
-      "windowUpperBound": 0.0,
-      "enablePartitioning": false,
-      "enableOrdering": false,
-      "precedingRows": 0,
-      "limitFollowing": false,
-      "orders": [],
-      "limitPreceding": false,
-      "followingRows": 0,
-      "windowLowerBound": 0.0,
-      "enableLimits": false
-    }
-  ],
   "rowNumber": false,
-  "computedColumns": [],
-  "postFilter": {
-    "distinct": false,
-    "enabled": false
-  },
-  "cumeDist": false
+  "outputColumnNameOverrides": {}
 }
