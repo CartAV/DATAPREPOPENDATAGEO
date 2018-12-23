@@ -565,7 +565,7 @@
       "conditions": [
         {
           "input": "dep_code_last",
-          "col": "dep_code_last",
+          "col": "norm_name",
           "string": "1",
           "num": 0,
           "operator": "\u003d\u003d [string]"
@@ -596,6 +596,6 @@
       "message": "Filter expression is invalid"
     },
     "distinct": false,
-    "enabled": true
+    "enabled": false
   }
 }
