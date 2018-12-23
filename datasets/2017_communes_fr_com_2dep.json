@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1545603170158
+    "lastModifiedOn": 1545603172875
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,7 +85,20 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "norm_name",
+        "type": "string"
+      },
+      {
+        "name": "ambiguité",
+        "type": "bigint"
+      },
+      {
+        "name": "dep_code",
+        "type": "string"
+      }
+    ],
     "userModified": true
   },
   "metrics": {
