@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1545603172875
+    "lastModifiedOn": 1545646198309
   },
   "creationTag": {
     "versionNumber": 0,
@@ -88,6 +88,10 @@
     "columns": [
       {
         "name": "norm_name",
+        "type": "string"
+      },
+      {
+        "name": "CODEISO3",
         "type": "string"
       },
       {
