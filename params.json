@@ -342,6 +342,10 @@
           {
             "targetProject": "DPFSO",
             "appearOnFlow": true
+          },
+          {
+            "targetProject": "HISTOVEC_LOGS",
+            "appearOnFlow": true
           }
         ]
       },
@@ -532,7 +536,8 @@
       "executionEngine": "HIVECLI_LOCAL"
     },
     "sparkEngineCreationSettings": {
-      "useGlobal": true
+      "useGlobal": true,
+      "useGlobalMetastore": false
     },
     "impalaEngineCreationSettings": {
       "useGlobal": true,
@@ -599,11 +604,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 92,
+    "versionNumber": 94,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1548154541610
+    "lastModifiedOn": 1551130415332
   },
   "shortDesc": "Préparation d’un ensemble de données ouvertes",
   "tags": [
